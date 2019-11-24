@@ -1,0 +1,462 @@
+Release 14.4 - xst P.49d (lin)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+Reading design: keypad.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "keypad.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "keypad"
+Output Format                      : NGC
+Target Device                      : xc3s250e-4-cp132
+
+---- Source Options
+Top Module Name                    : keypad
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/hendri/Documents/workspaceXilinx/P6-keypad/keypad.vhd" in Library work.
+Architecture behavioral of Entity keypad is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <keypad> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <keypad> in library <work> (Architecture <behavioral>).
+Entity <keypad> analyzed. Unit <keypad> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <keypad>.
+    Related source file is "/home/hendri/Documents/workspaceXilinx/P6-keypad/keypad.vhd".
+    Found 4-bit register for signal <keyOut>.
+    Found 4-bit register for signal <DBGOut>.
+    Found 4-bit register for signal <DBGIn>.
+    Found 7-bit register for signal <pinSeg>.
+    Found 32-bit up counter for signal <cntpsc>.
+    Found 32-bit comparator less for signal <cntpsc$cmp_lt0000> created at line 60.
+    Found 32-bit register for signal <counter>.
+    Found 32-bit adder for signal <counter$addsub0000> created at line 163.
+    Found 32-bit comparator greater for signal <counter$cmp_gt0000> created at line 84.
+    Found 32-bit comparator greater for signal <DBGIn$cmp_gt0000> created at line 87.
+    Found 32-bit comparator lessequal for signal <DBGOut$cmp_le0000> created at line 87.
+    Found 1-bit register for signal <PSCout>.
+    Found 1-bit register for signal <pulseSig>.
+    Found 4-bit register for signal <sigCn>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  50 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <keypad> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 8
+ 1-bit register                                        : 2
+ 32-bit register                                       : 1
+ 4-bit register                                        : 4
+ 7-bit register                                        : 1
+# Comparators                                          : 4
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 1
+ 32-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+# Comparators                                          : 4
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 1
+ 32-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <keypad> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block keypad, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 89
+ Flip-Flops                                            : 89
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : keypad.ngr
+Top Level Output File Name         : keypad
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 27
+
+Cell Usage :
+# BELS                             : 418
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 34
+#      LUT2                        : 94
+#      LUT2_D                      : 9
+#      LUT2_L                      : 4
+#      LUT3                        : 8
+#      LUT3_D                      : 1
+#      LUT3_L                      : 4
+#      LUT4                        : 80
+#      LUT4_D                      : 1
+#      LUT4_L                      : 6
+#      MULT_AND                    : 1
+#      MUXCY                       : 98
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 89
+#      FDCE                        : 42
+#      FDE                         : 14
+#      FDPE                        : 1
+#      FDR                         : 32
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 5
+#      OBUF                        : 21
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250ecp132-4 
+
+ Number of Slices:                      129  out of   2448     5%  
+ Number of Slice Flip Flops:             89  out of   4896     1%  
+ Number of 4 input LUTs:                249  out of   4896     5%  
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of     92    29%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_i                              | BUFGP                  | 33    |
+PSCout                             | BUFG                   | 56    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 43    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 11.664ns (Maximum Frequency: 85.732MHz)
+   Minimum input arrival time before clock: 7.594ns
+   Maximum output required time after clock: 4.394ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_i'
+  Clock period: 5.476ns (frequency: 182.631MHz)
+  Total number of paths / destination ports: 1453 / 66
+-------------------------------------------------------------------------
+Delay:               5.476ns (Levels of Logic = 13)
+  Source:            cntpsc_4 (FF)
+  Destination:       cntpsc_0 (FF)
+  Source Clock:      clk_i rising
+  Destination Clock: clk_i rising
+
+  Data Path: cntpsc_4 to cntpsc_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  cntpsc_4 (cntpsc_4)
+     LUT1:I0->O            1   0.704   0.000  Mcompar_cntpsc_cmp_lt0000_cy<0>_rt (Mcompar_cntpsc_cmp_lt0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_cntpsc_cmp_lt0000_cy<0> (Mcompar_cntpsc_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_cntpsc_cmp_lt0000_cy<1> (Mcompar_cntpsc_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_cntpsc_cmp_lt0000_cy<2> (Mcompar_cntpsc_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_cntpsc_cmp_lt0000_cy<3> (Mcompar_cntpsc_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_cntpsc_cmp_lt0000_cy<4> (Mcompar_cntpsc_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_cntpsc_cmp_lt0000_cy<5> (Mcompar_cntpsc_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_cntpsc_cmp_lt0000_cy<6> (Mcompar_cntpsc_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_cntpsc_cmp_lt0000_cy<7> (Mcompar_cntpsc_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_cntpsc_cmp_lt0000_cy<8> (Mcompar_cntpsc_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_cntpsc_cmp_lt0000_cy<9> (Mcompar_cntpsc_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_cntpsc_cmp_lt0000_cy<10> (Mcompar_cntpsc_cmp_lt0000_cy<10>)
+     MUXCY:CI->O          33   0.331   1.263  Mcompar_cntpsc_cmp_lt0000_cy<11> (Mcompar_cntpsc_cmp_lt0000_cy<11>)
+     FDR:R                     0.911          cntpsc_0
+    ----------------------------------------
+    Total                      5.476ns (3.591ns logic, 1.885ns route)
+                                       (65.6% logic, 34.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PSCout'
+  Clock period: 11.664ns (frequency: 85.732MHz)
+  Total number of paths / destination ports: 96983 / 112
+-------------------------------------------------------------------------
+Delay:               11.664ns (Levels of Logic = 18)
+  Source:            counter_3 (FF)
+  Destination:       counter_0 (FF)
+  Source Clock:      PSCout rising
+  Destination Clock: PSCout rising
+
+  Data Path: counter_3 to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.591   0.808  counter_3 (counter_3)
+     LUT4:I0->O            1   0.704   0.000  Mcompar_counter_cmp_gt0000_lut<0> (Mcompar_counter_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_counter_cmp_gt0000_cy<0> (Mcompar_counter_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_gt0000_cy<1> (Mcompar_counter_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_gt0000_cy<2> (Mcompar_counter_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_gt0000_cy<3> (Mcompar_counter_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_gt0000_cy<4> (Mcompar_counter_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_gt0000_cy<5> (Mcompar_counter_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_counter_cmp_gt0000_cy<6> (Mcompar_counter_cmp_gt0000_cy<6>)
+     MUXCY:CI->O          80   0.459   1.356  Mcompar_counter_cmp_gt0000_cy<7> (Mcompar_counter_cmp_gt0000_cy<7>)
+     LUT2:I1->O            2   0.704   0.622  counter_mux0000<11>1 (counter_mux0000<11>)
+     LUT4:I0->O            1   0.704   0.000  Mcompar_DBGOut_cmp_le0000_lut<2> (Mcompar_DBGOut_cmp_le0000_lut<2>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_DBGOut_cmp_le0000_cy<2> (Mcompar_DBGOut_cmp_le0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_DBGOut_cmp_le0000_cy<3> (Mcompar_DBGOut_cmp_le0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_DBGOut_cmp_le0000_cy<4> (Mcompar_DBGOut_cmp_le0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_DBGOut_cmp_le0000_cy<5> (Mcompar_DBGOut_cmp_le0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_DBGOut_cmp_le0000_cy<6> (Mcompar_DBGOut_cmp_le0000_cy<6>)
+     MUXCY:CI->O          46   0.331   1.346  Mcompar_DBGOut_cmp_le0000_cy<7> (DBGOut_cmp_le0000)
+     LUT2:I1->O           32   0.704   1.262  counter_not00011 (counter_not0001)
+     FDCE:CE                   0.555          counter_0
+    ----------------------------------------
+    Total                     11.664ns (6.270ns logic, 5.394ns route)
+                                       (53.8% logic, 46.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PSCout'
+  Total number of paths / destination ports: 180 / 24
+-------------------------------------------------------------------------
+Offset:              7.594ns (Levels of Logic = 5)
+  Source:            keyIn<1> (PAD)
+  Destination:       pinSeg_1 (FF)
+  Destination Clock: PSCout rising
+
+  Data Path: keyIn<1> to pinSeg_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.218   1.226  keyIn_1_IBUF (keyIn_1_IBUF)
+     LUT4:I0->O            8   0.704   0.932  DBGIn_mux0000<2>21 (N13)
+     LUT3:I0->O            1   0.704   0.595  pinSeg_mux0000<3>42_SW0 (N24)
+     LUT4_D:I0->O          1   0.704   0.499  pinSeg_mux0000<1>31 (N6)
+     LUT4:I1->O            1   0.704   0.000  pinSeg_mux0000<1>109 (pinSeg_mux0000<1>)
+     FDCE:D                    0.308          pinSeg_1
+    ----------------------------------------
+    Total                      7.594ns (4.342ns logic, 3.252ns route)
+                                       (57.2% logic, 42.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PSCout'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            pinSeg_5 (FF)
+  Destination:       pinSeg<5> (PAD)
+  Source Clock:      PSCout rising
+
+  Data Path: pinSeg_5 to pinSeg<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.591   0.531  pinSeg_5 (pinSeg_5)
+     OBUF:I->O                 3.272          pinSeg_5_OBUF (pinSeg<5>)
+    ----------------------------------------
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 14.13 secs
+ 
+--> 
+
+
+Total memory usage is 176500 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

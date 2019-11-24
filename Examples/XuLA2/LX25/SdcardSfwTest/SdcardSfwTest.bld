@@ -1,0 +1,1051 @@
+Release 13.4 ngdbuild O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -aul -aut -nt timestamp -uc
+C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2
+SdcardSfwTest.ngc SdcardSfwTest.ngd
+
+Reading NGO file
+"C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:59 - Constraint <NET fpgaClk_i      LOC = A9;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(20)]: NET "fpgaClk_i" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET fpgaClk_i      LOC = A9;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(20)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdCke_o        LOC = J12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(25)]: NET "sdCke_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdCke_o        LOC = J12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(25)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdClk_o        LOC = K11;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(26)]: NET "sdClk_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdClk_o        LOC = K11;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(26)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdClkFb_i      LOC = K12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(27)]: NET "sdClkFb_i" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdClkFb_i      LOC = K12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(27)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdCe_bo        LOC = H4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(28)]: NET "sdCe_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdCe_bo        LOC = H4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(28)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdRas_bo       LOC = L4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(29)]: NET "sdRas_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdRas_bo       LOC = L4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(29)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdCas_bo       LOC = L3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(30)]: NET "sdCas_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdCas_bo       LOC = L3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(30)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdWe_bo        LOC = M3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(31)]: NET "sdWe_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdWe_bo        LOC = M3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(31)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdDqml_o       LOC = M4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(32)]: NET "sdDqml_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdDqml_o       LOC = M4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(32)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdDqmh_o       LOC = L13;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(33)]: NET "sdDqmh_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdDqmh_o       LOC = L13;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(33)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdBs_o<0>      LOC = H3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(34)]: NET "sdBs_o<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdBs_o<0>      LOC = H3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(34)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdBs_o<1>      LOC = G3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(35)]: NET "sdBs_o<1>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdBs_o<1>      LOC = G3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(35)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdAddr_o<0>    LOC = E4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(36)]: NET "sdAddr_o<0>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdAddr_o<0>    LOC = E4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(36)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdAddr_o<1>    LOC = E3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(37)]: NET "sdAddr_o<1>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdAddr_o<1>    LOC = E3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(37)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdAddr_o<2>    LOC = D3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(38)]: NET "sdAddr_o<2>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdAddr_o<2>    LOC = D3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(38)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdAddr_o<3>    LOC = C3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(39)]: NET "sdAddr_o<3>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdAddr_o<3>    LOC = C3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(39)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdAddr_o<4>    LOC = B12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(40)]: NET "sdAddr_o<4>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdAddr_o<4>    LOC = B12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(40)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdAddr_o<5>    LOC = A12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(41)]: NET "sdAddr_o<5>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdAddr_o<5>    LOC = A12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(41)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdAddr_o<6>    LOC = D12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(42)]: NET "sdAddr_o<6>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdAddr_o<6>    LOC = D12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(42)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdAddr_o<7>    LOC = E12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(43)]: NET "sdAddr_o<7>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdAddr_o<7>    LOC = E12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(43)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdAddr_o<8>    LOC = G16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(44)]: NET "sdAddr_o<8>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdAddr_o<8>    LOC = G16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(44)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdAddr_o<9>    LOC = G12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(45)]: NET "sdAddr_o<9>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdAddr_o<9>    LOC = G12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(45)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdAddr_o<10>   LOC = F4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(46)]: NET "sdAddr_o<10>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdAddr_o<10>   LOC = F4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(46)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdAddr_o<11>   LOC = G11;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(47)]: NET "sdAddr_o<11>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdAddr_o<11>   LOC = G11;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(47)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdAddr_o<12>   LOC = H13;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(48)]: NET "sdAddr_o<12>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdAddr_o<12>   LOC = H13;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(48)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<0>   LOC = P6;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(49)]: NET "sdData_io<0>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<0>   LOC = P6;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(49)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<1>   LOC = T6;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(50)]: NET "sdData_io<1>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<1>   LOC = T6;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(50)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<2>   LOC = T5;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(51)]: NET "sdData_io<2>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<2>   LOC = T5;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(51)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<3>   LOC = P5;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(52)]: NET "sdData_io<3>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<3>   LOC = P5;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(52)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<4>   LOC = R5;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(53)]: NET "sdData_io<4>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<4>   LOC = R5;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(53)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<5>   LOC = N5;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(54)]: NET "sdData_io<5>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<5>   LOC = N5;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(54)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<6>   LOC = P4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(55)]: NET "sdData_io<6>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<6>   LOC = P4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(55)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<7>   LOC = N4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(56)]: NET "sdData_io<7>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<7>   LOC = N4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(56)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<8>   LOC = P12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(57)]: NET "sdData_io<8>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<8>   LOC = P12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(57)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<9>   LOC = R12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(58)]: NET "sdData_io<9>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<9>   LOC = R12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(58)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<10>  LOC = T13;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(59)]: NET "sdData_io<10>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<10>  LOC = T13;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(59)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<11>  LOC = T14;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(60)]: NET "sdData_io<11>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<11>  LOC = T14;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(60)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<12>  LOC = R14;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(61)]: NET "sdData_io<12>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<12>  LOC = R14;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(61)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<13>  LOC = T15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(62)]: NET "sdData_io<13>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<13>  LOC = T15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(62)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<14>  LOC = T12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(63)]: NET "sdData_io<14>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<14>  LOC = T12;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(63)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdData_io<15>  LOC = P11;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(64)]: NET "sdData_io<15>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET sdData_io<15>  LOC = P11;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(64)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chanClk_io     LOC = T7;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(78)]: NET "chanClk_io" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chanClk_io     LOC = T7;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(78)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<0>     LOC = R7;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(79)]: NET "chan_io<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<0>     LOC = R7;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(79)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<1>     LOC = R15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(80)]: NET "chan_io<1>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<1>     LOC = R15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(80)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<2>     LOC = R16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(81)]: NET "chan_io<2>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<2>     LOC = R16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(81)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<3>     LOC = M15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(82)]: NET "chan_io<3>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<3>     LOC = M15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(82)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<4>     LOC = M16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(83)]: NET "chan_io<4>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<4>     LOC = M16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(83)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<5>     LOC = K15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(84)]: NET "chan_io<5>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<5>     LOC = K15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(84)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<6>     LOC = K16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(85)]: NET "chan_io<6>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<6>     LOC = K16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(85)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<7>     LOC = J16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(86)]: NET "chan_io<7>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<7>     LOC = J16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(86)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<8>     LOC = J14;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(87)]: NET "chan_io<8>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<8>     LOC = J14;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(87)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<9>     LOC = F15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(88)]: NET "chan_io<9>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<9>     LOC = F15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(88)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<10>    LOC = F16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(89)]: NET "chan_io<10>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<10>    LOC = F16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(89)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<11>    LOC = C16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(90)]: NET "chan_io<11>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<11>    LOC = C16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(90)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<12>    LOC = C15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(91)]: NET "chan_io<12>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<12>    LOC = C15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(91)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<13>    LOC = B16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(92)]: NET "chan_io<13>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<13>    LOC = B16;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(92)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<14>    LOC = B15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(93)]: NET "chan_io<14>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<14>    LOC = B15;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(93)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<15>    LOC = T4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(94)]: NET "chan_io<15>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<15>    LOC = T4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(94)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<16>    LOC = R2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(95)]: NET "chan_io<16>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<16>    LOC = R2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(95)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<17>    LOC = R1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(96)]: NET "chan_io<17>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<17>    LOC = R1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(96)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<18>    LOC = M2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(97)]: NET "chan_io<18>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<18>    LOC = M2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(97)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<19>    LOC = M1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(98)]: NET "chan_io<19>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<19>    LOC = M1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(98)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<20>    LOC = K3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(99)]: NET "chan_io<20>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<20>    LOC = K3;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(99)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<21>    LOC = J4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(100)]: NET "chan_io<21>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<21>    LOC = J4;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(100)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<22>    LOC = H1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(101)]: NET "chan_io<22>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<22>    LOC = H1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(101)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<23>    LOC = H2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(102)]: NET "chan_io<23>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<23>    LOC = H2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(102)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<24>    LOC = F1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(103)]: NET "chan_io<24>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<24>    LOC = F1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(103)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<25>    LOC = F2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(104)]: NET "chan_io<25>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<25>    LOC = F2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(104)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<26>    LOC = E1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(105)]: NET "chan_io<26>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<26>    LOC = E1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(105)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<27>    LOC = E2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(106)]: NET "chan_io<27>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<27>    LOC = E2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(106)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<28>    LOC = C1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(107)]: NET "chan_io<28>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<28>    LOC = C1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(107)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<29>    LOC = B1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(108)]: NET "chan_io<29>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<29>    LOC = B1;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(108)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<30>    LOC = B2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(109)]: NET "chan_io<30>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<30>    LOC = B2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(109)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET chan_io<31>    LOC = A2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(110)]: NET "chan_io<31>"
+   not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET chan_io<31>    LOC = A2;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(110)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <NET fpgaClk_i      IOSTANDARD = LVTTL;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(115)]: NET "fpgaClk_i" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdClk_o        IOSTANDARD = LVTTL |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(116)]: NET "sdClk_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW=FAST |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(116)]: NET "sdClk_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE=8;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(116)]: NET "sdClk_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdClkFb_i      IOSTANDARD = LVTTL;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(117)]: NET "sdClkFb_i" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <net sdCke_o        IOSTANDARD = LVTTL;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(118)]: NET "sdCke_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <net sdCe_bo        IOSTANDARD = LVTTL;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(119)]: NET "sdCe_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:58 - Constraint <NET sdAddr_o*      IOSTANDARD = LVTTL |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(120)]: NET "sdAddr_o*"
+   does not match any design objects.
+
+INFO:ConstraintSystem:58 - Constraint <SLEW=SLOW |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(120)]: NET "sdAddr_o*"
+   does not match any design objects.
+
+INFO:ConstraintSystem:58 - Constraint <DRIVE=6;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(120)]: NET "sdAddr_o*"
+   does not match any design objects.
+
+INFO:ConstraintSystem:58 - Constraint <NET sdBs_o*        IOSTANDARD = LVTTL |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(121)]: NET "sdBs_o*" does
+   not match any design objects.
+
+INFO:ConstraintSystem:58 - Constraint <SLEW=SLOW |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(121)]: NET "sdBs_o*" does
+   not match any design objects.
+
+INFO:ConstraintSystem:58 - Constraint <DRIVE=6;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(121)]: NET "sdBs_o*" does
+   not match any design objects.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdRas_bo       IOSTANDARD = LVTTL |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(122)]: NET "sdRas_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW=SLOW |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(122)]: NET "sdRas_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE=6;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(122)]: NET "sdRas_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdCas_bo       IOSTANDARD = LVTTL |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(123)]: NET "sdCas_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW=SLOW |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(123)]: NET "sdCas_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE=6;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(123)]: NET "sdCas_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdWe_bo        IOSTANDARD = LVTTL |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(124)]: NET "sdWe_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW=SLOW |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(124)]: NET "sdWe_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE=6;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(124)]: NET "sdWe_bo" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:58 - Constraint <NET sdData_io*     IOSTANDARD = LVTTL |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(125)]: NET "sdData_io*"
+   does not match any design objects.
+
+INFO:ConstraintSystem:58 - Constraint <SLEW=SLOW |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(125)]: NET "sdData_io*"
+   does not match any design objects.
+
+INFO:ConstraintSystem:58 - Constraint <DRIVE=6;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(125)]: NET "sdData_io*"
+   does not match any design objects.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdDqmh_o       IOSTANDARD = LVTTL |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(126)]: NET "sdDqmh_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW=SLOW |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(126)]: NET "sdDqmh_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE=6;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(126)]: NET "sdDqmh_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET sdDqml_o       IOSTANDARD = LVTTL |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(127)]: NET "sdDqml_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <SLEW=SLOW |>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(127)]: NET "sdDqml_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <DRIVE=6;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(127)]: NET "sdDqml_o" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:58 - Constraint <NET chan*          IOSTANDARD = LVTTL;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(128)]: NET "chan*" does
+   not match any design objects.
+
+INFO:ConstraintSystem:59 - Constraint <NET "fpgaClk_i" TNM_NET = "fpgaClk_i";>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(133)]: NET "fpgaClk_i" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TSfpgaClk_i" = PERIOD
+   "fpgaClk_i" 12 MHz HIGH 50%;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(134)]: Unable to find an
+   active 'TNM' or 'TimeGrp' constraint named 'fpgaClk_i'.
+
+WARNING:ConstraintSystem:191 - The TNM 'fpgaClk_i', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TSfpgaClk_i'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC "TSfpgaClk_i" = PERIOD "fpgaClk_i" 12 MHz HIGH 50%;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(134)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC "TSfpgaClk_i" = PERIOD "fpgaClk_i" 12 MHz HIGH 50%;>
+   [C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf(134)]
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  77
+
+Total memory usage is 155116 kilobytes
+
+Writing NGD file "SdcardSfwTest.ngd" ...
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "SdcardSfwTest.bld"...

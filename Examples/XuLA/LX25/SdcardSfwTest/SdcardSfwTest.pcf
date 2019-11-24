@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map O.87xd on Fri Jul 13 12:59:05 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "flashCs_bo" LOCATE = SITE "T3" LEVEL 1;
+COMP "mosi_o" LOCATE = SITE "T10" LEVEL 1;
+COMP "miso_i" LOCATE = SITE "P10" LEVEL 1;
+COMP "usdflashCs_bo" LOCATE = SITE "T8" LEVEL 1;
+COMP "sclk_o" LOCATE = SITE "R11" LEVEL 1;
+SCHEMATIC END;
+

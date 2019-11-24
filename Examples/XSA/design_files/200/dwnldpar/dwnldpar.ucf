@@ -1,0 +1,50 @@
+#
+# pin assignments for the XC9572XL CPLD chip on the XSA-200 Board
+#
+
+# FPGA connections to CPLD
+net master_clk   loc=p17; 
+net clka         loc=p60; 
+net clkb         loc=p57; 
+net fpga_tck     loc=p58; 
+net fpga_wr_n    loc=p56; 
+net fpga_cs_n    loc=p52; 
+net fpga_done    loc=p63; 
+net fpga_prog_n  loc=p62; 
+net fpga_cclk    loc=p59; 
+net fpga_d<0>    loc=p4;  
+net fpga_d<1>    loc=p5;  
+net fpga_d<2>    loc=p6;  
+net fpga_d<3>    loc=p7;  
+net fpga_d<4>    loc=p8;  
+net fpga_d<5>    loc=p9;  
+net fpga_d<6>    loc=p10; 
+net fpga_d<7>    loc=p11; 
+net fpga_pp_d<0> loc=p40; # Flash A8
+net fpga_pp_d<1> loc=p39; # Flash A9
+net fpga_pp_d<2> loc=p38; # Flash A10
+net fpga_pp_d<3> loc=p36; # Flash A11
+net fpga_pp_d<4> loc=p35; # Flash A12
+net fpga_pp_d<5> loc=p34; # Flash A13
+net fpga_pp_d<6> loc=p33; # Flash A14
+net fpga_pp_d<7> loc=p32; # Flash A15
+net fpga_pp_s<3> loc=p64; # Flash A0
+net fpga_pp_s<4> loc=p50; # Flash A1
+net fpga_pp_s<5> loc=p49; # Flash A2
+
+# Flash RAM
+net flash_ce_n   loc=p1;  
+
+# parallel port
+net pp_d<0>      loc=p31; 
+net pp_d<1>      loc=p25; 
+net pp_d<2>      loc=p24; 
+net pp_d<3>      loc=p23; 
+net pp_d<4>      loc=p22; 
+net pp_d<5>      loc=p20; 
+net pp_d<6>      loc=p19; 
+net pp_d<7>      loc=p18; 
+net pp_s<3>      loc=p27; 
+net pp_s<4>      loc=p16; 
+net pp_s<5>      loc=p15; 
+

@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/basys2Test/pinIOTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/basys2Test/pinIOTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc basys2test.ucf -p xc3s250e-cp132-4 pinIOTest.ngc pinIOTest.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o pinIOTest_map.ncd pinIOTest.ngd pinIOTest.pcf 
+par -w -intstyle ise -ol high -t 1 pinIOTest_map.ncd pinIOTest.ncd pinIOTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml pinIOTest.twx pinIOTest.ncd -o pinIOTest.twr pinIOTest.pcf -ucf basys2test.ucf 
+bitgen -intstyle ise -f pinIOTest.ut pinIOTest.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/basys2Test/pinIOTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/basys2Test/pinIOTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc basys2test.ucf -p xc3s250e-cp132-4 pinIOTest.ngc pinIOTest.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o pinIOTest_map.ncd pinIOTest.ngd pinIOTest.pcf 
+par -w -intstyle ise -ol high -t 1 pinIOTest_map.ncd pinIOTest.ncd pinIOTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml pinIOTest.twx pinIOTest.ncd -o pinIOTest.twr pinIOTest.pcf -ucf basys2test.ucf 
+bitgen -intstyle ise -f pinIOTest.ut pinIOTest.ncd 

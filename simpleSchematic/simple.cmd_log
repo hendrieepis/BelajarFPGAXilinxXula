@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/simpleSchematic/simple.xst" -ofn "/home/hendri/Documents/workspaceXilinx/simpleSchematic/simple.syr" 

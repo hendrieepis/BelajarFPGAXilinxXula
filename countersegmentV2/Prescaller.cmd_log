@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/Prescaller.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/Prescaller.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/Prescaller.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/Prescaller.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/Prescaller.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/Prescaller.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/Prescaller.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/Prescaller.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/Prescaller.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/Prescaller.syr" 
+vhdtdtfi -prj PBsegmentV2 -o /home/hendri/Documents/workspaceXilinx/PBsegmentV2/Prescaller.vhi -module Prescaller -template /opt/Xilinx/14.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Prescaller.vhd 

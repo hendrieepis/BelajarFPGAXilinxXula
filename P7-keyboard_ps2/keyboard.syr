@@ -1,0 +1,538 @@
+Release 14.4 - xst P.49d (lin)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+Reading design: keyboard.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "keyboard.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "keyboard"
+Output Format                      : NGC
+Target Device                      : xc3s250e-4-cp132
+
+---- Source Options
+Top Module Name                    : keyboard
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.vhd" in Library work.
+Entity <keyboard> compiled.
+Entity <keyboard> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <keyboard> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <keyboard> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.vhd" line 102: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <kb_data>
+Entity <keyboard> analyzed. Unit <keyboard> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <keyboard>.
+    Related source file is "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 11                                             |
+    | Inputs             | 0                                              |
+    | Outputs            | 9                                              |
+    | Clock              | kb_clk                    (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | ststart                                        |
+    | Power Up State     | ststart                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 8-bit latch for signal <display>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftData_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftData_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftData_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftData_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftData_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftData_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftData_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shiftData_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <keyboard> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 9
+ 1-bit latch                                           : 8
+ 8-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state/FSM> on signal <state[1:11]> with one-hot encoding.
+-------------------------
+ State    | Encoding
+-------------------------
+ ststart  | 00000000001
+ st0      | 00000000010
+ st1      | 00000000100
+ st2      | 00000001000
+ st3      | 00000010000
+ st4      | 00000100000
+ st5      | 00001000000
+ st6      | 00010000000
+ st7      | 00100000000
+ stparity | 01000000000
+ ststop   | 10000000000
+-------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Latches                                              : 9
+ 1-bit latch                                           : 8
+ 8-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <keyboard> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block keyboard, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : keyboard.ngr
+Top Level Output File Name         : keyboard
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# FlipFlops/Latches                : 27
+#      FDC                         : 10
+#      FDP                         : 1
+#      LD                          : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 2
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250ecp132-4 
+
+ Number of Slices:                       11  out of   2448     0%  
+ Number of Slice Flip Flops:             19  out of   4896     0%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of     92    11%  
+    IOB Flip Flops:                       8
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+state_FSM_FFd3                     | NONE(shiftData_7)      | 1     |
+state_FSM_FFd4                     | NONE(shiftData_6)      | 1     |
+state_FSM_FFd5                     | NONE(shiftData_5)      | 1     |
+state_FSM_FFd6                     | NONE(shiftData_4)      | 1     |
+state_FSM_FFd7                     | NONE(shiftData_3)      | 1     |
+state_FSM_FFd8                     | NONE(shiftData_2)      | 1     |
+state_FSM_FFd9                     | NONE(shiftData_1)      | 1     |
+state_FSM_FFd10                    | NONE(shiftData_0)      | 1     |
+kb_clk                             | BUFGP                  | 11    |
+state_FSM_FFd1                     | NONE(display_0)        | 8     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 11    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 1.719ns (Maximum Frequency: 581.734MHz)
+   Minimum input arrival time before clock: 2.283ns
+   Maximum output required time after clock: 4.368ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'kb_clk'
+  Clock period: 1.719ns (frequency: 581.734MHz)
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Delay:               1.719ns (Levels of Logic = 0)
+  Source:            state_FSM_FFd1 (FF)
+  Destination:       state_FSM_FFd11 (FF)
+  Source Clock:      kb_clk rising
+  Destination Clock: kb_clk rising
+
+  Data Path: state_FSM_FFd1 to state_FSM_FFd11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.591   0.820  state_FSM_FFd1 (state_FSM_FFd1)
+     FDP:D                     0.308          state_FSM_FFd11
+    ----------------------------------------
+    Total                      1.719ns (0.899ns logic, 0.820ns route)
+                                       (52.3% logic, 47.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state_FSM_FFd3'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.283ns (Levels of Logic = 1)
+  Source:            kb_data (PAD)
+  Destination:       shiftData_7 (LATCH)
+  Destination Clock: state_FSM_FFd3 falling
+
+  Data Path: kb_data to shiftData_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.757  kb_data_IBUF (kb_data_IBUF)
+     LD:D                      0.308          shiftData_7
+    ----------------------------------------
+    Total                      2.283ns (1.526ns logic, 0.757ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state_FSM_FFd4'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.283ns (Levels of Logic = 1)
+  Source:            kb_data (PAD)
+  Destination:       shiftData_6 (LATCH)
+  Destination Clock: state_FSM_FFd4 falling
+
+  Data Path: kb_data to shiftData_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.757  kb_data_IBUF (kb_data_IBUF)
+     LD:D                      0.308          shiftData_6
+    ----------------------------------------
+    Total                      2.283ns (1.526ns logic, 0.757ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state_FSM_FFd5'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.283ns (Levels of Logic = 1)
+  Source:            kb_data (PAD)
+  Destination:       shiftData_5 (LATCH)
+  Destination Clock: state_FSM_FFd5 falling
+
+  Data Path: kb_data to shiftData_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.757  kb_data_IBUF (kb_data_IBUF)
+     LD:D                      0.308          shiftData_5
+    ----------------------------------------
+    Total                      2.283ns (1.526ns logic, 0.757ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state_FSM_FFd6'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.283ns (Levels of Logic = 1)
+  Source:            kb_data (PAD)
+  Destination:       shiftData_4 (LATCH)
+  Destination Clock: state_FSM_FFd6 falling
+
+  Data Path: kb_data to shiftData_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.757  kb_data_IBUF (kb_data_IBUF)
+     LD:D                      0.308          shiftData_4
+    ----------------------------------------
+    Total                      2.283ns (1.526ns logic, 0.757ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state_FSM_FFd7'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.283ns (Levels of Logic = 1)
+  Source:            kb_data (PAD)
+  Destination:       shiftData_3 (LATCH)
+  Destination Clock: state_FSM_FFd7 falling
+
+  Data Path: kb_data to shiftData_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.757  kb_data_IBUF (kb_data_IBUF)
+     LD:D                      0.308          shiftData_3
+    ----------------------------------------
+    Total                      2.283ns (1.526ns logic, 0.757ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state_FSM_FFd8'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.283ns (Levels of Logic = 1)
+  Source:            kb_data (PAD)
+  Destination:       shiftData_2 (LATCH)
+  Destination Clock: state_FSM_FFd8 falling
+
+  Data Path: kb_data to shiftData_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.757  kb_data_IBUF (kb_data_IBUF)
+     LD:D                      0.308          shiftData_2
+    ----------------------------------------
+    Total                      2.283ns (1.526ns logic, 0.757ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state_FSM_FFd9'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.283ns (Levels of Logic = 1)
+  Source:            kb_data (PAD)
+  Destination:       shiftData_1 (LATCH)
+  Destination Clock: state_FSM_FFd9 falling
+
+  Data Path: kb_data to shiftData_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.757  kb_data_IBUF (kb_data_IBUF)
+     LD:D                      0.308          shiftData_1
+    ----------------------------------------
+    Total                      2.283ns (1.526ns logic, 0.757ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state_FSM_FFd10'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.283ns (Levels of Logic = 1)
+  Source:            kb_data (PAD)
+  Destination:       shiftData_0 (LATCH)
+  Destination Clock: state_FSM_FFd10 falling
+
+  Data Path: kb_data to shiftData_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.757  kb_data_IBUF (kb_data_IBUF)
+     LD:D                      0.308          shiftData_0
+    ----------------------------------------
+    Total                      2.283ns (1.526ns logic, 0.757ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state_FSM_FFd1'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            display_7 (LATCH)
+  Destination:       display<7> (PAD)
+  Source Clock:      state_FSM_FFd1 falling
+
+  Data Path: display_7 to display<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  display_7 (display_7)
+     OBUF:I->O                 3.272          display_7_OBUF (display<7>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 10.09 secs
+ 
+--> 
+
+
+Total memory usage is 167532 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

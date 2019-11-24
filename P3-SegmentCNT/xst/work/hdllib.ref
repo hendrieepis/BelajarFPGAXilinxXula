@@ -1,0 +1,6 @@
+AR systemseg behavioral /home/hendri/Documents/workspaceXilinx/P3-SegmentCNT/systemSeg.vhd sub00/vhpl05 1359118548
+AR counter behavioral /home/hendri/Documents/workspaceXilinx/P3-SegmentCNT/counter.vhd sub00/vhpl03 1359118544
+EN counter NULL /home/hendri/Documents/workspaceXilinx/P3-SegmentCNT/counter.vhd sub00/vhpl02 1359118543
+AR decoder behavioral /home/hendri/Documents/workspaceXilinx/P3-SegmentCNT/decoder.vhd sub00/vhpl01 1359118546
+EN decoder NULL /home/hendri/Documents/workspaceXilinx/P3-SegmentCNT/decoder.vhd sub00/vhpl00 1359118545
+EN systemseg NULL /home/hendri/Documents/workspaceXilinx/P3-SegmentCNT/systemSeg.vhd sub00/vhpl04 1359118547

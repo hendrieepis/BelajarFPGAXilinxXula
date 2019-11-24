@@ -1,0 +1,14 @@
+NET "dataOut<7>" LOC = P83;
+NET "dataOut<6>" LOC = P73;
+NET "dataOut<5>" LOC = P72;
+NET "dataOut<4>" LOC = P62;
+NET "dataOut<3>" LOC = P61;
+NET "dataOut<2>" LOC = P57;
+NET "dataOut<1>" LOC = P56;
+NET "dataOut<0>" LOC = P52;
+
+NET "En" LOC = P50 ;
+NET "Rs" LOC = P37;
+NET "reset" LOC = P44;
+NET "clk" LOC = P43;
+#net "reset" PULLUP;

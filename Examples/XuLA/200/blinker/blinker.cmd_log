@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/blinker/blinker.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/blinker/blinker.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc blinker.ucf -p xc3s200a-vq100-4 blinker.ngc blinker.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o blinker_map.ncd blinker.ngd blinker.pcf 
+par -w -intstyle ise -ol high -t 1 blinker_map.ncd blinker.ncd blinker.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml blinker.twx blinker.ncd -o blinker.twr blinker.pcf -ucf blinker.ucf 
+bitgen -intstyle ise -f blinker.ut blinker.ncd 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc blinker.ucf -p xc3s200a-vq100-4 blinker.ngc blinker.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o blinker_map.ncd blinker.ngd blinker.pcf 
+par -w -intstyle ise -ol high -t 1 blinker_map.ncd blinker.ncd blinker.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml blinker.twx blinker.ncd -o blinker.twr blinker.pcf -ucf blinker.ucf 
+bitgen -intstyle ise -f blinker.ut blinker.ncd 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc blinker.ucf -p xc3s200a-vq100-4 blinker.ngc blinker.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o blinker_map.ncd blinker.ngd blinker.pcf 
+par -w -intstyle ise -ol high -t 1 blinker_map.ncd blinker.ncd blinker.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml blinker.twx blinker.ncd -o blinker.twr blinker.pcf -ucf blinker.ucf 
+bitgen -intstyle ise -f blinker.ut blinker.ncd 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc blinker.ucf -p xc3s200a-vq100-4 blinker.ngc blinker.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o blinker_map.ncd blinker.ngd blinker.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc blinker.ucf -p xc3s200a-vq100-4 blinker.ngc blinker.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o blinker_map.ncd blinker.ngd blinker.pcf 
+par -w -intstyle ise -ol high -t 1 blinker_map.ncd blinker.ncd blinker.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml blinker.twx blinker.ncd -o blinker.twr blinker.pcf -ucf blinker.ucf 
+bitgen -intstyle ise -f blinker.ut blinker.ncd 

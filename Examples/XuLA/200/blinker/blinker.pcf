@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map O.87xd on Sat Apr 28 20:35:27 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "blinker_o" LOCATE = SITE "P44" LEVEL 1;
+COMP "clk_i" LOCATE = SITE "P43" LEVEL 1;
+SCHEMATIC END;
+

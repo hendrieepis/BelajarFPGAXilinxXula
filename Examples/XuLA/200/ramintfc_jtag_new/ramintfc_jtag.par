@@ -1,0 +1,202 @@
+Release 13.4 par O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+X7::  Thu May 10 20:13:51 2012
+
+par -w -intstyle ise -ol high -t 1 ramintfc_jtag_map.ncd ramintfc_jtag.ncd
+ramintfc_jtag.pcf 
+
+
+Constraints file: ramintfc_jtag.pcf.
+Loading device for application Rf_Device from file '3s200a.nph' in environment C:\Xilinx\13.4\ISE_DS\ISE\.
+   "ramintfc_jtag" is an NCD, version 3.2, device xc3s200a, package vq100, speed -4
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc3s200a' is a WebPack part.
+WARNING:Security:42 - Your license support version '2012.05' for WebPack expires in 21 days after which you will not
+qualify for Xilinx software updates or new releases.
+
+----------------------------------------------------------------------
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.42 2012-01-07".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          36 out of 68     52%
+
+   Number of External Input IOBs                  2
+
+      Number of External Input IBUFs              2
+        Number of LOCed External Input IBUFs      2 out of 2     100%
+
+
+   Number of External Output IOBs                18
+
+      Number of External Output IOBs             18
+        Number of LOCed External Output IOBs     18 out of 18    100%
+
+
+   Number of External Bidir IOBs                 16
+
+      Number of External Bidir IOBs              16
+        Number of LOCed External Bidir IOBs      16 out of 16    100%
+
+
+   Number of BSCANs                          1 out of 1     100%
+   Number of BUFGMUXs                        2 out of 24      8%
+   Number of DCMs                            1 out of 4      25%
+   Number of Slices                        313 out of 1792   17%
+      Number of SLICEMs                      0 out of 896     0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 1 secs 
+Finished initial Timing Analysis.  REAL time: 1 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:58d2cf89) REAL time: 1 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:58d2cf89) REAL time: 1 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:a7bda4c9) REAL time: 1 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:e88ce7d3) REAL time: 1 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:e88ce7d3) REAL time: 1 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:e88ce7d3) REAL time: 1 secs 
+
+Phase 7.8  Global Placement
+....................
+......
+Phase 7.8  Global Placement (Checksum:c2fd8b5a) REAL time: 1 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:c2fd8b5a) REAL time: 1 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:5bec4fbd) REAL time: 1 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:5bec4fbd) REAL time: 1 secs 
+
+Total REAL time to Placer completion: 1 secs 
+Total CPU  time to Placer completion: 1 secs 
+Writing design to file ramintfc_jtag.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 2323 unrouted;      REAL time: 2 secs 
+
+Phase  2  : 2094 unrouted;      REAL time: 3 secs 
+
+Phase  3  : 348 unrouted;      REAL time: 3 secs 
+
+Phase  4  : 348 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+
+Updating file: ramintfc_jtag.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+
+Total REAL time to Router completion: 3 secs 
+Total CPU time to Router completion: 3 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|              drck_s | BUFGMUX_X1Y10| No   |   97 |  0.127     |  1.090      |
++---------------------+--------------+------+------+------------+-------------+
+|     sdClkFb_i_BUFGP |  BUFGMUX_X1Y0| No   |  111 |  0.083     |  1.048      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 1
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TSfpgaClk_i = PERIOD TIMEGRP "fpgaClk_i"  | MINLOWPULSE |    63.332ns|    20.000ns|       0|           0
+  12 MHz HIGH 50%                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 3 secs 
+Total CPU time to PAR completion: 3 secs 
+
+Peak Memory Usage:  276 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 0
+
+Writing design to file ramintfc_jtag.ncd
+
+
+
+PAR done!

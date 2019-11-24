@@ -1,0 +1,174 @@
+=pod
+
+
+=head1 USING THE VIDEO INPUT PORT ON THE XST-3.0 BOARD
+
+This is a simple design to grab frames of video data and display them on a VGA monitor.
+
+
+=head1 DESIGN FILES
+
+=over 4
+
+=item * F<common.vhd>
+
+This file contains some definitions and functions used in the rest of the VHDL code.
+
+=item * F<sdramcntl.vhd>
+
+This VHDL file describes a controller that simplifies writing/reading data to/from an SDRAM.
+
+=item * F<xsasdramcntl.vhd>
+
+This VHDL file surrounds the generic SDRAM controller with a wrapper that customizes it for the XSA Boards.
+
+=item * F<fifo.vhd>
+
+This file contains concise VHDL descriptions of the synchronous and asynchronous FIFOs
+described in Xilinx application note XAPP131.
+
+=item * F<framegrabber.vhd>
+
+This VHDL file describes a simple state machine that accepts pixels from a video decoder and places them
+in a FIFO buffer.
+
+=item * F<vga.vhd>
+
+This VHDL file describes a controller that accepts a stream of pixels and displays them on a VGA monitor.
+
+=item * F<video.vhd>
+
+This VHDL file ties the previous modules together to form a complete frame grabber application.
+When a button is pressed, the video codec dumps a stream of pixels in ITU-R BT.656 format,
+8-bit 4:2:2 with embedded syncs to the framegrabber module using a sampling clock of 27 MHz.
+The framegrabber loads the pixels into a FIFO (along with some framing information).
+A finite-state machine (FSM) offloads the pixels from the FIFO at 50 MHz and stores the 
+pixels into SDRAM while interleaving the lines of video from the odd and even fields.
+Another address counter is used to read stored pixels from the SDRAM at 50 MHz and load them
+into a FIFO.  The VGA generator retrieves pixels from this FIFO and displays them on a monitor.
+
+   __________                                                                                                                   
+  |          |    _________      ______________                                                                                 
+  | Parallel |   |         |    |              |     __________                                                                 
+  |   Port   |   | Button  |    | Address Cntr |    |          |                                                                
+  |__________|   |_________|    |    + FSM     |--->|          |                                                                
+       |              |         |______________|    |          |                                                                
+       |              |                             |          |                                                                
+   ____V____      ____V____      ______________     |          |      ____________       _______                                
+  |         |    |         |    |              |    |          |     |            |     |       |                               
+  |  Video  |--->|  Frame  |--->|     FIFO     |--->|          |     |            |     |       |                               
+  |  Codec  |    | Grabber |    |______________|    |          |     |            |     |       |                               
+  |_________|    |_________|                        |          |     |   SDRAM    |     |       |                               
+                                                    | Dualport |<--->| Controller |<--->| SDRAM |                               
+   _________      _________      ______________     |          |     |            |     |       |                               
+  |         |    |         |    |              |    |          |     |            |     |       |                               
+  | Monitor |<---|   VGA   |<---|     FIFO     |<---|          |     |            |     |       |                               
+  |_________|    |_________|    |______________|    |          |     |____________|     |_______|                               
+                                                    |          |                                                                
+                                 ______________     |          |                                                                
+                                |              |    |          |                                                                
+                                | Address Cntr |--->|          |                                                                
+                                |______________|    |__________|                                                                
+
+=item * F<video.ucf>
+
+These are the constraints which assign the I/O signals of the video module to the
+appropriate pins of the FPGA on the XSA-3S1000 + XST-3.0 combination.
+
+=item * F<video.bit>
+
+This is a compiled bitstream for the design that can be downloaded into the XSA-3S1000 + XST-3.0 combination.
+
+=item * F<video-200.ucf>
+
+This is an alternate set of pin assignments to be used if the design is recompiled for
+an XSA-200 + XST-3.0 combination.
+
+=item * F<video.npl>
+
+Open this project file with WebPACK if you need to recompile the design.
+
+=item * F<xsi2c.exe>
+
+This is a command-line program that allows you to initialize the control registers on the video decoder chip
+through the parallel port of a PC.
+
+=back
+
+
+=head1 USING THE DESIGN EXAMPLE
+
+=over 4
+
+=item * Step 1:
+
+Set jumper J9 on the XSA-3S1000 Board to XS.
+
+=item * Step 2:
+
+Download the default parallel port interface into the XSA-3S1000 (F<\XSTOOLS\XSA\3S1000\dwnldpar.svf>)
+if it is not already present.  (Running GXSTEST will do this automatically.)
+
+=item * Step 3:
+
+Download the F<video.bit> file to the XSA Board.
+
+=item * Step 4:
+
+Connect a VGA monitor to the DB15 port (J3) of the XSA-3S1000 Board.
+
+=item * Step 5:
+
+Connect a source of NTSC video to RCA jack AIP1A on the XST-3.0 Board. 
+
+=item * Step 6:
+
+Within a command window on the PC, type the command:
+
+  xsi2c -a B8 -scl_out_pin 2 -sda_out_pin 3 -scl_in_pin 15 -sda_in_pin 13 -w 3 6D
+
+This will enable the outputs of the TVP5150 video codec chip.
+
+=item * Step 7:
+
+Press the PB1 button on the XST-3.0 Board.  A frame of video from the video source will be
+captured and displayed on the VGA monitor.
+
+=back
+
+
+=head1 ENVIRONMENT
+
+This example design was developed using the following version of software:
+
+   Xilinx WebPACK       : 6.3.03i
+
+
+=head1 SOURCE FILES
+
+You can download the source files for this example design from the XESS website at
+http://www.xess.com/projects/xst3_video.zip .
+
+
+=head1 AUTHOR
+
+Dave Vanden Bout, X Engineering Software Systems Corp.
+
+Send bug reports to bugs@xess.com.
+
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2006 by X Engineering Software Systems Corporation.
+
+This application can be freely distributed and modified
+as long as you do not remove the attributions to the author or his employer.
+
+
+=head1 HISTORY
+
+02/11/2006 - Initial release.
+
+
+
+=cut

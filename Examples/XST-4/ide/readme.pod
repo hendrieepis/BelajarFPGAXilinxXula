@@ -1,0 +1,152 @@
+=pod
+
+
+=head1 USING THE IDE HARD DISK INTERFACE ON THE XST-3.0 BOARD
+
+This is a simple design example that writes data to sectors 
+on an IDE hard disk and then reads it back to verify it.
+
+
+=head1 DESIGN FILES
+
+=over 4
+
+=item * F<common.vhd>
+
+This file contains some definitions and functions used in the rest of the VHDL code.
+
+=item * F<atacntl.vhd>
+
+This is the VHDL file that describes an ATAPI interface to an IDE hard disk.
+You can get a more detailed description of the interface at http://xess.com/appnotes/an-041404-atacntl.pdf .
+
+=item * F<memtest.vhd>, F<randgen.vhd>
+
+These VHDL files describe a memory tester module that writes a stream of data from a random-number generator (RNG) to a storage
+device and then reads the data back and compares it to the RNG output to verify it was stored correctly.
+
+=item * F<debounce.vhd>
+
+This VHDL file describes a simple switch debouncer.
+
+=item * F<ide.vhd>
+
+This is the VHDL file that combines the IDE interface and memory tester module to create a design that tests
+writes and reads of hard disk sectors.
+
+=item * F<ide.ucf>
+
+These are the constraints which assign the I/O signals of IDE interface to the
+appropriate pins of the FPGA on the XSA-3S1000 + XST-3.0 combination.
+
+=item * F<ide.bit>
+
+This is a compiled bitstream for the design that can be downloaded into the XSA-3S1000 + XST-3.0 combination.
+
+=item * F<ide-200.ucf>
+
+This is an alternate set of pin assignments to be used if the design is recompiled for
+an XSA-200 + XST-3.0 combination.
+
+=item * F<ide.npl>
+
+Open this project file with WebPACK if you need to recompile the design.
+
+=back
+
+
+=head1 USING THE DESIGN EXAMPLE
+
+=over 4
+
+=item * Step 1:
+
+Attach an ATX power supply to the XST-3.0 Board and an IDE hard disk.
+
+=item * Step 2:
+
+Attach an IDE cable from header IDE1 on the XST-3.0 Board to the IDE hard disk.
+
+=item * Step 3:
+
+Set jumper J9 on the XSA-3S1000 Board to XS.
+
+=item * Step 4:
+
+Download the default parallel port interface into the XSA-3S1000 (F<\XSTOOLS\XSA\3S1000\dwnldpar.svf>)
+if it is not already present.  (Running GXSTEST will do this automatically.)
+
+=item * Step 5:
+
+Download the F<ide.bit> file to the XSA Board.
+
+=item * Step 6:
+
+After a 20-second delay, the application will write and read sectors on the hard disk and report
+the success or failure of the operation by displaying an "O" or an "E" on LED2, respectively.
+Press switch SW2 on the XSA Board to re-run the test.
+
+=back
+
+
+=head1 ENVIRONMENT
+
+This example design was developed using the following version of software:
+
+   Xilinx WebPACK       : 6.3.03i
+
+
+=head1 SOURCE FILES
+
+You can download the source files for this example design from the XESS website at
+http://www.xess.com/projects/xst3_IDE.zip .
+
+
+=head1 AUTHOR
+
+Dave Vanden Bout, X Engineering Software Systems Corp.
+
+Send bug reports to bugs@xess.com.
+
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2006 by X Engineering Software Systems Corporation.
+
+This application can be freely distributed and modified
+as long as you do not remove the attributions to the author or his employer.
+
+
+=head1 HISTORY
+
+05/30/2006 - Release 1.0.1:
+
+=over 4
+
+=item *
+
+Added multisector R/W.
+
+=item *
+
+Added PIO Mode 2 timing parameters.
+
+=item *
+
+Added enhanced ATA status outputs.
+
+=item *
+
+Added outputs to inactivate the XSA Flash and IDE disk DMA acknowledge.
+
+=item *
+
+Added a switch input that re-runs the sector R/W test.
+
+=back 4
+
+01/30/2006 - Initial release.
+
+
+
+=cut

@@ -1,0 +1,76 @@
+# VGA Generator example for the XST-3S1000 + XST-DAU_VGA daughterboard
+
+NET      blue<3>         LOC=P12;
+NET      blue<4>         LOC=H4;
+NET      blue<5>         LOC=M3;
+NET      blue<6>         LOC=L5;
+NET      blue<7>         LOC=N2;        
+NET      blue<8>         LOC=P2;        
+NET      blue<9>         LOC=R1;        
+NET      green<3>        LOC=F15;       
+NET      green<4>        LOC=E2;       
+NET      green<5>        LOC=K16;       
+NET      green<6>        LOC=E1;       
+NET      green<7>        LOC=K15;       
+NET      green<8>        LOC=F3;        
+NET      green<9>        LOC=G2;        
+NET      red<3>          LOC=G1;        
+NET      red<4>          LOC=J1;        
+NET      red<5>          LOC=G3;        
+NET      red<6>          LOC=H1;        
+NET      red<7>          LOC=G4;        
+NET      red<8>          LOC=H3;        
+NET      red<9>          LOC=F2;        
+NET      hsync_n         LOC=N1;        
+NET      vsync_n         LOC=T13;
+
+NET      clk0            LOC=F14;
+NET      blank_n         LOC=J16;       # slot 1
+NET      sync_n          LOC=E15;
+
+NET      "clk"           TNM_NET="clk"; 
+TIMESPEC "TS_clk"=PERIOD "clk"          10 ns HIGH 50 %; 
+
+# SDRAM memory tester pin assignments
+net      rst_n           loc=E11;       # active-low pushbutton
+net      clk             loc=T9;        # main clock
+net      sclkfb          loc=N8;        # feedback SDRAM clock after PCB delays
+net      sclk            loc=E10;       # clock to SDRAM
+net      cke             loc=D7;        # SDRAM clock enable
+net      cs_n            loc=B8;        # SDRAM chip-select
+net      ras_n           loc=A9;        
+net      cas_n           loc=A10;       
+net      we_n            loc=B10;       
+net      ba<0>           loc=A7;        
+net      ba<1>           loc=C7;        
+net      sAddr<0>        loc=B5;        
+net      sAddr<1>        loc=A4;        
+net      sAddr<2>        loc=B4;        
+net      sAddr<3>        loc=E6;        
+net      sAddr<4>        loc=E3;        
+net      sAddr<5>        loc=C1;        
+net      sAddr<6>        loc=E4;        
+net      sAddr<7>        loc=D3;        
+net      sAddr<8>        loc=C2;        
+net      sAddr<9>        loc=A3;        
+net      sAddr<10>       loc=B6;        
+net      sAddr<11>       loc=C5;        
+net      sAddr<12>       loc=C6;        
+net      sData<0>        loc=C15;       
+net      sData<1>        loc=D12;       
+net      sData<2>        loc=A14;       
+net      sData<3>        loc=B13;       
+net      sData<4>        loc=D11;       
+net      sData<5>        loc=A12;       
+net      sData<6>        loc=C11;       
+net      sData<7>        loc=D10;       
+net      sData<8>        loc=B11;       
+net      sData<9>        loc=B12;       
+net      sData<10>       loc=C12;       
+net      sData<11>       loc=B14;       
+net      sData<12>       loc=D14;       
+net      sData<13>       loc=C16;       
+net      sData<14>       loc=F12;       
+net      sData<15>       loc=F13;       
+net      dqmh            loc=D9;        
+net      dqml            loc=C10;       

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\xesscorp\PRODUCTS\XuLA\FPGA\50\blinker\blinker.ncd
+OUTFILE=C:\xesscorp\PRODUCTS\XuLA\FPGA\50\blinker\blinker.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-4vq100
+WORKINGDIR=C:\xesscorp\PRODUCTS\XuLA\FPGA\50\blinker
+LICENSE=WebPack
+USER_INFO=174511202_0_0_679

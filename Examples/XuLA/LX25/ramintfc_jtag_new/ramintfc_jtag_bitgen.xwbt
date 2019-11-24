@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\xesscorp\PRODUCTS\XuLA\FPGA\LX25\ramintfc_jtag_new\ramintfc_jtag.ncd
+OUTFILE=C:\xesscorp\PRODUCTS\XuLA\FPGA\LX25\ramintfc_jtag_new\ramintfc_jtag.bit
+FAMILY=Spartan6
+PART=xc6slx25-2ftg256
+WORKINGDIR=C:\xesscorp\PRODUCTS\XuLA\FPGA\LX25\ramintfc_jtag_new
+LICENSE=WebPack
+USER_INFO=174511202_0_0_679

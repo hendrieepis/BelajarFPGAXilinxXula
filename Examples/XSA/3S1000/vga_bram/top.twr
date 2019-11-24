@@ -1,0 +1,74 @@
+--------------------------------------------------------------------------------
+Release 11.5 Trace  (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\11.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/vga_bram.ise -intstyle ise
+-v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf top.ucf
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xc3s1000,ft256,-4 (PRODUCTION 1.39 2010-02-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock Clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+Hsync_n     |   10.711(R)|Clk_BUFGP         |   0.000|
+Rgb<0>      |   11.427(R)|Clk_BUFGP         |   0.000|
+Rgb<1>      |   11.839(R)|Clk_BUFGP         |   0.000|
+Rgb<2>      |   13.216(R)|Clk_BUFGP         |   0.000|
+Rgb<3>      |   12.208(R)|Clk_BUFGP         |   0.000|
+Rgb<4>      |   12.525(R)|Clk_BUFGP         |   0.000|
+Rgb<5>      |   15.883(R)|Clk_BUFGP         |   0.000|
+Rgb<6>      |   11.858(R)|Clk_BUFGP         |   0.000|
+Rgb<7>      |   12.525(R)|Clk_BUFGP         |   0.000|
+Rgb<8>      |   15.547(R)|Clk_BUFGP         |   0.000|
+Vsync_n     |    9.887(R)|Clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    9.604|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Apr 19 09:01:47 2011 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 87 MB
+
+Total REAL time to Trace completion: 1 secs 
+Total CPU time to Trace completion: 0 secs 
+
+
+

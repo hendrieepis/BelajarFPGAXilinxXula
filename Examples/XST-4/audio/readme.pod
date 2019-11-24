@@ -1,0 +1,113 @@
+=pod
+
+
+=head1 USING THE STEREO AUDIO CODEC ON THE XST-3.0 BOARD
+
+This is a simple design example that digitizes a stereo audio input and then converts
+it back into an audio output (i.e., a simple audio loopback).
+
+
+=head1 DESIGN FILES
+
+=over 4
+
+=item * F<common.vhd>
+
+This file contains some definitions and functions used in the rest of the VHDL code.
+
+=item * F<audio.vhd>
+
+This is the VHDL file that describes an interface to the stereo audio codec and then uses this
+interface to digitize a stereo input waveform and then convert it back into an analog output.
+You can get a more detailed description of the codec interface at http://www.xess.com/appnotes/an-032904-codec.pdf .
+
+=item * F<audio.ucf>
+
+These are the constraints which assign the I/O signals of the stereo codec interface to the
+appropriate pins of the FPGA on the XSA-3S1000 + XST-3.0 combination.
+
+=item * F<audio.bit>
+
+This is a compiled bitstream for the design that can be downloaded into the XSA-3S1000 + XST-3.0 combination.
+
+=item * F<audio-200.ucf>
+
+This is an alternate set of pin assignments to be used if the design is recompiled for
+an XSA-200 + XST-3.0 combination.
+
+=item * F<audio.npl>
+
+Open this project file with WebPACK if you need to recompile the design.
+
+=back
+
+
+=head1 USING THE DESIGN EXAMPLE
+
+=over 4
+
+=item * Step 1:
+
+Set jumper J9 on the XSA-3S1000 Board to XS.
+
+=item * Step 2:
+
+Download the default parallel port interface into the XSA-3S1000 (F<\XSTOOLS\XSA\3S1000\dwnldpar.svf>)
+if it is not already present.  (Running GXSTEST will do this automatically.)
+
+=item * Step 3:
+
+Connect a stereo cable from the line-out of a PC audio card to the J1 (IN) jack of the XST-3.0 Board.
+Connect stereo headphones to the J2 (OUT) jack.
+On the XST-3.0 Board near the audio jacks, make sure the shunts are removed from jumpers JP2 and JP3 and
+placed on jumpers JP4 and JP5.  
+
+=item * Step 4:
+
+Download the F<audio.bit> file to the XSA Board.
+
+=item * Step 5:
+
+Use Windows Media Player to play a .wav file from the \WINDOWS\Media folder.  The sound should be output
+through the headphones.
+Hold down pushbutton PB1 on the XST-3.0 Board to keep the circuit in the FPGA in its reset state.
+No sound should come from the headphones while the circuit is in the reset state.
+
+=back
+
+
+=head1 ENVIRONMENT
+
+This example design was developed using the following version of software:
+
+   Xilinx WebPACK       : 6.3.03i
+
+
+=head1 SOURCE FILES
+
+You can download the source files for this example design from the XESS website at
+http://www.xess.com/projects/xst3_audio.zip .
+
+
+=head1 AUTHOR
+
+Dave Vanden Bout, X Engineering Software Systems Corp.
+
+Send bug reports to bugs@xess.com.
+
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2006 by X Engineering Software Systems Corporation.
+
+This application can be freely distributed and modified
+as long as you do not remove the attributions to the author or his employer.
+
+
+=head1 HISTORY
+
+01/29/2006 - Initial release.
+
+
+
+=cut

@@ -1,0 +1,16 @@
+# XSA Board FPGA pin assignment constraints
+
+net sw1<1> loc=P11; 
+net sw1<2> loc=M10; 
+net sw1<3> loc=R11; 
+net sw1<4> loc=N10; 
+net sw2    loc=E3;  # active-low pushbutton
+net sw3    loc=D2;  # active-low pushbutton
+
+net s<0>   loc=N14; 
+net s<1>   loc=D14; 
+net s<2>   loc=N16; 
+net s<3>   loc=M16; 
+net s<4>   loc=F15; 
+net s<5>   loc=J16; 
+net s<6>   loc=G16; 

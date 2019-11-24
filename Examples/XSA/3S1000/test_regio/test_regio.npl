@@ -1,0 +1,43 @@
+JDF G
+// Created by Project Navigator ver 1.0
+PROJECT test_regio
+DESIGN test_regio
+DEVFAM spartan3
+DEVFAMTIME 1175441259
+DEVICE xc3s1000
+DEVICETIME 1175441259
+DEVPKG ft256
+DEVPKGTIME 1175441259
+DEVSPEED -5
+DEVSPEEDTIME 0
+DEVTOPLEVELMODULETYPE HDL
+TOPLEVELMODULETYPETIME 0
+DEVSYNTHESISTOOL XST (VHDL/Verilog)
+SYNTHESISTOOLTIME 0
+DEVSIMULATOR Other
+SIMULATORTIME 0
+DEVGENERATEDSIMULATIONMODEL VHDL
+GENERATEDSIMULATIONMODELTIME 0
+SOURCE ..\..\..\XS_LIB\regio_jtag.vhd
+SOURCE ..\..\..\XS_LIB\userinstr_jtag.vhd
+SOURCE ..\..\..\XS_LIB\common.vhd
+SOURCE test_regio.vhd
+[Normal]
+xilxBitgCfg_Clk=xstvhd, spartan3, VHDL.t_bitFile, 1175542562, Float
+xilxBitgCfg_Done=xstvhd, spartan3, VHDL.t_bitFile, 1175542562, Float
+xilxBitgCfg_M0=xstvhd, spartan3, VHDL.t_bitFile, 1175542562, Float
+xilxBitgCfg_M1=xstvhd, spartan3, VHDL.t_bitFile, 1175542562, Float
+xilxBitgCfg_M2=xstvhd, spartan3, VHDL.t_bitFile, 1175542562, Float
+xilxBitgCfg_Pgm=xstvhd, spartan3, VHDL.t_bitFile, 1175542562, Float
+xilxBitgCfg_TCK=xstvhd, spartan3, VHDL.t_bitFile, 1175542562, Float
+xilxBitgCfg_TDI=xstvhd, spartan3, VHDL.t_bitFile, 1175542562, Float
+xilxBitgCfg_TDO=xstvhd, spartan3, VHDL.t_bitFile, 1175542562, Float
+xilxBitgCfg_TMS=xstvhd, spartan3, VHDL.t_bitFile, 1175542562, Float
+xilxBitgCfg_Unused=xstvhd, spartan3, VHDL.t_bitFile, 1175542562, Float
+xilxBitgStart_Clk=xstvhd, spartan3, VHDL.t_bitFile, 1175542562, JTAG Clock
+xilxNgdbld_AUL=xstvhd, spartan3, VHDL.t_placeAndRouteDes, 1175544651, False
+_SynthRAMStyle=xstvhd, spartan3, Schematic.t_synthesize, 1175551904, Auto
+[STATUS-ALL]
+test_regio.ngcFile=WARNINGS,1175647266
+[STRATEGY-LIST]
+Normal=True

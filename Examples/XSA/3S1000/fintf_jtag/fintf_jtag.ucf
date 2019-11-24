@@ -1,0 +1,55 @@
+# Flash pin assignments for the FPGA on the XSA-3S1000 Board
+#
+
+NET      "clkin"     TNM_NET  =      "clkin"; 
+TIMESPEC "TS_clkin"  =        PERIOD "clkin"  10 ns HIGH 50 %; 
+
+# these Flash address pins do not match the ones in the schematic.
+# the schematic shows the address pins for the Flash when it is used in x16 (word) mode.
+# the address pins in this file correspond to those for the Flash in x8 (byte) mode.
+# f_addr<0> corresponds to flash-d15 in the schematic because data pin D15 is used for the
+# address LSB in x8 mode.  f_addr<1> corresponds to flash-a0 in the schematic, and so on. 
+
+net clkin        loc = T9; 
+net f_addr<0>    loc = P7; 
+net f_addr<1>    loc = N5; 
+net f_addr<2>    loc = K14; 
+net f_addr<3>    loc = K13; 
+net f_addr<4>    loc = K12; 
+net f_addr<5>    loc = L14; 
+net f_addr<6>    loc = M16; 
+net f_addr<7>    loc = L13; 
+net f_addr<8>    loc = N16; 
+net f_addr<9>    loc = N14; 
+net f_addr<10>   loc = P15; 
+net f_addr<11>   loc = R16; 
+net f_addr<12>   loc = P14; 
+net f_addr<13>   loc = P13; 
+net f_addr<14>   loc = N12; 
+net f_addr<15>   loc = T14; 
+net f_addr<16>   loc = R13; 
+net f_addr<17>   loc = N10; 
+net f_addr<18>   loc = M14; 
+net f_addr<19>   loc = K3; 
+net f_addr<20>   loc = K4; 
+net f_data<0>    loc = M11; 
+net f_data<1>    loc = N11; 
+net f_data<2>    loc = P10; 
+net f_data<3>    loc = R10; 
+net f_data<4>    loc = T7; 
+net f_data<5>    loc = R7; 
+net f_data<6>    loc = N6; 
+net f_data<7>    loc = M6; 
+#net f_reset_n loc = P16; 
+net f_ce_n       loc = R4; 
+net f_oe_n       loc = P5; 
+net f_we_n       loc = M13;
+net f_byte_n     loc = T8;
+#net diag<0> loc=N15;
+#net diag<1> loc=M15;
+#net diag<2> loc=L15;
+#net diag<3> loc=K15;
+#net diag<4> loc=K16;
+#net diag<5> loc=J13;
+#net diag<6> loc=J14;
+#net diag<7> loc=J16;

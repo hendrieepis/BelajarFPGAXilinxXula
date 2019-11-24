@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/decoder.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/decoder.syr" 
+vhdtdtfi -prj PBsegmentV2 -o /home/hendri/Documents/workspaceXilinx/PBsegmentV2/decoder.vhi -module decoder -template /opt/Xilinx/14.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work decoder.vhd 
+vhdtdtfi -prj PBsegmentV2 -o /home/hendri/Documents/workspaceXilinx/PBsegmentV2/decoder.vhi -module decoder -template /opt/Xilinx/14.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work decoder.vhd 

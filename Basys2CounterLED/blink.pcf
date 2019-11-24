@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Nov 16 09:33:53 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk_i" LOCATE = SITE "B8" LEVEL 1;
+COMP "blinkout" LOCATE = SITE "G1" LEVEL 1;
+NET "clk_i_BUFGP/IBUFG" BEL "clk_i_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

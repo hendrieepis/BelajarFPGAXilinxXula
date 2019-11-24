@@ -1,0 +1,44 @@
+#
+# pin assignments for the CPLD on the XSA Board
+#
+
+# these Flash address pins do not match the ones in the schematic.
+# the schematic shows the address pins for the Flash when it is used in x16 (word) mode.
+# the address pins in this file correspond to those for the Flash in x8 (byte) mode.
+# flash_a<0> corresponds to flash-d15 in the schematic because data pin D15 is used for the
+# address LSB in x8 mode.  flash_a<1> corresponds to flash-a0 in the schematic, and so on. 
+net flash_a<0>    loc=p12; # flash-d15 in the schematic 
+net flash_a<1>    loc=p64; # flash-a0 in the schematic
+net flash_a<2>    loc=p50; # flash-a1 in the schematic
+net flash_a<3>    loc=p49; # flash-a2 in the schematic
+net flash_a<4>    loc=p48; # flash-a3 in the schematic
+net flash_a<5>    loc=p47; # flash-a4 in the schematic
+net flash_a<6>    loc=p46; # flash-a5 in the schematic
+net flash_a<7>    loc=p45; # flash-a6 in the schematic
+net flash_a<8>    loc=p44; # flash-a7 in the schematic
+net flash_a<9>    loc=p40; # flash-a8 in the schematic
+net flash_a<10>   loc=p39; # flash-a9 in the schematic
+net flash_a<11>   loc=p38; # flash-a10 in the schematic
+net flash_a<12>   loc=p36; # flash-a11 in the schematic
+net flash_a<13>   loc=p35; # flash-a12 in the schematic
+net flash_a<14>   loc=p34; # flash-a13 in the schematic
+net flash_a<15>   loc=p33; # flash-a14 in the schematic
+net flash_a<16>   loc=p32; # flash-a15 in the schematic
+net flash_a<17>   loc=p13; # flash-a16 in the schematic
+net flash_a<18>   loc=p43; # flash-a17 in the schematic
+
+net flash_ce_n    loc=p1;  
+net flash_oe_n    loc=p2;  
+net flash_we_n    loc=p42; 
+
+net master_clk    loc=p17; 
+net clka          loc=p60; 
+net clkb          loc=p57; 
+
+net fpga_prog_n   loc=p62; 
+net fpga_cclk     loc=p59; 
+net fpga_cs_n     loc=p52; 
+net fpga_wr_n     loc=p56; 
+net fpga_init_n   loc=p61; 
+net fpga_dout_bsy loc=p51; 
+net fpga_done     loc=p63; 

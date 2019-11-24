@@ -1,0 +1,2 @@
+vhdl isim_temp "LCDTest.vhd"
+vhdl isim_temp "LCDTestBench.vhd"

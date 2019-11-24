@@ -1,0 +1,47 @@
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/StickIt/modules/LedDigits/FPGA/LedDigits/LedDigitsTest.xst" -ofn "C:/xesscorp/PRODUCTS/StickIt/modules/LedDigits/FPGA/LedDigits/LedDigitsTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LedDigitsTest.ucf -p xc3s200a-vq100-4 LedDigitsTest.ngc LedDigitsTest.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o LedDigitsTest_map.ncd LedDigitsTest.ngd LedDigitsTest.pcf 
+par -w -intstyle ise -ol high -t 1 LedDigitsTest_map.ncd LedDigitsTest.ncd LedDigitsTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LedDigitsTest.twx LedDigitsTest.ncd -o LedDigitsTest.twr LedDigitsTest.pcf -ucf LedDigitsTest.ucf 
+bitgen -intstyle ise -f LedDigitsTest.ut LedDigitsTest.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/StickIt/main/tests/LedDigits/LedDigitsTest.xst" -ofn "C:/xesscorp/PRODUCTS/StickIt/main/tests/LedDigits/LedDigitsTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LedDigitsTest.ucf -p xc3s200a-vq100-4 LedDigitsTest.ngc LedDigitsTest.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o LedDigitsTest_map.ncd LedDigitsTest.ngd LedDigitsTest.pcf 
+par -w -intstyle ise -ol high -t 1 LedDigitsTest_map.ncd LedDigitsTest.ncd LedDigitsTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LedDigitsTest.twx LedDigitsTest.ncd -o LedDigitsTest.twr LedDigitsTest.pcf -ucf LedDigitsTest.ucf 
+bitgen -intstyle ise -f LedDigitsTest.ut LedDigitsTest.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/StickIt/main/tests/LedDigits/LedDigitsTest.xst" -ofn "C:/xesscorp/PRODUCTS/StickIt/main/tests/LedDigits/LedDigitsTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LedDigitsTest.ucf -p xc3s200a-vq100-4 LedDigitsTest.ngc LedDigitsTest.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o LedDigitsTest_map.ncd LedDigitsTest.ngd LedDigitsTest.pcf 
+par -w -intstyle ise -ol high -t 1 LedDigitsTest_map.ncd LedDigitsTest.ncd LedDigitsTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LedDigitsTest.twx LedDigitsTest.ncd -o LedDigitsTest.twr LedDigitsTest.pcf -ucf LedDigitsTest.ucf 
+bitgen -intstyle ise -f LedDigitsTest.ut LedDigitsTest.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/StickIt/main/tests/LedDigits/LedDigitsTest.xst" -ofn "C:/xesscorp/PRODUCTS/StickIt/main/tests/LedDigits/LedDigitsTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LedDigitsTest.ucf -p xc3s200a-vq100-4 LedDigitsTest.ngc LedDigitsTest.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o LedDigitsTest_map.ncd LedDigitsTest.ngd LedDigitsTest.pcf 
+par -w -intstyle ise -ol high -t 1 LedDigitsTest_map.ncd LedDigitsTest.ncd LedDigitsTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LedDigitsTest.twx LedDigitsTest.ncd -o LedDigitsTest.twr LedDigitsTest.pcf -ucf LedDigitsTest.ucf 
+bitgen -intstyle ise -f LedDigitsTest.ut LedDigitsTest.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/StickIt/main/tests/LedDigits/LedDigitsTest.xst" -ofn "C:/xesscorp/PRODUCTS/StickIt/main/tests/LedDigits/LedDigitsTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LedDigitsTest.ucf -p xc3s200a-vq100-4 LedDigitsTest.ngc LedDigitsTest.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o LedDigitsTest_map.ncd LedDigitsTest.ngd LedDigitsTest.pcf 
+par -w -intstyle ise -ol high -t 1 LedDigitsTest_map.ncd LedDigitsTest.ncd LedDigitsTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LedDigitsTest.twx LedDigitsTest.ncd -o LedDigitsTest.twr LedDigitsTest.pcf -ucf LedDigitsTest.ucf 
+bitgen -intstyle ise -f LedDigitsTest.ut LedDigitsTest.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/StickIt/main/tests/LedDigits/LedDigitsTest.xst" -ofn "C:/xesscorp/PRODUCTS/StickIt/main/tests/LedDigits/LedDigitsTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LedDigitsTest.ucf -p xc3s200a-vq100-4 LedDigitsTest.ngc LedDigitsTest.ngd  
+map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off -c 100 -o LedDigitsTest_map.ncd LedDigitsTest.ngd LedDigitsTest.pcf 
+par -w -intstyle ise -ol high -t 1 LedDigitsTest_map.ncd LedDigitsTest.ncd LedDigitsTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LedDigitsTest.twx LedDigitsTest.ncd -o LedDigitsTest.twr LedDigitsTest.pcf -ucf LedDigitsTest.ucf 
+bitgen -intstyle ise -f LedDigitsTest.ut LedDigitsTest.ncd 
+bitgen -intstyle ise -f LedDigitsTest.ut LedDigitsTest.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA2/FPGA/lx25/LedDigitsWings/LedDigitsTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA2/FPGA/lx25/LedDigitsWings/LedDigitsTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc LedDigitsTest.ucf -p xc6slx25-ftg256-2 LedDigitsTest.ngc LedDigitsTest.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LedDigitsTest_map.ncd LedDigitsTest.ngd LedDigitsTest.pcf 
+par -w -intstyle ise -ol high -mt off LedDigitsTest_map.ncd LedDigitsTest.ncd LedDigitsTest.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LedDigitsTest.twx LedDigitsTest.ncd -o LedDigitsTest.twr LedDigitsTest.pcf -ucf LedDigitsTest.ucf 
+bitgen -intstyle ise -f LedDigitsTest.ut LedDigitsTest.ncd 
+bitgen -intstyle ise -f LedDigitsTest.ut LedDigitsTest.ncd 
+bitgen -intstyle ise -f LedDigitsTest.ut LedDigitsTest.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA2/FPGA/LX25/LedDigitsWings/LedDigitsTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA2/FPGA/LX25/LedDigitsWings/LedDigitsTest.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA2/FPGA/LX25/LedDigitsWings/LedDigitsTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA2/FPGA/LX25/LedDigitsWings/LedDigitsTest.syr" 

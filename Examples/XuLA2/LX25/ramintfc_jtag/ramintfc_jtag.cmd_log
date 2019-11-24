@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 ramintfc_jtag.ngc ramintfc_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ramintfc_jtag_map.ncd ramintfc_jtag.ngd ramintfc_jtag.pcf 
+par -w -intstyle ise -ol high -mt off ramintfc_jtag_map.ncd ramintfc_jtag.ncd ramintfc_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ramintfc_jtag.twx ramintfc_jtag.ncd -o ramintfc_jtag.twr ramintfc_jtag.pcf 
+bitgen -intstyle ise -f ramintfc_jtag.ut ramintfc_jtag.ncd 
+bitgen -intstyle ise -f ramintfc_jtag.ut ramintfc_jtag.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 ramintfc_jtag.ngc ramintfc_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ramintfc_jtag_map.ncd ramintfc_jtag.ngd ramintfc_jtag.pcf 
+par -w -intstyle ise -ol high -mt off ramintfc_jtag_map.ncd ramintfc_jtag.ncd ramintfc_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ramintfc_jtag.twx ramintfc_jtag.ncd -o ramintfc_jtag.twr ramintfc_jtag.pcf 
+bitgen -intstyle ise -f ramintfc_jtag.ut ramintfc_jtag.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 ramintfc_jtag.ngc ramintfc_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ramintfc_jtag_map.ncd ramintfc_jtag.ngd ramintfc_jtag.pcf 
+par -w -intstyle ise -ol high -mt off ramintfc_jtag_map.ncd ramintfc_jtag.ncd ramintfc_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ramintfc_jtag.twx ramintfc_jtag.ncd -o ramintfc_jtag.twr ramintfc_jtag.pcf 
+bitgen -intstyle ise -f ramintfc_jtag.ut ramintfc_jtag.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/ramintfc_jtag/ramintfc_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 ramintfc_jtag.ngc ramintfc_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ramintfc_jtag_map.ncd ramintfc_jtag.ngd ramintfc_jtag.pcf 
+par -w -intstyle ise -ol high -mt off ramintfc_jtag_map.ncd ramintfc_jtag.ncd ramintfc_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ramintfc_jtag.twx ramintfc_jtag.ncd -o ramintfc_jtag.twr ramintfc_jtag.pcf 
+bitgen -intstyle ise -f ramintfc_jtag.ut ramintfc_jtag.ncd 

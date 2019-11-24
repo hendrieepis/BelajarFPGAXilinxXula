@@ -1,0 +1,9 @@
+V3 4
+FL /home/hendri/Documents/workspaceXilinx/counter/counter.vhd 2012/11/26.08:22:46 P.40xd
+FL /home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counter.vhd 2012/11/26.08:22:46 P.40xd
+EN work/counter 1359106426 \
+      FL /home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counter.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/counter/Behavioral 1359106427 \
+      FL /home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counter.vhd \
+      EN work/counter 1359106426

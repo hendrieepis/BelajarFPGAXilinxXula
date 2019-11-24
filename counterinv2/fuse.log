@@ -1,0 +1,28 @@
+Running: /opt/Xilinx/14.3/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -o /home/hendri/Documents/workspaceXilinx/counterinv/counterTestbench_isim_beh.exe -prj /home/hendri/Documents/workspaceXilinx/counterinv/counterTestbench_beh.prj work.counterTestbench 
+ISim P.40xd (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.vhd" into library work
+Parsing VHDL file "/home/hendri/Documents/workspaceXilinx/counterinv/counter.vhd" into library work
+Parsing VHDL file "/home/hendri/Documents/workspaceXilinx/counterinv/countersys.vhd" into library work
+Parsing VHDL file "/home/hendri/Documents/workspaceXilinx/counterinv/counterTestbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 37408 KB
+Fuse CPU Usage: 1030 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity counter [counter_default]
+Compiling architecture behavioral of entity inverter [inverter_default]
+Compiling architecture behavioral of entity countersys [countersys_default]
+Compiling architecture behavior of entity countertestbench
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 11 VHDL Units
+Built simulation executable /home/hendri/Documents/workspaceXilinx/counterinv/counterTestbench_isim_beh.exe
+Fuse Memory Usage: 98784 KB
+Fuse CPU Usage: 1100 ms
+GCC CPU Usage: 220 ms

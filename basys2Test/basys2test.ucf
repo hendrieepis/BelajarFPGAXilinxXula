@@ -1,0 +1,17 @@
+net data<0>  LOC = G1;
+net data<1>  LOC = P4;
+net data<2>  LOC = N4;
+net data<3>  LOC = N5;
+net data<4>  LOC = P6;
+net data<5>  LOC = P7;
+net data<6>  LOC = M11;
+net data<7>  LOC =  M5;
+#input
+net btn<0>  LOC = N3;
+net btn<1>  LOC = E2;
+net btn<2>  LOC = F3;
+net btn<3>  LOC = G3;
+net btn<4>  LOC = B4;
+net btn<5>  LOC = K3;
+net btn<6>  LOC = L3;
+net btn<7>  LOC = P11;

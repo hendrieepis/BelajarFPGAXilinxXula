@@ -1,0 +1,104 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f counter.ut counter.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f counter.ut counter.ncd 
+vhdtdtfi -prj counter -o /home/hendri/Documents/workspaceXilinx/counter/counter.vhi -module counter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 
+vhdtdtfi -lib work counter.vhd -prj counter -o counter.spl -module counter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a counter.spl /home/hendri/Documents/workspaceXilinx/counter/counter.sym 
+vhdtdtfi -prj counter -o /home/hendri/Documents/workspaceXilinx/counter/counter.vhi -module counter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f counter.ut counter.ncd 
+vhdtdtfi -prj counter -o /home/hendri/Documents/workspaceXilinx/counter/counter.vhi -module counter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf 
+pin2ucf -o counter_locked.ucf counter.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+pin2ucf -o counter_locked.ucf counter.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f counter.ut counter.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counter/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counter/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f counter.ut counter.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f counter.ut counter.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f counter.ut counter.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 counter.ngc counter.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o counter_map.ncd counter.ngd counter.pcf 
+par -w -intstyle ise -ol high -t 1 counter_map.ncd counter.ncd counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml counter.twx counter.ncd -o counter.twr counter.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f counter.ut counter.ncd 

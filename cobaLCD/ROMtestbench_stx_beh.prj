@@ -1,0 +1,2 @@
+vhdl isim_temp "ROM.vhd"
+vhdl isim_temp "ROMtestbench.vhd"

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/hendri/Documents/workspaceXilinx/simpleSchematic/simple_simple_sch_tb_isim_beh.exe" -prj "/home/hendri/Documents/workspaceXilinx/simpleSchematic/simple_simple_sch_tb_beh.prj" "work.simple_simple_sch_tb" 

@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------------
+Release 6.3.03i Trace G.38
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+
+C:/ISE/bin/nt/trce.exe -intstyle ise -e 3 -l 3 -xml test_bus test_bus.ncd -o
+test_bus.twr test_bus.pcf
+
+
+Design file:              test_bus.ncd
+Physical constraint file: test_bus.pcf
+Device,speed:             xc2s300e,-6 (PRODUCTION 1.17 2004-06-25)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock sdram_clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  |  Clock |
+Destination | to PAD     |Internal Clock(s) |  Phase |
+------------+------------+------------------+--------+
+pb_a<0>     |    8.136(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<10>    |    8.434(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<11>    |    8.059(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<12>    |    7.610(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<13>    |    8.241(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<14>    |    9.332(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<1>     |    8.048(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<2>     |    8.187(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<3>     |    8.193(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<4>     |    7.691(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<5>     |    7.792(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<6>     |    7.849(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<7>     |    7.807(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<8>     |    8.063(R)|sdram_clk_BUFGP   |   0.000|
+pb_a<9>     |    7.962(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<0>     |    8.995(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<10>    |    7.627(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<11>    |    7.645(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<12>    |    7.579(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<13>    |    8.358(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<14>    |    8.372(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<15>    |    8.333(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<1>     |    9.124(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<2>     |    9.188(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<3>     |    8.676(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<4>     |    8.881(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<5>     |    7.592(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<6>     |    7.603(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<7>     |    9.287(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<8>     |    7.627(R)|sdram_clk_BUFGP   |   0.000|
+pb_d<9>     |    8.147(R)|sdram_clk_BUFGP   |   0.000|
+pb_lb_n     |    8.836(R)|sdram_clk_BUFGP   |   0.000|
+pb_ub_n     |    8.853(R)|sdram_clk_BUFGP   |   0.000|
+sdram_cas_n |    8.368(R)|sdram_clk_BUFGP   |   0.000|
+sdram_ce_n  |    7.807(R)|sdram_clk_BUFGP   |   0.000|
+sdram_cke   |    7.706(R)|sdram_clk_BUFGP   |   0.000|
+sdram_ras_n |    8.178(R)|sdram_clk_BUFGP   |   0.000|
+sdram_we_n  |    8.749(R)|sdram_clk_BUFGP   |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock sdram_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sdram_clk      |    8.116|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Analysis completed Mon Jun 20 16:52:32 2005
+--------------------------------------------------------------------------------
+
+Peak Memory Usage: 51 MB

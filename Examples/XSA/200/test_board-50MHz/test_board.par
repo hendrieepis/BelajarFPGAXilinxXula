@@ -1,0 +1,208 @@
+Release 6.3.03i Par G.38
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+
+X1::  Mon Feb 13 15:51:30 2006
+
+
+C:/ISE/bin/nt/par.exe -w -intstyle ise -ol std -t 1 test_board_map.ncd
+test_board.ncd test_board.pcf 
+
+
+Constraints file: test_board.pcf
+
+Loading device database for application Par from file "test_board_map.ncd".
+   "test_board" is an NCD, version 2.38, device xc2s200, package fg256, speed -5
+Loading device for application Par from file 'v200.nph' in environment C:/ISE.
+Device speed data version:  PRODUCTION 1.27 2004-06-25.
+
+
+Resolved that IOB <sData<10>> must be placed at site E2.
+Resolved that IOB <sData<11>> must be placed at site E4.
+Resolved that IOB <sData<12>> must be placed at site B1.
+Resolved that IOB <sData<13>> must be placed at site A2.
+Resolved that IOB <sData<14>> must be placed at site D5.
+Resolved that IOB <sData<15>> must be placed at site C5.
+Resolved that IOB <cas_n> must be placed at site H3.
+Resolved that IOB <s<0>> must be placed at site N14.
+Resolved that IOB <s<1>> must be placed at site D14.
+Resolved that IOB <s<2>> must be placed at site N16.
+Resolved that IOB <s<3>> must be placed at site M16.
+Resolved that IOB <s<4>> must be placed at site F15.
+Resolved that IOB <s<5>> must be placed at site J16.
+Resolved that IOB <s<6>> must be placed at site G16.
+Resolved that IOB <ras_n> must be placed at site J2.
+Resolved that IOB <ce_n> must be placed at site M15.
+Resolved that IOB <cs_n> must be placed at site J3.
+Resolved that IOB <dqmh> must be placed at site H1.
+Resolved that IOB <dqml> must be placed at site G2.
+Resolved that IOB <sAddr<10>> must be placed at site L3.
+Resolved that IOB <sAddr<11>> must be placed at site M3.
+Resolved that IOB <sAddr<12>> must be placed at site M2.
+Resolved that IOB <sclk> must be placed at site J4.
+Resolved that IOB <we_n> must be placed at site G1.
+Resolved that IOB <pps<6>> must be placed at site J13.
+Resolved that IOB <cke> must be placed at site L1.
+Resolved that GCLKIOB <clk> must be placed at site B8.
+Resolved that IOB <ba<0>> must be placed at site K2.
+Resolved that IOB <ba<1>> must be placed at site L2.
+Resolved that IOB <sw2> must be placed at site E3.
+Resolved that IOB <sAddr<0>> must be placed at site L4.
+Resolved that IOB <sAddr<1>> must be placed at site N1.
+Resolved that IOB <sAddr<2>> must be placed at site N2.
+Resolved that IOB <sAddr<3>> must be placed at site M4.
+Resolved that IOB <sAddr<4>> must be placed at site T5.
+Resolved that IOB <sAddr<5>> must be placed at site N6.
+Resolved that IOB <sAddr<6>> must be placed at site M6.
+Resolved that IOB <sAddr<7>> must be placed at site T3.
+Resolved that IOB <sAddr<8>> must be placed at site N5.
+Resolved that IOB <sAddr<9>> must be placed at site P1.
+Resolved that IOB <sData<0>> must be placed at site C2.
+Resolved that IOB <sData<1>> must be placed at site C1.
+Resolved that IOB <sData<2>> must be placed at site F5.
+Resolved that IOB <sData<3>> must be placed at site D1.
+Resolved that IOB <sData<4>> must be placed at site F3.
+Resolved that IOB <sData<5>> must be placed at site F2.
+Resolved that IOB <sData<6>> must be placed at site F1.
+Resolved that IOB <sData<7>> must be placed at site G3.
+Resolved that IOB <sData<8>> must be placed at site G4.
+Resolved that IOB <sData<9>> must be placed at site G5.
+
+
+Device utilization summary:
+
+   Number of External GCLKIOBs         1 out of 4      25%
+   Number of External IOBs            49 out of 176    27%
+      Number of LOCed External IOBs   49 out of 49    100%
+
+   Number of SLICEs                  299 out of 2352   12%
+
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+Starting initial Timing Analysis.  REAL time: 0 secs 
+Finished initial Timing Analysis.  REAL time: 0 secs 
+
+
+Phase 1.1
+Phase 1.1 (Checksum:989fbf) REAL time: 0 secs 
+
+Phase 2.23
+Phase 2.23 (Checksum:1312cfe) REAL time: 0 secs 
+
+Phase 3.3
+Phase 3.3 (Checksum:1c9c37d) REAL time: 0 secs 
+
+Phase 4.5
+Phase 4.5 (Checksum:26259fc) REAL time: 0 secs 
+
+Phase 5.8
+................
+..
+Phase 5.8 (Checksum:aa44a1) REAL time: 2 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 2 secs 
+
+Phase 7.18
+Phase 7.18 (Checksum:42c1d79) REAL time: 3 secs 
+
+Writing design to file test_board.ncd.
+
+Total REAL time to Placer completion: 3 secs 
+Total CPU time to Placer completion: 3 secs 
+
+
+Phase 1: 1954 unrouted;       REAL time: 4 secs 
+
+Phase 2: 1830 unrouted;       REAL time: 14 secs 
+
+Phase 3: 460 unrouted;       REAL time: 14 secs 
+
+Phase 4: 460 unrouted; (1264678)      REAL time: 15 secs 
+
+Phase 5: 1410 unrouted; (975503)      REAL time: 20 secs 
+
+Phase 6: 1432 unrouted; (960697)      REAL time: 20 secs 
+
+WARNING:Route - There is atleast one timing constraint that cannot be met.
+   Router will continue and provide a valid routed design. Consequentially, due
+   to timing constraints, the router will not be able to achieve an overall
+   optimum solution
+Phase 7: 0 unrouted; (960697)      REAL time: 24 secs 
+
+Total REAL time to Router completion: 24 secs 
+Total CPU time to Router completion: 23 secs 
+
+Generating "par" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++----------------------------+----------+--------+------------+-------------+
+|         Clock Net          | Resource | Fanout |Net Skew(ns)|Max Delay(ns)|
++----------------------------+----------+--------+------------+-------------+
+|          u0_clk_b          |Low-Skew  |   57   |  0.782     |  4.979      |
++----------------------------+----------+--------+------------+-------------+
+|     u0_u1_clkin_2          |   Local  |   59   |  3.918     |  5.939      |
++----------------------------+----------+--------+------------+-------------+
+|     u0_u1_clkin_1          |   Local  |   63   |  2.913     |  4.399      |
++----------------------------+----------+--------+------------+-------------+
+
+
+   The Delay Summary Report
+
+   The SCORE FOR THIS DESIGN is: 344602
+
+
+The NUMBER OF SIGNALS NOT COMPLETELY ROUTED for this design is: 0
+
+   The AVERAGE CONNECTION DELAY for this design is:        1.870
+   The MAXIMUM PIN DELAY IS:                               6.968
+   The AVERAGE CONNECTION DELAY on the 10 WORST NETS is:   4.999
+
+   Listing Pin Delays by value: (nsec)
+
+    d < 1.00   < d < 2.00  < d < 3.00  < d < 4.00  < d < 7.00  d >= 7.00
+   ---------   ---------   ---------   ---------   ---------   ---------
+         441         837         373         175         128           0
+
+Timing Score: 1215765
+
+WARNING:Par:62 - Timing constraints have not been met.
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+--------------------------------------------------------------------------------
+  Constraint                                | Requested  | Actual     | Logic 
+                                            |            |            | Levels
+--------------------------------------------------------------------------------
+* TS_clk = PERIOD TIMEGRP "clk"  10 nS   HI | 10.000ns   | 19.317ns   | 7    
+  GH 50.000000 %                            |            |            |      
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 25 secs 
+Total CPU time to PAR completion: 24 secs 
+
+Peak Memory Usage:  72 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - 320 errors found.
+
+Writing design to file test_board.ncd.
+
+
+PAR done.

@@ -1,0 +1,40 @@
+#
+# Pin assignments for XSA-200 Board.
+#
+
+net clk           loc=R8;  # 100 MHz clock
+net rerun_test_n  loc=E3;  # pushbutton SW2
+net dior_n        loc=P16; # disk I/O read control
+net diow_n        loc=L12; # disk I/O write control
+net dcs0_n        loc=B6;  # disk register-bank select
+net dcs1_n        loc=E7;  # disk register-bank select
+net da<0>         loc=P13; # 3-bit disk register address bus
+net da<1>         loc=N12; 
+net da<2>         loc=R13; 
+net dd<0>         loc=F14; # 16-bit disk data bus
+net dd<1>         loc=P9;  
+net dd<2>         loc=R9;  
+net dd<3>         loc=T9;  
+net dd<4>         loc=T7;  
+net dd<5>         loc=B9;  
+net dd<6>         loc=A9;  
+net dd<7>         loc=A5;  
+net dd<8>         loc=M7;  
+net dd<9>         loc=R6;  
+net dd<10>        loc=N7;  
+net dd<11>        loc=P7;  
+net dd<12>        loc=R7;  
+net dd<13>        loc=T14; 
+net dd<14>        loc=P8;  
+net dd<15>        loc=T8;  
+net dirq          loc=B7;  # IDE interrupt
+net dmack_n       loc=R10; # IDE DMA acknowledge
+net ethernet_cs_n loc=C6;  # ethernet chip-enable
+net flash_ce_n    loc=M15; # flash chip-enable
+net status<0>     loc=N14; # status displays on XSA LEDs
+net status<1>     loc=D14; 
+net status<2>     loc=N16; 
+net status<3>     loc=M16; 
+net status<4>     loc=F15; 
+net status<5>     loc=J16; 
+net status<6>     loc=G16; 

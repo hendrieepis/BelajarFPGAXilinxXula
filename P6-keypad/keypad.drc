@@ -1,0 +1,8 @@
+Release 14.4 Drc P.49d (lin)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sun Feb  3 16:53:32 2013
+
+drc -z keypad.ncd keypad.pcf
+
+DRC detected 0 errors and 0 warnings.

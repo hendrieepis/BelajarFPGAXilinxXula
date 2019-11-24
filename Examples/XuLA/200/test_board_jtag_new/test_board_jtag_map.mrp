@@ -1,0 +1,193 @@
+Release 13.4 Map O.87xd (nt64)
+Xilinx Mapping Report File for Design 'test_board_jtag'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off
+-c 100 -o test_board_jtag_map.ncd test_board_jtag.ngd test_board_jtag.pcf 
+Target Device  : xc3s200a
+Target Package : vq100
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Thu May 10 19:53:57 2012
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:           259 out of   3,584    7%
+  Number of 4 input LUTs:               397 out of   3,584   11%
+Logic Distribution:
+  Number of occupied Slices:            278 out of   1,792   15%
+    Number of Slices containing only related logic:     278 out of     278 100%
+    Number of Slices containing unrelated logic:          0 out of     278   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         448 out of   3,584   12%
+    Number used as logic:               397
+    Number used as a route-thru:         51
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 35 out of      68   51%
+  Number of BUFGMUXs:                     2 out of      24    8%
+  Number of DCMs:                         1 out of       4   25%
+  Number of BSCANs:                       1 out of       1  100%
+  Number of BSCAN_SPARTAN3As:             1 out of       1  100%
+
+Average Fanout of Non-Clock Nets:                3.32
+
+Peak Memory Usage:  268 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your license support version '2012.05' for WebPack expires
+in 21 days after which you will not qualify for Xilinx software updates or new
+releases.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc3s200a' is a WebPack part.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp u0/u0, consult the device
+   Interactive Data Sheet.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| fpgaClk_i                          | IBUF             | INPUT     | LVTTL                |       |          |         |              |          | 0 / 0    |                  |
+| sdAddr_o<0>                        | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdAddr_o<1>                        | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdAddr_o<2>                        | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdAddr_o<3>                        | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdAddr_o<4>                        | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdAddr_o<5>                        | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdAddr_o<6>                        | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdAddr_o<7>                        | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdAddr_o<8>                        | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdAddr_o<9>                        | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdAddr_o<10>                       | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdAddr_o<11>                       | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdBs_o                             | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdCas_bo                           | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdClkFb_i                          | IBUF             | INPUT     | LVTTL                |       |          |         |              |          | 0 / 0    |                  |
+| sdClk_o                            | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<0>                       | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<1>                       | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<2>                       | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<3>                       | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<4>                       | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<5>                       | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<6>                       | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<7>                       | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<8>                       | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<9>                       | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<10>                      | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<11>                      | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<12>                      | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<13>                      | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<14>                      | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdData_io<15>                      | IOB              | BIDIR     | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdRas_bo                           | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sdWe_bo                            | IOB              | OUTPUT    | LVTTL                |       | 6        | SLOW    |              |          | 0 / 0    | 3STATE           |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

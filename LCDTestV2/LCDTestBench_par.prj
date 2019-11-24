@@ -1,0 +1,2 @@
+vhdl work "netgen/par/LCDTest_timesim.vhd"
+vhdl work "LCDTestBench.vhd"

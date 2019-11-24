@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/decoderTestbench_isim_beh.exe" -prj "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/decoderTestbench_beh.prj" "work.decoderTestbench" 

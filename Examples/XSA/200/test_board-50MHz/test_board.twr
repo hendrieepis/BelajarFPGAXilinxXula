@@ -1,0 +1,279 @@
+--------------------------------------------------------------------------------
+Release 6.3.03i Trace G.38
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+
+C:/ISE/bin/nt/trce.exe -intstyle ise -e 3 -l 3 -xml test_board test_board.ncd
+-o test_board.twr test_board.pcf
+
+
+Design file:              test_board.ncd
+Physical constraint file: test_board.pcf
+Device,speed:             xc2s200,-5 (PRODUCTION 1.27 2004-06-25)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk"  10 nS   HIGH 50.000000 % ;
+
+ 22609 items analyzed, 320 timing errors detected. (256 setup errors, 64 hold errors)
+ Minimum period is  19.317ns.
+--------------------------------------------------------------------------------
+Slack:                  -9.317ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u0_u1_u1_activeRow_r_1_1 (FF)
+  Destination:          u0_fast_memtest_u0_r_r_14 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      13.342ns (Levels of Logic = 7)
+  Clock Path Skew:      -5.975ns
+  Source Clock:         u0_u1_clkin_2 rising at 0.000ns
+  Destination Clock:    u0_clk_b rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Data Path: u0_u1_u1_activeRow_r_1_1 to u0_fast_memtest_u0_r_r_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R27C24.S1.XQ     Tcko                  1.292   u0_u1_u1_activeRow_r_1_1
+                                                       u0_u1_u1_activeRow_r_1_1
+    CLB_R28C23.S0.F4     net (fanout=1)        1.031   u0_u1_u1_activeRow_r_1_1
+    CLB_R28C23.S0.X      Tif5x                 1.016   u0_u1_u1__n0153<1>
+                                                       u0_u1_u1_Mmux__n0153_inst_mux_f5_2111_G
+                                                       u0_u1_u1_Mmux__n0153_inst_mux_f5_2111
+    CLB_R26C23.S0.F2     net (fanout=1)        1.090   u0_u1_u1__n0153<1>
+    CLB_R26C23.S0.COUT   Topcyf                1.486   u0_u1_u1_Neq_stage_cyo1
+                                                       u0_u1_u1_Neq_stagelut
+                                                       u0_u1_u1_Neq_stagecy
+                                                       u0_u1_u1_Neq_stagecy_rn_0
+    CLB_R25C23.S0.CIN    net (fanout=1)        0.000   u0_u1_u1_Neq_stage_cyo1
+    CLB_R25C23.S0.COUT   Tbyp                  0.096   u0_u1_u1_Neq_stage_cyo3
+                                                       u0_u1_u1_Neq_stagecy_rn_1
+                                                       u0_u1_u1_Neq_stagecy_rn_2
+    CLB_R24C23.S0.CIN    net (fanout=1)        0.000   u0_u1_u1_Neq_stage_cyo3
+    CLB_R24C23.S0.COUT   Tbyp                  0.096   u0_u1_u1_Neq_stage_cyo5
+                                                       u0_u1_u1_Neq_stagecy_rn_3
+                                                       u0_u1_u1_Neq_stagecy_rn_4
+    CLB_R23C23.S0.CIN    net (fanout=1)        0.000   u0_u1_u1_Neq_stage_cyo5
+    CLB_R23C23.S0.XB     Tcinxb                0.046   N16394
+                                                       u0_u1_u1_Neq_stagecy_rn_5
+    CLB_R16C16.S1.G3     net (fanout=19)       2.600   u0_u1_u1__n0205
+    CLB_R16C16.S1.Y      Tilo                  0.653   u0_u1_u1_Ker11196_SW2/O
+                                                       u0_fast_memtest_ld18
+    CLB_R11C11.S1.G1     net (fanout=16)       2.584   u0_fast_memtest_ld
+    CLB_R11C11.S1.CLK    Tick                  1.352   u0_fast_memtest_u0_r_r<15>
+                                                       u0_fast_memtest_u0__n0000<14>1
+                                                       u0_fast_memtest_u0_r_r_14
+    -------------------------------------------------  ---------------------------
+    Total                                     13.342ns (6.037ns logic, 7.305ns route)
+                                                       (45.2% logic, 54.8% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -9.159ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u0_u1_u1_activeRow_r_1_1 (FF)
+  Destination:          u0_fast_memtest_u0_r_r_15 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      13.184ns (Levels of Logic = 7)
+  Clock Path Skew:      -5.975ns
+  Source Clock:         u0_u1_clkin_2 rising at 0.000ns
+  Destination Clock:    u0_clk_b rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Data Path: u0_u1_u1_activeRow_r_1_1 to u0_fast_memtest_u0_r_r_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R27C24.S1.XQ     Tcko                  1.292   u0_u1_u1_activeRow_r_1_1
+                                                       u0_u1_u1_activeRow_r_1_1
+    CLB_R28C23.S0.F4     net (fanout=1)        1.031   u0_u1_u1_activeRow_r_1_1
+    CLB_R28C23.S0.X      Tif5x                 1.016   u0_u1_u1__n0153<1>
+                                                       u0_u1_u1_Mmux__n0153_inst_mux_f5_2111_G
+                                                       u0_u1_u1_Mmux__n0153_inst_mux_f5_2111
+    CLB_R26C23.S0.F2     net (fanout=1)        1.090   u0_u1_u1__n0153<1>
+    CLB_R26C23.S0.COUT   Topcyf                1.486   u0_u1_u1_Neq_stage_cyo1
+                                                       u0_u1_u1_Neq_stagelut
+                                                       u0_u1_u1_Neq_stagecy
+                                                       u0_u1_u1_Neq_stagecy_rn_0
+    CLB_R25C23.S0.CIN    net (fanout=1)        0.000   u0_u1_u1_Neq_stage_cyo1
+    CLB_R25C23.S0.COUT   Tbyp                  0.096   u0_u1_u1_Neq_stage_cyo3
+                                                       u0_u1_u1_Neq_stagecy_rn_1
+                                                       u0_u1_u1_Neq_stagecy_rn_2
+    CLB_R24C23.S0.CIN    net (fanout=1)        0.000   u0_u1_u1_Neq_stage_cyo3
+    CLB_R24C23.S0.COUT   Tbyp                  0.096   u0_u1_u1_Neq_stage_cyo5
+                                                       u0_u1_u1_Neq_stagecy_rn_3
+                                                       u0_u1_u1_Neq_stagecy_rn_4
+    CLB_R23C23.S0.CIN    net (fanout=1)        0.000   u0_u1_u1_Neq_stage_cyo5
+    CLB_R23C23.S0.XB     Tcinxb                0.046   N16394
+                                                       u0_u1_u1_Neq_stagecy_rn_5
+    CLB_R16C16.S1.G3     net (fanout=19)       2.600   u0_u1_u1__n0205
+    CLB_R16C16.S1.Y      Tilo                  0.653   u0_u1_u1_Ker11196_SW2/O
+                                                       u0_fast_memtest_ld18
+    CLB_R11C11.S1.F2     net (fanout=16)       2.426   u0_fast_memtest_ld
+    CLB_R11C11.S1.CLK    Tick                  1.352   u0_fast_memtest_u0_r_r<15>
+                                                       u0_fast_memtest_u0__n0000<15>1
+                                                       u0_fast_memtest_u0_r_r_15
+    -------------------------------------------------  ---------------------------
+    Total                                     13.184ns (6.037ns logic, 7.147ns route)
+                                                       (45.8% logic, 54.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -9.122ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u0_u1_u1_activeRow_r_2_3 (FF)
+  Destination:          u0_fast_memtest_u0_r_r_14 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      13.197ns (Levels of Logic = 7)
+  Clock Path Skew:      -5.925ns
+  Source Clock:         u0_u1_clkin_2 rising at 0.000ns
+  Destination Clock:    u0_clk_b rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Data Path: u0_u1_u1_activeRow_r_2_3 to u0_fast_memtest_u0_r_r_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R28C24.S1.XQ     Tcko                  1.292   u0_u1_u1_activeRow_r_2_3
+                                                       u0_u1_u1_activeRow_r_2_3
+    CLB_R27C23.S1.G4     net (fanout=1)        1.082   u0_u1_u1_activeRow_r_2_3
+    CLB_R27C23.S1.X      Tif5x                 1.028   u0_u1_u1__n0153<3>
+                                                       u0_u1_u1_Mmux__n0153_inst_mux_f5_4111_F
+                                                       u0_u1_u1_Mmux__n0153_inst_mux_f5_4111
+    CLB_R26C23.S0.G1     net (fanout=1)        0.972   u0_u1_u1__n0153<3>
+    CLB_R26C23.S0.COUT   Topcyg                1.396   u0_u1_u1_Neq_stage_cyo1
+                                                       u0_u1_u1_Neq_stagelut1
+                                                       u0_u1_u1_Neq_stagecy_rn_0
+    CLB_R25C23.S0.CIN    net (fanout=1)        0.000   u0_u1_u1_Neq_stage_cyo1
+    CLB_R25C23.S0.COUT   Tbyp                  0.096   u0_u1_u1_Neq_stage_cyo3
+                                                       u0_u1_u1_Neq_stagecy_rn_1
+                                                       u0_u1_u1_Neq_stagecy_rn_2
+    CLB_R24C23.S0.CIN    net (fanout=1)        0.000   u0_u1_u1_Neq_stage_cyo3
+    CLB_R24C23.S0.COUT   Tbyp                  0.096   u0_u1_u1_Neq_stage_cyo5
+                                                       u0_u1_u1_Neq_stagecy_rn_3
+                                                       u0_u1_u1_Neq_stagecy_rn_4
+    CLB_R23C23.S0.CIN    net (fanout=1)        0.000   u0_u1_u1_Neq_stage_cyo5
+    CLB_R23C23.S0.XB     Tcinxb                0.046   N16394
+                                                       u0_u1_u1_Neq_stagecy_rn_5
+    CLB_R16C16.S1.G3     net (fanout=19)       2.600   u0_u1_u1__n0205
+    CLB_R16C16.S1.Y      Tilo                  0.653   u0_u1_u1_Ker11196_SW2/O
+                                                       u0_fast_memtest_ld18
+    CLB_R11C11.S1.G1     net (fanout=16)       2.584   u0_fast_memtest_ld
+    CLB_R11C11.S1.CLK    Tick                  1.352   u0_fast_memtest_u0_r_r<15>
+                                                       u0_fast_memtest_u0__n0000<14>1
+                                                       u0_fast_memtest_u0_r_r_14
+    -------------------------------------------------  ---------------------------
+    Total                                     13.197ns (5.959ns logic, 7.238ns route)
+                                                       (45.2% logic, 54.8% route)
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Hold Violations: TS_clk = PERIOD TIMEGRP "clk"  10 nS   HIGH 50.000000 ;
+--------------------------------------------------------------------------------
+Hold Violation:         -3.075ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u0_fast_memtest_addr_r_10 (FF)
+  Destination:          u0_u1_u1_activeRow_r_1_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      2.872ns (Levels of Logic = 0)
+  Positive Clock Path Skew: 5.947ns
+  Source Clock:         u0_clk_b rising at 0.000ns
+  Destination Clock:    u0_u1_clkin_2 rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Data Path: u0_fast_memtest_addr_r_10 to u0_u1_u1_activeRow_r_1_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R26C26.S0.YQ     Tcko                  1.292   u0_fast_memtest_addr_r<11>
+                                                       u0_fast_memtest_addr_r_10
+    CLB_R27C24.S1.BX     net (fanout=9)        1.389   u0_fast_memtest_addr_r<10>
+    CLB_R27C24.S1.CLK    Tckdi       (-Th)    -0.191   u0_u1_u1_activeRow_r_1_1
+                                                       u0_u1_u1_activeRow_r_1_1
+    -------------------------------------------------  ---------------------------
+    Total                                      2.872ns (1.483ns logic, 1.389ns route)
+                                                       (51.6% logic, 48.4% route)
+
+--------------------------------------------------------------------------------
+Hold Violation:         -2.722ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u0_fast_memtest_addr_r_10 (FF)
+  Destination:          u0_u1_u1_activeRow_r_2_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      3.175ns (Levels of Logic = 0)
+  Positive Clock Path Skew: 5.897ns
+  Source Clock:         u0_clk_b rising at 0.000ns
+  Destination Clock:    u0_u1_clkin_2 rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Data Path: u0_fast_memtest_addr_r_10 to u0_u1_u1_activeRow_r_2_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R26C26.S0.YQ     Tcko                  1.292   u0_fast_memtest_addr_r<11>
+                                                       u0_fast_memtest_addr_r_10
+    CLB_R28C24.S0.BX     net (fanout=9)        1.692   u0_fast_memtest_addr_r<10>
+    CLB_R28C24.S0.CLK    Tckdi       (-Th)    -0.191   u0_u1_u1_activeRow_r_2_1
+                                                       u0_u1_u1_activeRow_r_2_1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.175ns (1.483ns logic, 1.692ns route)
+                                                       (46.7% logic, 53.3% route)
+
+--------------------------------------------------------------------------------
+Hold Violation:         -2.491ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u0_fast_memtest_addr_r_11 (FF)
+  Destination:          u0_u1_u1_activeRow_r_2_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      3.406ns (Levels of Logic = 0)
+  Positive Clock Path Skew: 5.897ns
+  Source Clock:         u0_clk_b rising at 0.000ns
+  Destination Clock:    u0_u1_clkin_2 rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Data Path: u0_fast_memtest_addr_r_11 to u0_u1_u1_activeRow_r_2_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R26C26.S0.XQ     Tcko                  1.292   u0_fast_memtest_addr_r<11>
+                                                       u0_fast_memtest_addr_r_11
+    CLB_R28C24.S1.BY     net (fanout=9)        1.868   u0_fast_memtest_addr_r<11>
+    CLB_R28C24.S1.CLK    Tckdi       (-Th)    -0.246   u0_u1_u1_activeRow_r_2_3
+                                                       u0_u1_u1_activeRow_r_2_2
+    -------------------------------------------------  ---------------------------
+    Total                                      3.406ns (1.538ns logic, 1.868ns route)
+                                                       (45.2% logic, 54.8% route)
+
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   19.317|    6.248|    4.904|         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 320  Score: 1215765
+
+Constraints cover 22609 paths, 0 nets, and 1756 connections
+
+Design statistics:
+   Minimum period:  19.317ns (Maximum frequency:  51.768MHz)
+
+
+Analysis completed Mon Feb 13 15:51:57 2006
+--------------------------------------------------------------------------------
+
+Peak Memory Usage: 48 MB

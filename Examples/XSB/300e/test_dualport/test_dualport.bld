@@ -1,0 +1,25 @@
+Release 6.3.03i - ngdbuild G.38
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -intstyle ise -dd
+c:\temp\bitstreams\xsb\300e\test_dualport/_ngo -uc test_dualport.ucf -p
+xc2s300e-pq208-6 test_dualport.ngc test_dualport.ngd 
+
+Reading NGO file "C:/temp/BITSTREAMS/XSB/300e/test_dualport/test_dualport.ngc"
+...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "test_dualport.ucf" ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 42268 kilobytes
+
+Writing NGD file "test_dualport.ngd" ...
+
+Writing NGDBUILD log file "test_dualport.bld"...

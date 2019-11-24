@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/hendri/Documents/workspaceXilinx/basys2Test/pinIOTest.ncd
+OUTFILE=/home/hendri/Documents/workspaceXilinx/basys2Test/pinIOTest.bit
+FAMILY=Spartan3E
+PART=xc3s250e-4cp132
+WORKINGDIR=/home/hendri/Documents/workspaceXilinx/basys2Test
+LICENSE=WebPack
+USER_INFO=205718885_0_0_719

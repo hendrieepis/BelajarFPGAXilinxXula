@@ -1,0 +1,5 @@
+vhdl work C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/common.vhd
+vhdl work C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/sdramcntl.vhd
+vhdl work C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/userinstr_jtag.vhd
+vhdl work C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/XSA_LIB/xsasdramcntl.vhd
+vhdl work ramintfc_jtag.vhd

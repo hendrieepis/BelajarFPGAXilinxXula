@@ -1,0 +1,16 @@
+NET clk loc=T9;
+NET reset_n loc=H4;
+NET dio<0> loc=P12;
+NET dio<1> loc=J1;
+NET dio<2> loc=H1;
+NET dio<3> loc=H3;
+NET dio<4> loc=G2;
+NET dio<5> loc=K15;
+NET dio<6> loc=K16;
+NET dio<7> loc=F15;
+NET dirout loc=M1;
+NET flush loc=E2;
+NET hshkout loc=J13;
+NET hshkin loc=L3;
+NET stall loc=E1;
+NET ethernet_cs_n loc=G13;

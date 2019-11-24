@@ -1,0 +1,858 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: ramintfc_jtag.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ramintfc_jtag.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ramintfc_jtag"
+Output Format                      : NGC
+Target Device                      : xc3s200a-4-vq100
+
+---- Source Options
+Top Module Name                    : ramintfc_jtag
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : NO
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/Common.vhd" in Library work.
+Architecture commonpckg of Entity commonpckg is up to date.
+Compiling vhdl file "C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/SyncToClk.vhd" in Library work.
+Architecture arch of Entity synctoclock is up to date.
+Architecture arch of Entity syncbustoclock is up to date.
+Compiling vhdl file "C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/ClkGen.vhd" in Library work.
+Architecture arch of Entity clkgen is up to date.
+Architecture arch of Entity clktologic is up to date.
+Compiling vhdl file "C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/HostIo.vhd" in Library work.
+Architecture arch of Entity bscantohostio is up to date.
+Architecture arch of Entity hostiohdrscanner is up to date.
+Architecture arch of Entity hostiotoramcore is up to date.
+Architecture arch of Entity ramctrlsync is up to date.
+Architecture arch of Entity hostiotoram is up to date.
+Architecture arch of Entity hostiotodut is up to date.
+Compiling vhdl file "C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/SdramCntl.vhd" in Library work.
+Architecture arch of Entity sdramcntl is up to date.
+Architecture arch of Entity dualport is up to date.
+Compiling vhdl file "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" in Library work.
+Entity <ramintfc_jtag> compiled.
+Entity <ramintfc_jtag> (Architecture <arch>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ramintfc_jtag> in library <work> (architecture <arch>) with generics.
+	BASE_FREQ_G = 12.000000
+	CLK_DIV_G = 3
+	CLK_MUL_G = 25
+	DATA_WIDTH_G = 16
+	HADDR_WIDTH_G = 32
+	NCOLS_G = 512
+	NROWS_G = 4096
+	PIPE_EN_G = false
+	SADDR_WIDTH_G = 12
+
+Analyzing hierarchy for entity <ClkGen> in library <work> (architecture <arch>) with generics.
+	BASE_FREQ_G = 12.000000
+	CLK_DIV_G = 3
+	CLK_MUL_G = 25
+
+Analyzing hierarchy for entity <BscanToHostIo> in library <work> (architecture <arch>) with generics.
+	FPGA_DEVICE_G = "spartan3a"
+	TAP_USER_INSTR_G = "user1"
+
+Analyzing hierarchy for entity <HostIoToRam> in library <work> (architecture <arch>) with generics.
+	FPGA_DEVICE_G = "spartan3a"
+	ID_G = "00000010"
+	PYLD_CNTR_LENGTH_G = 32
+	SIMPLE_G = false
+	SYNC_G = true
+	TAP_USER_INSTR_G = "user1"
+
+Analyzing hierarchy for entity <SdramCntl> in library <work> (architecture <arch>) with generics.
+	DATA_WIDTH_G = 16
+	ENABLE_REFRESH_G = true
+	FREQ_G = 100.000000
+	HADDR_WIDTH_G = 32
+	IN_PHASE_G = true
+	MAX_NOP_G = 10000
+	MULTIPLE_ACTIVE_ROWS_G = false
+	NCOLS_G = 512
+	NROWS_G = 4096
+	PIPE_EN_G = false
+	SADDR_WIDTH_G = 12
+	T_INIT_G = 200000.000000
+	T_RAS_G = 45.000000
+	T_RCD_G = 20.000000
+	T_REF_G = 64000000.000000
+	T_RFC_G = 65.000000
+	T_RP_G = 20.000000
+	T_XSR_G = 75.000000
+
+Analyzing hierarchy for entity <HostIoToRamCore> in library <work> (architecture <arch>) with generics.
+	ID_G = "00000010"
+	PYLD_CNTR_LENGTH_G = 32
+
+Analyzing hierarchy for entity <RamCtrlSync> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <HostIoHdrScanner> in library <work> (architecture <arch>) with generics.
+	ID_G = "00000010"
+	PYLD_CNTR_LENGTH_G = 32
+
+Analyzing hierarchy for entity <SyncToClock> in library <work> (architecture <arch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <ramintfc_jtag> in library <work> (Architecture <arch>).
+	BASE_FREQ_G = 12.000000
+	CLK_DIV_G = 3
+	CLK_MUL_G = 25
+	DATA_WIDTH_G = 16
+	HADDR_WIDTH_G = 32
+	NCOLS_G = 512
+	NROWS_G = 4096
+	PIPE_EN_G = false
+	SADDR_WIDTH_G = 12
+WARNING:Xst:753 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 89: Unconnected output port 'o_b' of component 'ClkGen'.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdoa_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdob_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdoc_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdod_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdoe_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdof_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdog_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdoh_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdoi_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdoj_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdok_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdol_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdom_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdon_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdoo_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdop_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdoq_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdor_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdos_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdot_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdou_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdov_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdow_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdox_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdoy_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:752 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 96: Unconnected input port 'tdoz_i' of component 'BscanToHostIo' is tied to default value.
+WARNING:Xst:753 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 133: Unconnected output port 'opBegun_o' of component 'SdramCntl'.
+WARNING:Xst:753 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 133: Unconnected output port 'rdPending_o' of component 'SdramCntl'.
+WARNING:Xst:753 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 133: Unconnected output port 'rdDone_o' of component 'SdramCntl'.
+WARNING:Xst:753 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 133: Unconnected output port 'status_o' of component 'SdramCntl'.
+WARNING:Xst:753 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 133: Unconnected output port 'sdCke_o' of component 'SdramCntl'.
+WARNING:Xst:753 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 133: Unconnected output port 'sdCe_bo' of component 'SdramCntl'.
+WARNING:Xst:753 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 133: Unconnected output port 'sdDqmh_o' of component 'SdramCntl'.
+WARNING:Xst:753 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd" line 133: Unconnected output port 'sdDqml_o' of component 'SdramCntl'.
+Entity <ramintfc_jtag> analyzed. Unit <ramintfc_jtag> generated.
+
+Analyzing generic Entity <ClkGen> in library <work> (Architecture <arch>).
+	BASE_FREQ_G = 12.000000
+	CLK_DIV_G = 3
+	CLK_MUL_G = 25
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "CLKFX_DIVIDE =  3" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "CLKFX_MULTIPLY =  25" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "CLKIN_PERIOD =  83.3333333333333290" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "CLK_FEEDBACK =  NONE" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <u0> in unit <ClkGen>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <u0> in unit <ClkGen>.
+Entity <ClkGen> analyzed. Unit <ClkGen> generated.
+
+Analyzing generic Entity <BscanToHostIo> in library <work> (Architecture <arch>).
+	FPGA_DEVICE_G = "spartan3a"
+	TAP_USER_INSTR_G = "user1"
+Entity <BscanToHostIo> analyzed. Unit <BscanToHostIo> generated.
+
+Analyzing generic Entity <HostIoToRam> in library <work> (Architecture <arch>).
+	FPGA_DEVICE_G = "spartan3a"
+	ID_G = "00000010"
+	PYLD_CNTR_LENGTH_G = 32
+	SIMPLE_G = false
+	SYNC_G = true
+	TAP_USER_INSTR_G = "user1"
+Entity <HostIoToRam> analyzed. Unit <HostIoToRam> generated.
+
+Analyzing generic Entity <HostIoToRamCore> in library <work> (Architecture <arch>).
+	ID_G = "00000010"
+	PYLD_CNTR_LENGTH_G = 32
+Entity <HostIoToRamCore> analyzed. Unit <HostIoToRamCore> generated.
+
+Analyzing generic Entity <HostIoHdrScanner> in library <work> (Architecture <arch>).
+	ID_G = "00000010"
+	PYLD_CNTR_LENGTH_G = 32
+Entity <HostIoHdrScanner> analyzed. Unit <HostIoHdrScanner> generated.
+
+Analyzing Entity <RamCtrlSync> in library <work> (Architecture <arch>).
+Entity <RamCtrlSync> analyzed. Unit <RamCtrlSync> generated.
+
+Analyzing Entity <SyncToClock> in library <work> (Architecture <arch>).
+Entity <SyncToClock> analyzed. Unit <SyncToClock> generated.
+
+Analyzing generic Entity <SdramCntl> in library <work> (Architecture <arch>).
+	DATA_WIDTH_G = 16
+	ENABLE_REFRESH_G = true
+	FREQ_G = 100.000000
+	HADDR_WIDTH_G = 32
+	IN_PHASE_G = true
+	MAX_NOP_G = 10000
+	MULTIPLE_ACTIVE_ROWS_G = false
+	NCOLS_G = 512
+	NROWS_G = 4096
+	PIPE_EN_G = false
+	SADDR_WIDTH_G = 12
+	T_INIT_G = 200000.000000
+	T_RAS_G = 45.000000
+	T_RCD_G = 20.000000
+	T_REF_G = 64000000.000000
+	T_RFC_G = 65.000000
+	T_RP_G = 20.000000
+	T_XSR_G = 75.000000
+Entity <SdramCntl> analyzed. Unit <SdramCntl> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <SdramCntl>.
+    Related source file is "C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/SdramCntl.vhd".
+WARNING:Xst:647 - Input <addr_i<31:23>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <sdramDataOppPhase_r> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <col_s<11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bankIndex_s<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <state_r>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 28                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 9                                              |
+    | Clock              | clk_i                     (rising_edge)        |
+    | Clock enable       | state_r$cmp_ne0000        (negative)           |
+    | Reset              | rst_i                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | initwait                                       |
+    | Power Up State     | initwait                                       |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit tristate buffer for signal <sdData_io>.
+    Found 2-bit register for signal <activeBank_r>.
+    Found 1-bit register for signal <activeFlag_r<0>>.
+    Found 12-bit register for signal <activeRow_r<0>>.
+    Found 2-bit register for signal <ba_r>.
+    Found 1-bit register for signal <cke_r>.
+    Found 6-bit register for signal <cmd_r>.
+    Found 2-bit comparator not equal for signal <doActivate_s$cmp_ne0000> created at line 425.
+    Found 12-bit comparator not equal for signal <doActivate_s$cmp_ne0001> created at line 425.
+    Found 14-bit register for signal <nopCntr_r>.
+    Found 14-bit adder for signal <nopCntr_x$addsub0000> created at line 442.
+    Found 1-bit register for signal <opBegun_r>.
+    Found 3-bit register for signal <rasTimer_r>.
+    Found 3-bit subtractor for signal <rasTimer_x$sub0000> created at line 458.
+    Found 5-bit register for signal <rdPipeline_r>.
+    Found 11-bit register for signal <refTimer_r>.
+    Found 11-bit subtractor for signal <refTimer_x$addsub0000> created at line 482.
+    Found 13-bit register for signal <rfshCntr_r>.
+    Found 13-bit adder for signal <rfshCntr_x$add0000> created at line 488.
+    Found 13-bit subtractor for signal <rfshCntr_x$addsub0000>.
+    Found 12-bit register for signal <sAddr_r>.
+    Found 16-bit register for signal <sData_r>.
+    Found 1-bit register for signal <sDataDir_r>.
+    Found 16-bit register for signal <sdramData_r>.
+    Found 15-bit register for signal <timer_r>.
+    Found 15-bit subtractor for signal <timer_r$addsub0000> created at line 497.
+    Found 1-bit register for signal <wrPipeline_r<0>>.
+    Found 2-bit register for signal <wrTimer_r>.
+    Found 2-bit subtractor for signal <wrTimer_x$sub0000> created at line 471.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 117 D-type flip-flop(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  16 Tristate(s).
+Unit <SdramCntl> synthesized.
+
+
+Synthesizing Unit <HostIoHdrScanner>.
+    Related source file is "C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/HostIo.vhd".
+    Found 1-bit register for signal <hdrRcvd_r>.
+    Found 8-bit register for signal <id_r>.
+    Found 32-bit down counter for signal <pyldCntr_r>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   9 D-type flip-flop(s).
+Unit <HostIoHdrScanner> synthesized.
+
+
+Synthesizing Unit <SyncToClock>.
+    Related source file is "C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/SyncToClk.vhd".
+    Found 2-bit register for signal <sync_r>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <SyncToClock> synthesized.
+
+
+Synthesizing Unit <ClkGen>.
+    Related source file is "C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/ClkGen.vhd".
+WARNING:Xst:1780 - Signal <genClkP_s> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <genClkN_s> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <ClkGen> synthesized.
+
+
+Synthesizing Unit <BscanToHostIo>.
+    Related source file is "C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/HostIo.vhd".
+WARNING:Xst:646 - Signal <bscanSel2_s> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bscanDrck2_s> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <BscanToHostIo> synthesized.
+
+
+Synthesizing Unit <HostIoToRamCore>.
+    Related source file is "C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/HostIo.vhd".
+    Found 16-bit register for signal <dataFromHost_o>.
+    Found 1-bit register for signal <active_o>.
+    Found 32-bit register for signal <addrFromHost_r>.
+    Found 32-bit adder for signal <addrFromHost_r$share0000> created at line 519.
+    Found 1-bit register for signal <addrFromHostRcvd_r>.
+    Found 5-bit register for signal <bitCntr_r>.
+    Found 5-bit subtractor for signal <bitCntr_r$share0000> created at line 519.
+    Found 16-bit register for signal <dataFromMemory_r>.
+    Found 1-bit register for signal <dataFromMemoryRcvd_r>.
+    Found 2-bit register for signal <opcode_r>.
+    Found 1-bit register for signal <opcodeRcvd_r>.
+    Found 1-bit register for signal <rdFromMemory_r>.
+    Found 33-bit comparator less for signal <rdFromMemory_r$cmp_lt0000> created at line 566.
+    Found 16-bit register for signal <shiftReg_r>.
+    Found 16-bit 4-to-1 multiplexer for signal <shiftReg_r$mux0003> created at line 519.
+    Found 1-bit register for signal <wrToMemory_r>.
+    Summary:
+	inferred  93 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  16 Multiplexer(s).
+Unit <HostIoToRamCore> synthesized.
+
+
+Synthesizing Unit <RamCtrlSync>.
+    Related source file is "C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/HostIo.vhd".
+WARNING:Xst:647 - Input <drck_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <ctrlOut_o>.
+    Found 1-bit register for signal <doneOut_r>.
+    Found 1-bit register for signal <prevCtrlIn_v>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <RamCtrlSync> synthesized.
+
+
+Synthesizing Unit <HostIoToRam>.
+    Related source file is "C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/HostIo.vhd".
+Unit <HostIoToRam> synthesized.
+
+
+Synthesizing Unit <ramintfc_jtag>.
+    Related source file is "C:/xesscorp/PRODUCTS/XuLA/FPGA/200/ramintfc_jtag_new/ramintfc_jtag.vhd".
+    Found 1-bit register for signal <reset_s>.
+    Found 4-bit down counter for signal <resetCnt_v>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <ramintfc_jtag> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 11-bit subtractor                                     : 1
+ 13-bit adder                                          : 1
+ 13-bit subtractor                                     : 1
+ 14-bit adder                                          : 1
+ 15-bit subtractor                                     : 1
+ 2-bit subtractor                                      : 1
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 1
+ 5-bit subtractor                                      : 1
+# Counters                                             : 2
+ 32-bit down counter                                   : 1
+ 4-bit down counter                                    : 1
+# Registers                                            : 42
+ 1-bit register                                        : 19
+ 11-bit register                                       : 1
+ 12-bit register                                       : 2
+ 13-bit register                                       : 1
+ 14-bit register                                       : 1
+ 15-bit register                                       : 1
+ 16-bit register                                       : 5
+ 2-bit register                                        : 6
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+ 5-bit register                                        : 2
+ 6-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 3
+ 12-bit comparator not equal                           : 1
+ 2-bit comparator not equal                            : 1
+ 33-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 16-bit 4-to-1 multiplexer                             : 1
+# Tristates                                            : 1
+ 16-bit tristate buffer                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <u4/state_r/FSM> on signal <state_r[1:3]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ initwait    | 000
+ initpchg    | 001
+ initsetmode | 010
+ initrfsh    | 011
+ rw          | 110
+ activate    | 101
+ refreshrow  | 111
+ selfrefresh | 100
+-------------------------
+WARNING:Xst:2677 - Node <ba_r_1> of sequential type is unconnected in block <u4>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 9
+ 11-bit subtractor                                     : 1
+ 13-bit adder                                          : 1
+ 13-bit subtractor                                     : 1
+ 14-bit adder                                          : 1
+ 15-bit subtractor                                     : 1
+ 2-bit subtractor                                      : 1
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 1
+ 5-bit subtractor                                      : 1
+# Counters                                             : 2
+ 32-bit down counter                                   : 1
+ 4-bit down counter                                    : 1
+# Registers                                            : 247
+ Flip-Flops                                            : 247
+# Comparators                                          : 3
+ 12-bit comparator not equal                           : 1
+ 2-bit comparator not equal                            : 1
+ 33-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 16-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <sDataDir_r> in Unit <SdramCntl> is equivalent to the following FF/Latch, which will be removed : <wrPipeline_r_0> 
+INFO:Xst:2261 - The FF/Latch <cmd_r_5> in Unit <SdramCntl> is equivalent to the following 2 FFs/Latches, which will be removed : <cmd_r_1> <cmd_r_0> 
+WARNING:Xst:1293 - FF/Latch <cmd_r_5> has a constant value of 0 in block <SdramCntl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <u4/ba_r_1> of sequential type is unconnected in block <ramintfc_jtag>.
+WARNING:Xst:2677 - Node <u4/cke_r> of sequential type is unconnected in block <ramintfc_jtag>.
+WARNING:Xst:2677 - Node <u4/opBegun_r> of sequential type is unconnected in block <ramintfc_jtag>.
+
+Optimizing unit <ramintfc_jtag> ...
+
+Optimizing unit <HostIoHdrScanner> ...
+
+Optimizing unit <HostIoToRamCore> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ramintfc_jtag, actual ratio is 18.
+FlipFlop u3/USync.URdRamCtrlSync/ctrlOut_o has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 280
+ Flip-Flops                                            : 280
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ramintfc_jtag.ngr
+Top Level Output File Name         : ramintfc_jtag
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 36
+
+Cell Usage :
+# BELS                             : 844
+#      GND                         : 1
+#      INV                         : 47
+#      LUT1                        : 60
+#      LUT2                        : 33
+#      LUT2_D                      : 2
+#      LUT2_L                      : 3
+#      LUT3                        : 110
+#      LUT3_D                      : 8
+#      LUT3_L                      : 16
+#      LUT4                        : 198
+#      LUT4_D                      : 13
+#      LUT4_L                      : 39
+#      MUXCY                       : 137
+#      MUXF5                       : 46
+#      VCC                         : 1
+#      XORCY                       : 130
+# FlipFlops/Latches                : 280
+#      FD                          : 6
+#      FDC                         : 88
+#      FDCE                        : 19
+#      FDE                         : 50
+#      FDP                         : 9
+#      FDR                         : 33
+#      FDRE                        : 68
+#      FDRSE                       : 3
+#      FDS                         : 1
+#      FDSE                        : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 35
+#      IBUFG                       : 1
+#      IOBUF                       : 16
+#      OBUF                        : 18
+# DCMs                             : 1
+#      DCM_SP                      : 1
+# Others                           : 1
+#      BSCAN_SPARTAN3A             : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200avq100-4 
+
+ Number of Slices:                      293  out of   1792    16%  
+ Number of Slice Flip Flops:            247  out of   3584     6%  
+ Number of 4 input LUTs:                529  out of   3584    14%  
+ Number of IOs:                          36
+ Number of bonded IOBs:                  36  out of     68    52%  
+    IOB Flip Flops:                      33
+ Number of GCLKs:                         2  out of     24     8%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+sdClkFb_i                          | BUFGP                  | 146   |
+drck_s1                            | BUFG                   | 134   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset_s(reset_s:Q)                 | NONE(u4/activeFlag_r_0)| 116   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.395ns (Maximum Frequency: 135.226MHz)
+   Minimum input arrival time before clock: 3.345ns
+   Maximum output required time after clock: 7.015ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sdClkFb_i'
+  Clock period: 7.395ns (frequency: 135.227MHz)
+  Total number of paths / destination ports: 3871 / 142
+-------------------------------------------------------------------------
+Delay:               7.395ns (Levels of Logic = 5)
+  Source:            u4/nopCntr_r_10 (FF)
+  Destination:       u4/rfshCntr_r_12 (FF)
+  Source Clock:      sdClkFb_i rising
+  Destination Clock: sdClkFb_i rising
+
+  Data Path: u4/nopCntr_r_10 to u4/rfshCntr_r_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.590  u4/nopCntr_r_10 (u4/nopCntr_r_10)
+     LUT4:I0->O            1   0.648   0.500  u4/nopCntr_x_and000019 (u4/nopCntr_x_and000019)
+     LUT4:I1->O           21   0.643   1.160  u4/nopCntr_x_and000056 (u4/nopCntr_x_and0000)
+     LUT3_D:I2->LO         1   0.648   0.103  u4/doSelfRfsh_s1 (N309)
+     LUT4:I3->O           12   0.648   0.964  u4/rfshCntr_x<0>1 (N01)
+     LUT4:I3->O            1   0.648   0.000  u4/rfshCntr_x<12>16 (u4/rfshCntr_x<12>)
+     FDC:D                     0.252          u4/rfshCntr_r_12
+    ----------------------------------------
+    Total                      7.395ns (4.078ns logic, 3.317ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'drck_s1'
+  Clock period: 7.039ns (frequency: 142.065MHz)
+  Total number of paths / destination ports: 5622 / 318
+-------------------------------------------------------------------------
+Delay:               7.039ns (Levels of Logic = 4)
+  Source:            u3/UHostIoToRamCore/UHdrScannner/pyldCntr_r_5 (FF)
+  Destination:       u3/UHostIoToRamCore/UHdrScannner/hdrRcvd_r (FF)
+  Source Clock:      drck_s1 rising
+  Destination Clock: drck_s1 rising
+
+  Data Path: u3/UHostIoToRamCore/UHdrScannner/pyldCntr_r_5 to u3/UHostIoToRamCore/UHdrScannner/hdrRcvd_r
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.674  u3/UHostIoToRamCore/UHdrScannner/pyldCntr_r_5 (u3/UHostIoToRamCore/UHdrScannner/pyldCntr_r_5)
+     LUT4:I0->O            2   0.648   0.527  u3/UHostIoToRamCore/Mcompar_rdFromMemory_r_cmp_lt0000_lut<1> (u3/UHostIoToRamCore/Mcompar_rdFromMemory_r_cmp_lt0000_lut<1>)
+     LUT4:I1->O            1   0.643   0.423  u3/UHostIoToRamCore/UHdrScannner/id_r_or0000175 (u3/UHostIoToRamCore/UHdrScannner/id_r_or0000175)
+     LUT4_L:I3->LO         1   0.648   0.103  u3/UHostIoToRamCore/UHdrScannner/id_r_or0000202_SW0 (N201)
+     LUT4:I3->O           41   0.648   1.265  u3/UHostIoToRamCore/UHdrScannner/id_r_or0000202 (u3/UHostIoToRamCore/UHdrScannner/id_r_or0000)
+     FDRE:R                    0.869          u3/UHostIoToRamCore/UHdrScannner/hdrRcvd_r
+    ----------------------------------------
+    Total                      7.039ns (4.047ns logic, 2.992ns route)
+                                       (57.5% logic, 42.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'drck_s1'
+  Total number of paths / destination ports: 128 / 46
+-------------------------------------------------------------------------
+Offset:              3.345ns (Levels of Logic = 1)
+  Source:            u2/spartan3a_bscan.UBscanUser:SEL1 (PAD)
+  Destination:       u3/UHostIoToRamCore/UHdrScannner/hdrRcvd_r (FF)
+  Destination Clock: drck_s1 rising
+
+  Data Path: u2/spartan3a_bscan.UBscanUser:SEL1 to u3/UHostIoToRamCore/UHdrScannner/hdrRcvd_r
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN3A:SEL1    1   0.000   0.563  u2/spartan3a_bscan.UBscanUser (u2/bscanSel1_s)
+     LUT4:I0->O           41   0.648   1.265  u3/UHostIoToRamCore/UHdrScannner/id_r_or0000202 (u3/UHostIoToRamCore/UHdrScannner/id_r_or0000)
+     FDRE:R                    0.869          u3/UHostIoToRamCore/UHdrScannner/hdrRcvd_r
+    ----------------------------------------
+    Total                      3.345ns (1.517ns logic, 1.828ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sdClkFb_i'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              1.521ns (Levels of Logic = 1)
+  Source:            sdData_io<15> (PAD)
+  Destination:       u4/sdramData_r_15 (FF)
+  Destination Clock: sdClkFb_i rising
+
+  Data Path: sdData_io<15> to u4/sdramData_r_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           1   0.849   0.420  sdData_io_15_IOBUF (N74)
+     FDCE:D                    0.252          u4/sdramData_r_15
+    ----------------------------------------
+    Total                      1.521ns (1.101ns logic, 0.420ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sdClkFb_i'
+  Total number of paths / destination ports: 48 / 32
+-------------------------------------------------------------------------
+Offset:              7.015ns (Levels of Logic = 2)
+  Source:            u4/sDataDir_r (FF)
+  Destination:       sdData_io<15> (PAD)
+  Source Clock:      sdClkFb_i rising
+
+  Data Path: u4/sDataDir_r to sdData_io<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.447  u4/sDataDir_r (u4/sDataDir_r)
+     INV:I->O             16   0.648   1.034  u4/sDataDir_r_inv1_INV_0 (u4/sDataDir_r_inv)
+     IOBUF:T->IO               4.295          sdData_io_15_IOBUF (sdData_io<15>)
+    ----------------------------------------
+    Total                      7.015ns (5.534ns logic, 1.481ns route)
+                                       (78.9% logic, 21.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'drck_s1'
+  Total number of paths / destination ports: 21 / 3
+-------------------------------------------------------------------------
+Offset:              5.531ns (Levels of Logic = 1)
+  Source:            u3/UHostIoToRamCore/active_o (FF)
+  Destination:       chanClk_io (PAD)
+  Source Clock:      drck_s1 rising
+
+  Data Path: u3/UHostIoToRamCore/active_o to chanClk_io
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.591   0.420  u3/UHostIoToRamCore/active_o (u3/UHostIoToRamCore/active_o)
+     OBUF:I->O                 4.520          chanClk_io_OBUF (chanClk_io)
+    ----------------------------------------
+    Total                      5.531ns (5.111ns logic, 0.420ns route)
+                                       (92.4% logic, 7.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.89 secs
+ 
+--> 
+
+Total memory usage is 302188 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   49 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

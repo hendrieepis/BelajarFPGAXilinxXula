@@ -1,0 +1,3 @@
+net clka   loc=T9;  
+net rst_n  loc=E11; 
+net strobe loc=R10; 

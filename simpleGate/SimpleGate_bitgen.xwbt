@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/hendri/Documents/workspaceXilinx/simpleGate/SimpleGate.ncd
+OUTFILE=/home/hendri/Documents/workspaceXilinx/simpleGate/SimpleGate.bit
+FAMILY=Spartan3E
+PART=xc3s250e-4cp132
+WORKINGDIR=/home/hendri/Documents/workspaceXilinx/simpleGate
+LICENSE=WebPack
+USER_INFO=205718885_0_0_534

@@ -1,0 +1,5 @@
+[Inputs]
+clk_i
+[Outputs]
+counter_o
+[BiDir]

@@ -1,0 +1,2 @@
+net clk loc=T9;
+net tmp_out loc=H15;

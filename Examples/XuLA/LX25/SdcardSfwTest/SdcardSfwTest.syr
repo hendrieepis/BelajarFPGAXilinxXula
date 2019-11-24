@@ -1,0 +1,486 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: SdcardSfwTest.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SdcardSfwTest.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SdcardSfwTest"
+Output Format                      : NGC
+Target Device                      : xc6slx25-2-ftg256
+
+---- Source Options
+Top Module Name                    : SdcardSfwTest
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\xesscorp\PRODUCTS\XuLA\FPGA\XuLA_lib\SyncToClk.vhd" into library work
+Parsing package <SyncToClockPckg>.
+Parsing entity <SyncToClock>.
+Parsing architecture <arch> of entity <synctoclock>.
+Parsing entity <SyncBusToClock>.
+Parsing architecture <arch> of entity <syncbustoclock>.
+Parsing VHDL file "C:\xesscorp\PRODUCTS\XuLA\FPGA\XuLA_lib\Common.vhd" into library work
+Parsing package <CommonPckg>.
+Parsing package body <CommonPckg>.
+Parsing VHDL file "C:\xesscorp\PRODUCTS\XuLA\FPGA\XuLA_lib\HostIo.vhd" into library work
+Parsing package <HostIoPckg>.
+Parsing entity <BscanToHostIo>.
+Parsing architecture <arch> of entity <bscantohostio>.
+Parsing entity <HostIoHdrScanner>.
+Parsing architecture <arch> of entity <hostiohdrscanner>.
+Parsing entity <HostIoToRamCore>.
+Parsing architecture <arch> of entity <hostiotoramcore>.
+Parsing entity <RamCtrlSync>.
+Parsing architecture <arch> of entity <ramctrlsync>.
+Parsing entity <HostIoToRam>.
+Parsing architecture <arch> of entity <hostiotoram>.
+Parsing entity <HostIoToDut>.
+Parsing architecture <arch> of entity <hostiotodut>.
+Parsing VHDL file "C:\xesscorp\PRODUCTS\XuLA\FPGA\LX25\SdcardSfwTest\SdcardSfwTest.vhd" into library work
+Parsing entity <SdcardSfwTest>.
+Parsing architecture <arch> of entity <sdcardsfwtest>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <SdcardSfwTest> (architecture <arch>) from library <work>.
+
+Elaborating entity <HostIoToDut> (architecture <arch>) with generics from library <work>.
+
+Elaborating entity <BscanToHostIo> (architecture <arch>) with generics from library <work>.
+
+Elaborating entity <HostIoHdrScanner> (architecture <arch>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SdcardSfwTest>.
+    Related source file is "c:/xesscorp/products/xula/fpga/lx25/sdcardsfwtest/sdcardsfwtest.vhd".
+INFO:Xst:3210 - "c:/xesscorp/products/xula/fpga/lx25/sdcardsfwtest/sdcardsfwtest.vhd" line 47: Output port <tdo_o> of the instance <u1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/xesscorp/products/xula/fpga/lx25/sdcardsfwtest/sdcardsfwtest.vhd" line 47: Output port <clkToDut_o> of the instance <u1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <SdcardSfwTest> synthesized.
+
+Synthesizing Unit <HostIoToDut>.
+    Related source file is "c:/xesscorp/products/xula/fpga/xula_lib/hostio.vhd".
+        ID_G = "11111111"
+        PYLD_CNTR_LENGTH_G = 32
+        FPGA_DEVICE_G = spartan6
+        TAP_USER_INSTR_G = user1
+        SIMPLE_G = true
+WARNING:Xst:647 - Input <inShiftDr_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <drck_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tdi_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "c:/xesscorp/products/xula/fpga/xula_lib/hostio.vhd" line 912: Output port <pyldCntr_o> of the instance <UHdrScanner> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <tdo_o> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <opcodeRcvd_r>.
+    Found 16-bit register for signal <shiftReg_r>.
+    Found 5-bit register for signal <bitCntr_r>.
+    Found 3-bit register for signal <vectorToDut_o>.
+    Found 1-bit register for signal <activateClk_r>.
+    Found 2-bit register for signal <opcode_r>.
+    Found 5-bit subtractor for signal <GND_10_o_GND_10_o_sub_8_OUT<4:0>> created at line 975.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred  10 Multiplexer(s).
+Unit <HostIoToDut> synthesized.
+
+Synthesizing Unit <BscanToHostIo>.
+    Related source file is "c:/xesscorp/products/xula/fpga/xula_lib/hostio.vhd".
+        FPGA_DEVICE_G = spartan6
+        TAP_USER_INSTR_G = user1
+    Summary:
+	no macro.
+Unit <BscanToHostIo> synthesized.
+
+Synthesizing Unit <HostIoHdrScanner>.
+    Related source file is "c:/xesscorp/products/xula/fpga/xula_lib/hostio.vhd".
+        ID_G = "11111111"
+        PYLD_CNTR_LENGTH_G = 32
+    Found 32-bit register for signal <pyldCntr_r>.
+    Found 1-bit register for signal <hdrRcvd_r>.
+    Found 8-bit register for signal <id_r>.
+    Found 32-bit subtractor for signal <GND_39_o_GND_39_o_sub_2_OUT<31:0>> created at line 379.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <HostIoHdrScanner> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit subtractor                                     : 1
+ 5-bit subtractor                                      : 1
+# Registers                                            : 9
+ 1-bit register                                        : 3
+ 16-bit register                                       : 1
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+ 5-bit register                                        : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 12
+ 1-bit 2-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 5
+ 32-bit 2-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit subtractor                                     : 1
+ 5-bit subtractor                                      : 1
+# Registers                                            : 69
+ Flip-Flops                                            : 69
+# Multiplexers                                         : 12
+ 1-bit 2-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 5
+ 32-bit 2-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SdcardSfwTest> ...
+
+Optimizing unit <HostIoToDut> ...
+WARNING:Xst:1710 - FF/Latch <shiftReg_r_9> (without init value) has a constant value of 0 in block <HostIoToDut>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <shiftReg_r_10> (without init value) has a constant value of 0 in block <HostIoToDut>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <shiftReg_r_11> (without init value) has a constant value of 0 in block <HostIoToDut>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <shiftReg_r_12> (without init value) has a constant value of 0 in block <HostIoToDut>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <shiftReg_r_13> (without init value) has a constant value of 0 in block <HostIoToDut>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <shiftReg_r_14> (without init value) has a constant value of 0 in block <HostIoToDut>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <shiftReg_r_15> (without init value) has a constant value of 0 in block <HostIoToDut>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <HostIoHdrScanner> ...
+WARNING:Xst:2677 - Node <u1/activateClk_r> of sequential type is unconnected in block <SdcardSfwTest>.
+INFO:Xst:2261 - The FF/Latch <u1/shiftReg_r_8> in Unit <SdcardSfwTest> is equivalent to the following FF/Latch, which will be removed : <u1/bitCntr_r_4> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SdcardSfwTest, actual ratio is 0.
+FlipFlop u1/UHdrScanner/hdrRcvd_r has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : SdcardSfwTest.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 171
+#      GND                         : 1
+#      INV                         : 32
+#      LUT1                        : 1
+#      LUT2                        : 3
+#      LUT3                        : 2
+#      LUT4                        : 44
+#      LUT5                        : 7
+#      LUT6                        : 17
+#      MUXCY                       : 31
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 61
+#      FD                          : 43
+#      FDE                         : 3
+#      FDRE                        : 13
+#      FDSE                        : 2
+# IO Buffers                       : 5
+#      IBUF                        : 1
+#      OBUF                        : 4
+# Others                           : 1
+#      BSCAN_SPARTAN6              : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx25ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              61  out of  30064     0%  
+ Number of Slice LUTs:                  106  out of  15032     0%  
+    Number used as Logic:               106  out of  15032     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    111
+   Number with an unused Flip Flop:      50  out of    111    45%  
+   Number with an unused LUT:             5  out of    111     4%  
+   Number of fully used LUT-FF pairs:    56  out of    111    50%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    186     2%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+u1/drck_s                          | NONE(u1/vectorToDut_o_2)| 61    |
+-----------------------------------+-------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.988ns (Maximum Frequency: 167.001MHz)
+   Minimum input arrival time before clock: 2.923ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u1/drck_s'
+  Clock period: 5.988ns (frequency: 167.001MHz)
+  Total number of paths / destination ports: 2339 / 92
+-------------------------------------------------------------------------
+Delay:               5.988ns (Levels of Logic = 4)
+  Source:            u1/UHdrScanner/pyldCntr_r_0 (FF)
+  Destination:       u1/UHdrScanner/pyldCntr_r_31 (FF)
+  Source Clock:      u1/drck_s rising
+  Destination Clock: u1/drck_s rising
+
+  Data Path: u1/UHdrScanner/pyldCntr_r_0 to u1/UHdrScanner/pyldCntr_r_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.525   1.196  u1/UHdrScanner/pyldCntr_r_0 (u1/UHdrScanner/pyldCntr_r_0)
+     LUT6:I1->O            1   0.254   1.112  u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o1 (u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o1)
+     LUT6:I1->O            4   0.254   0.804  u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o7 (u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o7)
+     LUT4:I3->O           19   0.254   1.261  u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o8_1 (u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o8)
+     LUT4:I3->O            1   0.254   0.000  u1/UHdrScanner/Mmux_GND_39_o_PWR_13_o_mux_5_OUT221 (u1/UHdrScanner/GND_39_o_PWR_13_o_mux_5_OUT<29>)
+     FD:D                      0.074          u1/UHdrScanner/pyldCntr_r_29
+    ----------------------------------------
+    Total                      5.988ns (1.615ns logic, 4.373ns route)
+                                       (27.0% logic, 73.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u1/drck_s'
+  Total number of paths / destination ports: 131 / 46
+-------------------------------------------------------------------------
+Offset:              2.923ns (Levels of Logic = 2)
+  Source:            u1/USimple.UBscanHostIo/spartan6_bscan.UBscanUser:SHIFT (PAD)
+  Destination:       u1/UHdrScanner/pyldCntr_r_31 (FF)
+  Destination Clock: u1/drck_s rising
+
+  Data Path: u1/USimple.UBscanHostIo/spartan6_bscan.UBscanUser:SHIFT to u1/UHdrScanner/pyldCntr_r_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SHIFT    4   0.000   1.080  u1/USimple.UBscanHostIo/spartan6_bscan.UBscanUser (u1/USimple.UBscanHostIo/bscanShift_s)
+     LUT4:I0->O           19   0.254   1.261  u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o8_1 (u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o8)
+     LUT4:I3->O            1   0.254   0.000  u1/UHdrScanner/Mmux_GND_39_o_PWR_13_o_mux_5_OUT221 (u1/UHdrScanner/GND_39_o_PWR_13_o_mux_5_OUT<29>)
+     FD:D                      0.074          u1/UHdrScanner/pyldCntr_r_29
+    ----------------------------------------
+    Total                      2.923ns (0.582ns logic, 2.341ns route)
+                                       (19.9% logic, 80.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u1/drck_s'
+  Total number of paths / destination ports: 13 / 4
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            u1/vectorToDut_o_0 (FF)
+  Destination:       usdflashCs_bo (PAD)
+  Source Clock:      u1/drck_s rising
+
+  Data Path: u1/vectorToDut_o_0 to usdflashCs_bo
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.525   0.681  u1/vectorToDut_o_0 (u1/vectorToDut_o_0)
+     OBUF:I->O                 2.912          usdflashCs_bo_OBUF (usdflashCs_bo)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock u1/drck_s
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+u1/drck_s      |    5.988|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.30 secs
+ 
+--> 
+
+Total memory usage is 268740 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

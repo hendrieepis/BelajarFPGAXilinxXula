@@ -1,0 +1,7 @@
+vhdl work ../../../XS_LIB/common.vhd
+vhdl work ../../../XS_LIB/randgen.vhd
+vhdl work ../../../XS_LIB/memtest.vhd
+vhdl work ../../../XS_LIB/sdramcntl.vhd
+vhdl work ../../XSA_LIB/xsasdramcntl.vhd
+vhdl work ../../XSA_LIB/test_dualport_core.vhd
+vhdl work test_dualport.vhd

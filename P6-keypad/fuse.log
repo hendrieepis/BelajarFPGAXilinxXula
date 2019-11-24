@@ -1,0 +1,26 @@
+Running: /opt/Xilinx/14.4/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -o /home/hendri/Documents/workspaceXilinx/P6-keypad/keypadTestbench_isim_beh.exe -prj /home/hendri/Documents/workspaceXilinx/P6-keypad/keypadTestbench_beh.prj work.keypadTestbench 
+ISim P.49d (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/hendri/Documents/workspaceXilinx/P6-keypad/keypad.vhd" into library work
+Parsing VHDL file "/home/hendri/Documents/workspaceXilinx/P6-keypad/keypadTestbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 46448 KB
+Fuse CPU Usage: 2620 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package vcomponents
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture behavioral of entity keypad [keypad_default]
+Compiling architecture behavior of entity keypadtestbench
+Time Resolution for simulation is 1ps.
+Compiled 11 VHDL Units
+Built simulation executable /home/hendri/Documents/workspaceXilinx/P6-keypad/keypadTestbench_isim_beh.exe
+Fuse Memory Usage: 65420 KB
+Fuse CPU Usage: 2990 ms
+GCC CPU Usage: 630 ms

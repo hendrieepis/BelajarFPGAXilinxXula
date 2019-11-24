@@ -1,0 +1,5 @@
+set -tmpdir "/home/hendri/Documents/workspaceXilinx/counterinv/xst/projnav.tmp"
+set -xsthdpdir "/home/hendri/Documents/workspaceXilinx/counterinv/xst"
+elaborate
+-ifn inverter.prj
+-ifmt mixed

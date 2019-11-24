@@ -1,0 +1,2 @@
+vhdl work "netgen/par/ROM_timesim.vhd"
+vhdl work "ROMtestbench.vhd"

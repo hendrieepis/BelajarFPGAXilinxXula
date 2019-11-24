@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrlTestBench_isim_beh.exe" -prj "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrlTestBench_beh.prj" "work.SdCardCtrlTestBench" 

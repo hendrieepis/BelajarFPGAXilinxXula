@@ -1,0 +1,102 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity keypad is
+  Port(
+    reset : in STD_LOGIC;
+    keyIn   : in STD_LOGIC_VECTOR(3 downto 0);
+    keyOut : out STD_LOGIC_VECTOR(3 downto 0);
+    dataout : out STD_LOGIC_VECTOR(7 downto 0);
+    clk : in STD_LOGIC);
+end keypad;
+
+architecture Behavioral of keypad is
+  signal counter : integer := 0;
+begin
+-- purpose: get keypad data type : sequential inputs : clk, reset outputs: dataout
+  process(clk, reset)
+  begin -- process keypad
+    if reset = '0' then -- asynchronous reset (active low)
+      dataout <= "00000000";
+    elsif clk'event and clk = '1' then -- rising clock edge
+      counter <= counter + 1;
+      case counter is
+        when 0 =>
+          keyOut <= "0111";
+        when 1 =>
+          if keyIn = "0111" then
+            dataout <= "00000001";
+          elsif keyIn = "1011" then
+            dataout <= "00000010";
+          elsif keyIn = "1101" then
+            dataout <= "00000011";
+          elsif keyIn = "1110" then
+            dataout <= "00000100";
+          end if;
+        when 2 =>
+          if keyIn = "0111" then
+            dataout <= "00000001";
+          elsif keyIn = "1011" then
+            dataout <= "00000010";
+          elsif keyIn = "1101" then
+            dataout <= "00000011";
+          elsif keyIn = "1110" then
+            dataout <= "00000100";
+          end if;
+        when 3 =>
+          if keyIn = "0111" then
+            dataout <= "00000001";
+          elsif keyIn = "1011" then
+            dataout <= "00000010";
+          elsif keyIn = "1101" then
+            dataout <= "00000011";
+          elsif keyIn = "1110" then
+            dataout <= "00000100";
+          end if;
+        when 4 =>
+          if keyIn = "0111" then
+            dataout <= "00000001";
+          elsif keyIn = "1011" then
+            dataout <= "00000010";
+          elsif keyIn = "1101" then
+            dataout <= "00000011";
+          elsif keyIn = "1110" then
+            dataout <= "00000100";
+          end if;
+        when 5 =>
+          if keyIn = "0111" then
+            dataout <= "00000001";
+          elsif keyIn = "1011" then
+            dataout <= "00000010";
+          elsif keyIn = "1101" then
+            dataout <= "00000011";
+          elsif keyIn = "1110" then
+            dataout <= "00000100";
+          end if;
+        when 6 =>
+          if keyIn = "0111" then
+            dataout <= "00000001";
+          elsif keyIn = "1011" then
+            dataout <= "00000010";
+          elsif keyIn = "1101" then
+            dataout <= "00000011";
+          elsif keyIn = "1110" then
+            dataout <= "00000100";
+          end if;
+        when 7 =>
+          if keyIn = "0111" then
+            dataout <= "00000001";
+          elsif keyIn = "1011" then
+            dataout <= "00000010";
+          elsif keyIn = "1101" then
+            dataout <= "00000011";
+          elsif keyIn = "1110" then
+            dataout <= "00000100";
+          end if;
+        when others => null;
+      end case;
+    end if;
+  end process;
+
+end Behavioral;
+

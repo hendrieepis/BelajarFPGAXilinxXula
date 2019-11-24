@@ -1,0 +1,59 @@
+--------------------------------------------------------------------------------
+Release 6.3.03i Trace G.38
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+
+C:/ISE6/bin/nt/trce.exe -intstyle ise -e 3 -l 3 -xml audio audio.ncd -o
+audio.twr audio.pcf
+
+
+Design file:              audio.ncd
+Physical constraint file: audio.pcf
+Device,speed:             xc3s1000,-5 (ADVANCED 1.35 2004-11-11)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  |  Clock |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) |  Phase |
+------------+------------+------------+------------------+--------+
+sdto        |    3.344(R)|   -1.221(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  |  Clock |
+Destination | to PAD     |Internal Clock(s) |  Phase |
+------------+------------+------------------+--------+
+lrck        |    8.783(R)|clk_BUFGP         |   0.000|
+mclk        |    8.503(R)|clk_BUFGP         |   0.000|
+sclk        |    8.618(R)|clk_BUFGP         |   0.000|
+sdti        |    6.323(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.158|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Analysis completed Tue Aug 17 14:09:23 2010
+--------------------------------------------------------------------------------
+
+Peak Memory Usage: 69 MB

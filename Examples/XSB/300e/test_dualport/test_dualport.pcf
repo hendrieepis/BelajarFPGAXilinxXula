@@ -1,0 +1,172 @@
+SCHEMATIC START ;
+// created by map version G.38 on Fri Jun 17 15:45:47 2005 
+COMP "pb_lb_n" LOCATE =  SITE "P140" LEVEL 1; 
+COMP "pb_ub_n" LOCATE =  SITE "P146" LEVEL 1; 
+COMP "sdram_cke" LOCATE =  SITE "P99" LEVEL 1; 
+COMP "sdram_clk" LOCATE =  SITE "P80" LEVEL 1; 
+COMP "fpga_init_n" LOCATE =  SITE "P107" LEVEL 1; 
+COMP "sdram_cas_n" LOCATE =  SITE "P96" LEVEL 1; 
+COMP "sdram_ce_n" LOCATE =  SITE "P98" LEVEL 1; 
+COMP "pb_a<10>" LOCATE =  SITE "P102" LEVEL 1; 
+COMP "pb_a<11>" LOCATE =  SITE "P109" LEVEL 1; 
+COMP "pb_a<12>" LOCATE =  SITE "P110" LEVEL 1; 
+COMP "pb_a<13>" LOCATE =  SITE "P111" LEVEL 1; 
+COMP "pb_a<14>" LOCATE =  SITE "P112" LEVEL 1; 
+COMP "pb_a<19>" LOCATE =  SITE "P122" LEVEL 1; 
+COMP "pb_d<10>" LOCATE =  SITE "P132" LEVEL 1; 
+COMP "pb_d<11>" LOCATE =  SITE "P133" LEVEL 1; 
+COMP "pb_d<12>" LOCATE =  SITE "P134" LEVEL 1; 
+COMP "pb_d<13>" LOCATE =  SITE "P136" LEVEL 1; 
+COMP "pb_d<14>" LOCATE =  SITE "P138" LEVEL 1; 
+COMP "pb_d<15>" LOCATE =  SITE "P139" LEVEL 1; 
+COMP "pb_a<0>" LOCATE =  SITE "P83" LEVEL 1; 
+COMP "pb_a<1>" LOCATE =  SITE "P84" LEVEL 1; 
+COMP "pb_a<2>" LOCATE =  SITE "P86" LEVEL 1; 
+COMP "pb_a<3>" LOCATE =  SITE "P87" LEVEL 1; 
+COMP "pb_a<4>" LOCATE =  SITE "P88" LEVEL 1; 
+COMP "pb_a<5>" LOCATE =  SITE "P89" LEVEL 1; 
+COMP "pb_a<6>" LOCATE =  SITE "P93" LEVEL 1; 
+COMP "pb_a<7>" LOCATE =  SITE "P94" LEVEL 1; 
+COMP "pb_a<8>" LOCATE =  SITE "P100" LEVEL 1; 
+COMP "pb_a<9>" LOCATE =  SITE "P101" LEVEL 1; 
+COMP "pb_d<0>" LOCATE =  SITE "P153" LEVEL 1; 
+COMP "pb_d<1>" LOCATE =  SITE "P145" LEVEL 1; 
+COMP "pb_d<2>" LOCATE =  SITE "P141" LEVEL 1; 
+COMP "pb_d<3>" LOCATE =  SITE "P135" LEVEL 1; 
+COMP "pb_d<4>" LOCATE =  SITE "P126" LEVEL 1; 
+COMP "pb_d<5>" LOCATE =  SITE "P120" LEVEL 1; 
+COMP "pb_d<6>" LOCATE =  SITE "P116" LEVEL 1; 
+COMP "pb_d<7>" LOCATE =  SITE "P108" LEVEL 1; 
+COMP "pb_d<8>" LOCATE =  SITE "P127" LEVEL 1; 
+COMP "pb_d<9>" LOCATE =  SITE "P129" LEVEL 1; 
+COMP "sdram_ras_n" LOCATE =  SITE "P97" LEVEL 1; 
+COMP "sdram_we_n" LOCATE =  SITE "P95" LEVEL 1; 
+TIMEGRP "sdram_clk" = BEL "u0_u2_state_r_FFd2" BEL "u0_rst_i" BEL 
+"u0_u2_state_r_FFd4" BEL "u0_u2_cmd_r_0" BEL "u0_u2_cmd_r_4" BEL 
+"u0_u2_state_r_FFd3" BEL "u0_rstCnt_7" BEL "u0_divCnt_0" BEL "u0_divCnt_1" BEL 
+"u0_divCnt_2" BEL "u0_divCnt_3" BEL "u0_divCnt_4" BEL "u0_divCnt_5" BEL 
+"u0_divCnt_6" BEL "u0_divCnt_7" BEL "u0_divCnt_8" BEL "u0_divCnt_9" BEL 
+"u0_divCnt_10" BEL "u0_divCnt_11" BEL "u0_divCnt_12" BEL "u0_divCnt_13" BEL 
+"u0_divCnt_14" BEL "u0_divCnt_15" BEL "u0_divCnt_16" BEL "u0_rstCnt_8" BEL 
+"u0_rstCnt_0" BEL "u0_rstCnt_1" BEL "u0_rstCnt_2" BEL "u0_rstCnt_3" BEL 
+"u0_rstCnt_4" BEL "u0_rstCnt_5" BEL "u0_rstCnt_6" BEL 
+"u0_fast_memtest_port0_addr_r_22" BEL "u0_fast_memtest_port0_err_r" BEL 
+"u0_fast_memtest_port0_u0_r_r_13" BEL "u0_fast_memtest_port1_state_r_FFd3" BEL 
+"u0_fast_memtest_port0_addr_r_20" BEL "u0_fast_memtest_port0_addr_r_21" BEL 
+"u0_fast_memtest_port0_addr_r_0" BEL "u0_fast_memtest_port0_addr_r_1" BEL 
+"u0_fast_memtest_port0_addr_r_2" BEL "u0_fast_memtest_port0_addr_r_3" BEL 
+"u0_fast_memtest_port0_addr_r_4" BEL "u0_fast_memtest_port0_addr_r_5" BEL 
+"u0_fast_memtest_port0_addr_r_6" BEL "u0_fast_memtest_port0_addr_r_7" BEL 
+"u0_fast_memtest_port0_addr_r_8" BEL "u0_fast_memtest_port0_addr_r_9" BEL 
+"u0_fast_memtest_port0_addr_r_10" BEL "u0_fast_memtest_port0_addr_r_11" BEL 
+"u0_fast_memtest_port0_addr_r_12" BEL "u0_fast_memtest_port0_addr_r_13" BEL 
+"u0_fast_memtest_port0_addr_r_14" BEL "u0_fast_memtest_port0_addr_r_15" BEL 
+"u0_fast_memtest_port0_addr_r_16" BEL "u0_fast_memtest_port0_addr_r_17" BEL 
+"u0_fast_memtest_port0_addr_r_18" BEL "u0_fast_memtest_port0_addr_r_19" BEL 
+"u0_fast_memtest_port0_u0_r_r_14" BEL "u0_fast_memtest_port0_u0_r_r_15" BEL 
+"u0_fast_memtest_port0_u0_r_r_0" BEL "u0_fast_memtest_port0_u0_r_r_1" BEL 
+"u0_fast_memtest_port0_u0_r_r_2" BEL "u0_fast_memtest_port0_u0_r_r_3" BEL 
+"u0_fast_memtest_port0_u0_r_r_4" BEL "u0_fast_memtest_port0_u0_r_r_5" BEL 
+"u0_fast_memtest_port0_u0_r_r_6" BEL "u0_fast_memtest_port0_u0_r_r_7" BEL 
+"u0_fast_memtest_port0_u0_r_r_8" BEL "u0_fast_memtest_port0_u0_r_r_9" BEL 
+"u0_fast_memtest_port0_u0_r_r_10" BEL "u0_fast_memtest_port0_u0_r_r_11" BEL 
+"u0_fast_memtest_port0_u0_r_r_12" BEL "u0_fast_memtest_port0_state_r_FFd3" BEL 
+"u0_fast_memtest_port0_state_r_FFd5" BEL "u0_fast_memtest_port0_state_r_FFd2" 
+BEL "u0_fast_memtest_port1_addr_r_22" BEL "u0_fast_memtest_port1_err_r" BEL 
+"u0_fast_memtest_port1_u0_r_r_13" BEL "u0_fast_memtest_port1_addr_r_20" BEL 
+"u0_fast_memtest_port1_addr_r_21" BEL "u0_fast_memtest_port1_addr_r_0" BEL 
+"u0_fast_memtest_port1_addr_r_1" BEL "u0_fast_memtest_port1_addr_r_2" BEL 
+"u0_fast_memtest_port1_addr_r_3" BEL "u0_fast_memtest_port1_addr_r_4" BEL 
+"u0_fast_memtest_port1_addr_r_5" BEL "u0_fast_memtest_port1_addr_r_6" BEL 
+"u0_fast_memtest_port1_addr_r_7" BEL "u0_fast_memtest_port1_addr_r_8" BEL 
+"u0_fast_memtest_port1_addr_r_9" BEL "u0_fast_memtest_port1_addr_r_10" BEL 
+"u0_fast_memtest_port1_addr_r_11" BEL "u0_fast_memtest_port1_addr_r_12" BEL 
+"u0_fast_memtest_port1_addr_r_13" BEL "u0_fast_memtest_port1_addr_r_14" BEL 
+"u0_fast_memtest_port1_addr_r_15" BEL "u0_fast_memtest_port1_addr_r_16" BEL 
+"u0_fast_memtest_port1_addr_r_17" BEL "u0_fast_memtest_port1_addr_r_18" BEL 
+"u0_fast_memtest_port1_addr_r_19" BEL "u0_fast_memtest_port1_state_r_FFd4" BEL 
+"u0_fast_memtest_port1_u0_r_r_14" BEL "u0_fast_memtest_port1_u0_r_r_15" BEL 
+"u0_fast_memtest_port1_u0_r_r_0" BEL "u0_fast_memtest_port1_u0_r_r_1" BEL 
+"u0_fast_memtest_port1_u0_r_r_2" BEL "u0_fast_memtest_port1_u0_r_r_3" BEL 
+"u0_fast_memtest_port1_u0_r_r_4" BEL "u0_fast_memtest_port1_u0_r_r_5" BEL 
+"u0_fast_memtest_port1_u0_r_r_6" BEL "u0_fast_memtest_port1_u0_r_r_7" BEL 
+"u0_fast_memtest_port1_u0_r_r_8" BEL "u0_fast_memtest_port1_u0_r_r_9" BEL 
+"u0_fast_memtest_port1_u0_r_r_10" BEL "u0_fast_memtest_port1_u0_r_r_11" BEL 
+"u0_fast_memtest_port1_u0_r_r_12" BEL "u0_fast_memtest_port0_state_r_FFd4" BEL 
+"u0_fast_memtest_port1_state_r_FFd2" BEL "u0_u2_state_r_FFd1" BEL 
+"u0_u2_state_r_FFd8" BEL "u0_u2_refTimer_r_7" BEL "u0_u1_slot_r_13" BEL 
+"u0_u1_door_r_0" BEL "u0_u2_refTimer_r_6" BEL "u0_u1_port_r_0" BEL 
+"u0_u2_refTimer_r_5" BEL "u0_u1_slot_r_15" BEL "u0_u1_slot_r_14" BEL 
+"u0_u1_slot_r_0" BEL "u0_u1_slot_r_1" BEL "u0_u1_slot_r_2" BEL "u0_u1_slot_r_3" 
+BEL "u0_u1_slot_r_4" BEL "u0_u1_slot_r_5" BEL "u0_u1_slot_r_6" BEL 
+"u0_u1_slot_r_7" BEL "u0_u1_slot_r_8" BEL "u0_u1_slot_r_9" BEL "u0_u1_slot_r_10"
+ BEL "u0_u1_slot_r_11" BEL "u0_u1_slot_r_12" BEL "u0_u2_state_r_FFd5" BEL 
+"u0_u2_timer_r_12" BEL "u0_u2_ba_r_1" BEL "u0_u2_timer_r_1" BEL "u0_u2_cmd_r_3" 
+BEL "u0_u2_cke_r" BEL "u0_u2_rfshCntr_r_9" BEL "u0_u2_rfshCntr_r_10" BEL 
+"u0_u2_refTimer_r_4" BEL "u0_u2_rdPipeline_r_4" BEL "u0_u2_rfshCntr_r_11" BEL 
+"u0_u2_timer_r_0" BEL "u0_u2_refTimer_r_3" BEL "u0_u2_timer_r_9" BEL 
+"u0_u2_hDOutOppPhase_r_15" BEL "u0_u2_activeRow_r_3_11" BEL 
+"u0_u2_activeRow_r_2_11" BEL "u0_u2_timer_r_11" BEL "u0_u2_refTimer_r_2" BEL 
+"u0_u2_refTimer_r_1" BEL "u0_u2_refTimer_r_0" BEL "u0_u2_refTimer_r_9" BEL 
+"u0_u2_refTimer_r_10" BEL "u0_u2_cmd_r_2" BEL "u0_u2_activeRow_r_1_11" BEL 
+"u0_u2_timer_r_5" BEL "u0_u2_timer_r_6" BEL "u0_u2_activeRow_r_0_11" BEL 
+"u0_u2_nopCntr_r_13" BEL "u0_u2_hDOut_r_15" BEL "u0_u2_wrTimer_r_1" BEL 
+"u0_u2_sDataDir_r" BEL "u0_u2_rasTimer_r_2" BEL "u0_u2_sData_r_15" BEL 
+"u0_u2_refTimer_r_8" BEL "u0_u2_timer_r_7" BEL "u0_u2_timer_r_8" BEL 
+"u0_u2_timer_r_4" BEL "u0_u2_timer_r_3" BEL "u0_u2_timer_r_2" BEL 
+"u0_u2_state_r_FFd7" BEL "u0_u2_activeFlag_r_3" BEL "u0_u2_rfshCntr_r_12" BEL 
+"u0_u2_timer_r_13" BEL "u0_u2_timer_r_10" BEL "u0_u2_sAddr_r_0" BEL 
+"u0_u2_sAddr_r_1" BEL "u0_u2_sAddr_r_2" BEL "u0_u2_sAddr_r_3" BEL 
+"u0_u2_sAddr_r_4" BEL "u0_u2_sAddr_r_5" BEL "u0_u2_sAddr_r_6" BEL 
+"u0_u2_sAddr_r_7" BEL "u0_u2_sAddr_r_8" BEL "u0_u2_sAddr_r_9" BEL 
+"u0_u2_sAddr_r_10" BEL "u0_u2_sAddr_r_11" BEL "u0_u2_ba_r_0" BEL 
+"u0_u2_rdPipeline_r_0" BEL "u0_u2_rdPipeline_r_1" BEL "u0_u2_rdPipeline_r_2" 
+BEL "u0_u2_rdPipeline_r_3" BEL "u0_u2_hDOutOppPhase_r_0" BEL 
+"u0_u2_hDOutOppPhase_r_1" BEL "u0_u2_hDOutOppPhase_r_2" BEL 
+"u0_u2_hDOutOppPhase_r_3" BEL "u0_u2_hDOutOppPhase_r_4" BEL 
+"u0_u2_hDOutOppPhase_r_5" BEL "u0_u2_hDOutOppPhase_r_6" BEL 
+"u0_u2_hDOutOppPhase_r_7" BEL "u0_u2_hDOutOppPhase_r_8" BEL 
+"u0_u2_hDOutOppPhase_r_9" BEL "u0_u2_hDOutOppPhase_r_10" BEL 
+"u0_u2_hDOutOppPhase_r_11" BEL "u0_u2_hDOutOppPhase_r_12" BEL 
+"u0_u2_hDOutOppPhase_r_13" BEL "u0_u2_hDOutOppPhase_r_14" BEL 
+"u0_u2_activeRow_r_3_0" BEL "u0_u2_activeRow_r_3_1" BEL "u0_u2_activeRow_r_3_2" 
+BEL "u0_u2_activeRow_r_3_3" BEL "u0_u2_activeRow_r_3_4" BEL 
+"u0_u2_activeRow_r_3_5" BEL "u0_u2_activeRow_r_3_6" BEL "u0_u2_activeRow_r_3_7" 
+BEL "u0_u2_activeRow_r_3_8" BEL "u0_u2_activeRow_r_3_9" BEL 
+"u0_u2_activeRow_r_3_10" BEL "u0_u2_activeRow_r_2_0" BEL "u0_u2_activeRow_r_2_1"
+ BEL "u0_u2_activeRow_r_2_2" BEL "u0_u2_activeRow_r_2_3" BEL 
+"u0_u2_activeRow_r_2_4" BEL "u0_u2_activeRow_r_2_5" BEL "u0_u2_activeRow_r_2_6" 
+BEL "u0_u2_activeRow_r_2_7" BEL "u0_u2_activeRow_r_2_8" BEL 
+"u0_u2_activeRow_r_2_9" BEL "u0_u2_activeRow_r_2_10" BEL "u0_u2_activeRow_r_1_0"
+ BEL "u0_u2_activeRow_r_1_1" BEL "u0_u2_activeRow_r_1_2" BEL 
+"u0_u2_activeRow_r_1_3" BEL "u0_u2_activeRow_r_1_4" BEL "u0_u2_activeRow_r_1_5" 
+BEL "u0_u2_activeRow_r_1_6" BEL "u0_u2_activeRow_r_1_7" BEL 
+"u0_u2_activeRow_r_1_8" BEL "u0_u2_activeRow_r_1_9" BEL "u0_u2_activeRow_r_1_10"
+ BEL "u0_u2_activeRow_r_0_0" BEL "u0_u2_activeRow_r_0_1" BEL 
+"u0_u2_activeRow_r_0_2" BEL "u0_u2_activeRow_r_0_3" BEL "u0_u2_activeRow_r_0_4" 
+BEL "u0_u2_activeRow_r_0_5" BEL "u0_u2_activeRow_r_0_6" BEL 
+"u0_u2_activeRow_r_0_7" BEL "u0_u2_activeRow_r_0_8" BEL "u0_u2_activeRow_r_0_9" 
+BEL "u0_u2_activeRow_r_0_10" BEL "u0_u2_nopCntr_r_0" BEL "u0_u2_nopCntr_r_1" 
+BEL "u0_u2_nopCntr_r_2" BEL "u0_u2_nopCntr_r_3" BEL "u0_u2_nopCntr_r_4" BEL 
+"u0_u2_nopCntr_r_5" BEL "u0_u2_nopCntr_r_6" BEL "u0_u2_nopCntr_r_7" BEL 
+"u0_u2_nopCntr_r_8" BEL "u0_u2_nopCntr_r_9" BEL "u0_u2_nopCntr_r_10" BEL 
+"u0_u2_nopCntr_r_11" BEL "u0_u2_nopCntr_r_12" BEL "u0_u2_hDOut_r_0" BEL 
+"u0_u2_hDOut_r_1" BEL "u0_u2_hDOut_r_2" BEL "u0_u2_hDOut_r_3" BEL 
+"u0_u2_hDOut_r_4" BEL "u0_u2_hDOut_r_5" BEL "u0_u2_hDOut_r_6" BEL 
+"u0_u2_hDOut_r_7" BEL "u0_u2_hDOut_r_8" BEL "u0_u2_hDOut_r_9" BEL 
+"u0_u2_hDOut_r_10" BEL "u0_u2_hDOut_r_11" BEL "u0_u2_hDOut_r_12" BEL 
+"u0_u2_hDOut_r_13" BEL "u0_u2_hDOut_r_14" BEL "u0_u2_wrTimer_r_0" BEL 
+"u0_u2_rasTimer_r_0" BEL "u0_u2_rasTimer_r_1" BEL "u0_u2_sData_r_0" BEL 
+"u0_u2_sData_r_1" BEL "u0_u2_sData_r_2" BEL "u0_u2_sData_r_3" BEL 
+"u0_u2_sData_r_4" BEL "u0_u2_sData_r_5" BEL "u0_u2_sData_r_6" BEL 
+"u0_u2_sData_r_7" BEL "u0_u2_sData_r_8" BEL "u0_u2_sData_r_9" BEL 
+"u0_u2_sData_r_10" BEL "u0_u2_sData_r_11" BEL "u0_u2_sData_r_12" BEL 
+"u0_u2_sData_r_13" BEL "u0_u2_sData_r_14" BEL "u0_u2_activeFlag_r_0" BEL 
+"u0_u2_activeFlag_r_1" BEL "u0_u2_activeFlag_r_2" BEL "u0_u2_rfshCntr_r_0" BEL 
+"u0_u2_rfshCntr_r_1" BEL "u0_u2_rfshCntr_r_2" BEL "u0_u2_rfshCntr_r_3" BEL 
+"u0_u2_rfshCntr_r_4" BEL "u0_u2_rfshCntr_r_5" BEL "u0_u2_rfshCntr_r_6" BEL 
+"u0_u2_rfshCntr_r_7" BEL "u0_u2_rfshCntr_r_8" BEL "u0_u2_state_r_FFd6" BEL 
+"u0_u1_port_r_0_1" BEL "u0_u1_port_r_0_2" BEL "u0_u1_port_r_0_3" BEL 
+"u0_u2_rdPipeline_r_1_1" BEL "u0_u1_port_r_0_4" BEL "u0_rst_i_1" ;
+TS_sdram_clk = PERIOD TIMEGRP "sdram_clk"  10 nS   HIGH 50.000000 % ;
+SCHEMATIC END ;

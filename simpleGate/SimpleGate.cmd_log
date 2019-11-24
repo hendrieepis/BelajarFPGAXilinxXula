@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/simpleGate/SimpleGate.xst" -ofn "/home/hendri/Documents/workspaceXilinx/simpleGate/SimpleGate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-4 SimpleGate.ngc SimpleGate.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o SimpleGate_map.ncd SimpleGate.ngd SimpleGate.pcf 
+par -w -intstyle ise -ol high -t 1 SimpleGate_map.ncd SimpleGate.ncd SimpleGate.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SimpleGate.twx SimpleGate.ncd -o SimpleGate.twr SimpleGate.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-4 SimpleGate.ngc SimpleGate.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o SimpleGate_map.ncd SimpleGate.ngd SimpleGate.pcf 
+par -w -intstyle ise -ol high -t 1 SimpleGate_map.ncd SimpleGate.ncd SimpleGate.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SimpleGate.twx SimpleGate.ncd -o SimpleGate.twr SimpleGate.pcf 
+bitgen -intstyle ise -f SimpleGate.ut SimpleGate.ncd 

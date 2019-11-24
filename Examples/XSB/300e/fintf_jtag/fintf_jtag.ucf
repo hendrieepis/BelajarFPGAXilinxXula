@@ -1,0 +1,35 @@
+# Flash pin assignments for the FPGA on the xsb-300e Board
+
+net fpga_init_n		loc=p107;
+net clkin           loc=p80;
+net pb_d<1>			loc=p145;
+net pb_d<0>			loc=p153;
+net pb_d<2>			loc=p141;
+net pb_d<3>			loc=p135;
+net pb_d<4>			loc=p126;
+net pb_d<5>			loc=p120;
+net pb_d<6>			loc=p116;
+net pb_d<7>			loc=p108;
+net pb_a<0>			loc=p83;
+net pb_a<1>			loc=p84;
+net pb_a<2>			loc=p86;
+net pb_a<3>			loc=p87;
+net pb_a<4>			loc=p88;
+net pb_a<5>			loc=p89;
+net pb_a<6>			loc=p93;
+net pb_a<7>			loc=p94;
+net pb_a<8>			loc=p100;
+net pb_a<9>			loc=p101;
+net pb_a<10>		loc=p102;
+net pb_a<11>		loc=p109;
+net pb_a<12>		loc=p110;
+net pb_a<13>		loc=p111;
+net pb_a<14>		loc=p112;
+net pb_a<15>		loc=p113;
+net pb_a<16>		loc=p114;
+net pb_a<17>		loc=p115;
+net pb_a<18>		loc=p121;
+#net pb_a<19>		loc=p122;
+net pb_oe_n			loc=p125;
+net pb_we_n			loc=p123;
+net flash_ce_n		loc=p57;

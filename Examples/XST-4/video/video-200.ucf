@@ -1,0 +1,90 @@
+#
+# Pin assignments for the XSA-200 Board.
+#
+
+net clk_in       loc=R8;  # 100 MHz clock signal
+net grab_frame_n loc=T8;  # pushbutton PB1
+
+# video decoder interface
+net vidin_clk    loc=A7; # clock from the video decoder 
+net vidin_y<0>   loc=C7; # pixel data (least-significant bit)
+net vidin_y<1>   loc=R16;  
+net vidin_y<2>   loc=T15;  
+net vidin_y<3>   loc=M13;  
+net vidin_y<4>   loc=A10; 
+net vidin_y<5>   loc=A6; 
+net vidin_y<6>   loc=D7; 
+net vidin_y<7>   loc=B10; # pixel data (most-significant bit) 
+
+# bargraph LED
+net status<0>    loc=P13;  # segment 1  
+net status<1>    loc=N12;  # segment 2
+net status<2>    loc=R13;  # segment 3
+net status<3>    loc=P12;  # segment 4
+net status<4>    loc=F16; # segment 5
+net status<5>    loc=D9; # segment 6
+net status<6>    loc=A8; # segment 7
+net status<7>    loc=B7; # segment 8
+
+# VGA monitor interface
+net r<0>         loc=J1;  # red (least-significant bit)  
+net r<1>         loc=M1;  
+net r<2>         loc=T2;  # red (most-significant bit)
+net g<0>         loc=H2;  # green (least-significant bit)
+net g<1>         loc=K5;  
+net g<2>         loc=R1;  # green (most-significant bit)
+net b<0>         loc=H4;  # blue (least-significant bit)
+net b<1>         loc=K3;  
+net b<2>         loc=L5;  # blue (most-significant bit)
+net hsync_n      loc=K4;  # horizontal sync
+net vsync_n      loc=K1;  # vertical sync
+
+# SDRAM	interface
+net sclkfb       loc=N8;  # SDRAM clock fed back into the FPGA  
+net sclk         loc=J4; # clock from FPGA to SDRAM 
+net cke          loc=L1;  # clock-enable
+net cs_n         loc=J3;  # chip-select
+net ras_n        loc=J2;  # RAS
+net cas_n        loc=H3; # CAS
+net we_n         loc=G1; # write-enable
+net ba<0>        loc=K2;  # bank address 0
+net ba<1>        loc=L2;  # bank address 1
+net sAddr<0>     loc=L4;  # row/column address 0 (least-significant bit)
+net sAddr<1>     loc=N1;  
+net sAddr<2>     loc=N2;  
+net sAddr<3>     loc=M4;  
+net sAddr<4>     loc=T5;  
+net sAddr<5>     loc=N6;  
+net sAddr<6>     loc=M6;  
+net sAddr<7>     loc=T3;  
+net sAddr<8>     loc=N5;  
+net sAddr<9>     loc=P1;  
+net sAddr<10>    loc=L3;  
+net sAddr<11>    loc=M3;  
+net sAddr<12>    loc=M2;  # row/column address 12 (most-significant bit)  
+net sData<0>     loc=C2; # data bit 0 (least-significant bit)
+net sData<1>     loc=C1; 
+net sData<2>     loc=F5; 
+net sData<3>     loc=D1; 
+net sData<4>     loc=F3; 
+net sData<5>     loc=F2; 
+net sData<6>     loc=F1; 
+net sData<7>     loc=G3; 
+net sData<8>     loc=G4; 
+net sData<9>     loc=G5; 
+net sData<10>    loc=E2; 
+net sData<11>    loc=E4; 
+net sData<12>    loc=B1; 
+net sData<13>    loc=A2; 
+net sData<14>    loc=D5; 
+net sData<15>    loc=C5; # data bit 15 (most-significant bit) 
+net dqmh         loc=H1;  # qualifier for upper-byte of data bus
+net dqml         loc=G2; # qualifier for lower byte of data bus
+
+# PC-to-video decoder I2C interface (thru the CPLD)
+net lp_d<0>      loc=E13; # data bit D0 
+net lp_d<1>      loc=C16; # data bit D1
+net lp_s<3>      loc=L13;  # status bit S3
+net lp_s<4>      loc=C10; # status bit S4
+net scl          loc=P5;  # I2C clock
+net sda          loc=T4;  # I2C data to video decoder  

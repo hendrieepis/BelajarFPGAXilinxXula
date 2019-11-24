@@ -1,0 +1,3 @@
+vhdl isim_temp "../../XuLA_lib/Common.vhd"
+vhdl isim_temp "../../XuLA_lib/SDCard.vhdl"
+vhdl isim_temp "SdCardCtrlTestBench.vhd"

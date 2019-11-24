@@ -1,0 +1,9 @@
+// Created using Xilinx iMPACT Software [ISE - 11.5]
+// Date: Thu Sep 23 18:13:36 2010
+
+TRST OFF;
+ENDIR IDLE;
+ENDDR IDLE;
+STATE RESET;
+STATE IDLE;
+FREQUENCY 1E6 HZ;

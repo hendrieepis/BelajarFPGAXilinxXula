@@ -1,0 +1,32 @@
+xst -intstyle ise -ifn __projnav/test_dualport.xst -ofn test_dualport.syr
+xst -intstyle ise -ifn __projnav/test_dualport.xst -ofn test_dualport.syr
+xst -intstyle ise -ifn __projnav/test_dualport.xst -ofn test_dualport.syr
+ngdbuild -intstyle ise -dd c:\temp\bitstreams\xsb\300e\test_dualport/_ngo -uc test_dualport.ucf  -p xc2s300e-pq208-6 test_dualport.ngc test_dualport.ngd
+map -intstyle ise -p xc2s300e-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o test_dualport_map.ncd test_dualport.ngd test_dualport.pcf
+par -w -intstyle ise -ol std -t 1 test_dualport_map.ncd test_dualport.ncd test_dualport.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_dualport test_dualport.ncd -o test_dualport.twr test_dualport.pcf
+bitgen -intstyle ise -f test_dualport.ut test_dualport.ncd
+xst -intstyle ise -ifn __projnav/test_dualport.xst -ofn test_dualport.syr
+ngdbuild -intstyle ise -dd c:\temp\bitstreams\xsb\300e\test_dualport/_ngo -uc test_dualport.ucf  -p xc2s300e-pq208-6 test_dualport.ngc test_dualport.ngd
+map -intstyle ise -p xc2s300e-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o test_dualport_map.ncd test_dualport.ngd test_dualport.pcf
+par -w -intstyle ise -ol std -t 1 test_dualport_map.ncd test_dualport.ncd test_dualport.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_dualport test_dualport.ncd -o test_dualport.twr test_dualport.pcf
+bitgen -intstyle ise -f test_dualport.ut test_dualport.ncd
+xst -intstyle ise -ifn __projnav/test_dualport.xst -ofn test_dualport.syr
+ngdbuild -intstyle ise -dd c:\temp\bitstreams\xsb\300e\test_dualport/_ngo -uc test_dualport.ucf  -p xc2s300e-pq208-6 test_dualport.ngc test_dualport.ngd
+map -intstyle ise -p xc2s300e-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o test_dualport_map.ncd test_dualport.ngd test_dualport.pcf
+par -w -intstyle ise -ol std -t 1 test_dualport_map.ncd test_dualport.ncd test_dualport.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_dualport test_dualport.ncd -o test_dualport.twr test_dualport.pcf
+bitgen -intstyle ise -f test_dualport.ut test_dualport.ncd
+xst -intstyle ise -ifn __projnav/test_dualport.xst -ofn test_dualport.syr
+ngdbuild -intstyle ise -dd c:\temp\bitstreams\xsb\300e\test_dualport/_ngo -uc test_dualport.ucf  -p xc2s300e-pq208-6 test_dualport.ngc test_dualport.ngd
+map -intstyle ise -p xc2s300e-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o test_dualport_map.ncd test_dualport.ngd test_dualport.pcf
+par -w -intstyle ise -ol std -t 1 test_dualport_map.ncd test_dualport.ncd test_dualport.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_dualport test_dualport.ncd -o test_dualport.twr test_dualport.pcf
+bitgen -intstyle ise -f test_dualport.ut test_dualport.ncd
+xst -intstyle ise -ifn __projnav/test_dualport.xst -ofn test_dualport.syr
+ngdbuild -intstyle ise -dd c:\temp\bitstreams\xsb\300e\test_dualport/_ngo -uc test_dualport.ucf  -p xc2s300e-pq208-6 test_dualport.ngc test_dualport.ngd
+map -intstyle ise -p xc2s300e-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o test_dualport_map.ncd test_dualport.ngd test_dualport.pcf
+par -w -intstyle ise -ol std -t 1 test_dualport_map.ncd test_dualport.ncd test_dualport.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_dualport test_dualport.ncd -o test_dualport.twr test_dualport.pcf
+bitgen -intstyle ise -f test_dualport.ut test_dualport.ncd

@@ -1,0 +1,29 @@
+Command line:
+   keypadTestbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53273
+
+Sat Feb  2 13:00:06 2013
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 123.101 Meg
+
+ Total Signals          : 44
+ Total Nets             : 49
+ Total Signal Drivers   : 10
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 6
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 551
+Total Line Count : 48
+
+ Total Simulation Time: 507.54 sec
+
+ Current Memory Usage: 132.542 Meg
+
+Sat Feb  2 13:18:56 2013
+

@@ -1,0 +1,132 @@
+=pod
+
+=head1 XSA BOARD DESIGN FILES
+
+These are the design files for various XSA Board test applications.
+
+You can find application notes on some of these applications at
+http://www.xess.com/ho03000.html.
+
+
+=head1 APPLICATION DIRECTORIES
+
+The test applications for each XSA Board model are stored in a separate directory.
+Each directory has subdirectories, each containing a particular test application.
+The VHDL source files and pin assignments for each application are provided along with
+a WebPACK project description file so you can rebuild each application yourself.
+
+The function of the application in each subdirectory is listed below. 
+
+=over
+
+=item dwnldpar:
+
+This is the parallel port interface for the CPLD on the XSA Board. 
+
+=item dwnldpa2:
+
+This is the parallel port interface for the CPLD on the XSA-50 or XSA-100 Board when it is inserted into
+an XStend Board. 
+
+=item xessjtag
+
+This is the CPLD interface that bridges the FPGA's JTAG pins to the XSUSB module that communicates
+with the PC via USB.
+
+=item p3jtag:
+
+This is the Xilinx Parallel Cable III interface for the CPLD that lets you use iMPACT to download
+bitstreams to the XSA Board.
+
+=item p4jtag:
+
+This is the Xilinx Parallel Cable IV interface for the CPLD that lets you use iMPACT
+and a Parallel Cable IV to download bitstreams to the XSA-3S1000 Board.
+
+=item erase:
+
+Just a small SVF file that will erase the CPLD.
+
+=item fcnfg:
+
+This allows the CPLD to configure the FPGA with a bitstream stored in the Flash.
+
+=item fintf:
+
+This programs the CPLD or FPGA to create a parallel port-to-Flash upload/download interface. 
+
+=item fintf_jtag:
+
+This programs the CPLD or FPGA to create a USB-to-JTAG-to-Flash upload/download interface. 
+
+=item ramintfc:
+
+This programs the FPGA to create a parallel port-to-SDRAM upload/download interface. 
+
+=item ramintfc_jtag:
+
+This programs the FPGA to create a USB-to-JTAG-to-SDRAM upload/download interface. 
+
+=item test_board:
+
+This programs the FPGA to perform a read/write test of the SDRAM through the parallel port.
+
+=item test_board_jtag:
+
+This programs the FPGA to perform a read/write test of the SDRAM through the USB-to-JTAG ports.
+
+=item test_codec:
+
+This programs the FPGA to perform a loopback test of the codec on the XStend Board.
+
+=item test_dualport:
+
+This programs the FPGA to test memory using two independent modules that simultaneously access the SDRAM
+through a dual-port interface.
+
+=item test_kbd:
+
+This programs the FPGA to perform a test where keypresses of the digit keys on a PS/2
+keyboard are displayed on the seven-segment LED. 
+
+=item test_switches:
+
+This programs the FPGA to perform an uninteresting test where the DIP switch and pushbutton states
+affect the illumination of the seven-segment LED. 
+
+=item test_timer:
+
+This programs the FPGA to perform an uninteresting test where the top segment
+of the seven-segment LED pulses at approximately a 1 Hz rate. 
+
+=item test_vga:
+
+This programs the FPGA to with a VGA generator that will display an image stored in the SDRAM
+on a VGA monitor. 
+
+=back
+
+
+=head1 AUTHOR
+
+Dave Vanden Bout, X Engineering Software Systems Corp.
+
+Send bug reports to bugs@xess.com.
+
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2004 by X Engineering Software Systems Corporation.
+
+These applications can be freely distributed and modified
+as long as you do not remove the attributions to the author or his employer.
+
+
+=head1 HISTORY
+
+06/17/07 - Added xessjtag, fntf_jtag, ramintfc_jtag and test_board_jtag applications.
+
+11/18/04 - Initial release.
+
+
+=cut

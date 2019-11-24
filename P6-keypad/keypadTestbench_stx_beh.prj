@@ -1,0 +1,2 @@
+vhdl isim_temp "keypad.vhd"
+vhdl isim_temp "keypadTestbench.vhd"

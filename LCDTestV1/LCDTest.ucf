@@ -1,0 +1,9 @@
+NET "en" LOC = P62;
+NET "dataLCD<0>" LOC = P72;
+NET "dataLCD<1>" LOC = P73;
+NET "dataLCD<2>" LOC = P83;
+NET "dataLCD<3>" LOC = P84;
+NET "rs" LOC = p61;
+NET "clock" LOC = P43;
+NET "reset" LOC = P44;
+#halo apa kabar NET "reset" PULLUP;

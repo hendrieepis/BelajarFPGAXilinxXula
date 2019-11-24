@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\xesscorp\PRODUCTS\StickIt\modules\LedDigits\FPGA\LedDigits\impact.xsl
+OUTFILE=C:\xesscorp\PRODUCTS\StickIt\modules\LedDigits\FPGA\LedDigits\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\xesscorp\PRODUCTS\StickIt\modules\LedDigits\FPGA\LedDigits
+LICENSE=iMPACT
+USER_INFO=iMPACT

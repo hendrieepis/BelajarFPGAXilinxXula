@@ -1,0 +1,18 @@
+rem perl mv_files.pl -d 100 -d 200 -d 3S1000 -d 50 -s "../../XSA_LIB/common.vhd ../../../XS_LIB/common.vhd"
+rem perl mv_files.pl -d 100 -d 200 -d 3S1000 -d 50 -s "..\\..\\XSA_LIB\\common.vhd ..\..\..\XS_LIB\common.vhd"
+rem perl mv_files.pl -d 100 -d 200 -d 3S1000 -d 50 -s "../../XSA_LIB/randgen.vhd ../../../XS_LIB/randgen.vhd"
+rem perl mv_files.pl -d 100 -d 200 -d 3S1000 -d 50 -s "..\\..\\XSA_LIB\\randgen.vhd ..\..\..\XS_LIB\randgen.vhd"
+rem perl mv_files.pl -d 100 -d 200 -d 3S1000 -d 50 -s "../../XSA_LIB/memtest.vhd ../../../XS_LIB/memtest.vhd"
+rem perl mv_files.pl -d 100 -d 200 -d 3S1000 -d 50 -s "..\\..\\XSA_LIB\\memtest.vhd ..\..\..\XS_LIB\memtest.vhd"
+rem perl mv_files.pl -d 100 -d 200 -d 3S1000 -d 50 -s "../../XSA_LIB/sdramcntl.vhd ../../../XS_LIB/sdramcntl.vhd"
+rem perl mv_files.pl -d 100 -d 200 -d 3S1000 -d 50 -s "..\\..\\XSA_LIB\\sdramcntl.vhd ..\..\..\XS_LIB\sdramcntl.vhd"
+
+perl mv_files.pl -d 300e -s "../../XSB_LIB/common.vhd ../../../XS_LIB/common.vhd"
+perl mv_files.pl -d 300e -s "..\\..\\XSB_LIB\\common.vhd ..\..\..\XS_LIB\common.vhd"
+perl mv_files.pl -d 300e -s "../../XSB_LIB/randgen.vhd ../../../XS_LIB/randgen.vhd"
+perl mv_files.pl -d 300e -s "..\\..\\XSB_LIB\\randgen.vhd ..\..\..\XS_LIB\randgen.vhd"
+perl mv_files.pl -d 300e -s "../../XSB_LIB/memtest.vhd ../../../XS_LIB/memtest.vhd"
+perl mv_files.pl -d 300e -s "..\\..\\XSB_LIB\\memtest.vhd ..\..\..\XS_LIB\memtest.vhd"
+perl mv_files.pl -d 300e -s "../../XSB_LIB/sdramcntl.vhd ../../../XS_LIB/sdramcntl.vhd"
+perl mv_files.pl -d 300e -s "..\\..\\XSB_LIB\\sdramcntl.vhd ..\..\..\XS_LIB\sdramcntl.vhd"
+

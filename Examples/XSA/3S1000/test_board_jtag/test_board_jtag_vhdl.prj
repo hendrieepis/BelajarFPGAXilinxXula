@@ -1,0 +1,8 @@
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XS_LIB\common.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XS_LIB\sdramcntl.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XS_LIB\randgen.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XS_LIB\memtest.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XSA\XSA_LIB\xsasdramcntl.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XS_LIB\userinstr_jtag.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XSA\XSA_LIB\test_board_core.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XSA\3S1000\test_board_jtag\test_board_jtag.vhd"

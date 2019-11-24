@@ -1,0 +1,31 @@
+Command line:
+   LCDTestBench_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/LCDTest_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  56851
+
+Mon Jan  7 21:15:27 2013
+
+
+ Elaboration Time: 0.21 sec
+
+ Current Memory Usage: 134.849 Meg
+
+ Total Signals          : 3838
+ Total Nets             : 2447
+ Total Signal Drivers   : 2417
+ Total Blocks           : 971
+ Total Primitive Blocks : 537
+ Total Processes        : 2419
+ Total Traceable Variables  : 5639
+ Total Scalar Nets and Variables : 20301
+Total Line Count : 8007
+
+ Total Simulation Time: 453.92 sec
+
+ Current Memory Usage: 144.368 Meg
+
+Mon Jan  7 21:25:00 2013
+

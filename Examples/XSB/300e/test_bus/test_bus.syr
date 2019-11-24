@@ -1,0 +1,297 @@
+Release 6.3.03i - xst G.38
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.61 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.61 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: test_bus.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+  5) Advanced HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : test_bus.prj
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+Verilog Include Directory          : 
+
+---- Target Parameters
+Output File Name                   : test_bus
+Output Format                      : NGC
+Target Device                      : xc2s300e-6-pq208
+
+---- Source Options
+Top Module Name                    : test_bus
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : lut
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100
+Add Generic Clock Buffer(BUFG)     : 4
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : test_bus.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+Optimize Instantiated Primitives   : NO
+tristate2logic                     : No
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/xesscorp/PRODUCTS/BITSTREAMS/XSB/300e/test_bus/test_bus.vhd in Library work.
+Entity <test_bus> (Architecture <arch>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <test_bus> (Architecture <arch>).
+Entity <test_bus> analyzed. Unit <test_bus> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <test_bus>.
+    Related source file is C:/xesscorp/PRODUCTS/BITSTREAMS/XSB/300e/test_bus/test_bus.vhd.
+WARNING:Xst:1306 - Output <pb_a<19:15>> is never assigned.
+WARNING:Xst:1778 - Inout <pb_d> is assigned but never used.
+    Found 21-bit up counter for signal <divCnt>.
+    Found 1-bit register for signal <rst_i>.
+    Found 9-bit up counter for signal <rstCnt>.
+    Found 38-bit register for signal <shiftReg_r>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  39 D-type flip-flop(s).
+Unit <test_bus> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                         : 2
+ 21-bit up counter                 : 1
+ 9-bit up counter                  : 1
+# Registers                        : 2
+ 38-bit register                   : 1
+ 1-bit register                    : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1291 - FF/Latch <divCnt_20> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_6> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_7> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_8> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_9> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_10> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_11> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_12> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_13> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_14> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_15> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_16> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_17> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_18> is unconnected in block <test_bus>.
+WARNING:Xst:1291 - FF/Latch <divCnt_19> is unconnected in block <test_bus>.
+
+Optimizing unit <test_bus> ...
+Loading device for application Xst from file '2s300e.nph' in environment C:/ISE.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block test_bus, actual ratio is 1.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : test_bus.ngr
+Top Level Output File Name         : test_bus
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 45
+
+Macro Statistics :
+# Registers                        : 4
+#      1-bit register              : 1
+#      38-bit register             : 1
+#      9-bit register              : 2
+# Adders/Subtractors               : 2
+#      9-bit adder                 : 2
+
+Cell Usage :
+# BELS                             : 90
+#      GND                         : 1
+#      LUT1                        : 15
+#      LUT2_L                      : 38
+#      LUT3                        : 2
+#      LUT3_D                      : 1
+#      LUT4                        : 4
+#      LUT4_L                      : 2
+#      MUXCY                       : 13
+#      VCC                         : 1
+#      XORCY                       : 13
+# FlipFlops/Latches                : 54
+#      FD                          : 6
+#      FDE                         : 47
+#      FDR                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 39
+#      OBUF                        : 39
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2s300epq208-6 
+
+ Number of Slices:                      40  out of   3072     1%  
+ Number of Slice Flip Flops:            54  out of   6144     0%  
+ Number of 4 input LUTs:                62  out of   6144     1%  
+ Number of bonded IOBs:                 39  out of    146    26%  
+ Number of GCLKs:                        1  out of      4    25%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+sdram_clk                          | BUFGP                  | 54    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -6
+
+   Minimum period: 7.635ns (Maximum Frequency: 130.976MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.744ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'sdram_clk'
+Delay:               7.635ns (Levels of Logic = 2)
+  Source:            divCnt_3 (FF)
+  Destination:       shiftReg_r_37 (FF)
+  Source Clock:      sdram_clk rising
+  Destination Clock: sdram_clk rising
+
+  Data Path: divCnt_3 to shiftReg_r_37
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.992   1.150  divCnt_3 (divCnt_3)
+     LUT3_D:I0->O          1   0.468   0.920  _n0001_SW0 (N1707)
+     LUT4:I3->O           19   0.468   2.950  _n0001_1 (_n0001_1)
+     FDE:CE                    0.687          shiftReg_r_9
+    ----------------------------------------
+    Total                      7.635ns (2.615ns logic, 5.020ns route)
+                                       (34.3% logic, 65.7% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sdram_clk'
+Offset:              6.744ns (Levels of Logic = 1)
+  Source:            shiftReg_r_15 (FF)
+  Destination:       pb_d<15> (PAD)
+  Source Clock:      sdram_clk rising
+
+  Data Path: shiftReg_r_15 to pb_d<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.992   1.150  shiftReg_r_15 (shiftReg_r_15)
+     OBUF:I->O                 4.602          pb_d_15_OBUF (pb_d<15>)
+    ----------------------------------------
+    Total                      6.744ns (5.594ns logic, 1.150ns route)
+                                       (82.9% logic, 17.1% route)
+
+=========================================================================
+CPU : 2.77 / 3.97 s | Elapsed : 3.00 / 4.00 s
+ 
+--> 
+
+Total memory usage is 60996 kilobytes
+
+

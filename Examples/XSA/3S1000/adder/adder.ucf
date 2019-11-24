@@ -1,0 +1,15 @@
+net a<0> loc=n14;
+net a<1> loc=p15;
+net a<2> loc=r16;
+net a<3> loc=p14;
+net b<0> loc=p13;
+net b<1> loc=n12;
+net b<2> loc=t14;
+net b<3> loc=r13;
+net led<0> loc=r10;
+net led<1> loc=p10;
+net led<2> loc=m11;
+net led<3> loc=m6;
+net led<4> loc=n6;
+net led<5> loc=t7;
+net led<6> loc=r7;

@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.49d on Sat Feb 02 14:49:26 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "blinker_o" LOCATE = SITE "N4" LEVEL 1;
+COMP "sw1" LOCATE = SITE "P11" LEVEL 1;
+COMP "clk_i" LOCATE = SITE "B8" LEVEL 1;
+COMP "sw2" LOCATE = SITE "L3" LEVEL 1;
+COMP "sw3" LOCATE = SITE "K3" LEVEL 1;
+COMP "sw4" LOCATE = SITE "B4" LEVEL 1;
+COMP "en1" LOCATE = SITE "F12" LEVEL 1;
+COMP "en2" LOCATE = SITE "J12" LEVEL 1;
+COMP "en3" LOCATE = SITE "M13" LEVEL 1;
+COMP "en4" LOCATE = SITE "K14" LEVEL 1;
+COMP "segA" LOCATE = SITE "L14" LEVEL 1;
+NET "clk_i_BUFGP/IBUFG" BEL "clk_i_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

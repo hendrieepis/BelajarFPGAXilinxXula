@@ -1,0 +1,2 @@
+vhdl work "LCDTest.vhd"
+vhdl work "LCDTestBench.vhd"

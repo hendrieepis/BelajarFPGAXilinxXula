@@ -1,0 +1,7 @@
+vhdl work ../../../XS_LIB/common.vhd
+vhdl work ../../XSA_LIB/ramintfc_core.vhd
+vhdl work ../../../XS_LIB/sdramcntl.vhd
+vhdl work ../../XSA_LIB/xsasdramcntl.vhd
+vhdl work ../../XSA_LIB/xsasdramcntl_ppintfc.vhd
+vhdl work ../../XSA_LIB/vga.vhd
+vhdl work test_vga.vhd

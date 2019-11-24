@@ -1,0 +1,69 @@
+# XSA-3S1000 RADAR logger pin assignments
+
+NET      "clk"     TNM_NET  =      "clk"; 
+TIMESPEC "TS_clk"  =        PERIOD "clk"  10 ns HIGH 50 %; 
+
+net      button_n  loc=E11; # SW2
+net      ce_n      loc=R4;	 # flash chip-enable
+net      clk       loc=T9;	 # 100 MHz clock oscillator
+
+#net diag<0> loc=H15;
+#net diag<1> loc=H14;
+#net diag<2> loc=H13;
+#net diag<3> loc=G16;
+#net diag<4> loc=G15;
+#net diag<5> loc=G14;
+#net diag<6> loc=G13;
+#net diag<7> loc=F15;
+
+# LED segments
+#net      led_dp    loc=N11; 
+net      led<0>      loc=M6;  
+net      led<1>      loc=M11; 
+net      led<2>      loc=N6;  
+net      led<3>      loc=R7;  
+net      led<4>      loc=P10; 
+net      led<5>      loc=T7;  
+net      led<6>      loc=R10;
+
+# SDRAM signals
+net      sclkfb    loc=N8;
+net      sclk      loc=E10;
+net      cke       loc=D7;
+net      cs_n      loc=B8;
+net      ras_n     loc=A9;  
+net      cas_n     loc=A10; 
+net      we_n      loc=B10; 
+net      ba<0>     loc=A7;  
+net      ba<1>     loc=C7;  
+net      sAddr<0>  loc=B5;  
+net      sAddr<1>  loc=A4;  
+net      sAddr<2>  loc=B4;  
+net      sAddr<3>  loc=E6;  
+net      sAddr<4>  loc=E3;  
+net      sAddr<5>  loc=C1;  
+net      sAddr<6>  loc=E4;  
+net      sAddr<7>  loc=D3;  
+net      sAddr<8>  loc=C2;  
+net      sAddr<9>  loc=A3;  
+net      sAddr<10> loc=B6;  
+net      sAddr<11> loc=C5;  
+net      sAddr<12> loc=C6;  
+net      sData<0>  loc=C15; 
+net      sData<1>  loc=D12; 
+net      sData<2>  loc=A14; 
+net      sData<3>  loc=B13; 
+net      sData<4>  loc=D11; 
+net      sData<5>  loc=A12; 
+net      sData<6>  loc=C11; 
+net      sData<7>  loc=D10; 
+net      sData<8>  loc=B11; 
+net      sData<9>  loc=B12; 
+net      sData<10> loc=C12; 
+net      sData<11> loc=B14; 
+net      sData<12> loc=D14; 
+net      sData<13> loc=C16; 
+net      sData<14> loc=F12; 
+net      sData<15> loc=F13; 
+net      dqmh      loc=D9;  
+net      dqml      loc=C10; 

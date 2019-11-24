@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn __projnav/audio.xst -ofn audio.syr
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xst-4\audio/_ngo -uc audio.ucf  -p xc3s1000-ft256-5 audio.ngc audio.ngd
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -pr b -k 4 -c 100 -tx off -o audio_map.ncd audio.ngd audio.pcf
+par -w -intstyle ise -ol std -t 1 audio_map.ncd audio.ncd audio.pcf
+trce -intstyle ise -e 3 -l 3 -xml audio audio.ncd -o audio.twr audio.pcf
+bitgen -intstyle ise -f audio.ut audio.ncd

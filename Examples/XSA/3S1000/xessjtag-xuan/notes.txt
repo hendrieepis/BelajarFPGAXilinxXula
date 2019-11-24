@@ -1,0 +1,49 @@
+Xuan:
+
+I've attached a new xessjtag.svf file to this message.  If you replace your existing xessjtag.svf file with the new one, then your 
+XSA-3S1000 board LEDs should react to XSPORT in the same way whether you use the parallel port or the USB port.
+
+The only difference will be that setting D7 to 0 will not erase the FPGA when using the USB port as it does when using the parallel 
+port.  I can add that behavior if you want it.
+
+
+
+Dave,
+So, "/xstools/xsport 00000000" works with parallel port even w/o doing anything else, but it does NOT work with usb port w/o running 
+extra FPGA configuration. okay, if I want to make the statement "/xstools/xsport 00000000" work (have a response just like with parallel 
+port), what should my code look like? (w/o touching the .vhd, and just use xsport util) Could you give me some sample code? Thanks,
+Xuan
+
+
+Dave Vanden Bout wrote:
+
+Xuan:
+We talked yesterday about your concern that XSPORT did not produce the same results when used with the XSUSB as it does with the parallel 
+port.  I looked at the xessjtag.svf design that is loaded into the CPLD when the XSUSB is used.  It specifically blocks access to the 
+FPGA pins by XSPORT when the FPGA is not configured or when the flash is being accessed.  Here is the pertinent code from the 
+xessjtag.vhd file:
+  -- Handle sending test vectors through the parallel port to the configured FPGA.
+  -- Output the test vector to the FPGA if it is configured and the flash is not in contention.
+  process(pp_d(0))
+  begin
+    if falling_edge(pp_d(0)) then
+            if pp_d(6) = HI then
+        upper_test_vector <= pp_d(5 downto 2);
+                 end if;
+    end if;
+    if rising_edge(pp_d(0)) then
+            if pp_d(6) = HI then
+        test_vector <= upper_test_vector & pp_d(5 downto 2);
+                 end if;
+    end if;
+  end process;
+  process(fpga_done,flash_ce_n)
+  begin
+    if (fpga_done = HI) and (flash_ce_n = HI) then
+      fpga_pp_d <= test_vector;
+    else
+      fpga_pp_d <= (others=>'Z');
+    end if;
+  end process;
+So I think the behavior you are seeing is normal.  In order for XSPORT to produce a visible result with the XSUSB interface, the FPGA has 
+to be programmed with a bitstream.  Otherwise, you won't see any response at all.

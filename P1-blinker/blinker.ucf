@@ -1,0 +1,2 @@
+net clk_i loc = p43;
+net blinker_o loc = p44;

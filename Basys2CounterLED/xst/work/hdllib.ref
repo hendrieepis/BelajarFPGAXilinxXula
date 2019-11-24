@@ -1,0 +1,4 @@
+AR blink behavioral /home/hendri/Documents/workspaceXilinx/Basys2CounterLED/counter.vhd sub00/vhpl03 1384569181
+EN blink NULL /home/hendri/Documents/workspaceXilinx/Basys2CounterLED/counter.vhd sub00/vhpl02 1384569180
+AR counter behavioral /home/hendri/Documents/workspaceXilinx/Basys2CounterLED/counter.vhd sub00/vhpl01 1384567291
+EN counter NULL /home/hendri/Documents/workspaceXilinx/Basys2CounterLED/counter.vhd sub00/vhpl00 1384567290

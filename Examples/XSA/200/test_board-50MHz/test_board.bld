@@ -1,0 +1,30 @@
+Release 6.3.03i - ngdbuild G.38
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -intstyle ise -dd
+c:\xesscorp\products\bitstreams\xsa\200\test_board-50mhz/_ngo -uc test_board.ucf
+-p xc2s200-fg256-5 test_board.ngc test_board.ngd 
+
+Reading NGO file
+"C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/test_board.ngc" ...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "test_board.ucf" ...
+
+Checking timing specifications ...
+WARNING:XdmHelpers:662 - Period specification "TS_clk" references the TNM group
+   "clk", which contains both pads and synchronous elements. The timing analyzer
+   will ignore the pads for this specification. You might want to use a
+   qualifier (e.g. "FFS") on the TNM property to remove the pads from this
+   group.
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 39264 kilobytes
+
+Writing NGD file "test_board.ngd" ...
+
+Writing NGDBUILD log file "test_board.bld"...

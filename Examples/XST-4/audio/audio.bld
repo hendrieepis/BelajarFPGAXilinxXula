@@ -1,0 +1,24 @@
+Release 6.3.03i - ngdbuild G.38
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -intstyle ise -dd
+c:\xesscorp\products\bitstreams\xst-4\audio/_ngo -uc audio.ucf -p
+xc3s1000-ft256-5 audio.ngc audio.ngd 
+
+Reading NGO file "C:/xesscorp/PRODUCTS/BITSTREAMS/XST-4/audio/audio.ngc" ...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "audio.ucf" ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 40772 kilobytes
+
+Writing NGD file "audio.ngd" ...
+
+Writing NGDBUILD log file "audio.bld"...

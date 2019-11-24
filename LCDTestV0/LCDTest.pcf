@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Tue Jan 08 11:42:43 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "en" LOCATE = SITE "P62" LEVEL 1;
+COMP "rs" LOCATE = SITE "P61" LEVEL 1;
+COMP "dataLCD<0>" LOCATE = SITE "P72" LEVEL 1;
+COMP "dataLCD<1>" LOCATE = SITE "P73" LEVEL 1;
+COMP "dataLCD<2>" LOCATE = SITE "P83" LEVEL 1;
+COMP "dataLCD<3>" LOCATE = SITE "P84" LEVEL 1;
+COMP "clock" LOCATE = SITE "P43" LEVEL 1;
+COMP "reset" LOCATE = SITE "P44" LEVEL 1;
+SCHEMATIC END;
+

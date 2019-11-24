@@ -1,0 +1,37 @@
+V3 21
+FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/counterBCD.vhd 2013/01/26.06:57:11 P.40xd
+EN work/counterBCD 1359160857 \
+      FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/counterBCD.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/counterBCD/Behavioral 1359160858 \
+      FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/counterBCD.vhd \
+      EN work/counterBCD 1359160857
+FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/debouncing.vhd 2013/01/26.06:59:49 P.40xd
+EN work/debouncing 1359160855 \
+      FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/debouncing.vhd \
+      PB ieee/std_logic_1164 1350103243
+AR work/debouncing/Behavioral 1359160856 \
+      FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/debouncing.vhd \
+      EN work/debouncing 1359160855
+FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/decoder.vhd 2013/01/26.06:59:49 P.40xd
+EN work/decoder 1359160859 \
+      FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/decoder.vhd \
+      PB ieee/std_logic_1164 1350103243
+AR work/decoder/Behavioral 1359160860 \
+      FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/decoder.vhd \
+      EN work/decoder 1359160859
+FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/prescaller.vhd 2013/01/26.06:59:49 P.40xd
+EN work/Prescaller 1359160853 \
+      FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/prescaller.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/STD_LOGIC_UNSIGNED 1350103247 \
+      PB ieee/std_logic_arith 1350103244 LB UNISIM PH unisim/VCOMPONENTS 1350103252
+AR work/Prescaller/Behavioral 1359160854 \
+      FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/prescaller.vhd \
+      EN work/Prescaller 1359160853 CP BUFG
+FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/SysCnt.vhd 2013/01/26.06:59:49 P.40xd
+EN work/syscnt 1359160861 \
+      FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/SysCnt.vhd \
+      PB ieee/std_logic_1164 1350103243
+AR work/syscnt/Behavioral 1359160862 \
+      FL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/SysCnt.vhd \
+      EN work/syscnt 1359160861 CP Prescaller CP debouncing CP counterBCD CP decoder

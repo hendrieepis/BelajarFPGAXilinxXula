@@ -1,0 +1,2 @@
+vhdl work "blinker.vhd"
+vhdl work "blinkerTestBench.vhd"

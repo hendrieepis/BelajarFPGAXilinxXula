@@ -1,0 +1,4 @@
+vhdl work "inverter.vhd"
+vhdl work "counter.vhd"
+vhdl work "countersys.vhd"
+vhdl work "counterTestbench.vhd"

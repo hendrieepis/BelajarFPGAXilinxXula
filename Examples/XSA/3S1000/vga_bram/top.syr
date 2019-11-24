@@ -1,0 +1,657 @@
+Release 11.5 - xst L.70 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s1000-4-ft256
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : top.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : { "ipcore_dir" }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/common.vhd" in Library work.
+Architecture common of Entity common is up to date.
+Compiling vhdl file "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/ipcore_dir/ScreenRam.vhd" in Library work.
+Architecture screenram_a of Entity screenram is up to date.
+Compiling vhdl file "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/ipcore_dir/CharRom.vhd" in Library work.
+Architecture charrom_a of Entity charrom is up to date.
+Compiling vhdl file "C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/vga.vhd" in Library work.
+Package <vgapckg> compiled.
+Entity <syncgen> compiled.
+Entity <syncgen> (Architecture <arch>) compiled.
+Entity <hvsyncgen> compiled.
+Entity <hvsyncgen> (Architecture <arch>) compiled.
+Entity <fifocc> compiled.
+Entity <fifocc> (Architecture <arch>) compiled.
+Entity <pixelvga> compiled.
+Entity <pixelvga> (Architecture <arch>) compiled.
+Entity <textcounter> compiled.
+Entity <textcounter> (Architecture <arch>) compiled.
+Entity <textvga> compiled.
+Entity <textvga> (Architecture <arch>) compiled.
+Compiling vhdl file "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/VgaDisplay.vhd" in Library work.
+Architecture behavioral of Entity vgadisplay is up to date.
+Compiling vhdl file "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/top.vhd" in Library work.
+Architecture behavioral of Entity top is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <VgaDisplay> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <TextVga> in library <work> (architecture <arch>) with generics.
+	CHAR_HEIGHT_G = 8
+	CHAR_WIDTH_G = 8
+	CLK_DIV_G = 4
+	FIT_TO_SCREEN_G = false
+	FREQ_G = 100.000000
+	NUM_TEXT_COLS_G = 40
+	NUM_TEXT_ROWS_G = 25
+	OFFSET_DOWN_G = 80
+	OFFSET_RIGHT_G = 40
+
+Analyzing hierarchy for entity <HVSyncGen> in library <work> (architecture <arch>) with generics.
+	FIT_TO_SCREEN_G = false
+	LINES_PER_FRAME_G = 200
+	OFFSET_DOWN_G = 80
+	OFFSET_RIGHT_G = 40
+	PIXELS_PER_LINE_G = 320
+	PIXEL_FREQ_G = 25.000000
+
+Analyzing hierarchy for entity <TextCounter> in library <work> (architecture <arch>) with generics.
+	CHAR_SIZE_G = 8
+	POSITION_INCR_G = 1
+	TEXT_SIZE_G = 40
+
+Analyzing hierarchy for entity <TextCounter> in library <work> (architecture <arch>) with generics.
+	CHAR_SIZE_G = 8
+	POSITION_INCR_G = 40
+	TEXT_SIZE_G = 1000
+
+Analyzing hierarchy for entity <SyncGen> in library <work> (architecture <arch>) with generics.
+	FREQ_G = 25.000000
+	OFFSET_G = 40
+	PERIOD_G = 31.770000
+	START_G = 26.110000
+	VISIBLE_G = 320
+	WIDTH_G = 3.770000
+
+Analyzing hierarchy for entity <SyncGen> in library <work> (architecture <arch>) with generics.
+	FREQ_G = 0.031476
+	OFFSET_G = 80
+	PERIOD_G = 16784.000000
+	START_G = 15700.000000
+	VISIBLE_G = 200
+	WIDTH_G = 64.000000
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/top.vhd" line 90: Mux is complete : default of case is discarded
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <VgaDisplay> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/VgaDisplay.vhd" line 102: Instantiating black box module <ScreenRam>.
+WARNING:Xst:2211 - "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/VgaDisplay.vhd" line 113: Instantiating black box module <CharRom>.
+Entity <VgaDisplay> analyzed. Unit <VgaDisplay> generated.
+
+Analyzing generic Entity <TextVga> in library <work> (Architecture <arch>).
+	CHAR_HEIGHT_G = 8
+	CHAR_WIDTH_G = 8
+	CLK_DIV_G = 4
+	FIT_TO_SCREEN_G = false
+	FREQ_G = 100.000000
+	NUM_TEXT_COLS_G = 40
+	NUM_TEXT_ROWS_G = 25
+	OFFSET_DOWN_G = 80
+	OFFSET_RIGHT_G = 40
+WARNING:Xst:753 - "C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/vga.vhd" line 801: Unconnected output port 'lineCnt_p' of component 'HVSyncGen'.
+WARNING:Xst:753 - "C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/vga.vhd" line 801: Unconnected output port 'pixelCnt_p' of component 'HVSyncGen'.
+WARNING:Xst:753 - "C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/vga.vhd" line 823: Unconnected output port 'subPosition_p' of component 'TextCounter'.
+WARNING:Xst:753 - "C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/vga.vhd" line 838: Unconnected output port 'newPosition_p' of component 'TextCounter'.
+WARNING:Xst:1610 - "C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/vga.vhd" line 853: Width mismatch. <ramAddr_p> has a width of 11 bits but assigned expression is 10-bit wide.
+Entity <TextVga> analyzed. Unit <TextVga> generated.
+
+Analyzing generic Entity <HVSyncGen> in library <work> (Architecture <arch>).
+	FIT_TO_SCREEN_G = false
+	LINES_PER_FRAME_G = 200
+	OFFSET_DOWN_G = 80
+	OFFSET_RIGHT_G = 40
+	PIXELS_PER_LINE_G = 320
+	PIXEL_FREQ_G = 25.000000
+Entity <HVSyncGen> analyzed. Unit <HVSyncGen> generated.
+
+Analyzing generic Entity <SyncGen.1> in library <work> (Architecture <arch>).
+	FREQ_G = 25.000000
+	OFFSET_G = 40
+	PERIOD_G = 31.770000
+	START_G = 26.110000
+	VISIBLE_G = 320
+	WIDTH_G = 3.770000
+Entity <SyncGen.1> analyzed. Unit <SyncGen.1> generated.
+
+Analyzing generic Entity <SyncGen.2> in library <work> (Architecture <arch>).
+	FREQ_G = 0.031476
+	OFFSET_G = 80
+	PERIOD_G = 16784.000000
+	START_G = 15700.000000
+	VISIBLE_G = 200
+	WIDTH_G = 64.000000
+Entity <SyncGen.2> analyzed. Unit <SyncGen.2> generated.
+
+Analyzing generic Entity <TextCounter.1> in library <work> (Architecture <arch>).
+	CHAR_SIZE_G = 8
+	POSITION_INCR_G = 1
+	TEXT_SIZE_G = 40
+Entity <TextCounter.1> analyzed. Unit <TextCounter.1> generated.
+
+Analyzing generic Entity <TextCounter.2> in library <work> (Architecture <arch>).
+	CHAR_SIZE_G = 8
+	POSITION_INCR_G = 40
+	TEXT_SIZE_G = 1000
+Entity <TextCounter.2> analyzed. Unit <TextCounter.2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <TextCounter_1>.
+    Related source file is "C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/vga.vhd".
+    Found 1-bit register for signal <newPosition_p>.
+    Found 6-bit up counter for signal <position_r>.
+    Found 3-bit up counter for signal <subPosition_r>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <TextCounter_1> synthesized.
+
+
+Synthesizing Unit <TextCounter_2>.
+    Related source file is "C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/vga.vhd".
+    Found 1-bit register for signal <newPosition_p>.
+    Found 10-bit up accumulator for signal <position_r>.
+    Found 3-bit up counter for signal <subPosition_r>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Accumulator(s).
+	inferred   1 D-type flip-flop(s).
+Unit <TextCounter_2> synthesized.
+
+
+Synthesizing Unit <SyncGen_1>.
+    Related source file is "C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/vga.vhd".
+    Found 1-bit register for signal <sync_bp>.
+    Found 1-bit register for signal <gate_p>.
+    Found 1-bit register for signal <blank_p>.
+    Found 10-bit up counter for signal <cnt_r>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <SyncGen_1> synthesized.
+
+
+Synthesizing Unit <SyncGen_2>.
+    Related source file is "C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/vga.vhd".
+    Found 1-bit register for signal <sync_bp>.
+    Found 1-bit register for signal <gate_p>.
+    Found 1-bit register for signal <blank_p>.
+    Found 10-bit up counter for signal <cnt_r>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <SyncGen_2> synthesized.
+
+
+Synthesizing Unit <HVSyncGen>.
+    Related source file is "C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/vga.vhd".
+Unit <HVSyncGen> synthesized.
+
+
+Synthesizing Unit <TextVga>.
+    Related source file is "C:/xesscorp/PRODUCTS/BITSTREAMS/XS_LIB/vga.vhd".
+WARNING:Xst:646 - Signal <eof_s> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 12-bit adder for signal <romAddr_p>.
+    Found 1-bit register for signal <cke_r>.
+    Found 3-bit up counter for signal <clkDivCnt_r>.
+    Found 8-bit register for signal <pixelReg_r>.
+    Found 10-bit adder for signal <ramAddr_p$add0000> created at line 853.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <TextVga> synthesized.
+
+
+Synthesizing Unit <VgaDisplay>.
+    Related source file is "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/VgaDisplay.vhd".
+WARNING:Xst:643 - "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/VgaDisplay.vhd" line 100: The result of a 8x6-bit multiplication is partially used. Only the 11 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 11-bit adder for signal <CharAddr>.
+    Found 8x6-bit multiplier for signal <CharAddr$mult0001> created at line 100.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <VgaDisplay> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/top.vhd".
+WARNING:Xst:1780 - Signal <Data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Register <Row> equivalent to <Col> has been removed
+    Found 16x8-bit ROM for signal <Char$mux0000> created at line 74.
+    Found 8-bit register for signal <Char>.
+    Found 8-bit register for signal <Col>.
+    Found 8-bit up counter for signal <NybbleCnt>.
+    Found 8-bit comparator less for signal <NybbleCnt$cmp_lt0000> created at line 102.
+    Found 1-bit register for signal <Reset>.
+    Found 4-bit down counter for signal <ResetCntr>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Multipliers                                          : 1
+ 8x6-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 3
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 1
+ 12-bit adder                                          : 1
+# Counters                                             : 8
+ 10-bit up counter                                     : 2
+ 3-bit up counter                                      : 3
+ 4-bit down counter                                    : 1
+ 6-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 10-bit up accumulator                                 : 1
+# Registers                                            : 13
+ 1-bit register                                        : 10
+ 8-bit register                                        : 3
+# Comparators                                          : 1
+ 8-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/ScreenRam.ngc>.
+Reading core <ipcore_dir/CharRom.ngc>.
+Loading core <ScreenRam> for timing and area information for instance <u1>.
+Loading core <CharRom> for timing and area information for instance <u2>.
+WARNING:Xst:1426 - The value init of the FF/Latch Reset hinder the constant cleaning in the block top.
+   You should achieve better results by setting this init to 0.
+
+Synthesizing (advanced) Unit <top>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_Char_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <top> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Multipliers                                          : 1
+ 8x6-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 3
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 1
+ 12-bit adder                                          : 1
+# Counters                                             : 8
+ 10-bit up counter                                     : 2
+ 3-bit up counter                                      : 3
+ 4-bit down counter                                    : 1
+ 6-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 10-bit up accumulator                                 : 1
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+# Comparators                                          : 1
+ 8-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch Reset hinder the constant cleaning in the block top.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <Char_4> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Char_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Char_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <position_r_0> has a constant value of 0 in block <TextCounter_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <position_r_1> has a constant value of 0 in block <TextCounter_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <position_r_2> has a constant value of 0 in block <TextCounter_2>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp4x4.ram in unit U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp4x4.ram of type RAMB16_S4_S4 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram in unit U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram of type RAMB16_S4_S4 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram in unit U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram of type RAMB16_S9_S9 has been replaced by RAMB16
+
+Optimizing unit <top> ...
+
+Optimizing unit <TextCounter_1> ...
+
+Optimizing unit <TextCounter_2> ...
+
+Optimizing unit <SyncGen_1> ...
+
+Optimizing unit <SyncGen_2> ...
+
+Optimizing unit <TextVga> ...
+WARNING:Xst:1293 - FF/Latch <clkDivCnt_r_2> has a constant value of 0 in block <TextVga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <clkDivCnt_r_2> has a constant value of 0 in block <TextVga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <u0/u3/UHVSyncGen/UVSync/gate_p> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u0/u3/URowTextCounter/newPosition_p> of sequential type is unconnected in block <top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 82
+ Flip-Flops                                            : 82
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 257
+#      GND                         : 6
+#      INV                         : 9
+#      LUT1                        : 34
+#      LUT2                        : 43
+#      LUT2_L                      : 3
+#      LUT3                        : 21
+#      LUT3_D                      : 1
+#      LUT3_L                      : 3
+#      LUT4                        : 34
+#      LUT4_D                      : 2
+#      LUT4_L                      : 2
+#      MUXCY                       : 41
+#      MUXF5                       : 6
+#      VCC                         : 3
+#      XORCY                       : 49
+# FlipFlops/Latches                : 82
+#      FDC                         : 3
+#      FDCE                        : 37
+#      FDE                         : 10
+#      FDP                         : 1
+#      FDPE                        : 3
+#      FDR                         : 1
+#      FDRE                        : 27
+# RAMS                             : 3
+#      RAMB16                      : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      OBUF                        : 11
+# MULTs                            : 1
+#      MULT18X18                   : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-4 
+
+ Number of Slices:                       87  out of   7680     1%  
+ Number of Slice Flip Flops:             82  out of  15360     0%  
+ Number of 4 input LUTs:                152  out of  15360     0%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    173     6%  
+ Number of BRAMs:                         3  out of     24    12%  
+ Number of MULT18X18s:                    1  out of     24     4%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                                                    | Load  |
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clk                                | BUFGP                                                                                                                                                                    | 85    |
+u0/u2/BU2/N0                       | NONE(u0/u2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp4x4.ram/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp4x4.ram)| 2     |
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Reset(Reset:Q)                     | NONE(Col_0)            | 44    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.724ns (Maximum Frequency: 114.626MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 7.488ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 8.724ns (frequency: 114.626MHz)
+  Total number of paths / destination ports: 1458 / 217
+-------------------------------------------------------------------------
+Delay:               8.724ns (Levels of Logic = 6)
+  Source:            Col_7 (FF)
+  Destination:       u0/u1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram (RAM)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: Col_7 to u0/u1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.720   0.877  Col_7 (Col_7)
+     MULT18X18:A7->P9      1   2.881   1.140  u0/Mmult_CharAddr_mult0001 (u0/CharAddr_mult0001<9>)
+     LUT1:I0->O            1   0.551   0.000  u0/Madd_CharAddr_cy<9>_rt (u0/Madd_CharAddr_cy<9>_rt)
+     MUXCY:S->O            0   0.500   0.000  u0/Madd_CharAddr_cy<9> (u0/Madd_CharAddr_cy<9>)
+     XORCY:CI->O           1   0.904   0.801  u0/Madd_CharAddr_xor<10> (u0/CharAddr<10>)
+     begin scope: 'u0/u1'
+     begin scope: 'BU2'
+     begin scope: 'U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram'
+     RAMB16:ADDRA13            0.350          U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram
+    ----------------------------------------
+    Total                      8.724ns (5.906ns logic, 2.818ns route)
+                                       (67.7% logic, 32.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              7.488ns (Levels of Logic = 1)
+  Source:            u0/u3/pixelReg_r_7 (FF)
+  Destination:       Rgb<8> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: u0/u3/pixelReg_r_7 to Rgb<8>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             9   0.720   1.124  u0/u3/pixelReg_r_7 (u0/u3/pixelReg_r_7)
+     OBUF:I->O                 5.644          Rgb_8_OBUF (Rgb<8>)
+    ----------------------------------------
+    Total                      7.488ns (6.364ns logic, 1.124ns route)
+                                       (85.0% logic, 15.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.78 secs
+ 
+--> 
+
+Total memory usage is 161284 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   22 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

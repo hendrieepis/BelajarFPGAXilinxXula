@@ -1,0 +1,25 @@
+Running: /opt/Xilinx/14.3/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -o /home/hendri/Documents/workspaceXilinx/LCDTestV0/LCDTestBench_isim_beh.exe -prj /home/hendri/Documents/workspaceXilinx/LCDTestV0/LCDTestBench_beh.prj work.LCDTestBench 
+ISim P.40xd (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/hendri/Documents/workspaceXilinx/LCDTestV0/LCDTest.vhd" into library work
+Parsing VHDL file "/home/hendri/Documents/workspaceXilinx/LCDTestV0/LCDTestBench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 45792 KB
+Fuse CPU Usage: 2550 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package vcomponents
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture behavioral of entity LCDTest [lcdtest_default]
+Compiling architecture behavior of entity lcdtestbench
+Time Resolution for simulation is 1ps.
+Compiled 10 VHDL Units
+Built simulation executable /home/hendri/Documents/workspaceXilinx/LCDTestV0/LCDTestBench_isim_beh.exe
+Fuse Memory Usage: 61100 KB
+Fuse CPU Usage: 2750 ms
+GCC CPU Usage: 660 ms

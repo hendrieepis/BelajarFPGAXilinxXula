@@ -1,0 +1,22 @@
+#NET "clk_i" LOC = P43;
+#NET "systick" LOC = P59;
+#NET "counter_o<0>" LOC = P88;
+#NET "counter_o<1>" LOC = P89;
+#NET "counter_o<2>" LOC = P93;
+#NET "counter_o<3>" LOC = P94;
+#NET "counter_o<4>" LOC = P97;
+#NET "counter_o<5>" LOC = P3;
+##NET "counter_o<6>" LOC = P4;
+#NET "counter_o<7>" LOC = P5;
+#pin2ucf - Mon Nov 26 06:47:57 2012
+#The following constraints were newly added
+NET "counter_o<0>" LOC = P35;
+NET "counter_o<1>" LOC = P34;
+NET "counter_o<2>" LOC = P33;
+NET "counter_o<3>" LOC = P32;
+NET "counter_o<4>" LOC = P20;
+NET "counter_o<5>" LOC = P19;
+NET "counter_o<6>" LOC = P13;
+NET "counter_o<7>" LOC = P12;
+NET "clk_i" LOC = P43;
+NET "systick" LOC = P44;

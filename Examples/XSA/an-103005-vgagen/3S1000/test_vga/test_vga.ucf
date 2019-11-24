@@ -1,0 +1,75 @@
+# timing constraint primarily to make the SDRAM controller operate at 100 MHz
+NET      "clk"           TNM_NET="clk"; 
+TIMESPEC "TS_clk"=PERIOD "clk"          10 ns HIGH 50 %; 
+
+net      rst_n           loc=E11;       # active-low pushbutton
+net      clk             loc=T9;        # main clock
+
+# parallel port interface
+net ppd<0>    loc=N14; 
+net ppd<1>    loc=P15; 
+net ppd<2>    loc=R16; 
+net ppd<3>    loc=P14; 
+net ppd<4>    loc=P13; 
+net ppd<5>    loc=N12; 
+# net ppd<6> loc=T14;
+# net ppd<7> loc=R13;
+net pps<3>    loc=N5;  
+net pps<4>    loc=K14; 
+net pps<5>    loc=K13; 
+net pps<6>    loc=T10; 
+
+# VGA 
+NET      blue<0>         LOC=C9;        
+NET      blue<1>         LOC=E7;        
+NET      blue<2>         LOC=D5;        
+NET      green<0>        LOC=A8;        
+NET      green<1>        LOC=A5;        
+NET      green<2>        LOC=C3;        
+NET      hsync_n         LOC=B7;        
+NET      red<0>          LOC=C8;        
+NET      red<1>          LOC=D6;        
+NET      red<2>          LOC=B1;        
+NET      vsync_n         LOC=D8;        
+
+# SDRAM memory tester pin assignments
+net      sclkfb          loc=N8;        # feedback SDRAM clock after PCB delays
+net      sclk            loc=E10;       # clock to SDRAM
+net      cke             loc=D7;        # SDRAM clock enable
+net      cs_n            loc=B8;        # SDRAM chip-select
+net      ras_n           loc=A9;        
+net      cas_n           loc=A10;       
+net      we_n            loc=B10;       
+net      ba<0>           loc=A7;        
+net      ba<1>           loc=C7;        
+net      sAddr<0>        loc=B5;        
+net      sAddr<1>        loc=A4;        
+net      sAddr<2>        loc=B4;        
+net      sAddr<3>        loc=E6;        
+net      sAddr<4>        loc=E3;        
+net      sAddr<5>        loc=C1;        
+net      sAddr<6>        loc=E4;        
+net      sAddr<7>        loc=D3;        
+net      sAddr<8>        loc=C2;        
+net      sAddr<9>        loc=A3;        
+net      sAddr<10>       loc=B6;        
+net      sAddr<11>       loc=C5;        
+net      sAddr<12>       loc=C6;        
+net      sData<0>        loc=C15;       
+net      sData<1>        loc=D12;       
+net      sData<2>        loc=A14;       
+net      sData<3>        loc=B13;       
+net      sData<4>        loc=D11;       
+net      sData<5>        loc=A12;       
+net      sData<6>        loc=C11;       
+net      sData<7>        loc=D10;       
+net      sData<8>        loc=B11;       
+net      sData<9>        loc=B12;       
+net      sData<10>       loc=C12;       
+net      sData<11>       loc=B14;       
+net      sData<12>       loc=D14;       
+net      sData<13>       loc=C16;       
+net      sData<14>       loc=F12;       
+net      sData<15>       loc=F13;       
+net      dqmh            loc=D9;        
+net      dqml            loc=C10;       

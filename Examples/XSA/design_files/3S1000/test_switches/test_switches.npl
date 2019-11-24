@@ -1,0 +1,39 @@
+JDF G
+// Created by Project Navigator ver 1.0
+PROJECT test_switches
+DESIGN test_switches
+DEVFAM spartan3
+DEVFAMTIME 0
+DEVICE xc3s1000
+DEVICETIME 1098331127
+DEVPKG ft256
+DEVPKGTIME 1095687180
+DEVSPEED -4
+DEVSPEEDTIME 1095687180
+DEVTOPLEVELMODULETYPE HDL
+TOPLEVELMODULETYPETIME 0
+DEVSYNTHESISTOOL XST (VHDL/Verilog)
+SYNTHESISTOOLTIME 0
+DEVSIMULATOR Other
+SIMULATORTIME 0
+DEVGENERATEDSIMULATIONMODEL VHDL
+GENERATEDSIMULATIONMODELTIME 0
+SOURCE test_switches.vhd
+DEPASSOC test_switches test_switches.ucf
+[Normal]
+xilxBitgCfg_Clk=xstvhd, spartan3, Implementation.t_bitFile, 1098328251, Float
+xilxBitgCfg_Done=xstvhd, spartan3, Implementation.t_bitFile, 1098328251, Float
+xilxBitgCfg_M0=xstvhd, spartan3, Implementation.t_bitFile, 1098328251, Float
+xilxBitgCfg_M1=xstvhd, spartan3, Implementation.t_bitFile, 1098328251, Float
+xilxBitgCfg_M2=xstvhd, spartan3, Implementation.t_bitFile, 1098328251, Float
+xilxBitgCfg_Pgm=xstvhd, spartan3, Implementation.t_bitFile, 1098328251, Float
+xilxBitgCfg_TCK=xstvhd, spartan3, Implementation.t_bitFile, 1098328251, Float
+xilxBitgCfg_TDI=xstvhd, spartan3, Implementation.t_bitFile, 1098328251, Float
+xilxBitgCfg_TDO=xstvhd, spartan3, Implementation.t_bitFile, 1098328251, Float
+xilxBitgCfg_TMS=xstvhd, spartan3, Implementation.t_bitFile, 1098328251, Float
+xilxBitgCfg_Unused=xstvhd, spartan3, Implementation.t_bitFile, 1095904824, Float
+xilxBitgStart_Clk_MatchCycle=xstvhd, spartan3, Implementation.t_bitFile, 1095904824, NoWait
+[STATUS-ALL]
+test_switches.ngcFile=WARNINGS,1098331130
+[STRATEGY-LIST]
+Normal=True

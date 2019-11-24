@@ -1,0 +1,59 @@
+//! **************************************************************************
+// Written by: Map O.87xd on Sat Jul 14 23:26:19 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "usdflashCs_bo" LOCATE = SITE "T8" LEVEL 1;
+COMP "fpgaClk_i" LOCATE = SITE "A9" LEVEL 1;
+COMP "flashCs_bo" LOCATE = SITE "T3" LEVEL 1;
+COMP "miso_i" LOCATE = SITE "P10" LEVEL 1;
+COMP "sclk_o" LOCATE = SITE "R11" LEVEL 1;
+COMP "mosi_o" LOCATE = SITE "T10" LEVEL 1;
+PIN u2/blk_ram_pins<22> = BEL "u2/blk_ram" PINNAME CLKA;
+PIN u2/blk_ram_pins<23> = BEL "u2/blk_ram" PINNAME CLKB;
+TIMEGRP clk = BEL "reset" BEL "rst_cntr_0" BEL "rst_cntr_1" BEL "rst_cntr_2"
+        BEL "rst_cntr_3" BEL "u2/cntr_2" BEL "u2/cntr_1" BEL "u2/cntr_0" BEL
+        "u2/wait_cntr_4" BEL "u2/wait_cntr_3" BEL "u2/wait_cntr_2" BEL
+        "u2/wait_cntr_1" BEL "u2/wait_cntr_0" BEL "u2/f_di_7" BEL "u2/f_di_6"
+        BEL "u2/f_di_5" BEL "u2/f_di_4" BEL "u2/f_di_3" BEL "u2/f_di_2" BEL
+        "u2/f_di_1" BEL "u2/f_di_0" BEL "u2/blk_addr_b_7" BEL
+        "u2/blk_addr_b_6" BEL "u2/blk_addr_b_5" BEL "u2/blk_addr_b_4" BEL
+        "u2/blk_addr_b_3" BEL "u2/blk_addr_b_2" BEL "u2/blk_addr_b_1" BEL
+        "u2/blk_addr_b_0" BEL "u2/flash_state_4" BEL "u2/flash_state_3" BEL
+        "u2/flash_state_2" BEL "u2/flash_state_1" BEL "u2/flash_state_0" BEL
+        "u2/rtn_flash_state_4" BEL "u2/rtn_flash_state_3" BEL
+        "u2/rtn_flash_state_2" BEL "u2/rtn_flash_state_1" BEL "u2/h_do_7" BEL
+        "u2/h_do_6" BEL "u2/h_do_5" BEL "u2/h_do_4" BEL "u2/h_do_3" BEL
+        "u2/h_do_2" BEL "u2/h_do_1" BEL "u2/h_do_0" BEL "u2/f_do_7" BEL
+        "u2/f_do_6" BEL "u2/f_do_5" BEL "u2/f_do_4" BEL "u2/f_do_3" BEL
+        "u2/f_do_2" BEL "u2/f_do_1" BEL "u2/f_do_0" BEL "u2/f_addr_23" BEL
+        "u2/f_addr_22" BEL "u2/f_addr_21" BEL "u2/f_addr_20" BEL
+        "u2/f_addr_19" BEL "u2/f_addr_18" BEL "u2/f_addr_17" BEL
+        "u2/f_addr_16" BEL "u2/f_addr_15" BEL "u2/f_addr_14" BEL
+        "u2/f_addr_13" BEL "u2/f_addr_12" BEL "u2/f_addr_11" BEL
+        "u2/f_addr_10" BEL "u2/f_addr_9" BEL "u2/f_addr_8" BEL "u2/f_addr_7"
+        BEL "u2/f_addr_6" BEL "u2/f_addr_5" BEL "u2/f_addr_4" BEL
+        "u2/f_addr_3" BEL "u2/f_addr_2" BEL "u2/f_addr_1" BEL "u2/f_addr_0"
+        BEL "u1/rd_continue" BEL "u1/drck_sreg_3" BEL "u1/drck_sreg_2" BEL
+        "u1/drck_sreg_1" BEL "u1/drck_sreg_0" BEL "u1/rd_word_7" BEL
+        "u1/rd_word_6" BEL "u1/rd_word_5" BEL "u1/rd_word_4" BEL
+        "u1/rd_word_3" BEL "u1/rd_word_2" BEL "u1/rd_word_1" BEL
+        "u1/rd_word_0" BEL "clk_BUFG" BEL "u2/h_begun" BEL "u2/h_done" BEL
+        "u2/blk_en_b" BEL "u2/f_cs_n" BEL "u2/sclk" BEL "u2/blk_we_b" BEL
+        "u1/drck_pulse" BEL "u1/wr_dly_2" BEL "u1/blk_pgm_dly_2" BEL
+        "u1/blk_pgm_dly_1" BEL "u1/blk_pgm_dly_0" BEL "u1/blk_pgm" BEL
+        "u1/erase" BEL "u1/wr" BEL "u1/rd" BEL "u1/op_done" BEL "u1/rd_dly_2"
+        BEL "u1/erase_dly_1" BEL "u1/erase_dly_0" BEL "u1/wr_dly_1" BEL
+        "u1/rd_dly_1" BEL "u1/rd_dly_0" BEL "u1/erase_dly_2" BEL "u1/wr_dly_0"
+        BEL "u2/rtn_flash_state_0_P_0" BEL "u2/flash_state_2_1" BEL
+        "u2/rtn_flash_state_0_C_0" PIN "u2/blk_ram_pins<22>" PIN
+        "u2/blk_ram_pins<23>";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN u0/u0_pins<2> = BEL "u0/u0" PINNAME CLKIN;
+TIMEGRP fpgaClk_i = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "u0/u0_pins<2>";
+TSfpgaClk_i = PERIOD TIMEGRP "fpgaClk_i" 12 MHz HIGH 50%;
+TS_clk = PERIOD TIMEGRP "clk" TSfpgaClk_i * 8.33333333 HIGH 50%;
+SCHEMATIC END;
+

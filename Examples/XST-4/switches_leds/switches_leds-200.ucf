@@ -1,0 +1,28 @@
+#
+# Pin assignments for the XSA-200 Board.
+#
+
+net a<3>       loc=F14; # DIP switch 1
+net a<2>       loc=P9;  # DIP switch 2
+net a<1>       loc=R9;  # DIP switch 3
+net a<0>       loc=T9;  # DIP switch 4
+net b<3>       loc=T7;  # DIP switch 5
+net b<2>       loc=B9;  # DIP switch 6
+net b<1>       loc=A9;  # DIP switch 7
+net b<0>       loc=A5;  # DIP switch 8
+net msdigit<0> loc=C7;  # LED 1 - segment A
+net msdigit<1> loc=R16; # LED 1 - segment B
+net msdigit<2> loc=T15; # LED 1 - segment C
+net msdigit<3> loc=M13; # LED 1 - segment D
+net msdigit<4> loc=A10; # LED 1 - segment E
+net msdigit<5> loc=A6;  # LED 1 - segment F
+net msdigit<6> loc=D7;  # LED 1 - segment G
+net lsdigit<0> loc=M7;  # LED 2 - segment A
+net lsdigit<1> loc=R6;  # LED 2 - segment B
+net lsdigit<2> loc=N7;  # LED 2 - segment C
+net lsdigit<3> loc=P7;  # LED 2 - segment D
+net lsdigit<4> loc=R7;  # LED 2 - segment E
+net lsdigit<5> loc=T14; # LED 2 - segment F
+net lsdigit<6> loc=P8;  # LED 2 - segment G
+net op<0>      loc=T8;  # pushbutton PB1
+net ether_cs_n loc=C6;  # chip-enable for Ethernet chip

@@ -1,0 +1,17 @@
+# Loop back/demo signals
+# Pin assignment for PS2
+NET "kb_clk"    LOC = "B1"   | DRIVE = 2  | PULLUP ; # Bank = 3, Signal name = PS2C
+NET "kb_data"    LOC = "C3"   | DRIVE = 2  | PULLUP ; # Bank = 3, Signal name = PS2D
+
+# Pin assignment for LEDs
+NET "display<7>" LOC = "G1" ; # Bank = 3, Signal name = LD7
+NET "display<6>" LOC = "P4" ; # Bank = 2, Signal name = LD6
+NET "display<5>" LOC = "N4" ;  # Bank = 2, Signal name = LD5
+NET "display<4>" LOC = "N5" ;  # Bank = 2, Signal name = LD4
+NET "display<3>" LOC = "P6" ; # Bank = 2, Signal name = LD3
+NET "display<2>" LOC = "P7" ; # Bank = 3, Signal name = LD2
+NET "display<1>" LOC = "M11" ; # Bank = 2, Signal name = LD1
+NET "display<0>" LOC = "M5" ;  # Bank = 2, Signal name = LD0
+
+NET "reset" LOC = "A7";  # Bank = 1, Signal name = BTN3
+NET "kb_clk" CLOCK_DEDICATED_ROUTE = FALSE;

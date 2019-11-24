@@ -1,0 +1,627 @@
+Release 6.3.03i - xst G.38
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.65 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.65 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: test_dualport.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+  5) Advanced HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : test_dualport.prj
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+Verilog Include Directory          : 
+
+---- Target Parameters
+Output File Name                   : test_dualport
+Output Format                      : NGC
+Target Device                      : xc2s300e-6-pq208
+
+---- Source Options
+Top Module Name                    : test_dualport
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : lut
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100
+Add Generic Clock Buffer(BUFG)     : 4
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : test_dualport.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+Optimize Instantiated Primitives   : NO
+tristate2logic                     : No
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../../XS_LIB/common.vhd in Library work.
+Architecture common of Entity common is up to date.
+Compiling vhdl file C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../../XS_LIB/randgen.vhd in Library work.
+Architecture arch of Entity randgen is up to date.
+Compiling vhdl file C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../../XS_LIB/memtest.vhd in Library work.
+Architecture arch of Entity memtest is up to date.
+Compiling vhdl file C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../../XS_LIB/sdramcntl.vhd in Library work.
+Architecture arch of Entity sdramcntl is up to date.
+Architecture arch of Entity dualport is up to date.
+Compiling vhdl file C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../XSB_LIB/test_dualport_core.vhd in Library work.
+Architecture arch of Entity test_dualport_core is up to date.
+Compiling vhdl file C:/temp/BITSTREAMS/XSB/300e/test_dualport/test_dualport.vhd in Library work.
+Entity <test_dualport> (Architecture <arch>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <test_dualport> (Architecture <arch>).
+Entity <test_dualport> analyzed. Unit <test_dualport> generated.
+
+Analyzing generic Entity <test_dualport_core> (Architecture <arch>).
+	FREQ = 67000
+	PIPE_EN = <u>1
+	DATA_WIDTH = 16
+	SADDR_WIDTH = 13
+	NROWS = 4096
+	NCOLS = 512
+	BEG_ADDR = 0
+	END_ADDR = 8388607
+	BEG_TEST_0 = 0
+	END_TEST_0 = 4194303
+	BEG_TEST_1 = 4194304
+	END_TEST_1 = 8388607
+	PORT_TIME_SLOTS = <u>1111111100000000
+WARNING:Xst:753 - C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../XSB_LIB/test_dualport_core.vhd line 294: Unconnected output port 'status0' of component 'dualport'.
+WARNING:Xst:753 - C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../XSB_LIB/test_dualport_core.vhd line 294: Unconnected output port 'status1' of component 'dualport'.
+WARNING:Xst:753 - C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../XSB_LIB/test_dualport_core.vhd line 348: Unconnected output port 'status' of component 'sdramCntl'.
+Entity <test_dualport_core> analyzed. Unit <test_dualport_core> generated.
+
+Analyzing generic Entity <memTest> (Architecture <arch>).
+	PIPE_EN = <u>1
+	DATA_WIDTH = 16
+	ADDR_WIDTH = 23
+	BEG_TEST = 0
+	END_TEST = 4194303
+Entity <memTest> analyzed. Unit <memTest> generated.
+
+Analyzing generic Entity <randGen> (Architecture <arch>).
+	DATA_WIDTH = 16
+Entity <randGen> analyzed. Unit <randGen> generated.
+
+Analyzing generic Entity <memTest> (Architecture <arch>).
+	PIPE_EN = <u>1
+	DATA_WIDTH = 16
+	ADDR_WIDTH = 23
+	BEG_TEST = 4194304
+	END_TEST = 8388607
+Entity <memTest> analyzed. Unit <memTest0> generated.
+
+Analyzing generic Entity <dualport> (Architecture <arch>).
+	PIPE_EN = <u>1
+	PORT_TIME_SLOTS = <u>1111111100000000
+	DATA_WIDTH = 16
+	HADDR_WIDTH = 23
+Entity <dualport> analyzed. Unit <dualport> generated.
+
+Analyzing generic Entity <sdramCntl> (Architecture <arch>).
+	FREQ = 67000
+	IN_PHASE = <u>0
+	PIPE_EN = <u>1
+	MAX_NOP = 10000
+	DATA_WIDTH = 16
+	NROWS = 4096
+	NCOLS = 512
+	HADDR_WIDTH = 23
+	SADDR_WIDTH = 13
+Entity <sdramCntl> analyzed. Unit <sdramCntl> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+INFO:Xst:1304 - Contents of register <sAddr_x<12>> in unit <sdramCntl> never changes during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <randGen>.
+    Related source file is C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../../XS_LIB/randgen.vhd.
+    Found 1-bit xor4 for signal <new_bit>.
+    Found 16-bit register for signal <r_r>.
+    Found 16 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+	inferred   1 Xor(s).
+Unit <randGen> synthesized.
+
+
+Synthesizing Unit <sdramCntl>.
+    Related source file is C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../../XS_LIB/sdramcntl.vhd.
+WARNING:Xst:646 - Signal <col<12>> is assigned but never used.
+    Found finite state machine <FSM_0> for signal <state_r>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 28                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Clock enable       | $n0141 (negative)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | initwait                                       |
+    | Power Up State     | initwait                                       |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit 4-to-1 multiplexer for signal <$n0001> created at line 409.
+    Found 12-bit 4-to-1 multiplexer for signal <$n0140> created at line 409.
+    Found 13-bit subtractor for signal <$n0161>.
+    Found 13-bit adder for signal <$n0166> created at line 471.
+    Found 14-bit adder for signal <$n0183> created at line 426.
+    Found 11-bit subtractor for signal <$n0185> created at line 466.
+    Found 3-bit subtractor for signal <$n0186> created at line 442.
+    Found 2-bit subtractor for signal <$n0191> created at line 455.
+    Found 14-bit subtractor for signal <$n0192> created at line 477.
+    Found 12-bit comparator not equal for signal <$n0193> created at line 409.
+    Found 4-bit register for signal <activeFlag_r>.
+    Found 48-bit register for signal <activeRow_r>.
+    Found 2-bit register for signal <ba_r>.
+    Found 1-bit register for signal <cke_r>.
+    Found 6-bit register for signal <cmd_r>.
+    Found 16-bit register for signal <hDOut_r>.
+    Found 16-bit register for signal <hDOutOppPhase_r>.
+    Found 14-bit register for signal <nopCntr_r>.
+    Found 1-bit register for signal <opBegun_r>.
+    Found 3-bit register for signal <rasTimer_r>.
+    Found 5-bit register for signal <rdPipeline_r>.
+    Found 11-bit register for signal <refTimer_r>.
+    Found 13-bit register for signal <rfshCntr_r>.
+    Found 13-bit register for signal <sAddr_r>.
+    Found 16-bit register for signal <sData_r>.
+    Found 1-bit register for signal <sDataDir_r>.
+    Found 14-bit register for signal <timer_r>.
+    Found 1-bit register for signal <wrPipeline_r<0>>.
+    Found 2-bit register for signal <wrTimer_r>.
+    Found 59 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 170 D-type flip-flop(s).
+	inferred   7 Adder/Subtracter(s).
+	inferred   1 Comparator(s).
+	inferred  75 Multiplexer(s).
+Unit <sdramCntl> synthesized.
+
+
+Synthesizing Unit <dualport>.
+    Related source file is C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../../XS_LIB/sdramcntl.vhd.
+WARNING:Xst:647 - Input <opBegun> is never used.
+    Found 1-bit register for signal <opBegun0>.
+    Found 1-bit register for signal <opBegun1>.
+    Found 1-bit register for signal <door_r<0>>.
+    Found 1-bit register for signal <port_r<0>>.
+    Found 16-bit register for signal <slot_r>.
+    Found 40 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred  40 Multiplexer(s).
+Unit <dualport> synthesized.
+
+
+Synthesizing Unit <memTest0>.
+    Related source file is C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../../XS_LIB/memtest.vhd.
+    Found finite state machine <FSM_1> for signal <state_r>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 23-bit adder for signal <$n0029> created at line 151.
+    Found 16-bit comparator not equal for signal <$n0032> created at line 204.
+    Found 23-bit register for signal <addr_r>.
+    Found 1-bit register for signal <err_r>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Adder/Subtracter(s).
+	inferred   1 Comparator(s).
+Unit <memTest0> synthesized.
+
+
+Synthesizing Unit <memTest>.
+    Related source file is C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../../XS_LIB/memtest.vhd.
+    Found finite state machine <FSM_2> for signal <state_r>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 23-bit adder for signal <$n0029> created at line 151.
+    Found 16-bit comparator not equal for signal <$n0032> created at line 204.
+    Found 23-bit register for signal <addr_r>.
+    Found 1-bit register for signal <err_r>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Adder/Subtracter(s).
+	inferred   1 Comparator(s).
+Unit <memTest> synthesized.
+
+
+Synthesizing Unit <test_dualport_core>.
+    Related source file is C:/temp/BITSTREAMS/XSB/300e/test_dualport/../../XSB_LIB/test_dualport_core.vhd.
+WARNING:Xst:646 - Signal <rst> is assigned but never used.
+WARNING:Xst:646 - Signal <begun0> is assigned but never used.
+WARNING:Xst:646 - Signal <begun1> is assigned but never used.
+WARNING:Xst:646 - Signal <done0> is assigned but never used.
+WARNING:Xst:646 - Signal <done1> is assigned but never used.
+WARNING:Xst:653 - Signal <status> is used but never assigned. Tied to value 0000.
+WARNING:Xst:1780 - Signal <dataOut> is never used or assigned.
+WARNING:Xst:1780 - Signal <dataIn> is never used or assigned.
+    Found 21-bit up counter for signal <divCnt>.
+    Found 1-bit register for signal <rst_i>.
+    Found 9-bit up counter for signal <rstCnt>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <test_dualport_core> synthesized.
+
+
+Synthesizing Unit <test_dualport>.
+    Related source file is C:/temp/BITSTREAMS/XSB/300e/test_dualport/test_dualport.vhd.
+WARNING:Xst:1306 - Output <pb_a<18:15>> is never assigned.
+    Found 16-bit tristate buffer for signal <pb_d>.
+    Found 16 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred  16 Multiplexer(s).
+	inferred  16 Tristate(s).
+Unit <test_dualport> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Selecting encoding for FSM_2 ...
+Optimizing FSM <FSM_2> on signal <state_r> with one-hot encoding.
+Selecting encoding for FSM_1 ...
+Optimizing FSM <FSM_1> on signal <state_r> with one-hot encoding.
+Selecting encoding for FSM_0 ...
+Optimizing FSM <FSM_0> on signal <state_r> with one-hot encoding.
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# FSMs                             : 3
+# Adders/Subtractors               : 9
+ 23-bit adder                      : 2
+ 14-bit subtractor                 : 1
+ 11-bit subtractor                 : 1
+ 14-bit adder                      : 1
+ 13-bit adder                      : 1
+ 13-bit subtractor                 : 1
+ 2-bit subtractor                  : 1
+ 3-bit subtractor                  : 1
+# Counters                         : 2
+ 21-bit up counter                 : 1
+ 9-bit up counter                  : 1
+# Registers                        : 50
+ 1-bit register                    : 27
+ 23-bit register                   : 2
+ 16-bit register                   : 6
+ 12-bit register                   : 4
+ 13-bit register                   : 2
+ 2-bit register                    : 2
+ 5-bit register                    : 1
+ 14-bit register                   : 2
+ 3-bit register                    : 1
+ 4-bit register                    : 1
+ 6-bit register                    : 1
+ 11-bit register                   : 1
+# Comparators                      : 3
+ 16-bit comparator not equal       : 2
+ 12-bit comparator not equal       : 1
+# Multiplexers                     : 14
+ 16-bit 2-to-1 multiplexer         : 4
+ 1-bit 2-to-1 multiplexer          : 5
+ 23-bit 2-to-1 multiplexer         : 1
+ 1-bit 4-to-1 multiplexer          : 1
+ 13-bit 2-to-1 multiplexer         : 2
+ 12-bit 4-to-1 multiplexer         : 1
+# Tristates                        : 1
+ 16-bit tristate buffer            : 1
+# Xors                             : 2
+ 1-bit xor4                        : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch  <sAddr_r_12> (without init value) is constant in block <sdramCntl>.
+WARNING:Xst:1291 - FF/Latch <wrPipeline_r_0> is unconnected in block <u2>.
+WARNING:Xst:1291 - FF/Latch <opBegun_r> is unconnected in block <u2>.
+WARNING:Xst:1291 - FF/Latch <opBegun1> is unconnected in block <u1>.
+WARNING:Xst:1291 - FF/Latch <opBegun0> is unconnected in block <u1>.
+WARNING:Xst:1710 - FF/Latch  <cmd_r_5> (without init value) is constant in block <sdramCntl>.
+WARNING:Xst:1291 - FF/Latch <divCnt_20> is unconnected in block <test_dualport_core>.
+WARNING:Xst:1291 - FF/Latch <divCnt_17> is unconnected in block <test_dualport_core>.
+WARNING:Xst:1291 - FF/Latch <divCnt_18> is unconnected in block <test_dualport_core>.
+WARNING:Xst:1291 - FF/Latch <divCnt_19> is unconnected in block <test_dualport_core>.
+
+Optimizing unit <test_dualport> ...
+
+Optimizing unit <memTest> ...
+
+Optimizing unit <memTest0> ...
+
+Optimizing unit <dualport> ...
+
+Optimizing unit <sdramCntl> ...
+
+Optimizing unit <test_dualport_core> ...
+Loading device for application Xst from file '2s300e.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+WARNING:Xst:1291 - FF/Latch <u0_u1_opBegun1> is unconnected in block <test_dualport>.
+WARNING:Xst:1291 - FF/Latch <u0_u1_opBegun0> is unconnected in block <test_dualport>.
+WARNING:Xst:1291 - FF/Latch <u0_u2_wrPipeline_r_0> is unconnected in block <test_dualport>.
+WARNING:Xst:1291 - FF/Latch <u0_u2_opBegun_r> is unconnected in block <test_dualport>.
+Building and optimizing final netlist ...
+Register u0_u2_cmd_r_1 equivalent to u0_u2_cmd_r_0 has been removed
+Register u0_fast_memtest_port1_state_r_FFd5 equivalent to u0_fast_memtest_port0_state_r_FFd5 has been removed
+Found area constraint ratio of 100 (+ 5) on block test_dualport, actual ratio is 11.
+FlipFlop u0_u1_port_r_0 has been replicated 3 time(s)
+FlipFlop u0_u2_rdPipeline_r_1 has been replicated 1 time(s)
+FlipFlop u0_u1_port_r_0 has been replicated 1 time(s)
+FlipFlop u0_rst_i has been replicated 1 time(s)
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : test_dualport.ngr
+Top Level Output File Name         : test_dualport
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 45
+
+Macro Statistics :
+# Registers                        : 51
+#      1-bit register              : 29
+#      12-bit register             : 4
+#      13-bit register             : 2
+#      14-bit register             : 2
+#      16-bit register             : 5
+#      2-bit register              : 2
+#      23-bit register             : 2
+#      3-bit register              : 1
+#      4-bit register              : 1
+#      5-bit register              : 1
+#      9-bit register              : 2
+# Multiplexers                     : 14
+#      1-bit 4-to-1 multiplexer    : 1
+#      12-bit 4-to-1 multiplexer   : 1
+#      2-to-1 multiplexer          : 12
+# Tristates                        : 1
+#      16-bit tristate buffer      : 1
+# Adders/Subtractors               : 9
+#      11-bit subtractor           : 1
+#      13-bit adder                : 1
+#      13-bit subtractor           : 1
+#      14-bit adder                : 1
+#      14-bit subtractor           : 1
+#      23-bit adder                : 2
+#      9-bit adder                 : 2
+# Comparators                      : 3
+#      12-bit comparator not equal : 1
+#      16-bit comparator not equal : 2
+# Xors                             : 2
+#      1-bit xor4                  : 2
+
+Cell Usage :
+# BELS                             : 1004
+#      GND                         : 1
+#      LUT1                        : 138
+#      LUT2                        : 69
+#      LUT2_D                      : 2
+#      LUT2_L                      : 1
+#      LUT3                        : 119
+#      LUT3_D                      : 15
+#      LUT3_L                      : 4
+#      LUT4                        : 186
+#      LUT4_D                      : 22
+#      LUT4_L                      : 143
+#      MUXCY                       : 150
+#      MUXF5                       : 22
+#      VCC                         : 1
+#      XORCY                       : 131
+# FlipFlops/Latches                : 328
+#      FD                          : 17
+#      FDC                         : 100
+#      FDCE                        : 31
+#      FDCE_1                      : 16
+#      FDE                         : 137
+#      FDP                         : 9
+#      FDPE                        : 9
+#      FDR                         : 4
+#      FDRE                        : 2
+#      FDRS                        : 2
+#      FDS                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 40
+#      IOBUF                       : 16
+#      OBUF                        : 24
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2s300epq208-6 
+
+ Number of Slices:                     381  out of   3072    12%  
+ Number of Slice Flip Flops:           328  out of   6144     5%  
+ Number of 4 input LUTs:               699  out of   6144    11%  
+ Number of bonded IOBs:                 40  out of    146    27%  
+ Number of GCLKs:                        1  out of      4    25%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+sdram_clk                          | BUFGP                  | 328   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -6
+
+   Minimum period: 18.616ns (Maximum Frequency: 53.717MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 17.431ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'sdram_clk'
+Delay:               18.616ns (Levels of Logic = 7)
+  Source:            u0_u1_port_r_0 (FF)
+  Destination:       u0_fast_memtest_port0_addr_r_22 (FF)
+  Source Clock:      sdram_clk rising
+  Destination Clock: sdram_clk rising
+
+  Data Path: u0_u1_port_r_0 to u0_fast_memtest_port0_addr_r_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.992   2.350  u0_u1_port_r_0 (u0_u1_port_r_0)
+     LUT3:I0->O           19   0.468   2.950  u0_u1_Mmux_hAddr_Result<22>1 (u0_hAddr<22>)
+     LUT3:I0->O            1   0.468   0.000  u0_u2_Mmux__n0001_inst_mux_f5_0111_F (N28530)
+     MUXF5:I0->O          14   0.422   2.650  u0_u2_Mmux__n0001_inst_mux_f5_0111 (u0_u2__n0001)
+     LUT2_D:I0->O         13   0.468   2.550  u0_u2__n01711_SW0 (N27912)
+     LUT4_D:I0->O          1   0.468   0.920  u0_u2_Ker171071_SW5 (N28061)
+     LUT4_D:I3->O         10   0.468   2.250  u0_fast_memtest_port0_Ker114741_1 (u0_fast_memtest_port0_Ker114741_1)
+     LUT4_L:I1->LO         1   0.468   0.000  u0_fast_memtest_port0__n0028<20>1 (u0_fast_memtest_port0__n0028<20>)
+     FDE:D                     0.724          u0_fast_memtest_port0_addr_r_20
+    ----------------------------------------
+    Total                     18.616ns (4.946ns logic, 13.670ns route)
+                                       (26.6% logic, 73.4% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sdram_clk'
+Offset:              17.431ns (Levels of Logic = 5)
+  Source:            u0_fast_memtest_port0_state_r_FFd5 (FF)
+  Destination:       pb_d<15> (PAD)
+  Source Clock:      sdram_clk rising
+
+  Data Path: u0_fast_memtest_port0_state_r_FFd5 to pb_d<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             51   0.992   3.775  u0_fast_memtest_port0_state_r_FFd5 (u0_fast_memtest_port0_state_r_FFd5)
+     LUT4:I0->O            3   0.468   1.320  u0_fast_memtest_port0_state_r_Out41 (u0_progress0<1>)
+     LUT2:I0->O            2   0.468   1.150  u0_progress<1>1 (progress<1>)
+     LUT4:I3->O           16   0.468   2.800  _n00021 (_n0002)
+     LUT3:I0->O            1   0.468   0.920  Mmux__n0000_Result<0>1 (pb_d_0_IOBUF)
+     IOBUF:I->IO               4.602          pb_d_0_IOBUF (pb_d<0>)
+    ----------------------------------------
+    Total                     17.431ns (7.466ns logic, 9.965ns route)
+                                       (42.8% logic, 57.2% route)
+
+=========================================================================
+CPU : 16.11 / 17.37 s | Elapsed : 16.00 / 17.00 s
+ 
+--> 
+
+Total memory usage is 75348 kilobytes
+
+

@@ -1,0 +1,142 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/countersegment/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBcounterV1/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBcounterV1/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/P3-SegmentCNT/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/P3-SegmentCNT/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/P3-SegmentCNT/systemSeg.xst" -ofn "/home/hendri/Documents/workspaceXilinx/P3-SegmentCNT/systemSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s50a-vq100-4 systemSeg.ngc systemSeg.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o systemSeg_map.ncd systemSeg.ngd systemSeg.pcf 
+par -w -intstyle ise -ol high -t 1 systemSeg_map.ncd systemSeg.ncd systemSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml systemSeg.twx systemSeg.ncd -o systemSeg.twr systemSeg.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f systemSeg.ut systemSeg.ncd 

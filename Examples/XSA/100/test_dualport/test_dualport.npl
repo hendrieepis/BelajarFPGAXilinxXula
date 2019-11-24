@@ -1,0 +1,50 @@
+JDF G
+// Created by Project Navigator ver 1.0
+PROJECT test_dualport
+DESIGN test_dualport
+DEVFAM spartan2
+DEVFAMTIME 1118197653
+DEVICE xc2s100
+DEVICETIME 1118197653
+DEVPKG tq144
+DEVPKGTIME 1118197653
+DEVSPEED -5
+DEVSPEEDTIME 1118197653
+DEVTOPLEVELMODULETYPE HDL
+TOPLEVELMODULETYPETIME 0
+DEVSYNTHESISTOOL XST (VHDL/Verilog)
+SYNTHESISTOOLTIME 0
+DEVSIMULATOR Other
+SIMULATORTIME 0
+DEVGENERATEDSIMULATIONMODEL VHDL
+GENERATEDSIMULATIONMODELTIME 0
+SOURCE ..\..\..\XS_LIB\memtest.vhd
+SOURCE ..\..\..\XS_LIB\randgen.vhd
+SOURCE ..\..\XSA_LIB\xsasdramcntl.vhd
+SOURCE ..\..\..\XS_LIB\sdramcntl.vhd
+SOURCE ..\..\..\XS_LIB\common.vhd
+SOURCE test_dualport.vhd
+SOURCE ..\..\XSA_LIB\test_dualport_core.vhd
+DEPASSOC test_dualport test_dualport.ucf
+[Normal]
+xilxBitgCfg_Clk=xstvhd, spartan2, Implementation.t_bitFile, 1098328031, Float
+xilxBitgCfg_Done=xstvhd, spartan2, Implementation.t_bitFile, 1098328031, Float
+xilxBitgCfg_M0=xstvhd, spartan2, Implementation.t_bitFile, 1098328031, Float
+xilxBitgCfg_M1=xstvhd, spartan2, Implementation.t_bitFile, 1098328031, Float
+xilxBitgCfg_M2=xstvhd, spartan2, Implementation.t_bitFile, 1098328031, Float
+xilxBitgCfg_Pgm=xstvhd, spartan2, Implementation.t_bitFile, 1098328031, Float
+xilxBitgCfg_TCK=xstvhd, spartan2, Implementation.t_bitFile, 1098328031, Float
+xilxBitgCfg_TDI=xstvhd, spartan2, Implementation.t_bitFile, 1098328031, Float
+xilxBitgCfg_TDO=xstvhd, spartan2, Implementation.t_bitFile, 1098328031, Float
+xilxBitgCfg_TMS=xstvhd, spartan2, Implementation.t_bitFile, 1098328031, Float
+xilxBitgCfg_Unused=xstvhd, spartan2, Implementation.t_bitFile, 1098328031, Float
+xilxMapAllowLogicOpt=xstvhd, spartan2, VHDL.t_placeAndRouteDes, 1118261510, True
+xilxMapCoverMode=xstvhd, spartan2, VHDL.t_placeAndRouteDes, 1118261510, Speed
+xilxMapTimingDrivenPacking=xstvhd, spartan2, VHDL.t_placeAndRouteDes, 1118261510, True
+xilxNgdbld_AUL=xstvhd, spartan2, VHDL.t_placeAndRouteDes, 1089468408, False
+xilxPAReffortLevel=xstvhd, spartan2, VHDL.t_placeAndRouteDes, 1118261510, High
+[STATUS-ALL]
+test_dualport.ncdFile=WARNINGS,1118261518
+test_dualport.ngcFile=WARNINGS,1118260734
+[STRATEGY-LIST]
+Normal=True

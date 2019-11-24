@@ -1,0 +1,37 @@
+JDF G
+// Created by Project Navigator ver 1.0
+PROJECT test_codec
+DESIGN test_codec
+DEVFAM spartan3
+DEVFAMTIME 1095685775
+DEVICE xc3s1000
+DEVICETIME 1095685775
+DEVPKG ft256
+DEVPKGTIME 1095685775
+DEVSPEED -4
+DEVSPEEDTIME 1095685775
+DEVTOPLEVELMODULETYPE HDL
+TOPLEVELMODULETYPETIME 0
+DEVSYNTHESISTOOL XST (VHDL/Verilog)
+SYNTHESISTOOLTIME 0
+DEVSIMULATOR Other
+SIMULATORTIME 0
+DEVGENERATEDSIMULATIONMODEL VHDL
+GENERATEDSIMULATIONMODELTIME 0
+SOURCE test_codec.vhd
+SOURCE ../../../XS_LIB/common.vhd
+DEPASSOC test_codec test_codec.ucf
+[Normal]
+xilxBitgCfg_Clk=xstvhd, spartan3, VHDL.t_bitFile, 1114351903, Float
+xilxBitgCfg_Done=xstvhd, spartan3, VHDL.t_bitFile, 1114351903, Float
+xilxBitgCfg_M0=xstvhd, spartan3, VHDL.t_bitFile, 1114351903, Float
+xilxBitgCfg_M1=xstvhd, spartan3, VHDL.t_bitFile, 1114351903, Float
+xilxBitgCfg_M2=xstvhd, spartan3, VHDL.t_bitFile, 1114351903, Float
+xilxBitgCfg_Pgm=xstvhd, spartan3, VHDL.t_bitFile, 1114351903, Float
+xilxBitgCfg_TCK=xstvhd, spartan3, VHDL.t_bitFile, 1114351903, Float
+xilxBitgCfg_TDI=xstvhd, spartan3, VHDL.t_bitFile, 1114351903, Float
+xilxBitgCfg_TDO=xstvhd, spartan3, VHDL.t_bitFile, 1114351903, Float
+xilxBitgCfg_TMS=xstvhd, spartan3, VHDL.t_bitFile, 1114351903, Float
+xilxBitgCfg_Unused=xstvhd, spartan3, VHDL.t_bitFile, 1114351903, Float
+[STRATEGY-LIST]
+Normal=True

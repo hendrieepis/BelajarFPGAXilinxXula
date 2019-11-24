@@ -1,0 +1,10 @@
+net load loc=e13;
+net clk loc=c16;
+net din<0> loc=e14;
+net din<1> loc=d16;
+net din<2> loc=f13;
+net din<3> loc=e15;
+net dout<0> loc=l13;
+net dout<1> loc=c10;
+net dout<2> loc=d10;
+net dout<3> loc=j13;

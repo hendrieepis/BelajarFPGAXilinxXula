@@ -1,0 +1,29 @@
+Command line:
+   ROM_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  35917
+
+Sun Jan 27 20:31:18 2013
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 123.019 Meg
+
+ Total Signals          : 35
+ Total Nets             : 40
+ Total Signal Drivers   : 6
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 4
+ Total Traceable Variables  : 10
+ Total Scalar Nets and Variables : 418
+Total Line Count : 34
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 132.461 Meg
+
+Sun Jan 27 20:40:27 2013
+

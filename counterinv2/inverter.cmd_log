@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.xst" -ofn "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.syr" 
+vhdtdtfi -prj counterinv -o /home/hendri/Documents/workspaceXilinx/counterinv/inverter.vhi -module inverter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work inverter.vhd 
+vhdtdtfi -prj counterinv -o /home/hendri/Documents/workspaceXilinx/counterinv/inverter.vhi -module inverter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work inverter.vhd 

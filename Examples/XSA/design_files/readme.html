@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>XSA BOARD DESIGN FILES</title>
+<link rev="made" href="mailto:" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#xsa_board_design_files">XSA BOARD DESIGN FILES</a></li>
+	<li><a href="#application_directories">APPLICATION DIRECTORIES</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#copyright_and_license">COPYRIGHT AND LICENSE</a></li>
+	<li><a href="#history">HISTORY</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<hr />
+<h1><a name="xsa_board_design_files">XSA BOARD DESIGN FILES</a></h1>
+<p>These are the design files for various XSA Board test applications.</p>
+<p>You can find application notes on some of these applications at
+<a href="http://www.xess.com/ho03000.html.">http://www.xess.com/ho03000.html.</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="application_directories">APPLICATION DIRECTORIES</a></h1>
+<p>The test applications for each XSA Board model are stored in a separate directory.
+Each directory has subdirectories, each containing a particular test application.
+The VHDL source files and pin assignments for each application are provided along with
+a WebPACK project description file so you can rebuild each application yourself.</p>
+<p>The function of the application in each subdirectory is listed below.</p>
+<dl>
+<dt><strong><a name="item_dwnldpar_3a">dwnldpar:</a></strong><br />
+</dt>
+<dd>
+This is the parallel port interface for the CPLD on the XSA Board.
+</dd>
+<p></p>
+<dt><strong><a name="item_dwnldpa2_3a">dwnldpa2:</a></strong><br />
+</dt>
+<dd>
+This is the parallel port interface for the CPLD on the XSA-50 or XSA-100 Board when it is inserted into
+an XStend Board.
+</dd>
+<p></p>
+<dt><strong><a name="item_fcnfg_3a">fcnfg:</a></strong><br />
+</dt>
+<dd>
+This allows the CPLD to configure the FPGA with a bitstream stored in the Flash.
+</dd>
+<p></p>
+<dt><strong><a name="item_fintf_3a">fintf:</a></strong><br />
+</dt>
+<dd>
+This programs the CPLD or FPGA to create a parallel port-to-Flash upload/download interface.
+</dd>
+<p></p>
+<dt><strong><a name="item_p3jtag_3a">p3jtag:</a></strong><br />
+</dt>
+<dd>
+This is the Xilinx Parallel Cable III interface for the CPLD that lets you use iMPACT to download
+bitstreams to the XSA Board.
+</dd>
+<p></p>
+<dt><strong><a name="item_p4jtag_3a">p4jtag:</a></strong><br />
+</dt>
+<dd>
+This is the Xilinx Parallel Cable IV interface for the CPLD that lets you use iMPACT
+and a Parallel Cable IV to download bitstreams to the XSA-3S1000 Board.
+</dd>
+<p></p>
+<dt><strong><a name="item_ramintfc_3a">ramintfc:</a></strong><br />
+</dt>
+<dd>
+This programs the FPGA to create a parallel port-to-SDRAM upload/download interface.
+</dd>
+<p></p>
+<dt><strong><a name="item_test_board_3a">test_board:</a></strong><br />
+</dt>
+<dd>
+This programs the FPGA to perform a read/write test of the SDRAM.
+</dd>
+<p></p>
+<dt><strong><a name="item_test_codec_3a">test_codec:</a></strong><br />
+</dt>
+<dd>
+This programs the FPGA to perform a loopback test of the codec on the XStend Board.
+</dd>
+<p></p>
+<dt><strong><a name="item_test_kbd_3a">test_kbd:</a></strong><br />
+</dt>
+<dd>
+This programs the FPGA to perform a test where keypresses of the digit keys on a PS/2
+keyboard are displayed on the seven-segment LED.
+</dd>
+<p></p>
+<dt><strong><a name="item_test_switches_3a">test_switches:</a></strong><br />
+</dt>
+<dd>
+This programs the FPGA to perform an uninteresting test where the DIP switch and pushbutton states
+affect the illumination of the seven-segment LED.
+</dd>
+<p></p>
+<dt><strong><a name="item_test_timer_3a">test_timer:</a></strong><br />
+</dt>
+<dd>
+This programs the FPGA to perform an uninteresting test where the top segment
+of the seven-segment LED pulses at approximately a 1 Hz rate.
+</dd>
+<p></p>
+<dt><strong><a name="item_test_vga_3a">test_vga:</a></strong><br />
+</dt>
+<dd>
+This programs the FPGA to with a VGA generator that will display an image stored in the SDRAM
+on a VGA monitor.
+</dd>
+<p></p></dl>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>Dave Vanden Bout, X Engineering Software Systems Corp.</p>
+<p>Send bug reports to <a href="mailto:bugs@xess.com.">bugs@xess.com.</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="copyright_and_license">COPYRIGHT AND LICENSE</a></h1>
+<p>Copyright 2004 by X Engineering Software Systems Corporation.</p>
+<p>These applications can be freely distributed and modified
+as long as you do not remove the attributions to the author or his employer.</p>
+<p>
+</p>
+<hr />
+<h1><a name="history">HISTORY</a></h1>
+<p>11/18/04 - Initial release.</p>
+
+</body>
+
+</html>

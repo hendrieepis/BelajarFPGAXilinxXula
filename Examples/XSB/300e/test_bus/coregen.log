@@ -1,0 +1,22 @@
+# Xilinx CORE Generator 6.3.03i
+# User = DEVB
+Initializing default project...
+Loading plug-ins...
+All runtime messages will be recorded in C:\xesscorp\PRODUCTS\BITSTREAMS\XSB\300e\test_bus\coregen.log
+NEWPROJECT .
+SETPROJECT .
+# busformat=BusFormatAngleBracketNotRipped
+# designflow=VHDL
+# expandedprojectpath=C:\xesscorp\PRODUCTS\BITSTREAMS\XSB\300e\test_bus
+# flowvendor=Foundation_iSE
+# formalverification=None
+# simulationoutputproducts=VHDL
+# xilinxfamily=Virtex2
+# outputoption=DesignFlow
+# overwritefiles=Default
+# simvendor=ModelSim
+# expandedprojectpath=C:\xesscorp\PRODUCTS\BITSTREAMS\XSB\300e\test_bus
+Set current Project to C:\xesscorp\PRODUCTS\BITSTREAMS\XSB\300e\test_bus
+SET BusFormat = BusFormatAngleBracketNotRipped
+SETXIPCPORTHOST 1306
+XIPCPJSENDCORES spartan2e

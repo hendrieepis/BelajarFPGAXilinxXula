@@ -1,0 +1,10 @@
+EN debouncing NULL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/debouncing.vhd sub00/vhpl02 1359160855
+EN prescaller NULL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/prescaller.vhd sub00/vhpl00 1359160853
+EN counterbcd NULL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/counterBCD.vhd sub00/vhpl04 1359160857
+AR debouncing behavioral /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/debouncing.vhd sub00/vhpl03 1359160856
+AR prescaller behavioral /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/prescaller.vhd sub00/vhpl01 1359160854
+AR counterbcd behavioral /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/counterBCD.vhd sub00/vhpl05 1359160858
+EN syscnt NULL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/SysCnt.vhd sub00/vhpl08 1359160861
+AR decoder behavioral /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/decoder.vhd sub00/vhpl07 1359160860
+EN decoder NULL /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/decoder.vhd sub00/vhpl06 1359160859
+AR syscnt behavioral /home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/SysCnt.vhd sub00/vhpl09 1359160862

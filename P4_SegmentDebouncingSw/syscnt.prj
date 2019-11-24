@@ -1,0 +1,5 @@
+vhdl work "prescaller.vhd"
+vhdl work "decoder.vhd"
+vhdl work "debouncing.vhd"
+vhdl work "counterBCD.vhd"
+vhdl work "SysCnt.vhd"

@@ -1,0 +1,121 @@
+=pod
+
+
+=head1 USING THE RS232 PORT ON THE XST-3.0 BOARD
+
+This is a simple design example that echoes characters received through the RS232 port of the XST-3.0 Board
+back to the sending terminal.
+
+
+=head1 DESIGN FILES
+
+=over 4
+
+=item * F<miniuart.vhd>, F<Rxunit.vhd>, F<Txunit.vhd>, F<utils.vhd>
+
+These are the design files for a UART that is used to send and receive eight-bit data through the DB9 connector on
+the XST-3.0 Board.  Some small changes were made to these design files, but I can't quite remember what they were.
+The original files are stored in the F<MiniUART.tar.gz> archive if you want to check.
+
+=item * F<RS232.vhd>
+
+This is the VHDL file that describes a simple state machine that accepts characters received by the UART module
+and then transmits them back through the UART to the terminal that sent them.
+
+=item * F<RS232.ucf>
+
+These are the constraints which assign the I/O signals of the RS232 module to the
+appropriate pins of the FPGA on the XSA-3S1000 + XST-3.0 combination.
+
+=item * F<RS232.bit>
+
+This is a compiled bitstream for the design that can be downloaded into the XSA-3S1000 + XST-3.0 combination.
+
+=item * F<RS232-200.ucf>
+
+This is an alternate set of pin assignments to be used if the design is recompiled for
+an XSA-200 + XST-3.0 combination.
+
+=item * F<RS232.npl>
+
+Open this project file with WebPACK if you need to recompile the design.
+
+=back
+
+
+=head1 USING THE DESIGN EXAMPLE
+
+=over 4
+
+=item * Step 1:
+
+Set jumper J9 on the XSA-3S1000 Board to XS.
+
+=item * Step 2:
+
+Download the default parallel port interface into the XSA-3S1000 (F<\XSTOOLS\XSA\3S1000\dwnldpar.svf>)
+if it is not already present.  (Running GXSTEST will do this automatically.)
+
+=item * Step 3:
+
+Connect a straight-thru serial cable between the PC and the female DB9 connector of the XST-3.0 Board.
+On the XST-3.0 Board near the DB9 connector, make sure the shunts are arranged to connect 
+the following pins on header J7: 1-3, 2-4, 5-7, 6-8.
+
+=item * Step 4:
+
+On the PC, open a Hyperterminal window with the following settings:
+
+    Bits per second:  9600
+    Data bits:           8
+    Parity:           None
+    Stop bits:           1
+    Flow control:     None
+
+=item * Step 5:
+
+Download the F<RS232.bit> file to the XSA Board.
+
+=item * Step 6:
+
+Start typing within the Hyperterminal window.  The typed characters will be echoed
+back and displayed in the window.
+
+=back
+
+
+=head1 ENVIRONMENT
+
+This example design was developed using the following version of software:
+
+   Xilinx WebPACK       : 6.3.03i
+
+
+=head1 SOURCE FILES
+
+You can download the source files for this example design from the XESS website at
+http://www.xess.com/projects/xst3_RS232.zip .
+
+
+=head1 AUTHOR
+
+Dave Vanden Bout, X Engineering Software Systems Corp.
+
+Send bug reports to bugs@xess.com.
+
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2006 by X Engineering Software Systems Corporation.
+
+This application can be freely distributed and modified
+as long as you do not remove the attributions to the author or his employer.
+
+
+=head1 HISTORY
+
+01/28/2006 - Initial release.
+
+
+
+=cut

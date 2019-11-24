@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTestBench_isim_beh.exe" -prj "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTestBench_beh.prj" "work.LCDTestBench" 

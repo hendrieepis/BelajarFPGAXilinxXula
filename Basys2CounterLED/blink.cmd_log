@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/Basys2CounterLED/blink.xst" -ofn "/home/hendri/Documents/workspaceXilinx/Basys2CounterLED/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc counter.ucf -p xc3s250e-cp132-4 blink.ngc blink.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -t 1 blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf counter.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 

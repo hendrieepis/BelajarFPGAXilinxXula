@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keybtest1_isim_beh.exe" -prj "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keybtest1_beh.prj" "work.keybtest1" 

@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map O.87xd on Thu May 17 19:14:12 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "trig_o" LOCATE = SITE "P50" LEVEL 1;
+COMP "s_o<0>" LOCATE = SITE "P84" LEVEL 1;
+COMP "s_o<1>" LOCATE = SITE "P83" LEVEL 1;
+COMP "echo_i" LOCATE = SITE "P32" LEVEL 1;
+COMP "s_o<2>" LOCATE = SITE "P94" LEVEL 1;
+COMP "s_o<3>" LOCATE = SITE "P73" LEVEL 1;
+COMP "s_o<4>" LOCATE = SITE "P72" LEVEL 1;
+COMP "s_o<5>" LOCATE = SITE "P3" LEVEL 1;
+COMP "s_o<6>" LOCATE = SITE "P4" LEVEL 1;
+COMP "s_o<7>" LOCATE = SITE "P62" LEVEL 1;
+COMP "clk_i" LOCATE = SITE "P43" LEVEL 1;
+SCHEMATIC END;
+

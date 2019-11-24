@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/syscnt.xst" -ofn "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/syscnt.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-vq100-4 syscnt.ngc syscnt.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o syscnt_map.ncd syscnt.ngd syscnt.pcf 
+par -w -intstyle ise -ol high -t 1 syscnt_map.ncd syscnt.ncd syscnt.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml syscnt.twx syscnt.ncd -o syscnt.twr syscnt.pcf 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/syscnt.xst" -ofn "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/syscnt.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc syscnt.ucf -p xc3s50a-vq100-4 syscnt.ngc syscnt.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o syscnt_map.ncd syscnt.ngd syscnt.pcf 
+par -w -intstyle ise -ol high -t 1 syscnt_map.ncd syscnt.ncd syscnt.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml syscnt.twx syscnt.ncd -o syscnt.twr syscnt.pcf -ucf syscnt.ucf 
+bitgen -intstyle ise -f syscnt.ut syscnt.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/syscnt.xst" -ofn "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/syscnt.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc syscnt.ucf -p xc3s50a-vq100-4 syscnt.ngc syscnt.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o syscnt_map.ncd syscnt.ngd syscnt.pcf 
+par -w -intstyle ise -ol high -t 1 syscnt_map.ncd syscnt.ncd syscnt.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml syscnt.twx syscnt.ncd -o syscnt.twr syscnt.pcf -ucf syscnt.ucf 
+bitgen -intstyle ise -f syscnt.ut syscnt.ncd 

@@ -1,0 +1,13 @@
+NET "counter_out<6>" LOC = P37;
+NET "counter_out<5>" LOC = P50;
+NET "counter_out<4>" LOC = P52;
+NET "counter_out<3>" LOC = P56;
+NET "counter_out<2>" LOC = P57;
+NET "counter_out<1>" LOC = P61;
+NET "counter_out<0>" LOC = P62;
+NET "pb_i" LOC = P68;
+NET "clk_i" LOC = P43;
+
+# PlanAhead Generated IO constraints 
+
+NET "pb_i" PULLUP;

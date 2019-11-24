@@ -1,0 +1,610 @@
+Release 6.3.03i - xst G.38
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.62 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.62 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: test_board.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+  5) Advanced HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : test_board.prj
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+Verilog Include Directory          : 
+
+---- Target Parameters
+Output File Name                   : test_board
+Output Format                      : NGC
+Target Device                      : xc2s200-5-fg256
+
+---- Source Options
+Top Module Name                    : test_board
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : lut
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100
+Add Generic Clock Buffer(BUFG)     : 4
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : test_board.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+Optimize Instantiated Primitives   : NO
+tristate2logic                     : No
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../../XS_LIB/common.vhd in Library work.
+Architecture common of Entity common is up to date.
+Compiling vhdl file C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../../XS_LIB/sdramcntl.vhd in Library work.
+Architecture arch of Entity sdramcntl is up to date.
+Architecture arch of Entity dualport is up to date.
+Compiling vhdl file C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../../XS_LIB/randgen.vhd in Library work.
+Architecture arch of Entity randgen is up to date.
+Compiling vhdl file C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../../XS_LIB/memtest.vhd in Library work.
+Architecture arch of Entity memtest is up to date.
+Compiling vhdl file C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../XSA_LIB/xsasdramcntl.vhd in Library work.
+Architecture arch of Entity xsasdramcntl is up to date.
+Compiling vhdl file C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../XSA_LIB/test_board_core.vhd in Library work.
+Architecture arch of Entity test_board_core is up to date.
+Compiling vhdl file C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/test_board.vhd in Library work.
+Entity <test_board> (Architecture <arch>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <test_board> (Architecture <arch>).
+Entity <test_board> analyzed. Unit <test_board> generated.
+
+Analyzing generic Entity <test_board_core> (Architecture <arch>).
+	FREQ = 50000
+	CLK_DIV = 4.000000
+	PIPE_EN = <u>1
+	DATA_WIDTH = 16
+	SADDR_WIDTH = 13
+	NROWS = 8192
+	NCOLS = 512
+	BEG_ADDR = 0
+	END_ADDR = 16777215
+	BEG_TEST = 0
+	END_TEST = 16777215
+    Set user-defined property "INIT =  1" for signal <rst_i>.
+WARNING:Xst:753 - C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../XSA_LIB/test_board_core.vhd line 245: Unconnected output port 'clk2x' of component 'XSASDRAMCntl'.
+WARNING:Xst:753 - C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../XSA_LIB/test_board_core.vhd line 245: Unconnected output port 'status' of component 'XSASDRAMCntl'.
+Entity <test_board_core> analyzed. Unit <test_board_core> generated.
+
+Analyzing generic Entity <memTest> (Architecture <arch>).
+	PIPE_EN = <u>1
+	DATA_WIDTH = 16
+	ADDR_WIDTH = 24
+	BEG_TEST = 0
+	END_TEST = 16777215
+Entity <memTest> analyzed. Unit <memTest> generated.
+
+Analyzing generic Entity <randGen> (Architecture <arch>).
+	DATA_WIDTH = 16
+Entity <randGen> analyzed. Unit <randGen> generated.
+
+Analyzing generic Entity <XSASDRAMCntl> (Architecture <arch>).
+	FREQ = 50000
+	CLK_DIV = 4.000000
+	PIPE_EN = <u>1
+	MAX_NOP = 10000
+	MULTIPLE_ACTIVE_ROWS = <u>1
+	DATA_WIDTH = 16
+	NROWS = 8192
+	NCOLS = 512
+	HADDR_WIDTH = 24
+	SADDR_WIDTH = 13
+Entity <XSASDRAMCntl> analyzed. Unit <XSASDRAMCntl> generated.
+
+Analyzing generic Entity <sdramCntl> (Architecture <arch>).
+	FREQ = 50000
+	IN_PHASE = <u>0
+	PIPE_EN = <u>1
+	MAX_NOP = 10000
+	MULTIPLE_ACTIVE_ROWS = <u>1
+	DATA_WIDTH = 16
+	NROWS = 8192
+	NCOLS = 512
+	HADDR_WIDTH = 24
+	SADDR_WIDTH = 13
+WARNING:Xst:819 - C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../../XS_LIB/sdramcntl.vhd line 333: The following signals are missing in the process sensitivity list:
+   activeBank_r, ba_r.
+Entity <sdramCntl> analyzed. Unit <sdramCntl> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sdramCntl>.
+    Related source file is C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../../XS_LIB/sdramcntl.vhd.
+WARNING:Xst:646 - Signal <col<12>> is assigned but never used.
+    Found finite state machine <FSM_0> for signal <state_r>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 30                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 8                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Clock enable       | $n0154 (negative)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | initwait                                       |
+    | Power Up State     | initwait                                       |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit 4-to-1 multiplexer for signal <$n0001> created at line 422.
+    Found 13-bit 4-to-1 multiplexer for signal <$n0153> created at line 422.
+    Found 2-bit comparator equal for signal <$n0157> created at line 603.
+    Found 14-bit subtractor for signal <$n0176>.
+    Found 14-bit adder for signal <$n0180> created at line 484.
+    Found 14-bit adder for signal <$n0196> created at line 439.
+    Found 9-bit subtractor for signal <$n0198> created at line 479.
+    Found 2-bit subtractor for signal <$n0199> created at line 455.
+    Found 14-bit subtractor for signal <$n0204> created at line 490.
+    Found 13-bit comparator not equal for signal <$n0205> created at line 422.
+    Found 1-bit register for signal <activeBank_r>.
+    Found 4-bit register for signal <activeFlag_r>.
+    Found 52-bit register for signal <activeRow_r>.
+    Found 2-bit register for signal <ba_r>.
+    Found 1-bit register for signal <cke_r>.
+    Found 6-bit register for signal <cmd_r>.
+    Found 16-bit register for signal <hDOut_r>.
+    Found 16-bit register for signal <hDOutOppPhase_r>.
+    Found 14-bit register for signal <nopCntr_r>.
+    Found 1-bit register for signal <opBegun_r>.
+    Found 2-bit register for signal <rasTimer_r>.
+    Found 5-bit register for signal <rdPipeline_r>.
+    Found 9-bit register for signal <refTimer_r>.
+    Found 14-bit register for signal <rfshCntr_r>.
+    Found 13-bit register for signal <sAddr_r>.
+    Found 16-bit register for signal <sData_r>.
+    Found 1-bit register for signal <sDataDir_r>.
+    Found 14-bit register for signal <timer_r>.
+    Found 1-bit register for signal <wrPipeline_r<0>>.
+    Found 1-bit register for signal <wrTimer_r<0>>.
+    Found 61 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 174 D-type flip-flop(s).
+	inferred   6 Adder/Subtracter(s).
+	inferred   2 Comparator(s).
+	inferred  78 Multiplexer(s).
+Unit <sdramCntl> synthesized.
+
+
+Synthesizing Unit <randGen>.
+    Related source file is C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../../XS_LIB/randgen.vhd.
+    Found 1-bit xor4 for signal <new_bit>.
+    Found 16-bit register for signal <r_r>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <randGen> synthesized.
+
+
+Synthesizing Unit <XSASDRAMCntl>.
+    Related source file is C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../XSA_LIB/xsasdramcntl.vhd.
+WARNING:Xst:647 - Input <sclkfb> is never used.
+WARNING:Xst:1780 - Signal <int_clkdv> is never used or assigned.
+WARNING:Xst:1780 - Signal <dllext_rst_n> is never used or assigned.
+WARNING:Xst:1780 - Signal <sclkfb_b> is never used or assigned.
+WARNING:Xst:1780 - Signal <int_clk2x_b> is never used or assigned.
+WARNING:Xst:1780 - Signal <ext_lock> is never used or assigned.
+WARNING:Xst:1780 - Signal <int_clk1x_b> is never used or assigned.
+WARNING:Xst:1780 - Signal <int_clk1x> is never used or assigned.
+WARNING:Xst:1780 - Signal <int_clk2x> is never used or assigned.
+WARNING:Xst:1780 - Signal <int_clkdv_b> is never used or assigned.
+WARNING:Xst:1780 - Signal <ext_clk1x> is never used or assigned.
+WARNING:Xst:1780 - Signal <dllext_rst> is never used or assigned.
+WARNING:Xst:1780 - Signal <int_lock> is never used or assigned.
+    Found 16-bit tristate buffer for signal <sData>.
+    Summary:
+	inferred  16 Tristate(s).
+Unit <XSASDRAMCntl> synthesized.
+
+
+Synthesizing Unit <memTest>.
+    Related source file is C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../../XS_LIB/memtest.vhd.
+    Found finite state machine <FSM_1> for signal <state_r>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 24-bit adder for signal <$n0029> created at line 151.
+    Found 16-bit comparator not equal for signal <$n0032> created at line 204.
+    Found 24-bit register for signal <addr_r>.
+    Found 1-bit register for signal <err_r>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   1 Adder/Subtracter(s).
+	inferred   1 Comparator(s).
+Unit <memTest> synthesized.
+
+
+Synthesizing Unit <test_board_core>.
+    Related source file is C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/../../XSA_LIB/test_board_core.vhd.
+WARNING:Xst:646 - Signal <begun> is assigned but never used.
+WARNING:Xst:1780 - Signal <dataOut> is never used or assigned.
+WARNING:Xst:1780 - Signal <dataIn> is never used or assigned.
+WARNING:Xst:646 - Signal <done> is assigned but never used.
+    Found 23-bit up counter for signal <divCnt>.
+    Found 1-bit register for signal <rst_i>.
+    Found 2-bit register for signal <syncButton>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <test_board_core> synthesized.
+
+
+Synthesizing Unit <test_board>.
+    Related source file is C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/200/test_board-50MHz/test_board.vhd.
+WARNING:Xst:1306 - Output <pps<5:3>> is never assigned.
+Unit <test_board> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Selecting encoding for FSM_1 ...
+Optimizing FSM <FSM_1> on signal <state_r> with one-hot encoding.
+Selecting encoding for FSM_0 ...
+Optimizing FSM <FSM_0> on signal <state_r> with one-hot encoding.
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# FSMs                             : 2
+# Adders/Subtractors               : 7
+ 24-bit adder                      : 1
+ 14-bit subtractor                 : 2
+ 9-bit subtractor                  : 1
+ 14-bit adder                      : 2
+ 2-bit subtractor                  : 1
+# Counters                         : 1
+ 23-bit up counter                 : 1
+# Registers                        : 42
+ 1-bit register                    : 23
+ 24-bit register                   : 1
+ 16-bit register                   : 4
+ 13-bit register                   : 5
+ 2-bit register                    : 2
+ 5-bit register                    : 1
+ 14-bit register                   : 3
+ 4-bit register                    : 1
+ 6-bit register                    : 1
+ 9-bit register                    : 1
+# Comparators                      : 3
+ 16-bit comparator not equal       : 1
+ 13-bit comparator not equal       : 1
+ 2-bit comparator equal            : 1
+# Multiplexers                     : 8
+ 1-bit 2-to-1 multiplexer          : 4
+ 1-bit 4-to-1 multiplexer          : 1
+ 14-bit 2-to-1 multiplexer         : 2
+ 13-bit 4-to-1 multiplexer         : 1
+# Tristates                        : 1
+ 16-bit tristate buffer            : 1
+# Xors                             : 1
+ 1-bit xor4                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch activeBank_r hinder the constant cleaning in the block sdramCntl.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1291 - FF/Latch <wrPipeline_r_0> is unconnected in block <u1>.
+WARNING:Xst:1291 - FF/Latch <opBegun_r> is unconnected in block <u1>.
+WARNING:Xst:1710 - FF/Latch  <cmd_r_5> (without init value) is constant in block <sdramCntl>.
+WARNING:Xst:1291 - FF/Latch <u0_divCnt_22> is unconnected in block <test_board>.
+WARNING:Xst:1291 - FF/Latch <u0_divCnt_17> is unconnected in block <test_board>.
+WARNING:Xst:1291 - FF/Latch <u0_divCnt_18> is unconnected in block <test_board>.
+WARNING:Xst:1291 - FF/Latch <u0_divCnt_19> is unconnected in block <test_board>.
+WARNING:Xst:1291 - FF/Latch <u0_divCnt_20> is unconnected in block <test_board>.
+WARNING:Xst:1291 - FF/Latch <u0_divCnt_21> is unconnected in block <test_board>.
+
+Optimizing unit <test_board> ...
+
+Optimizing unit <randGen> ...
+
+Optimizing unit <memTest> ...
+
+Optimizing unit <sdramCntl> ...
+Loading device for application Xst from file 'v200.nph' in environment C:/ISE.
+
+Mapping all equations...
+WARNING:Xst:1291 - FF/Latch <u0_u1_u1_wrPipeline_r_0> is unconnected in block <test_board>.
+WARNING:Xst:1291 - FF/Latch <u0_u1_u1_opBegun_r> is unconnected in block <test_board>.
+Building and optimizing final netlist ...
+Register u0_u1_u1_sDataDir_r equivalent to u0_u1_u1_wrTimer_r_0 has been removed
+Register u0_u1_u1_cmd_r_1 equivalent to u0_u1_u1_cmd_r_0 has been removed
+Found area constraint ratio of 100 (+ 5) on block test_board, actual ratio is 11.
+FlipFlop u0_rst_i has been replicated 7 time(s)
+FlipFlop u0_u1_u1_rdPipeline_r_1 has been replicated 1 time(s)
+FlipFlop u0_fast_memtest_addr_r_23 has been replicated 2 time(s)
+FlipFlop u0_fast_memtest_addr_r_22 has been replicated 1 time(s)
+FlipFlop u0_fast_memtest_state_r_FFd3 has been replicated 1 time(s)
+FlipFlop u0_fast_memtest_state_r_FFd4 has been replicated 1 time(s)
+FlipFlop u0_u1_u1_state_r_FFd4 has been replicated 1 time(s)
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : test_board.ngr
+Top Level Output File Name         : test_board
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 54
+
+Macro Statistics :
+# Registers                        : 46
+#      1-bit register              : 28
+#      13-bit register             : 5
+#      14-bit register             : 3
+#      16-bit register             : 4
+#      2-bit register              : 2
+#      23-bit register             : 1
+#      24-bit register             : 1
+#      4-bit register              : 1
+#      5-bit register              : 1
+# Multiplexers                     : 8
+#      1-bit 4-to-1 multiplexer    : 1
+#      13-bit 4-to-1 multiplexer   : 1
+#      2-to-1 multiplexer          : 6
+# Tristates                        : 1
+#      16-bit tristate buffer      : 1
+# Adders/Subtractors               : 7
+#      14-bit adder                : 2
+#      14-bit subtractor           : 2
+#      23-bit adder                : 1
+#      24-bit adder                : 1
+#      9-bit subtractor            : 1
+# Comparators                      : 2
+#      13-bit comparator not equal : 1
+#      16-bit comparator not equal : 1
+# Xors                             : 1
+#      1-bit xor4                  : 1
+
+Cell Usage :
+# BELS                             : 694
+#      BUF                         : 2
+#      GND                         : 1
+#      LUT1                        : 109
+#      LUT2                        : 17
+#      LUT2_D                      : 4
+#      LUT2_L                      : 20
+#      LUT3                        : 78
+#      LUT3_D                      : 5
+#      LUT3_L                      : 4
+#      LUT4                        : 115
+#      LUT4_D                      : 22
+#      LUT4_L                      : 85
+#      MUXCY                       : 114
+#      MUXF5                       : 15
+#      VCC                         : 1
+#      XORCY                       : 102
+# FlipFlops/Latches                : 272
+#      FD                          : 18
+#      FDC                         : 92
+#      FDCE                        : 24
+#      FDCE_1                      : 16
+#      FDE                         : 97
+#      FDP                         : 8
+#      FDPE                        : 1
+#      FDR                         : 11
+#      FDRE                        : 2
+#      FDRS                        : 2
+#      FDS                         : 1
+# IO Buffers                       : 50
+#      IBUF                        : 1
+#      IBUFG                       : 1
+#      IOBUF                       : 16
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2s200fg256-5 
+
+ Number of Slices:                     285  out of   2352    12%  
+ Number of Slice Flip Flops:           272  out of   4704     5%  
+ Number of 4 input LUTs:               459  out of   4704     9%  
+ Number of bonded IOBs:                 50  out of    180    27%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | IBUFG                  | 272   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 16.468ns (Maximum Frequency: 60.724MHz)
+   Minimum input arrival time before clock: 2.857ns
+   Maximum output required time after clock: 14.355ns
+   Maximum combinational path delay: 15.807ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'clk'
+Delay:               16.468ns (Levels of Logic = 5)
+  Source:            u0_fast_memtest_addr_r_22 (FF)
+  Destination:       u0_fast_memtest_addr_r_23 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: u0_fast_memtest_addr_r_22 to u0_fast_memtest_addr_r_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             17   1.292   2.900  u0_fast_memtest_addr_r_22 (u0_fast_memtest_addr_r_22)
+     MUXF5:S->O           10   0.981   2.200  u0_u1_u1_Mmux__n0001_inst_mux_f5_0111 (u0_u1_u1__n0001)
+     LUT3:I0->O            6   0.653   1.850  u0_u1_u1__n01851_SW0 (N16460)
+     LUT4:I0->O            3   0.653   1.480  u0_u1_u1_Ker11196_SW1 (N16486)
+     LUT4_D:I0->O         12   0.653   2.400  u0_fast_memtest_Ker101751 (u0_fast_memtest_N10177)
+     LUT4_L:I3->LO         1   0.653   0.000  u0_fast_memtest__n0028<12>1 (u0_fast_memtest__n0028<12>)
+     FDE:D                     0.753          u0_fast_memtest_addr_r_12
+    ----------------------------------------
+    Total                     16.468ns (5.638ns logic, 10.830ns route)
+                                       (34.2% logic, 65.8% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+Offset:              2.857ns (Levels of Logic = 1)
+  Source:            sw2 (PAD)
+  Destination:       u0_syncButton_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: sw2 to u0_syncButton_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.924   1.150  sw2_IBUF (sw2_IBUF)
+     FDR:R                     0.783          u0_syncButton_1
+    ----------------------------------------
+    Total                      2.857ns (1.707ns logic, 1.150ns route)
+                                       (59.7% logic, 40.3% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+Offset:              14.355ns (Levels of Logic = 3)
+  Source:            u0_fast_memtest_state_r_FFd3_1 (FF)
+  Destination:       s<4> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: u0_fast_memtest_state_r_FFd3_1 to s<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            25   1.292   3.450  u0_fast_memtest_state_r_FFd3_1 (u0_fast_memtest_state_r_FFd3_1)
+     LUT4:I3->O            4   0.653   1.600  u0_fast_memtest_state_r_Out51 (u0_progress<0>)
+     LUT3:I0->O            1   0.653   1.150  u0_led<1>1 (s_1_OBUF)
+     OBUF:I->O                 5.557          s_1_OBUF (s<1>)
+    ----------------------------------------
+    Total                     14.355ns (8.155ns logic, 6.200ns route)
+                                       (56.8% logic, 43.2% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default path analysis
+Delay:               15.807ns (Levels of Logic = 3)
+  Source:            clk (PAD)
+  Destination:       sclk (PAD)
+
+  Data Path: clk to sclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFG:I->O           91   1.697   6.750  u0_u1_clkin (u0_clk_b)
+     LUT1:I0->O            1   0.653   1.150  u0_u1_ext_clkin1 (sclk_OBUF)
+     OBUF:I->O                 5.557          sclk_OBUF (sclk)
+    ----------------------------------------
+    Total                     15.807ns (7.907ns logic, 7.900ns route)
+                                       (50.0% logic, 50.0% route)
+
+=========================================================================
+CPU : 11.66 / 12.92 s | Elapsed : 11.00 / 12.00 s
+ 
+--> 
+
+Total memory usage is 70604 kilobytes
+
+

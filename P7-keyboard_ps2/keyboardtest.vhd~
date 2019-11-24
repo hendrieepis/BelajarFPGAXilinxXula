@@ -1,0 +1,173 @@
+--------------------------------------------------------------------------------
+-- Company: 
+-- Engineer:
+--
+-- Create Date:   15:57:01 02/25/2013
+-- Design Name:   
+-- Module Name:   /home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboardtest.vhd
+-- Project Name:  keyboard_ps2
+-- Target Device:  
+-- Tool versions:  
+-- Description:   
+-- 
+-- VHDL Test Bench Created by ISE for module: keyboard
+-- 
+-- Dependencies:
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+--
+-- Notes: 
+-- This testbench has been automatically generated using types std_logic and
+-- std_logic_vector for the ports of the unit under test.  Xilinx recommends
+-- that these types always be used for the top-level I/O of a design in order
+-- to guarantee that the testbench will bind correctly to the post-implementation 
+-- simulation model.
+--------------------------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+ 
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--USE ieee.numeric_std.ALL;
+ 
+ENTITY keyboardtest IS
+END keyboardtest;
+ 
+ARCHITECTURE behavior OF keyboardtest IS 
+ 
+    -- Component Declaration for the Unit Under Test (UUT)
+ 
+    COMPONENT keyboard
+    PORT(
+         reset : IN  std_logic;
+         clk : IN  std_logic;
+         LED : OUT  std_logic
+        );
+    END COMPONENT;
+    
+
+   --Inputs
+   signal reset : std_logic := '0';
+   signal clk : std_logic := '0';
+
+ 	--Outputs
+   signal LED : std_logic;
+	kb_clk : in std_logic;	-- hodiny z klavesnice
+   kb_data : in std_logic;	-- seriova data z klavesnice
+   -- Clock period definitions
+	constant key : in std_logic_vector(7 downto 0) :="11110101"
+   constant clk_period : time := 20 ns;
+ 
+BEGIN
+ 
+	-- Instantiate the Unit Under Test (UUT)
+   uut: keyboard PORT MAP (
+          reset => reset,
+          clk => clk,
+          LED => LED
+        );
+
+   -- Clock process definitions
+   clk_process :process
+   begin
+		clk <= '0';
+		wait for clk_period/2;
+		clk <= '1';
+		wait for clk_period/2;
+   end process;
+ 
+
+   -- Stimulus process
+   stim_proc: process
+   begin		
+      -- hold reset state for 100 ns.
+      wait for 100 ns;	
+
+      wait for clk_period*10;
+
+      -- insert stimulus here 
+			kb_clk <= '1';
+wait for 500 us;
+
+kb_clk <= '0';
+wait for 65 us;
+kb_clk <= '1';
+wait for 65 us;
+
+-- start bit
+kb_data <= '0';
+kb_clk <= '0';
+wait for 65 us;
+kb_clk <= '1';
+wait for 65 us;
+
+kb_data <= key(0);
+kb_clk <= '0';
+wait for 65 us;
+kb_clk <= '1';
+wait for 65 us;
+wait for clk_delay * 1 us;
+kb_data <= key(1);
+kb_clk <= '0';
+wait for 65 us;
+kb_clk <= '1';
+wait for 65 us;
+
+kb_data <= key(2);
+kb_clk <= '0';
+wait for 65 us;
+kb_clk <= '1';
+wait for 65 us;
+
+kb_data <= key(3);
+kb_clk <= '0';
+wait for 65 us;
+kb_clk <= '1';
+wait for 65 us;
+
+kb_data <= key(4);
+kb_clk <= '0';
+wait for 65 us;
+kb_clk <= '1';
+wait for 65 us;
+
+kb_data <= key(5);
+kb_clk <= '0';
+wait for 65 us;
+kb_clk <= '1';
+wait for 65 us;
+
+kb_data <= key(6);
+kb_clk <= '0';
+wait for 65 us;
+kb_clk <= '1';
+wait for 65 us;
+
+kb_data <= key(7);
+kb_clk <= '0';
+wait for 65 us;
+kb_clk <= '1';
+wait for 65 us;
+
+-- parita
+kb_data <= not (key(0) xor key(1) xor key(2) xor key(3) xor key(4) xor key(5) xor key(6) xor key(7));
+kb_clk <= '0';
+wait for 65 us;
+kb_clk <= '1';
+wait for 65 us;
+
+-- stop bit
+kb_data <= '1';
+kb_clk <= '0';
+wait for 65 us;
+kb_clk <= '1';
+
+
+wait for 500 us
+
+      wait;
+   end process;
+
+END;

@@ -1,0 +1,76 @@
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xsa\200\test_board/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+map -intstyle ise -p xc2s200-fg256-5 -cm area -pr b -k 4 -c 100 -tx off -o test_board_map.ncd test_board.ngd test_board.pcf
+par -w -intstyle ise -ol std -t 1 test_board_map.ncd test_board.ncd test_board.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_board test_board.ncd -o test_board.twr test_board.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_board test_board.ncd -o test_board.twr test_board.pcf
+timingan -intstyle ise test_board.ncd test_board
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xsa\200\test_board/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+map -intstyle ise -p xc2s200-fg256-5 -cm area -pr b -k 4 -c 100 -tx off -o test_board_map.ncd test_board.ngd test_board.pcf
+par -w -intstyle ise -ol std -t 1 test_board_map.ncd test_board.ncd test_board.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_board test_board.ncd -o test_board.twr test_board.pcf
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+ngdbuild -intstyle ise -dd c:\temp\bitstreams\xsa\200\test_board/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+map -intstyle ise -p xc2s200-fg256-5 -cm area -pr b -k 4 -c 100 -tx off -o test_board_map.ncd test_board.ngd test_board.pcf
+par -w -intstyle ise -ol std -t 1 test_board_map.ncd test_board.ncd test_board.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_board test_board.ncd -o test_board.twr test_board.pcf
+bitgen -intstyle ise -f test_board.ut test_board.ncd
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xsa\200\test_board/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+map -intstyle ise -p xc2s200-fg256-5 -cm area -pr b -k 4 -c 100 -tx off -o test_board_map.ncd test_board.ngd test_board.pcf
+par -w -intstyle ise -ol std -t 1 test_board_map.ncd test_board.ncd test_board.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_board test_board.ncd -o test_board.twr test_board.pcf
+bitgen -intstyle ise -f test_board.ut test_board.ncd
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xsa\200\test_board/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+map -intstyle ise -p xc2s200-fg256-5 -cm area -pr b -k 4 -c 100 -tx off -o test_board_map.ncd test_board.ngd test_board.pcf
+par -w -intstyle ise -ol std -t 1 test_board_map.ncd test_board.ncd test_board.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_board test_board.ncd -o test_board.twr test_board.pcf
+bitgen -intstyle ise -f test_board.ut test_board.ncd
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xsa\200\test_board/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+map -intstyle ise -p xc2s200-fg256-5 -cm area -pr b -k 4 -c 100 -tx off -o test_board_map.ncd test_board.ngd test_board.pcf
+par -w -intstyle ise -ol std -t 1 test_board_map.ncd test_board.ncd test_board.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_board test_board.ncd -o test_board.twr test_board.pcf
+bitgen -intstyle ise -f test_board.ut test_board.ncd
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xsa\200\test_board/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+map -intstyle ise -p xc2s200-fg256-5 -cm area -pr b -k 4 -c 100 -tx off -o test_board_map.ncd test_board.ngd test_board.pcf
+par -w -intstyle ise -ol std -t 1 test_board_map.ncd test_board.ncd test_board.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_board test_board.ncd -o test_board.twr test_board.pcf
+bitgen -intstyle ise -f test_board.ut test_board.ncd
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xsa\200\test_board-50mhz/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+map -intstyle ise -p xc2s200-fg256-5 -cm area -pr b -k 4 -c 100 -tx off -o test_board_map.ncd test_board.ngd test_board.pcf
+par -w -intstyle ise -ol std -t 1 test_board_map.ncd test_board.ncd test_board.pcf
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xsa\200\test_board-50mhz/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+map -intstyle ise -p xc2s200-fg256-5 -cm area -pr b -k 4 -c 100 -tx off -o test_board_map.ncd test_board.ngd test_board.pcf
+par -w -intstyle ise -ol std -t 1 test_board_map.ncd test_board.ncd test_board.pcf
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xsa\200\test_board-50mhz/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+map -intstyle ise -p xc2s200-fg256-5 -cm area -pr b -k 4 -c 100 -tx off -o test_board_map.ncd test_board.ngd test_board.pcf
+par -w -intstyle ise -ol std -t 1 test_board_map.ncd test_board.ncd test_board.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_board test_board.ncd -o test_board.twr test_board.pcf
+bitgen -intstyle ise -f test_board.ut test_board.ncd
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xsa\200\test_board-50mhz/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xsa\200\test_board-50mhz/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+map -intstyle ise -p xc2s200-fg256-5 -cm area -pr b -k 4 -c 100 -tx off -o test_board_map.ncd test_board.ngd test_board.pcf
+par -w -intstyle ise -ol std -t 1 test_board_map.ncd test_board.ncd test_board.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_board test_board.ncd -o test_board.twr test_board.pcf
+bitgen -intstyle ise -f test_board.ut test_board.ncd
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xsa\200\test_board-50mhz/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+map -intstyle ise -p xc2s200-fg256-5 -cm area -pr b -k 4 -c 100 -tx off -o test_board_map.ncd test_board.ngd test_board.pcf
+par -w -intstyle ise -ol std -t 1 test_board_map.ncd test_board.ncd test_board.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_board test_board.ncd -o test_board.twr test_board.pcf
+bitgen -intstyle ise -f test_board.ut test_board.ncd
+xst -intstyle ise -ifn __projnav/test_board.xst -ofn test_board.syr
+ngdbuild -intstyle ise -dd c:\xesscorp\products\bitstreams\xsa\200\test_board-50mhz/_ngo -uc test_board.ucf  -p xc2s200-fg256-5 test_board.ngc test_board.ngd
+map -intstyle ise -p xc2s200-fg256-5 -cm area -pr b -k 4 -c 100 -tx off -o test_board_map.ncd test_board.ngd test_board.pcf
+par -w -intstyle ise -ol std -t 1 test_board_map.ncd test_board.ncd test_board.pcf
+trce -intstyle ise -e 3 -l 3 -xml test_board test_board.ncd -o test_board.twr test_board.pcf
+bitgen -intstyle ise -f test_board.ut test_board.ncd

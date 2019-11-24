@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/fintf_jtag/fintf_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/fintf_jtag/fintf_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 fintf_jtag.ngc fintf_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fintf_jtag_map.ncd fintf_jtag.ngd fintf_jtag.pcf 
+par -w -intstyle ise -ol high -mt off fintf_jtag_map.ncd fintf_jtag.ncd fintf_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml fintf_jtag.twx fintf_jtag.ncd -o fintf_jtag.twr fintf_jtag.pcf 
+bitgen -intstyle ise -f fintf_jtag.ut fintf_jtag.ncd 

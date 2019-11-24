@@ -1,0 +1,8 @@
+V3 3
+FL /home/hendri/Documents/workspaceXilinx/basys2Test/pinIOTest.vhd 2013/01/30.19:34:25 P.49d
+EN work/pinIOTest 1359549402 \
+      FL /home/hendri/Documents/workspaceXilinx/basys2Test/pinIOTest.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/pinIOTest/Behavioral 1359549403 \
+      FL /home/hendri/Documents/workspaceXilinx/basys2Test/pinIOTest.vhd \
+      EN work/pinIOTest 1359549402

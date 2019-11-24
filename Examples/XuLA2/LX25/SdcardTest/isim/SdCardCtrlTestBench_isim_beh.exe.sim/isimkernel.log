@@ -1,0 +1,29 @@
+Command line:
+   SdCardCtrlTestBench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62966
+
+Mon Jul 09 18:44:43 2012
+
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 505.373 Meg
+
+ Total Signals          : 29
+ Total Nets             : 60
+ Total Signal Drivers   : 15
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 4
+ Total Traceable Variables  : 55
+ Total Scalar Nets and Variables : 679
+Total Line Count : 183
+
+ Total Simulation Time: 0.0624 sec
+
+ Current Memory Usage: 505.373 Meg
+
+Mon Jul 09 20:44:45 2012
+

@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/debouncing.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/debouncing.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/debouncing.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/debouncing.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/debouncing.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/debouncing.syr" 
+vhdtdtfi -prj PBsegmentV2 -o /home/hendri/Documents/workspaceXilinx/PBsegmentV2/debouncing.vhi -module debouncing -template /opt/Xilinx/14.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work debouncing.vhd 
+vhdtdtfi -prj PBsegmentV2 -o /home/hendri/Documents/workspaceXilinx/PBsegmentV2/debouncing.vhi -module debouncing -template /opt/Xilinx/14.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work debouncing.vhd 

@@ -1,0 +1,60 @@
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 test_board_jtag.ngc test_board_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_board_jtag_map.ncd test_board_jtag.ngd test_board_jtag.pcf 
+par -w -intstyle ise -ol high -mt off test_board_jtag_map.ncd test_board_jtag.ncd test_board_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml test_board_jtag.twx test_board_jtag.ncd -o test_board_jtag.twr test_board_jtag.pcf 
+bitgen -intstyle ise -f test_board_jtag.ut test_board_jtag.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 test_board_jtag.ngc test_board_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_board_jtag_map.ncd test_board_jtag.ngd test_board_jtag.pcf 
+par -w -intstyle ise -ol high -mt off test_board_jtag_map.ncd test_board_jtag.ncd test_board_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml test_board_jtag.twx test_board_jtag.ncd -o test_board_jtag.twr test_board_jtag.pcf 
+bitgen -intstyle ise -f test_board_jtag.ut test_board_jtag.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 test_board_jtag.ngc test_board_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_board_jtag_map.ncd test_board_jtag.ngd test_board_jtag.pcf 
+par -w -intstyle ise -ol high -mt off test_board_jtag_map.ncd test_board_jtag.ncd test_board_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml test_board_jtag.twx test_board_jtag.ncd -o test_board_jtag.twr test_board_jtag.pcf 
+bitgen -intstyle ise -f test_board_jtag.ut test_board_jtag.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 test_board_jtag.ngc test_board_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_board_jtag_map.ncd test_board_jtag.ngd test_board_jtag.pcf 
+par -w -intstyle ise -ol high -mt off test_board_jtag_map.ncd test_board_jtag.ncd test_board_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml test_board_jtag.twx test_board_jtag.ncd -o test_board_jtag.twr test_board_jtag.pcf 
+bitgen -intstyle ise -f test_board_jtag.ut test_board_jtag.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 test_board_jtag.ngc test_board_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_board_jtag_map.ncd test_board_jtag.ngd test_board_jtag.pcf 
+par -w -intstyle ise -ol high -mt off test_board_jtag_map.ncd test_board_jtag.ncd test_board_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml test_board_jtag.twx test_board_jtag.ncd -o test_board_jtag.twr test_board_jtag.pcf 
+bitgen -intstyle ise -f test_board_jtag.ut test_board_jtag.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 test_board_jtag.ngc test_board_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_board_jtag_map.ncd test_board_jtag.ngd test_board_jtag.pcf 
+par -w -intstyle ise -ol high -mt off test_board_jtag_map.ncd test_board_jtag.ncd test_board_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml test_board_jtag.twx test_board_jtag.ncd -o test_board_jtag.twr test_board_jtag.pcf 
+bitgen -intstyle ise -f test_board_jtag.ut test_board_jtag.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 test_board_jtag.ngc test_board_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_board_jtag_map.ncd test_board_jtag.ngd test_board_jtag.pcf 
+par -w -intstyle ise -ol high -mt off test_board_jtag_map.ncd test_board_jtag.ncd test_board_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml test_board_jtag.twx test_board_jtag.ncd -o test_board_jtag.twr test_board_jtag.pcf 
+bitgen -intstyle ise -f test_board_jtag.ut test_board_jtag.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 test_board_jtag.ngc test_board_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_board_jtag_map.ncd test_board_jtag.ngd test_board_jtag.pcf 
+par -w -intstyle ise -ol high -mt off test_board_jtag_map.ncd test_board_jtag.ncd test_board_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml test_board_jtag.twx test_board_jtag.ncd -o test_board_jtag.twr test_board_jtag.pcf 
+bitgen -intstyle ise -f test_board_jtag.ut test_board_jtag.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 test_board_jtag.ngc test_board_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_board_jtag_map.ncd test_board_jtag.ngd test_board_jtag.pcf 
+par -w -intstyle ise -ol high -mt off test_board_jtag_map.ncd test_board_jtag.ncd test_board_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml test_board_jtag.twx test_board_jtag.ncd -o test_board_jtag.twr test_board_jtag.pcf 
+bitgen -intstyle ise -f test_board_jtag.ut test_board_jtag.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/test_board_jtag/test_board_jtag.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 test_board_jtag.ngc test_board_jtag.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_board_jtag_map.ncd test_board_jtag.ngd test_board_jtag.pcf 
+par -w -intstyle ise -ol high -mt off test_board_jtag_map.ncd test_board_jtag.ncd test_board_jtag.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml test_board_jtag.twx test_board_jtag.ncd -o test_board_jtag.twr test_board_jtag.pcf 
+bitgen -intstyle ise -f test_board_jtag.ut test_board_jtag.ncd 

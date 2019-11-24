@@ -1,0 +1,10 @@
+Command line:
+   LCDTestBench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  40738
+
+Tue Jan  8 11:35:12 2013
+
+
+ Elaboration Time: 0.02 sec

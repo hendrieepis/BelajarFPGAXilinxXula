@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 SdcardSfwTest.ngc SdcardSfwTest.ngd  
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 SdcardSfwTest.ngc SdcardSfwTest.ngd  
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 SdcardSfwTest.ngc SdcardSfwTest.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SdcardSfwTest_map.ncd SdcardSfwTest.ngd SdcardSfwTest.pcf 
+par -w -intstyle ise -ol high -mt off SdcardSfwTest_map.ncd SdcardSfwTest.ncd SdcardSfwTest.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SdcardSfwTest.twx SdcardSfwTest.ncd -o SdcardSfwTest.twr SdcardSfwTest.pcf 
+bitgen -intstyle ise -f SdcardSfwTest.ut SdcardSfwTest.ncd 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardSfwTest/SdcardSfwTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -aut -nt timestamp -uc C:/xesscorp/PRODUCTS/XuLA/FPGA/XuLA_lib/XuLA2.ucf -p xc6slx25-ftg256-2 SdcardSfwTest.ngc SdcardSfwTest.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SdcardSfwTest_map.ncd SdcardSfwTest.ngd SdcardSfwTest.pcf 
+par -w -intstyle ise -ol high -mt off SdcardSfwTest_map.ncd SdcardSfwTest.ncd SdcardSfwTest.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SdcardSfwTest.twx SdcardSfwTest.ncd -o SdcardSfwTest.twr SdcardSfwTest.pcf 
+bitgen -intstyle ise -f SdcardSfwTest.ut SdcardSfwTest.ncd 

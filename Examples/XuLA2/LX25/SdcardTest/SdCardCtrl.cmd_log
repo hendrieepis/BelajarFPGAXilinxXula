@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrl.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrl.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrl.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrl.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrl.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrl.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrl.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrl.syr" 
+xst -intstyle ise -ifn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrl.xst" -ofn "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrl.syr" 

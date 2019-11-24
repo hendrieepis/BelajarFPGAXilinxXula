@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map L.70 on Tue Apr 19 09:01:32 2011
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Rgb<0>" LOCATE = SITE "C9" LEVEL 1;
+COMP "Rgb<1>" LOCATE = SITE "E7" LEVEL 1;
+COMP "Rgb<2>" LOCATE = SITE "D5" LEVEL 1;
+COMP "Rgb<3>" LOCATE = SITE "A8" LEVEL 1;
+COMP "Rgb<4>" LOCATE = SITE "A5" LEVEL 1;
+COMP "Rgb<5>" LOCATE = SITE "C3" LEVEL 1;
+COMP "Rgb<6>" LOCATE = SITE "C8" LEVEL 1;
+COMP "Rgb<7>" LOCATE = SITE "D6" LEVEL 1;
+COMP "Rgb<8>" LOCATE = SITE "B1" LEVEL 1;
+COMP "Vsync_n" LOCATE = SITE "D8" LEVEL 1;
+COMP "Hsync_n" LOCATE = SITE "B7" LEVEL 1;
+COMP "Clk" LOCATE = SITE "T9" LEVEL 1;
+NET "Clk_BUFGP/IBUFG" BEL "Clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

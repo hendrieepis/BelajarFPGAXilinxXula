@@ -1,0 +1,5 @@
+vhdl work "C:\xesscorp\PRODUCTS\XuLA\FPGA\XuLA_lib\Common.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\XuLA\FPGA\XuLA_lib\UserInstrJtag.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\XuLA\FPGA\XuLA_lib\SdramCntl.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\XuLA\FPGA\XuLA_lib\ClkGen.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\XuLA\FPGA\50\ramintfc_jtag\ramintfc_jtag.vhd"

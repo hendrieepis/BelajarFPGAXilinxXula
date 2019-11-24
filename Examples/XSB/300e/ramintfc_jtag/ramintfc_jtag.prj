@@ -1,0 +1,3 @@
+vhdl work ../../../XS_LIB/common.vhd
+vhdl work ../../../XS_LIB/userinstr_jtag.vhd
+vhdl work ramintfc_jtag.vhd

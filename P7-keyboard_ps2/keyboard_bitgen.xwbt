@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.ncd
+OUTFILE=/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.bit
+FAMILY=Spartan3E
+PART=xc3s250e-4cp132
+WORKINGDIR=/home/hendri/Documents/workspaceXilinx/keyboard_ps2
+LICENSE=WebPack
+USER_INFO=205718885_0_0_719

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/counterBCD.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/counterBCD.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/counterBCD.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/counterBCD.syr" 
+vhdtdtfi -prj PBsegmentV2 -o /home/hendri/Documents/workspaceXilinx/PBsegmentV2/counterBCD.vhi -module counterBCD -template /opt/Xilinx/14.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counterBCD.vhd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/counterBCD.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/counterBCD.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/counterBCD.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/counterBCD.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/counterBCD.xst" -ofn "/home/hendri/Documents/workspaceXilinx/PBsegmentV2/counterBCD.syr" 

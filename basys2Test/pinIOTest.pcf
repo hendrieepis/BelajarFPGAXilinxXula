@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map P.49d on Wed Jan 30 19:37:39 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "btn<0>" LOCATE = SITE "N3" LEVEL 1;
+COMP "data<0>" LOCATE = SITE "G1" LEVEL 1;
+COMP "btn<1>" LOCATE = SITE "E2" LEVEL 1;
+COMP "data<1>" LOCATE = SITE "P4" LEVEL 1;
+COMP "btn<2>" LOCATE = SITE "F3" LEVEL 1;
+COMP "data<2>" LOCATE = SITE "N4" LEVEL 1;
+COMP "btn<3>" LOCATE = SITE "G3" LEVEL 1;
+COMP "data<3>" LOCATE = SITE "N5" LEVEL 1;
+COMP "btn<4>" LOCATE = SITE "B4" LEVEL 1;
+COMP "data<4>" LOCATE = SITE "P6" LEVEL 1;
+COMP "btn<5>" LOCATE = SITE "K3" LEVEL 1;
+COMP "data<5>" LOCATE = SITE "P7" LEVEL 1;
+COMP "btn<6>" LOCATE = SITE "L3" LEVEL 1;
+COMP "data<6>" LOCATE = SITE "M11" LEVEL 1;
+COMP "btn<7>" LOCATE = SITE "P11" LEVEL 1;
+COMP "data<7>" LOCATE = SITE "M5" LEVEL 1;
+SCHEMATIC END;
+

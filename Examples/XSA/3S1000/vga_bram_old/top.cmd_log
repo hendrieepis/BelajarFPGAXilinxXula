@@ -1,0 +1,12 @@
+xst -ise "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/vga_bram.ise" -intstyle ise -ifn "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/top.xst" -ofn "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/top.syr" 
+ngdbuild -ise "vga_bram.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s1000-ft256-4 top.ngc top.ngd  
+map -ise "vga_bram.ise" -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "vga_bram.ise" -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/vga_bram.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf top.ucf 
+bitgen -ise "vga_bram.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/vga_bram.ise" -intstyle ise -ifn "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/top.xst" -ofn "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/top.syr" 
+ngdbuild -ise "vga_bram.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s1000-ft256-4 top.ngc top.ngd  
+map -ise "vga_bram.ise" -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "vga_bram.ise" -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/xesscorp/PRODUCTS/BITSTREAMS/XSA/3S1000/vga_bram/vga_bram.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf top.ucf 
+bitgen -ise "vga_bram.ise" -intstyle ise -f top.ut top.ncd 

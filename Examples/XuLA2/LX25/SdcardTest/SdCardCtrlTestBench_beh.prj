@@ -1,0 +1,3 @@
+vhdl work "../../XuLA_lib/Common.vhd"
+vhdl work "../../XuLA_lib/SDCard.vhdl"
+vhdl work "SdCardCtrlTestBench.vhd"

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counterbench_isim_beh.exe" -prj "/home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counterbench_beh.prj" "work.counterbench" 

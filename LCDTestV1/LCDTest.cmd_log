@@ -1,0 +1,76 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-vq100-4 LCDTest.ngc LCDTest.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o LCDTest_map.ncd LCDTest.ngd LCDTest.pcf 
+par -w -intstyle ise -ol high -t 1 LCDTest_map.ncd LCDTest.ncd LCDTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCDTest.twx LCDTest.ncd -o LCDTest.twr LCDTest.pcf 
+pin2ucf -o LCDTest_locked.ucf LCDTest.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCDTest.ucf -p xc3s50a-vq100-4 LCDTest.ngc LCDTest.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o LCDTest_map.ncd LCDTest.ngd LCDTest.pcf 
+par -w -intstyle ise -ol high -t 1 LCDTest_map.ncd LCDTest.ncd LCDTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCDTest.twx LCDTest.ncd -o LCDTest.twr LCDTest.pcf -ucf LCDTest.ucf 
+bitgen -intstyle ise -f LCDTest.ut LCDTest.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCDTest.ucf -p xc3s50a-vq100-4 LCDTest.ngc LCDTest.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o LCDTest_map.ncd LCDTest.ngd LCDTest.pcf 
+par -w -intstyle ise -ol high -t 1 LCDTest_map.ncd LCDTest.ncd LCDTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCDTest.twx LCDTest.ncd -o LCDTest.twr LCDTest.pcf -ucf LCDTest.ucf 
+bitgen -intstyle ise -f LCDTest.ut LCDTest.ncd 
+bitgen -intstyle ise -f LCDTest.ut LCDTest.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCDTest.ucf -p xc3s50a-vq100-4 LCDTest.ngc LCDTest.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o LCDTest_map.ncd LCDTest.ngd LCDTest.pcf 
+par -w -intstyle ise -ol high -t 1 LCDTest_map.ncd LCDTest.ncd LCDTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCDTest.twx LCDTest.ncd -o LCDTest.twr LCDTest.pcf -ucf LCDTest.ucf 
+bitgen -intstyle ise -f LCDTest.ut LCDTest.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCDTest.ucf -p xc3s50a-vq100-4 LCDTest.ngc LCDTest.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o LCDTest_map.ncd LCDTest.ngd LCDTest.pcf 
+par -w -intstyle ise -ol high -t 1 LCDTest_map.ncd LCDTest.ncd LCDTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCDTest.twx LCDTest.ncd -o LCDTest.twr LCDTest.pcf -ucf LCDTest.ucf 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCDTest.ucf -p xc3s50a-vq100-4 LCDTest.ngc LCDTest.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o LCDTest_map.ncd LCDTest.ngd LCDTest.pcf 
+par -w -intstyle ise -ol high -t 1 LCDTest_map.ncd LCDTest.ncd LCDTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCDTest.twx LCDTest.ncd -o LCDTest.twr LCDTest.pcf -ucf LCDTest.ucf 
+bitgen -intstyle ise -f LCDTest.ut LCDTest.ncd 
+pin2ucf LCDTest.ncd -o /home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.ucf -r LCDTest.lck 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCDTest.ucf -p xc3s50a-vq100-4 LCDTest.ngc LCDTest.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o LCDTest_map.ncd LCDTest.ngd LCDTest.pcf 
+par -w -intstyle ise -ol high -t 1 LCDTest_map.ncd LCDTest.ncd LCDTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCDTest.twx LCDTest.ncd -o LCDTest.twr LCDTest.pcf -ucf LCDTest.ucf 
+netgen -intstyle ise -s 4  -pcf LCDTest.pcf -rpw 100 -tpw 0 -ar Structure -tm LCDTest -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim LCDTest.ncd LCDTest_timesim.vhd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTest/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCDTest.ucf -p xc3s50a-vq100-4 LCDTest.ngc LCDTest.ngd  
+map -intstyle ise -p xc3s50a-vq100-4 -cm area -ir off -pr off -c 100 -o LCDTest_map.ncd LCDTest.ngd LCDTest.pcf 
+par -w -intstyle ise -ol high -t 1 LCDTest_map.ncd LCDTest.ncd LCDTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCDTest.twx LCDTest.ncd -o LCDTest.twr LCDTest.pcf -ucf LCDTest.ucf 
+bitgen -intstyle ise -f LCDTest.ut LCDTest.ncd 
+netgen -intstyle ise -s 4  -pcf LCDTest.pcf -rpw 100 -tpw 0 -ar Structure -tm LCDTest -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim LCDTest.ncd LCDTest_timesim.vhd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTestV1/LCDTest.syr" 

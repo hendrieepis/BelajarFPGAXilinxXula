@@ -1,0 +1,73 @@
+library IEEE;
+library UNISIM;
+use IEEE.STD_LOGIC_1164.all;
+use UNISIM.vcomponents.all;
+use IEEE.NUMERIC_STD.all;
+use IEEE.std_logic_unsigned.all;
+
+entity keypad is
+  port(
+    reset   : in  std_logic;
+    dataout : out std_logic_vector(6 downto 0);
+    pinSeg  : out std_logic_vector(6 downto 0);
+    enseg   : out std_logic;
+    DP      : out std_logic;
+    clk_i   : in  std_logic);
+end keypad;
+
+architecture Behavioral of keypad is
+  signal   PSCClk   : std_logic := '0';
+  signal   cntpsc   : integer   := 0;
+  signal   PSCout   : std_logic := '0';
+  type     ROMtable is array (15 downto 0) of std_logic_vector(6 downto 0);  -- dataSevenSegment  
+  constant ROMdata  : ROMtable  :=
+    (
+      "1000000", "1111001", "0100100", "0110000" ,
+      "0011001" , "0010010" , "0000010" , "1111000" ,
+      "0000000" , "0011000" , "0001000" , "0000011" ,
+      "1000110" , "0100001" , "0000110" , "0001110"
+      );
+begin
+  Prescaller : process (clk_i)
+  begin  -- process Prescaller  500.000 for 10 ms
+    if rising_edge(clk_i) then
+      if cntpsc < 50000000 then
+        cntpsc <= cntpsc+1;
+      else
+        cntpsc <= 0;
+        PSCout <= not PSCout;
+      end if;
+    end if;
+  end process Prescaller;
+
+
+  BUFG_inst : BUFG
+    port map(
+      O => PSCClk,                      -- Clock buffer output
+      I => PSCout                       -- Clock buffer input
+      );
+
+  DP    <= PSCClk;
+  enseg <= '0';
+
+  counter : process (PSCClk, reset)
+    variable cntdata : integer := 0;
+  begin  -- process counter
+    if reset = '1' then                 -- asynchronous reset (active low)
+      cntdata := 0;
+		dataout <= (others=>'0');
+	   pinSeg <= ROMdata(0);
+    elsif PSCClk'event and PSCClk = '1' then  -- rising clock edge
+      if cntdata < 15 then
+        cntdata := cntdata+1;
+        dataout <= std_logic_vector(to_unsigned(cntdata, 7));
+        pinSeg <= ROMdata(cntdata);
+      else
+        cntdata := 0;
+      end if;
+    end if;
+  end process counter;
+
+
+end Behavioral;
+

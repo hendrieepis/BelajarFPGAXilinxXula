@@ -1,0 +1,11 @@
+net "clk_i" LOC = B8;
+net "blinker_o" LOC = N4;
+net "segA" LOC = L14;
+net "en1" loc = F12;
+net "en2" loc = J12;
+net "en3" loc = M13;
+net "en4" loc = K14;
+net "sw1" loc = P11;
+net "sw2" loc = L3;
+net "sw3" loc = K3;
+net "sw4" loc = B4;

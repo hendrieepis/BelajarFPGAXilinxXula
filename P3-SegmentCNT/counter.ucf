@@ -1,0 +1,10 @@
+NET "counter_out<6>" LOC = P37;
+NET "counter_out<5>" LOC = P50;
+NET "counter_out<4>" LOC = P52;
+NET "counter_out<3>" LOC = P56;
+NET "counter_out<2>" LOC = P57;
+NET "counter_out<1>" LOC = P61;
+NET "counter_out<0>" LOC = P62;
+
+NET "clk" LOC = P43;
+NET "systick" LOC = P44;

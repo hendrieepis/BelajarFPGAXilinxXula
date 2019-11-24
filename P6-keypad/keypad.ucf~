@@ -1,0 +1,24 @@
+NET "dataOut<7>" LOC = G1;
+NET "dataOut<6>" LOC = P4;
+NET "dataOut<5>" LOC = N4;
+NET "dataOut<4>" LOC = N5;
+NET "dataOut<3>" LOC = P6;
+NET "dataOut<2>" LOC = P7;
+NET "dataOut<1>" LOC = M11;
+NET "dataOut<0>" LOC = M5;
+
+NET "keyOut<3>" LOC = B2 ;
+NET "keyOut<2>" LOC = A3 ;
+NET "keyOut<1>" LOC = J3 ;
+NET "keyOut<0>" LOC = B5 ;
+
+NET "keyIn<3>" LOC = C6 ;
+NET "keyIn<2>" LOC = B6 ;
+NET "keyIn<1>" LOC = C5 ;
+NET "keyIn<0>" LOC = B7 ;
+NET "reset" LOC = A7;
+NET "clk_i" LOC = B8;
+NET "Strobe" LOC = A9;
+NET "enseg" LOC = M13;
+NET "segA" LOC =  L14;
+net "reset" PULLUP;

@@ -1,0 +1,219 @@
+Release 6.3.03i Map G.38
+Xilinx Mapping Report File for Design 'test_bus'
+
+Design Information
+------------------
+Command Line   : C:/ISE/bin/nt/map.exe -intstyle ise -p xc2s300e-pq208-6 -cm
+area -pr b -k 4 -c 100 -tx off -o test_bus_map.ncd test_bus.ngd test_bus.pcf 
+Target Device  : x2s300e
+Target Package : pq208
+Target Speed   : -6
+Mapper Version : spartan2e -- $Revision: 1.16.8.2 $
+Mapped Date    : Mon Jun 20 16:52:26 2005
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:        54 out of  6,144    1%
+  Number of 4 input LUTs:            49 out of  6,144    1%
+Logic Distribution:
+    Number of occupied Slices:                          34 out of  3,072    1%
+    Number of Slices containing only related logic:     34 out of     34  100%
+    Number of Slices containing unrelated logic:         0 out of     34    0%
+        *See NOTES below for an explanation of the effects of unrelated logic
+Total Number 4 input LUTs:           62 out of  6,144    1%
+      Number used as logic:                        49
+      Number used as a route-thru:                 13
+   Number of bonded IOBs:            39 out of    142   27%
+   Number of GCLKs:                   1 out of      4   25%
+   Number of GCLKIOBs:                1 out of      4   25%
+
+Total equivalent gate count for design:  804
+Additional JTAG gate count for IOBs:  1,920
+Peak Memory Usage:  65 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity -
+   e.g. two LUTs are "related" if they share common inputs.
+   When assembling slices, Map gives priority to combine logic that
+   is related.  Doing so results in the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin
+   packing unrelated logic into a slice once 99% of the slices are
+   occupied through related logic packing.
+
+   Note that once logic distribution reaches the 99% level through
+   related logic packing, this does not mean the device is completely
+   utilized.  Unrelated logic packing will then begin, continuing until
+   all usable LUTs and FFs are occupied.  Depending on your timing
+   budget, increased levels of unrelated logic packing may adversely
+   affect the overall timing performance of your design.
+
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Additional Device Resource Counts
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:95 - All of the external outputs in this design are using slew rate
+   limited output drivers. The delay on speed critical outputs can be
+   dramatically reduced by designating them as fast outputs in the schematic.
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type    | Direction | IO Standard | Drive    | Slew | Reg (s)  | Resistor | IOB   |
+|                                    |         |           |             | Strength | Rate |          |          | Delay |
++------------------------------------------------------------------------------------------------------------------------+
+| sdram_clk                          | GCLKIOB | INPUT     | LVTTL       |          |      |          |          |       |
+| fpga_init_n                        | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<0>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<1>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<2>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<3>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<4>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<5>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<6>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<7>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<8>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<9>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<10>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<11>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<12>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<13>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_a<14>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<0>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<1>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<2>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<3>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<4>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<5>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<6>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<7>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<8>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<9>                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<10>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<11>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<12>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<13>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<14>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_d<15>                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_lb_n                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pb_ub_n                            | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_cas_n                        | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_ce_n                         | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_cke                          | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_ras_n                        | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_we_n                         | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
++------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group Summary
+------------------------------
+No area groups were found in this design.
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Additional Device Resource Counts
+----------------------------------------------
+Number of JTAG Gates for IOBs = 40
+Number of Equivalent Gates for Design = 804
+Number of RPM Macros = 0
+Number of Hard Macros = 0
+PCI IOBs = 0
+PCI LOGICs = 0
+CAPTUREs = 0
+BSCANs = 0
+STARTUPs = 0
+DLLs = 0
+GCLKIOBs = 1
+GCLKs = 1
+Block RAMs = 0
+TBUFs = 0
+Total Registers (Flops & Latches in Slices & IOBs) not driven by LUTs = 14
+IOB Latches not driven by LUTs = 0
+IOB Latches = 0
+IOB Flip Flops not driven by LUTs = 0
+IOB Flip Flops = 0
+Unbonded IOBs = 0
+Bonded IOBs = 39
+Shift Registers = 0
+Static Shift Registers = 0
+Dynamic Shift Registers = 0
+16x1 ROMs = 0
+16x1 RAMs = 0
+32x1 RAMs = 0
+Dual Port RAMs = 0
+MULTANDs = 0
+MUXF5s + MUXF6s = 0
+4 input LUTs used as Route-Thrus = 13
+4 input LUTs = 49
+Slice Latches not driven by LUTs = 0
+Slice Latches = 0
+Slice Flip Flops not driven by LUTs = 14
+Slice Flip Flops = 54
+Slices = 34
+Number of LUT signals with 4 loads = 0
+Number of LUT signals with 3 loads = 0
+Number of LUT signals with 2 loads = 3
+Number of LUT signals with 1 load = 43
+NGM Average fanout of LUT = 1.96
+NGM Maximum fanout of LUT = 19
+NGM Average fanin for LUT = 2.2653
+Number of LUT symbols = 49
+Number of IPAD symbols = 1

@@ -1,0 +1,340 @@
+Release 6.3.03i - xst G.38
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.39 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.39 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: audio.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+  5) Advanced HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : audio.prj
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+Verilog Include Directory          : 
+
+---- Target Parameters
+Output File Name                   : audio
+Output Format                      : NGC
+Target Device                      : xc3s1000-5-ft256
+
+---- Source Options
+Top Module Name                    : audio
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : audio.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+Optimize Instantiated Primitives   : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/xesscorp/PRODUCTS/BITSTREAMS/XST-4/audio/common.vhd in Library work.
+Compiling vhdl file C:/xesscorp/PRODUCTS/BITSTREAMS/XST-4/audio/audio.vhd in Library work.
+Entity <codec_intfc> (Architecture <arch>) compiled.
+Entity <audio> (Architecture <arch>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <audio> (Architecture <arch>).
+Entity <audio> analyzed. Unit <audio> generated.
+
+Analyzing generic Entity <codec_intfc> (Architecture <arch>).
+	XST_1_3_X = <u>0
+	XST_2_0_X = <u>0
+	XST_2_1_X = <u>0
+	XSB_300E = <u>1
+	DIVISOR = 4
+	RESOLUTION = 20
+Entity <codec_intfc> analyzed. Unit <codec_intfc> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <codec_intfc>.
+    Related source file is C:/xesscorp/PRODUCTS/BITSTREAMS/XST-4/audio/audio.vhd.
+WARNING:Xst:646 - Signal <left_chan_cnt<8:4>> is assigned but never used.
+WARNING:Xst:646 - Signal <DAC_start_cnt<0>> is assigned but never used.
+WARNING:Xst:646 - Signal <DAC_rdy_cnt> is assigned but never used.
+    Found 3-bit adder for signal <$n0003> created at line 147.
+    Found 5-bit comparator less for signal <$n0008> created at line 152.
+    Found 20-bit register for signal <ADC_r>.
+    Found 10-bit register for signal <cnt_r>.
+    Found 10-bit adder for signal <cnt_x>.
+    Found 20-bit register for signal <DAC_r>.
+    Found 20 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred  50 D-type flip-flop(s).
+	inferred   2 Adder/Subtracter(s).
+	inferred   1 Comparator(s).
+	inferred  20 Multiplexer(s).
+Unit <codec_intfc> synthesized.
+
+
+Synthesizing Unit <audio>.
+    Related source file is C:/xesscorp/PRODUCTS/BITSTREAMS/XST-4/audio/audio.vhd.
+WARNING:Xst:646 - Signal <DAC_rdy> is assigned but never used.
+    Found 20-bit register for signal <left_ADC>.
+    Found 20-bit register for signal <right_ADC>.
+    Found 20 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred  40 D-type flip-flop(s).
+	inferred  20 Multiplexer(s).
+Unit <audio> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors               : 2
+ 10-bit adder                      : 1
+ 3-bit adder                       : 1
+# Registers                        : 24
+ 20-bit register                   : 3
+ 10-bit register                   : 1
+ 1-bit register                    : 20
+# Comparators                      : 1
+ 5-bit comparator less             : 1
+# Multiplexers                     : 2
+ 20-bit 2-to-1 multiplexer         : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <audio> ...
+
+Optimizing unit <codec_intfc> ...
+Loading device for application Xst from file '3s1000.nph' in environment C:/ISE6.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block audio, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : audio.ngr
+Top Level Output File Name         : audio
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 10
+
+Macro Statistics :
+# Registers                        : 24
+#      1-bit register              : 20
+#      10-bit register             : 1
+#      20-bit register             : 3
+# Multiplexers                     : 2
+#      2-to-1 multiplexer          : 2
+# Adders/Subtractors               : 1
+#      10-bit adder                : 1
+# Comparators                      : 1
+#      5-bit comparator less       : 1
+
+Cell Usage :
+# BELS                             : 81
+#      GND                         : 1
+#      LUT1                        : 11
+#      LUT3_D                      : 2
+#      LUT3_L                      : 38
+#      LUT4                        : 7
+#      LUT4_D                      : 1
+#      LUT4_L                      : 2
+#      MUXCY                       : 9
+#      VCC                         : 1
+#      XORCY                       : 9
+# FlipFlops/Latches                : 90
+#      FDC                         : 10
+#      FDCE                        : 40
+#      FDE                         : 40
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 2
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-5 
+
+ Number of Slices:                      65  out of   7680     0%  
+ Number of Slice Flip Flops:            90  out of  15360     0%  
+ Number of 4 input LUTs:                61  out of  15360     0%  
+ Number of bonded IOBs:                  9  out of    173     5%  
+ Number of GCLKs:                        1  out of      8    12%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 90    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.921ns (Maximum Frequency: 203.211MHz)
+   Minimum input arrival time before clock: 2.095ns
+   Maximum output required time after clock: 5.554ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'clk'
+Delay:               4.921ns (Levels of Logic = 3)
+  Source:            u0_cnt_r_8 (FF)
+  Destination:       left_ADC_18 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: u0_cnt_r_8 to left_ADC_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.626   0.717  u0_cnt_r_8 (u0_cnt_r_8)
+     LUT4:I0->O            1   0.479   0.240  u0__n0004_SW0 (N2735)
+     LUT4_D:I3->O          1   0.479   0.240  u0__n0004 (ADC_rdy)
+     LUT4:I3->O           20   0.479   1.137  _n00041 (_n0004)
+     FDE:CE                    0.524          left_ADC_0
+    ----------------------------------------
+    Total                      4.921ns (2.587ns logic, 2.334ns route)
+                                       (52.6% logic, 47.4% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+Offset:              2.095ns (Levels of Logic = 1)
+  Source:            sdto (PAD)
+  Destination:       u0_ADC_r_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: sdto to u0_ADC_r_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.679   0.240  sdto_IBUF (sdto_IBUF)
+     FDCE:D                    0.176          u0_ADC_r_0
+    ----------------------------------------
+    Total                      2.095ns (1.855ns logic, 0.240ns route)
+                                       (88.5% logic, 11.5% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+Offset:              5.554ns (Levels of Logic = 1)
+  Source:            u0_cnt_r_3 (FF)
+  Destination:       sclk (PAD)
+  Source Clock:      clk rising
+
+  Data Path: u0_cnt_r_3 to sclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.626   0.688  u0_cnt_r_3 (u0_cnt_r_3)
+     OBUF:I->O                 4.240          sclk_OBUF (sclk)
+    ----------------------------------------
+    Total                      5.554ns (4.866ns logic, 0.688ns route)
+                                       (87.6% logic, 12.4% route)
+
+=========================================================================
+CPU : 2.88 / 3.50 s | Elapsed : 3.00 / 3.00 s
+ 
+--> 
+
+Total memory usage is 77204 kilobytes
+
+

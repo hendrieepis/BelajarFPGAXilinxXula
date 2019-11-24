@@ -1,0 +1,395 @@
+Release 14.3 - xst P.40xd (lin)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> 
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s50a-4-vq100
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/hendri/Documents/workspaceXilinx/counterinv/counter.vhd" in Library work.
+Architecture behavioral of Entity counter is up to date.
+Compiling vhdl file "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.vhd" in Library work.
+Architecture behavioral of Entity inverter is up to date.
+Compiling vhdl file "/home/hendri/Documents/workspaceXilinx/counterinv/top.vhd" in Library work.
+Architecture behavioral of Entity top is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <counter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <inverter> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <work> (Architecture <behavioral>).
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <counter> in library <work> (Architecture <behavioral>).
+Entity <counter> analyzed. Unit <counter> generated.
+
+Analyzing Entity <inverter> in library <work> (Architecture <behavioral>).
+Entity <inverter> analyzed. Unit <inverter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <counter>.
+    Related source file is "/home/hendri/Documents/workspaceXilinx/counterinv/counter.vhd".
+    Found 8-bit up counter for signal <clk_r>.
+    Found 23-bit up counter for signal <psc>.
+    Found 23-bit comparator lessequal for signal <psc$cmp_le0000> created at line 47.
+    Found 1-bit register for signal <tick>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <counter> synthesized.
+
+
+Synthesizing Unit <inverter>.
+    Related source file is "/home/hendri/Documents/workspaceXilinx/counterinv/inverter.vhd".
+Unit <inverter> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "/home/hendri/Documents/workspaceXilinx/counterinv/top.vhd".
+Unit <top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 23-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Comparators                                          : 1
+ 23-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 23-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 1
+ 23-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 102
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 29
+#      MUXCY                       : 29
+#      VCC                         : 1
+#      XORCY                       : 31
+# FlipFlops/Latches                : 32
+#      FDE                         : 9
+#      FDR                         : 23
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50avq100-4 
+
+ Number of Slices:                       17  out of    704     2%  
+ Number of Slice Flip Flops:             32  out of   1408     2%  
+ Number of 4 input LUTs:                 40  out of   1408     2%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of     68    14%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.830ns (Maximum Frequency: 207.039MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.626ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.830ns (frequency: 207.039MHz)
+  Total number of paths / destination ports: 345 / 64
+-------------------------------------------------------------------------
+Delay:               4.830ns (Levels of Logic = 23)
+  Source:            Inst_counter/psc_1 (FF)
+  Destination:       Inst_counter/psc_22 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Inst_counter/psc_1 to Inst_counter/psc_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.591   0.563  Inst_counter/psc_1 (Inst_counter/psc_1)
+     LUT1:I0->O            1   0.648   0.000  Inst_counter/Mcount_psc_cy<1>_rt (Inst_counter/Mcount_psc_cy<1>_rt)
+     MUXCY:S->O            1   0.632   0.000  Inst_counter/Mcount_psc_cy<1> (Inst_counter/Mcount_psc_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<2> (Inst_counter/Mcount_psc_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<3> (Inst_counter/Mcount_psc_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<4> (Inst_counter/Mcount_psc_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<5> (Inst_counter/Mcount_psc_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<6> (Inst_counter/Mcount_psc_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<7> (Inst_counter/Mcount_psc_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<8> (Inst_counter/Mcount_psc_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<9> (Inst_counter/Mcount_psc_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<10> (Inst_counter/Mcount_psc_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<11> (Inst_counter/Mcount_psc_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<12> (Inst_counter/Mcount_psc_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<13> (Inst_counter/Mcount_psc_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<14> (Inst_counter/Mcount_psc_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<15> (Inst_counter/Mcount_psc_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<16> (Inst_counter/Mcount_psc_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<17> (Inst_counter/Mcount_psc_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<18> (Inst_counter/Mcount_psc_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<19> (Inst_counter/Mcount_psc_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_counter/Mcount_psc_cy<20> (Inst_counter/Mcount_psc_cy<20>)
+     MUXCY:CI->O           0   0.065   0.000  Inst_counter/Mcount_psc_cy<21> (Inst_counter/Mcount_psc_cy<21>)
+     XORCY:CI->O           1   0.844   0.000  Inst_counter/Mcount_psc_xor<22> (Result<22>)
+     FDR:D                     0.252          Inst_counter/psc_22
+    ----------------------------------------
+    Total                      4.830ns (4.267ns logic, 0.563ns route)
+                                       (88.3% logic, 11.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              6.626ns (Levels of Logic = 2)
+  Source:            Inst_counter/clk_r_7 (FF)
+  Destination:       count<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Inst_counter/clk_r_7 to count<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.447  Inst_counter/clk_r_7 (Inst_counter/clk_r_7)
+     INV:I->O              1   0.648   0.420  Inst_inverter/outdata<7>1_INV_0 (count_7_OBUF)
+     OBUF:I->O                 4.520          count_7_OBUF (count<7>)
+    ----------------------------------------
+    Total                      6.626ns (5.759ns logic, 0.867ns route)
+                                       (86.9% logic, 13.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 10.24 secs
+ 
+--> 
+
+
+Total memory usage is 166972 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,11 @@
+Release 13.4 Drc O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Thu May 10 11:44:58 2012
+
+drc -z ramintfc_jtag.ncd ramintfc_jtag.pcf
+
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp u0/u0, consult the device
+   Data Sheet.
+DRC detected 0 errors and 0 warnings.

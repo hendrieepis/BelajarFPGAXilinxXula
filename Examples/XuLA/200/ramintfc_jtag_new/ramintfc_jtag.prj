@@ -1,0 +1,6 @@
+vhdl work "../../XuLA_lib/SyncToClk.vhd"
+vhdl work "../../XuLA_lib/Common.vhd"
+vhdl work "../../XuLA_lib/SdramCntl.vhd"
+vhdl work "../../XuLA_lib/HostIo.vhd"
+vhdl work "../../XuLA_lib/ClkGen.vhd"
+vhdl work "ramintfc_jtag.vhd"

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/simpleAndGate/andvhdl.xst" -ofn "/home/hendri/Documents/workspaceXilinx/simpleAndGate/andvhdl.syr" 

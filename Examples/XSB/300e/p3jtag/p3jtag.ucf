@@ -1,0 +1,114 @@
+#
+# pin assignments for the XC9572XL CPLD chip on the XSB Board
+#
+
+# Spartan2 FPGA connections to CPLD
+# net S2_clk		loc=p42;
+net S2_tck		loc=p13;
+# net S2_dout		loc=p18;
+net S2_tms		loc=p18;
+# net S2_din		loc=p2;
+# net S2_wr_n		loc=p19;
+net S2_tdo		loc=p19;
+# net S2_cs_n		loc=p15;
+net S2_tdi		loc=p15;
+# net S2_init_n		loc=p38;
+# net S2_done		loc=p40;
+net S2_prog_n		loc=p39;
+# net S2_cclk		loc=p16;
+net S2_m<0> 		loc=p36;
+# net S2_d<0>		loc=p2;
+# net S2_d<1>		loc=p4;
+# net S2_d<2>		loc=p5;
+# net S2_d<3>		loc=p6;
+# net S2_d<4>		loc=p7;
+# net S2_d<5>		loc=p8;
+# net S2_d<6>		loc=p9;
+# net S2_d<7>		loc=p10;
+# net S2_a<0>		loc=p1;
+# net S2_a<1>		loc=p64;
+# net S2_a<2>		loc=p63;
+# net S2_a<3>		loc=p62;
+# net S2_a<4>		loc=p61;
+# net S2_a<5>		loc=p60;
+# net S2_a<6>		loc=p59;
+# net S2_a<7>		loc=p58;
+# net S2_a<8>		loc=p45;
+# net S2_a<9>		loc=p44;
+# net S2_a<10>		loc=p57;
+# net S2_a<11>		loc=p43;
+# net S2_a<12>		loc=p56;
+# net S2_a<13>		loc=p46;
+# net S2_a<14>		loc=p47;
+# net S2_a<15>		loc=p52;
+# net S2_a<16>		loc=p51;
+# net S2_a<17>		loc=p48;
+# net S2_rst_n		loc=p50;	# Flash reset
+# net S2_oe_n		loc=p12;	# Flash output-enable
+# net S2_we_n		loc=p49;	# Flash write-enable
+# net S2_ce_n		loc=p11;	# Flash chip-enable
+
+# Flash RAM
+# net fd<0>		loc=p2;
+# net fd<1>		loc=p4;
+# net fd<2>		loc=p5;
+# net fd<3>		loc=p6;
+# net fd<4>		loc=p7;
+# net fd<5>		loc=p8;
+# net fd<6>		loc=p9;
+# net fd<7>		loc=p10;
+# net fa<0>		loc=p1;
+# net fa<1>		loc=p64;
+# net fa<2>		loc=p63;
+# net fa<3>		loc=p62;
+# net fa<4>		loc=p61;
+# net fa<5>		loc=p60;
+# net fa<6>		loc=p59;
+# net fa<7>		loc=p58;
+# net fa<8>		loc=p45;
+# net fa<9>		loc=p44;
+# net fa<10>		loc=p57;
+# net fa<11>		loc=p43;
+# net fa<12>		loc=p56;
+# net fa<13>		loc=p46;
+# net fa<14>		loc=p47;
+# net fa<15>		loc=p52;
+# net fa<16>		loc=p51;
+# net fa<17>		loc=p48;
+# net frst_n		loc=p50;	# Flash reset
+# net foe_n		loc=p12;	# Flash output-enable
+# net fwe_n		loc=p49;	# Flash write-enable
+# net fce_n		loc=p11;	# Flash chip-enable
+
+# DIP and pushbutton switches
+# net dipsw<1>		loc=p47;
+# net dipsw<2>		loc=p52;
+# net dipsw<3>		loc=p51;
+# net dipsw<4>		loc=p48;
+
+# 7-segment LEDs
+# net s<0>		loc=p10;
+# net s<1>		loc=p2;
+# net s<2>		loc=p9;
+# net s<3>		loc=p8;
+# net s<4>		loc=p5;
+# net s<5>		loc=p7;
+# net s<6>		loc=p6;
+# net dp		loc=p4;
+
+# programmable oscillator
+# net clk		loc=p17;
+
+# parallel port
+net ppd<0>      	loc=p33;
+net ppd<1>      	loc=p32;
+net ppd<2>		loc=p31;
+net ppd<3>		loc=p27;
+net ppd<4>		loc=p25;
+# net ppd<5>		loc=p24;
+net ppd<6>		loc=p23;
+# net ppd<7>		loc=p22;
+net pps<3>		loc=p34;
+net pps<4>		loc=p20;
+net pps<5>		loc=p35;
+

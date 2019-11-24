@@ -1,0 +1,2 @@
+vhdl work "counterBCD.vhd"
+vhdl work "counterbcdtestbench.vhd"

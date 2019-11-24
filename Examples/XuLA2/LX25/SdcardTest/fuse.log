@@ -1,0 +1,10 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrlTestBench_isim_beh.exe" -prj "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrlTestBench_beh.prj" "work.SdCardCtrlTestBench" 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/../../XuLA_lib/Common.vhd" into library work
+Parsing VHDL file "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/../../XuLA_lib/SDCard.vhdl" into library work
+ERROR:HDLCompiler:69 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/../../XuLA_lib/SDCard.vhdl" Line 133: <fmax> is not declared.
+ERROR:HDLCompiler:854 - "C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/../../XuLA_lib/SDCard.vhdl" Line 100: Unit <arch> ignored due to previous errors.
+VHDL file C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/../../XuLA_lib/SDCard.vhdl ignored due to errors

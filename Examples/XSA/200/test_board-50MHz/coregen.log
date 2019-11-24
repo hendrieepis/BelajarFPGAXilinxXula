@@ -1,0 +1,21 @@
+# Xilinx CORE Generator 6.3.03i
+# User = DEVB
+Initializing default project...
+Loading plug-ins...
+All runtime messages will be recorded in C:\xesscorp\PRODUCTS\BITSTREAMS\XSA\200\test_board-50MHz\coregen.log
+# busformat=BusFormatAngleBracketNotRipped
+# designflow=VHDL
+# expandedprojectpath=C:\xesscorp\PRODUCTS\BITSTREAMS\XSA\200\test_board-50MHz
+# flowvendor=Foundation_iSE
+# formalverification=None
+# simulationoutputproducts=VHDL
+# xilinxfamily=Virtex2
+# outputoption=DesignFlow
+# overwritefiles=Default
+# simvendor=ModelSim
+# expandedprojectpath=C:\xesscorp\PRODUCTS\BITSTREAMS\XSA\200\test_board-50MHz
+SETPROJECT .
+Set current Project to C:\xesscorp\PRODUCTS\BITSTREAMS\XSA\200\test_board-50MHz
+SET BusFormat = BusFormatAngleBracketNotRipped
+SETXIPCPORTHOST 1805
+XIPCPJSENDCORES spartan2

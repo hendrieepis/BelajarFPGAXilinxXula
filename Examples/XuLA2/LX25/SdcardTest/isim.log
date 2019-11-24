@@ -1,0 +1,209 @@
+ISim log file
+Running: C:\xesscorp\PRODUCTS\XuLA\FPGA\LX25\SdcardTest\SdCardCtrlTestBench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/xesscorp/PRODUCTS/XuLA/FPGA/LX25/SdcardTest/SdCardCtrlTestBench_isim_beh.wdb 
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 10 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 10 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 10 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 10 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 10 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 10 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 10 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 10 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 10 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 10 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 10 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+ISim O.87xd (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 10 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us
+# run 10.00us

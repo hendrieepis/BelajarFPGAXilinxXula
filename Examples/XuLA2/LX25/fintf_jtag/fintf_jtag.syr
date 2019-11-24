@@ -1,0 +1,725 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: fintf_jtag.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fintf_jtag.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fintf_jtag"
+Output Format                      : NGC
+Target Device                      : xc6slx25-2-ftg256
+
+---- Source Options
+Top Module Name                    : fintf_jtag
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\xesscorp\PRODUCTS\XuLA\FPGA\XuLA_lib\Common.vhd" into library work
+Parsing package <CommonPckg>.
+Parsing package body <CommonPckg>.
+Parsing VHDL file "C:\xesscorp\PRODUCTS\XuLA\FPGA\XuLA_lib\UserInstrJtag.vhd" into library work
+Parsing package <UserInstrJtagPckg>.
+Parsing entity <UserinstrJtag>.
+Parsing architecture <arch> of entity <userinstrjtag>.
+Parsing VHDL file "C:\xesscorp\PRODUCTS\XuLA\FPGA\XuLA_lib\FlashCntl.vhd" into library work
+Parsing package <FlashCntlPckg>.
+Parsing entity <FlashCntl>.
+Parsing architecture <arch> of entity <flashcntl>.
+Parsing VHDL file "C:\xesscorp\PRODUCTS\XuLA\FPGA\XuLA_lib\ClkGen.vhd" into library work
+Parsing package <ClkGenPckg>.
+Parsing entity <ClkGen>.
+Parsing architecture <arch> of entity <clkgen>.
+Parsing entity <ClkToLogic>.
+Parsing architecture <arch> of entity <clktologic>.
+Parsing VHDL file "C:\xesscorp\PRODUCTS\XuLA\FPGA\LX25\fintf_jtag\fintf_jtag.vhd" into library work
+Parsing entity <fintf_jtag>.
+Parsing architecture <arch> of entity <fintf_jtag>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <fintf_jtag> (architecture <arch>) with generics from library <work>.
+
+Elaborating entity <ClkGen> (architecture <arch>) with generics from library <work>.
+
+Elaborating entity <UserinstrJtag> (architecture <arch>) with generics from library <work>.
+
+Elaborating entity <FlashCntl> (architecture <arch>) with generics from library <work>.
+WARNING:HDLCompiler:634 - "C:\xesscorp\PRODUCTS\XuLA\FPGA\LX25\fintf_jtag\fintf_jtag.vhd" Line 71: Net <bscan_update> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <fintf_jtag>.
+    Related source file is "c:/xesscorp/products/xula/fpga/lx25/fintf_jtag/fintf_jtag.vhd".
+        BASE_FREQ_G = 12.0
+        CLK_MUL_G = 25
+        CLK_DIV_G = 3
+        DATA_WIDTH_G = 8
+        ADDR_WIDTH_G = 24
+        BLOCK_SIZE_G = 256
+INFO:Xst:3210 - "c:/xesscorp/products/xula/fpga/lx25/fintf_jtag/fintf_jtag.vhd" line 94: Output port <o_b> of the instance <u0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/xesscorp/products/xula/fpga/lx25/fintf_jtag/fintf_jtag.vhd" line 127: Output port <s> of the instance <u1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/xesscorp/products/xula/fpga/lx25/fintf_jtag/fintf_jtag.vhd" line 127: Output port <run_test> of the instance <u1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/xesscorp/products/xula/fpga/lx25/fintf_jtag/fintf_jtag.vhd" line 161: Output port <h_busy> of the instance <u2> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <bscan_update> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 4-bit register for signal <rst_cntr>.
+    Found 1-bit register for signal <reset>.
+    Found 4-bit adder for signal <rst_cntr[3]_GND_11_o_add_1_OUT> created at line 107.
+    Found 4-bit comparator greater for signal <rst_cntr[3]_PWR_11_o_LessThan_1_o> created at line 105
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <fintf_jtag> synthesized.
+
+Synthesizing Unit <ClkGen>.
+    Related source file is "c:/xesscorp/products/xula/fpga/xula_lib/clkgen.vhd".
+        BASE_FREQ_G = 12.0
+        CLK_MUL_G = 25
+        CLK_DIV_G = 3
+    Summary:
+	no macro.
+Unit <ClkGen> synthesized.
+
+Synthesizing Unit <UserinstrJtag>.
+    Related source file is "c:/xesscorp/products/xula/fpga/xula_lib/userinstrjtag.vhd".
+        FPGA_TYPE_G = 3
+        ENABLE_RAM_INTFC_G = false
+        ENABLE_FLASH_INTFC_G = true
+        ENABLE_TEST_INTFC_G = false
+        DATA_WIDTH_G = 8
+        ADDR_WIDTH_G = 24
+        BLOCK_ADDR_WIDTH_G = 8
+WARNING:Xst:647 - Input <test_progress<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bscan_update> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <test_failed> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <jrd>.
+    Found 1-bit register for signal <jrd_continue>.
+    Found 1-bit register for signal <jwr>.
+    Found 1-bit register for signal <jerase>.
+    Found 1-bit register for signal <jblk_pgm>.
+    Found 8-bit register for signal <instr>.
+    Found 4-bit register for signal <drck_sreg>.
+    Found 1-bit register for signal <drck_pulse>.
+    Found 8-bit register for signal <jrd_word>.
+    Found 1-bit register for signal <jop_done>.
+    Found 6-bit register for signal <bit_cntr>.
+    Found 32-bit register for signal <tdo>.
+    Found 7-bit register for signal <s>.
+    Found 24-bit register for signal <jaddr>.
+    Found 24-bit register for signal <rw_cntr>.
+    Found 8-bit register for signal <buff>.
+    Found 8-bit register for signal <wr_word>.
+    Found 1-bit register for signal <rd_continue>.
+    Found 3-bit register for signal <rd_dly>.
+    Found 1-bit register for signal <rd>.
+    Found 1-bit register for signal <op_done>.
+    Found 8-bit register for signal <rd_word>.
+    Found 3-bit register for signal <wr_dly>.
+    Found 1-bit register for signal <wr>.
+    Found 3-bit register for signal <erase_dly>.
+    Found 1-bit register for signal <erase>.
+    Found 3-bit register for signal <blk_pgm_dly>.
+    Found 1-bit register for signal <blk_pgm>.
+    Found 6-bit adder for signal <bit_cntr[5]_GND_19_o_add_2_OUT> created at line 318.
+    Found 24-bit adder for signal <jaddr[23]_GND_19_o_add_9_OUT> created at line 370.
+    Found 3-bit adder for signal <rd_dly[2]_GND_19_o_add_151_OUT> created at line 597.
+    Found 3-bit adder for signal <wr_dly[2]_GND_19_o_add_167_OUT> created at line 623.
+    Found 3-bit adder for signal <erase_dly[2]_GND_19_o_add_179_OUT> created at line 646.
+    Found 3-bit adder for signal <blk_pgm_dly[2]_GND_19_o_add_191_OUT> created at line 669.
+    Found 24-bit subtractor for signal <GND_19_o_GND_19_o_sub_7_OUT<23:0>> created at line 362.
+    Found 24-bit subtractor for signal <GND_19_o_GND_19_o_sub_11_OUT<23:0>> created at line 376.
+    Found 3-bit 3-to-1 multiplexer for signal <_n0555> created at line 581.
+    Found 3-bit 3-to-1 multiplexer for signal <_n0563> created at line 609.
+    Found 3-bit 3-to-1 multiplexer for signal <_n0569> created at line 635.
+    Found 3-bit 3-to-1 multiplexer for signal <_n0575> created at line 658.
+    Found 6-bit comparator greater for signal <bit_cntr[5]_GND_19_o_LessThan_43_o> created at line 354
+    Found 6-bit comparator greater for signal <bit_cntr[5]_PWR_13_o_LessThan_44_o> created at line 357
+    Found 6-bit comparator greater for signal <bit_cntr[5]_PWR_13_o_LessThan_47_o> created at line 365
+    Found 3-bit comparator greater for signal <n0220> created at line 580
+    Found 3-bit comparator greater for signal <n0245> created at line 608
+    Found 3-bit comparator greater for signal <n0266> created at line 634
+    Found 3-bit comparator greater for signal <n0287> created at line 657
+    WARNING:Xst:2404 -  FFs/Latches <run_test<0:0>> (without init value) have a constant value of 0 in block <UserinstrJtag>.
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred 162 D-type flip-flop(s).
+	inferred   7 Comparator(s).
+	inferred 138 Multiplexer(s).
+Unit <UserinstrJtag> synthesized.
+
+Synthesizing Unit <FlashCntl>.
+    Related source file is "c:/xesscorp/products/xula/fpga/xula_lib/flashcntl.vhd".
+        DATA_WIDTH_G = 8
+        ADDR_WIDTH_G = 24
+        BLOCK_SIZE_G = 256
+    Found 1-bit register for signal <f_cs_n>.
+    Found 8-bit register for signal <f_di>.
+    Found 8-bit register for signal <blk_addr_b>.
+    Found 5-bit register for signal <flash_state>.
+    Found 5-bit register for signal <rtn_flash_state>.
+    Found 1-bit register for signal <blk_en_b>.
+    Found 1-bit register for signal <blk_we_b>.
+    Found 1-bit register for signal <sclk>.
+    Found 1-bit register for signal <h_begun>.
+    Found 1-bit register for signal <h_busy>.
+    Found 1-bit register for signal <h_done>.
+    Found 24-bit register for signal <f_addr>.
+    Found 8-bit register for signal <h_do>.
+    Found 5-bit register for signal <wait_cntr>.
+    Found 3-bit register for signal <cntr>.
+    Found 8-bit register for signal <f_do>.
+    Found 8-bit adder for signal <blk_addr_b[7]_GND_21_o_add_12_OUT> created at line 305.
+    Found 5-bit subtractor for signal <GND_21_o_GND_21_o_sub_21_OUT<4:0>> created at line 384.
+    Found 3-bit subtractor for signal <GND_21_o_GND_21_o_sub_24_OUT<2:0>> created at line 402.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  81 D-type flip-flop(s).
+	inferred  60 Multiplexer(s).
+Unit <FlashCntl> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 12
+ 24-bit adder                                          : 1
+ 24-bit subtractor                                     : 2
+ 3-bit adder                                           : 4
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 46
+ 1-bit register                                        : 21
+ 24-bit register                                       : 3
+ 3-bit register                                        : 5
+ 32-bit register                                       : 1
+ 4-bit register                                        : 2
+ 5-bit register                                        : 3
+ 6-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 9
+# Comparators                                          : 8
+ 3-bit comparator greater                              : 4
+ 4-bit comparator greater                              : 1
+ 6-bit comparator greater                              : 3
+# Multiplexers                                         : 198
+ 1-bit 2-to-1 multiplexer                              : 88
+ 24-bit 2-to-1 multiplexer                             : 10
+ 3-bit 2-to-1 multiplexer                              : 15
+ 3-bit 3-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 8
+ 5-bit 2-to-1 multiplexer                              : 34
+ 6-bit 2-to-1 multiplexer                              : 9
+ 8-bit 2-to-1 multiplexer                              : 30
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <buff_0> of sequential type is unconnected in block <u1>.
+
+Synthesizing (advanced) Unit <FlashCntl>.
+The following registers are absorbed into counter <wait_cntr>: 1 register on signal <wait_cntr>.
+The following registers are absorbed into counter <cntr>: 1 register on signal <cntr>.
+Unit <FlashCntl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UserinstrJtag>.
+The following registers are absorbed into counter <rw_cntr>: 1 register on signal <rw_cntr>.
+Unit <UserinstrJtag> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fintf_jtag>.
+The following registers are absorbed into counter <rst_cntr>: 1 register on signal <rst_cntr>.
+Unit <fintf_jtag> synthesized (advanced).
+WARNING:Xst:2677 - Node <buff_0> of sequential type is unconnected in block <UserinstrJtag>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 8
+ 24-bit adder                                          : 1
+ 24-bit subtractor                                     : 1
+ 3-bit adder                                           : 4
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 4
+ 24-bit down counter                                   : 1
+ 3-bit down counter                                    : 1
+ 4-bit up counter                                      : 1
+ 5-bit down counter                                    : 1
+# Registers                                            : 211
+ Flip-Flops                                            : 211
+# Comparators                                          : 8
+ 3-bit comparator greater                              : 4
+ 4-bit comparator greater                              : 1
+ 6-bit comparator greater                              : 3
+# Multiplexers                                         : 206
+ 1-bit 2-to-1 multiplexer                              : 101
+ 24-bit 2-to-1 multiplexer                             : 9
+ 3-bit 2-to-1 multiplexer                              : 14
+ 3-bit 3-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 8
+ 5-bit 2-to-1 multiplexer                              : 32
+ 6-bit 2-to-1 multiplexer                              : 9
+ 8-bit 2-to-1 multiplexer                              : 29
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance blk_ram in unit FlashCntl of type RAMB16_S9_S9 has been replaced by RAMB16BWER
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
+    rtn_flash_state_0 in unit <FlashCntl>
+
+
+Optimizing unit <fintf_jtag> ...
+
+Optimizing unit <FlashCntl> ...
+
+Optimizing unit <UserinstrJtag> ...
+WARNING:Xst:2677 - Node <u2/h_busy> of sequential type is unconnected in block <fintf_jtag>.
+WARNING:Xst:2677 - Node <u1/s_6> of sequential type is unconnected in block <fintf_jtag>.
+WARNING:Xst:2677 - Node <u1/s_5> of sequential type is unconnected in block <fintf_jtag>.
+WARNING:Xst:2677 - Node <u1/s_4> of sequential type is unconnected in block <fintf_jtag>.
+WARNING:Xst:2677 - Node <u1/s_3> of sequential type is unconnected in block <fintf_jtag>.
+WARNING:Xst:2677 - Node <u1/s_2> of sequential type is unconnected in block <fintf_jtag>.
+WARNING:Xst:2677 - Node <u1/s_1> of sequential type is unconnected in block <fintf_jtag>.
+WARNING:Xst:2677 - Node <u1/s_0> of sequential type is unconnected in block <fintf_jtag>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fintf_jtag, actual ratio is 3.
+WARNING:Xst:1426 - The value init of the FF/Latch u2/rtn_flash_state_0_LD hinder the constant cleaning in the block fintf_jtag.
+   You should achieve better results by setting this init to 1.
+FlipFlop u2/flash_state_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 241
+ Flip-Flops                                            : 241
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : fintf_jtag.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 601
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 23
+#      LUT2                        : 23
+#      LUT3                        : 32
+#      LUT4                        : 49
+#      LUT5                        : 122
+#      LUT6                        : 200
+#      MUXCY                       : 69
+#      MUXF7                       : 6
+#      VCC                         : 1
+#      XORCY                       : 72
+# FlipFlops/Latches                : 242
+#      FD                          : 21
+#      FDC                         : 22
+#      FDCE                        : 26
+#      FDE                         : 164
+#      FDP                         : 1
+#      FDPE                        : 1
+#      FDRE                        : 6
+#      LD                          : 1
+# RAMS                             : 1
+#      RAMB16BWER                  : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 6
+#      IBUF                        : 1
+#      IBUFG                       : 1
+#      OBUF                        : 4
+# DCMs                             : 1
+#      DCM_SP                      : 1
+# Others                           : 1
+#      BSCAN_SPARTAN6              : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx25ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             242  out of  30064     0%  
+ Number of Slice LUTs:                  452  out of  15032     3%  
+    Number used as Logic:               452  out of  15032     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    510
+   Number with an unused Flip Flop:     268  out of    510    52%  
+   Number with an unused LUT:            58  out of    510    11%  
+   Number of fully used LUT-FF pairs:   184  out of    510    36%  
+   Number of unique control sets:        23
+
+IO Utilization: 
+ Number of IOs:                           6
+ Number of bonded IOBs:                   6  out of    186     3%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     52     1%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)        | Load  |
+-----------------------------------+------------------------------+-------+
+fpgaClk_i                          | DCM_SP:CLKFX                 | 119   |
+u1/drck_pulse                      | BUFG                         | 123   |
+reset                              | NONE(u2/rtn_flash_state_0_LD)| 1     |
+-----------------------------------+------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 46.408ns (Maximum Frequency: 21.548MHz)
+   Minimum input arrival time before clock: 5.506ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'fpgaClk_i'
+  Clock period: 46.408ns (frequency: 21.548MHz)
+  Total number of paths / destination ports: 1627 / 255
+-------------------------------------------------------------------------
+Delay:               5.569ns (Levels of Logic = 4)
+  Source:            u1/rd_dly_2 (FF)
+  Destination:       u1/wr_dly_2 (FF)
+  Source Clock:      fpgaClk_i rising 8.3X
+  Destination Clock: fpgaClk_i rising 8.3X
+
+  Data Path: u1/rd_dly_2 to u1/wr_dly_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              15   0.525   1.263  u1/rd_dly_2 (u1/rd_dly_2)
+     LUT3:I1->O            4   0.250   0.804  u1/jrd_GND_19_o_OR_79_o1 (u1/jrd_GND_19_o_OR_79_o)
+     LUT5:I4->O            1   0.254   0.682  u1/_n06021_SW0 (N135)
+     LUT6:I5->O           17   0.254   1.209  u1/_n06021 (u1/_n0602)
+     LUT2:I1->O            1   0.254   0.000  u1/op_done_rstpot1 (u1/op_done_rstpot1)
+     FD:D                      0.074          u1/op_done
+    ----------------------------------------
+    Total                      5.569ns (1.611ns logic, 3.958ns route)
+                                       (28.9% logic, 71.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u1/drck_pulse'
+  Clock period: 10.814ns (frequency: 92.474MHz)
+  Total number of paths / destination ports: 18556 / 181
+-------------------------------------------------------------------------
+Delay:               10.814ns (Levels of Logic = 7)
+  Source:            u1/instr_3 (FF)
+  Destination:       u1/jaddr_23 (FF)
+  Source Clock:      u1/drck_pulse rising
+  Destination Clock: u1/drck_pulse rising
+
+  Data Path: u1/instr_3 to u1/jaddr_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             30   0.525   1.487  u1/instr_3 (u1/instr_3)
+     LUT2:I1->O            1   0.254   0.682  u1/GND_19_o_instr[7]_equal_90_o<7>1_SW0 (N30)
+     LUT6:I5->O           12   0.254   1.069  u1/GND_19_o_instr[7]_equal_90_o<7>1 (u1/GND_19_o_instr[7]_equal_90_o<7>1)
+     LUT5:I4->O           42   0.254   2.142  u1/GND_19_o_GND_19_o_OR_69_o1 (u1/GND_19_o_GND_19_o_OR_69_o)
+     LUT6:I0->O            1   0.254   0.790  u1/GND_19_o_jaddr[23]_select_98_OUT<0>12 (u1/GND_19_o_jaddr[23]_select_98_OUT<0>12)
+     LUT5:I3->O           24   0.250   1.380  u1/GND_19_o_jaddr[23]_select_98_OUT<0>13 (u1/GND_19_o_jaddr[23]_select_98_OUT<0>1)
+     LUT5:I4->O            1   0.254   0.910  u1/GND_19_o_jaddr[23]_select_98_OUT<9>_SW0 (N32)
+     LUT6:I3->O            1   0.235   0.000  u1/GND_19_o_jaddr[23]_select_98_OUT<9> (u1/GND_19_o_jaddr[23]_select_98_OUT<9>)
+     FDE:D                     0.074          u1/jaddr_9
+    ----------------------------------------
+    Total                     10.814ns (2.354ns logic, 8.460ns route)
+                                       (21.8% logic, 78.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'fpgaClk_i'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              2.163ns (Levels of Logic = 1)
+  Source:            u_bscan:RESET (PAD)
+  Destination:       u1/drck_pulse (FF)
+  Destination Clock: fpgaClk_i rising 8.3X
+
+  Data Path: u_bscan:RESET to u1/drck_pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:RESET   24   0.000   1.835  u_bscan (bscan_reset)
+     LUT6:I0->O            1   0.254   0.000  u1/drck_pulse_rstpot (u1/drck_pulse_rstpot)
+     FD:D                      0.074          u1/drck_pulse
+    ----------------------------------------
+    Total                      2.163ns (0.328ns logic, 1.835ns route)
+                                       (15.2% logic, 84.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u1/drck_pulse'
+  Total number of paths / destination ports: 374 / 146
+-------------------------------------------------------------------------
+Offset:              5.506ns (Levels of Logic = 2)
+  Source:            u_bscan:RESET (PAD)
+  Destination:       u1/rw_cntr_23 (FF)
+  Destination Clock: u1/drck_pulse rising
+
+  Data Path: u_bscan:RESET to u1/rw_cntr_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:RESET   24   0.000   1.488  u_bscan (bscan_reset)
+     LUT4:I2->O           25   0.250   1.833  u1/_n0755_inv31 (u1/_n0755_inv3)
+     LUT6:I1->O           24   0.254   1.379  u1/_n0755_inv2 (u1/_n0755_inv)
+     FDE:CE                    0.302          u1/rw_cntr_0
+    ----------------------------------------
+    Total                      5.506ns (0.806ns logic, 4.700ns route)
+                                       (14.6% logic, 85.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'fpgaClk_i'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            u2/f_cs_n (FF)
+  Destination:       flashCs_bo (PAD)
+  Source Clock:      fpgaClk_i rising 8.3X
+
+  Data Path: u2/f_cs_n to flashCs_bo
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              2   0.525   0.725  u2/f_cs_n (u2/f_cs_n)
+     OBUF:I->O                 2.912          flashCs_bo_OBUF (flashCs_bo)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u1/drck_pulse'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.525ns (Levels of Logic = 0)
+  Source:            u1/tdo_0 (FF)
+  Destination:       u_bscan:TDO (PAD)
+  Source Clock:      u1/drck_pulse rising
+
+  Data Path: u1/tdo_0 to u_bscan:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              0   0.525   0.000  u1/tdo_0 (u1/tdo_0)
+    BSCAN_SPARTAN6:TDO         0.000          u_bscan
+    ----------------------------------------
+    Total                      0.525ns (0.525ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock fpgaClk_i
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+fpgaClk_i      |    5.569|         |         |         |
+reset          |         |    3.937|         |         |
+u1/drck_pulse  |    5.588|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u1/drck_pulse
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+fpgaClk_i      |    1.324|         |         |         |
+u1/drck_pulse  |   10.814|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.72 secs
+ 
+--> 
+
+Total memory usage is 274692 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

@@ -1,0 +1,21 @@
+#
+# Pin assignments for the XSA-200 Board.
+#
+
+net barled<1>     loc=P13; # barled 1
+net barled<2>     loc=N12; # barled 2
+net barled<3>     loc=R13; # barled 3
+net barled<4>     loc=P12; # barled 4
+net barled<5>     loc=F16; # barled 5
+net barled<6>     loc=D9;  # barled 6
+net barled<7>     loc=A8;  # barled 7
+net barled<8>     loc=B7;  # barled 8
+
+net reset_n       loc=T8;  # pushbutton PB1
+
+net td            loc=N9;  # RS232 TD pin 3
+net rd            loc=T6;  # RS232 RD pin 2
+
+net clk           loc=B8;  # 50 MHz clock input  
+
+net ethernet_cs_n loc=C6;  # Ethernet chip-enable 

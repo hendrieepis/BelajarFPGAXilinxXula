@@ -1,0 +1,46 @@
+#
+# pin assignments for the FPGA on the XSA Board
+#
+
+net flash_d<0>    loc=D14; 
+net flash_d<1>    loc=E16; 
+net flash_d<2>    loc=F15; 
+net flash_d<3>    loc=G16; 
+net flash_d<4>    loc=J16; 
+net flash_d<5>    loc=M16; 
+net flash_d<6>    loc=N16; 
+net flash_d<7>    loc=N14; 
+
+# these Flash address pins do not match the ones in the schematic.
+# the schematic shows the address pins for the Flash when it is used in x16 (word) mode.
+# the address pins in this file correspond to those for the Flash in x8 (byte) mode.
+# flash_a<0> corresponds to flash-d15 in the schematic because data pin D15 is used for the
+# address LSB in x8 mode.  flash_a<1> corresponds to flash-a0 in the schematic, and so on. 
+net flash_a<0>    loc=J14; # flash-d15 in the schematic
+net flash_a<1>    loc=L13; # flash-a0 in the schematic
+net flash_a<2>    loc=C10; # flash-a1 in the schematic
+net flash_a<3>    loc=D10; # flash-a2 in the schematic
+net flash_a<4>    loc=A11; # flash-a3 in the schematic
+net flash_a<5>    loc=B11; # flash-a4 in the schematic
+net flash_a<6>    loc=C11; # flash-a5 in the schematic
+net flash_a<7>    loc=A12; # flash-a6 in the schematic
+net flash_a<8>    loc=B12; # flash-a7 in the schematic
+net flash_a<9>    loc=E13; # flash-a8 in the schematic
+net flash_a<10>   loc=C16; # flash-a9 in the schematic
+net flash_a<11>   loc=E14; # flash-a10 in the schematic
+net flash_a<12>   loc=D16; # flash-a11 in the schematic
+net flash_a<13>   loc=F13; # flash-a12 in the schematic
+net flash_a<14>   loc=E15; # flash-a13 in the schematic
+net flash_a<15>   loc=G12; # flash-a14 in the schematic
+net flash_a<16>   loc=G13; # flash-a15 in the schematic
+net flash_a<17>   loc=H16; # flash-a16 in the schematic
+net flash_a<18>   loc=A13; # flash-a17 in the schematic
+net flash_a<19>   loc=M10; # flash-a18 in the schematic
+net flash_a<20>   loc=P11; # flash-a19 in the schematic
+
+net flash_ce_n    loc=M15; 
+net flash_oe_n    loc=L14; 
+net flash_reset_n loc=A14; 
+net flash_we_n    loc=D12; 
+
+net clka          loc=R8;  

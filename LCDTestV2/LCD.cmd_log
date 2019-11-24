@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTestV2/LCD.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTestV2/LCD.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/LCDTestV2/LCD.xst" -ofn "/home/hendri/Documents/workspaceXilinx/LCDTestV2/LCD.syr" 

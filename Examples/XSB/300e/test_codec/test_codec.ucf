@@ -1,0 +1,10 @@
+net clka 		LOC="P182";
+net rst_n		LOC="P100";
+net mclk		LOC="P167";
+net sclk		LOC="P166";
+net lrck		LOC="P168";
+net sdti		LOC="P169";
+net sdto		LOC="P173";
+net ADC_rdy_diag	LOC="P7";
+net DAC_rdy_diag	LOC="P8";
+

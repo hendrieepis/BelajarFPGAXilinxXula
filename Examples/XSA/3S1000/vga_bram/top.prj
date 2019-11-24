@@ -1,0 +1,6 @@
+vhdl work "ipcore_dir/ScreenRam.vhd"
+vhdl work "../../../XS_LIB/common.vhd"
+vhdl work "../../../XS_LIB/vga.vhd"
+vhdl work "ipcore_dir/CharRom.vhd"
+vhdl work "VgaDisplay.vhd"
+vhdl work "top.vhd"

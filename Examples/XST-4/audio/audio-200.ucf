@@ -1,0 +1,15 @@
+#
+# Pin assignments for the XSA-200 Board.
+#
+
+net clk           loc=B8;  # 50 MHz clock input 
+net reset_n       loc=T8;  # pushbutton PB1  
+net mclk          loc=H13; # master clock for the codec 
+net sclk          loc=G15; # serial bit clock for the codec 
+net lrck          loc=G14; # left-right channel clock for the codec 
+net sdti          loc=H14; # serial data input to the codec 
+net sdto          loc=T11; # serial data output from the codec  
+net ADC_rdy_diag  loc=M7;  # analog-to-digital diagnostic signal  
+net DAC_rdy_diag  loc=R6;  # digital-to-analog diagnostic signal  
+net ethernet_cs_n loc=C6;  # Ethernet chip-enable 
+

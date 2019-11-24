@@ -1,0 +1,31 @@
+Command line:
+   ROMtestbench_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/ROM_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  36383
+
+Sun Jan 27 22:40:37 2013
+
+
+ Elaboration Time: 0.31 sec
+
+ Current Memory Usage: 139.71 Meg
+
+ Total Signals          : 5652
+ Total Nets             : 3389
+ Total Signal Drivers   : 3358
+ Total Blocks           : 1464
+ Total Primitive Blocks : 786
+ Total Processes        : 3360
+ Total Traceable Variables  : 7714
+ Total Scalar Nets and Variables : 28907
+Total Line Count : 9490
+
+ Total Simulation Time: 1409.2 sec
+
+ Current Memory Usage: 149.225 Meg
+
+Mon Jan 28 00:57:22 2013
+

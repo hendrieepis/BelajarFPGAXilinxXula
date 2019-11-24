@@ -1,0 +1,39 @@
+NET "DBGOut<3>" LOC = G1;
+NET "DBGOut<2>" LOC = P4;
+NET "DBGOut<1>" LOC = N4;
+NET "DBGOut<0>" LOC = N5;
+
+NET "DBGIn<3>" LOC = P6;
+NET "DBGIn<2>" LOC = P7;
+NET "DBGIn<1>" LOC = M11;
+NET "DBGIn<0>" LOC = M5;
+
+NET "reset" LOC = A7;
+NET "clk_i" LOC = B8;
+NET "enseg" LOC = F12;
+NET "dp" LOC =  N13;
+
+NET "pinSeg<0>" LOC =L14;
+NET "pinSeg<1>" LOC =H12;
+NET "pinSeg<2>" LOC =N14;
+NET "pinSeg<3>" LOC =N11;
+NET "pinSeg<4>" LOC =P12;
+NET "pinSeg<5>" LOC =L13;
+NET "pinSeg<6>" LOC =M12;
+
+NET "keyIn<3>" LOC = B2 ;
+NET "keyIn<2>" LOC = A3 ;
+NET "keyIn<1>" LOC = J3 ;
+NET "keyIn<0>" LOC = B5 ;
+#
+NET "keyOut<3>" LOC = C6 ;
+NET "keyOut<2>" LOC = B6 ;
+NET "keyOut<1>" LOC = C5 ;
+NET "keyOut<0>" LOC = B7 ;
+
+NET "keyIn<3>" PULLUP ;
+NET "keyIn<2>" PULLUP ;
+NET "keyIn<1>" PULLUP ;
+NET "keyIn<0>" PULLUP ;
+
+#net "reset" PULLUP;

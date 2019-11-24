@@ -1,0 +1,7 @@
+vhdl work ../../../XS_LIB/common.vhd
+vhdl work ../../../XS_LIB/randgen.vhd
+vhdl work ../../../XS_LIB/memtest.vhd
+vhdl work ../../../XS_LIB/sdramcntl.vhd
+vhdl work ../../XSB_LIB/test_board_core.vhd
+vhdl work ../../../XS_LIB/userinstr_jtag.vhd
+vhdl work test_board_jtag.vhd

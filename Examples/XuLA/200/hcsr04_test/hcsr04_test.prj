@@ -1,0 +1,4 @@
+vhdl work "../../XuLA_lib/Common.vhd"
+vhdl work "../../XuLA_lib/LedDigits.vhd"
+vhdl work "../../XuLA_lib/hcsr04.vhd"
+vhdl work "hcsr04_test.vhd"

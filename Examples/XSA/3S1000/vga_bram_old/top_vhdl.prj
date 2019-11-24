@@ -1,0 +1,6 @@
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XSA\3S1000\vga_bram\ipcore_dir\ScreenRam.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XSA\3S1000\vga_bram\VgaCtlr.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XSA\3S1000\vga_bram\ipcore_dir\CharRom.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XSA\3S1000\vga_bram\clkgen.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XSA\3S1000\vga_bram\VgaDisplay.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\BITSTREAMS\XSA\3S1000\vga_bram\top.vhd"

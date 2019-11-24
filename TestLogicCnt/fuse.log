@@ -1,0 +1,23 @@
+Running: /opt/Xilinx/14.3/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -o /home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counterbench_isim_beh.exe -prj /home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counterbench_beh.prj work.counterbench 
+ISim P.40xd (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counter.vhd" into library work
+Parsing VHDL file "/home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counterbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 37536 KB
+Fuse CPU Usage: 2440 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity counter [counter_default]
+Compiling architecture behavior of entity counterbench
+Time Resolution for simulation is 1ps.
+Compiled 7 VHDL Units
+Built simulation executable /home/hendri/Documents/workspaceXilinx/P2-BarLEDCNT/counterbench_isim_beh.exe
+Fuse Memory Usage: 50608 KB
+Fuse CPU Usage: 2640 ms
+GCC CPU Usage: 480 ms

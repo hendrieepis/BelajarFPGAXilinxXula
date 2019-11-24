@@ -1,0 +1,120 @@
+=pod
+
+
+=head1 USING SWITCHES AND LEDS ON THE XST-3.0 BOARD
+
+This is a simple design example that takes two four-bit numbers entered through the DIP switch of the XST-3.0 Board
+and displays their sum or difference on the LED digits.
+
+
+=head1 DESIGN FILES
+
+=over 4
+
+=item * F<switches_leds.vhd>
+
+This is the VHDL file that describes the circuitry which accepts two four-bit numbers, adds or subtracts them and
+then displays the result on the LED digits.
+
+=item * F<switches_leds.ucf>
+
+These are the constraints which assign the I/O signals of the switches_leds module to the
+appropriate pins of the FPGA on the XSA-3S1000 + XST-3.0 combination.
+
+=item * F<switches_leds.bit>
+
+This is a compiled bitstream for the design that can be downloaded into the XSA-3S1000 + XST-3.0 combination.
+
+=item * F<switches_leds-200.ucf>
+
+This is an alternate set of pin assignments to be used if the design is recompiled for
+an XSA-200 + XST-3.0 combination.
+
+=item * F<switches_leds.npl>
+
+Open this project file with WebPACK if you need to recompile the design.
+
+=back
+
+
+=head1 USING THE DESIGN EXAMPLE
+
+=over 4
+
+=item * Step 1:
+
+Set jumper J9 on the XSA-3S1000 Board to XS.
+
+=item * Step 2:
+
+Download the default parallel port interface into the XSA-3S1000 (F<\XSTOOLS\XSA\3S1000\dwnldpar.svf>)
+if it is not already present.  (Running GXSTEST will do this automatically.)
+
+=item * Step 3:
+
+Download the F<switches_leds.bit> file to the XSA Board.
+
+=item * Step 4:
+
+Set the DIP switches to enter two four-bit numbers, (A3,A2,A1,A0) and (B3,B2,B1,B0), as follows:
+
+                   DIPSW
+    1    2    3    4    5    6    7    8
+    |    |    |    |    |    |    |    |
+   A3   A2   A1   A0   B3   B2   B1   B0
+
+    DIPSW1: A3 (most-significant bit of A)
+    DIPSW2: A2
+    DIPSW3: A1
+    DIPSW4: A0 (least-significant bit of A)
+    DIPSW5: B3 (most-significant bit of B)
+    DIPSW6: B2
+    DIPSW7: B1
+    DIPSW8: B0 (least-significant bit of B)
+
+=item * Step 5:
+
+The sum of A and B will be displayed on LED1 and LED2.
+
+=item * Step 6:
+
+Press pushbutton PB1 and the difference (A-B) will be displayed on LED1 and LED2.
+
+=back
+
+
+=head1 ENVIRONMENT
+
+This example design was developed using the following version of software:
+
+   Xilinx WebPACK       : 6.3.03i
+
+
+=head1 SOURCE FILES
+
+You can download the source files for this example design from the XESS website at
+http://www.xess.com/projects/xst3_switches_leds.zip .
+
+
+=head1 AUTHOR
+
+Dave Vanden Bout, X Engineering Software Systems Corp.
+
+Send bug reports to bugs@xess.com.
+
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2006 by X Engineering Software Systems Corporation.
+
+This application can be freely distributed and modified
+as long as you do not remove the attributions to the author or his employer.
+
+
+=head1 HISTORY
+
+01/28/2006 - Initial release.
+
+
+
+=cut

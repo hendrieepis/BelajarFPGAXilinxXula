@@ -1,0 +1,15 @@
+#
+# Pin assignments for the XSA-3S1000 Board.
+#
+
+net clk           LOC=P8;  # 50 MHz clock input 
+net reset_n       LOC=H4;  # pushbutton PB1  
+net mclk          LOC=P11; # master clock for the codec 
+net sclk          LOC=T12; # serial bit clock for the codec 
+net lrck          LOC=R12; # left-right channel clock for the codec 
+net sdti          LOC=M10; # serial data input to the codec 
+net sdto          LOC=K5;  # serial data output from the codec  
+net ADC_rdy_diag  LOC=E2;  # analog-to-digital diagnostic signal  
+net DAC_rdy_diag  LOC=E1;  # digital-to-analog diagnostic signal  
+net ethernet_cs_n LOC=G13; # Ethernet chip-enable 
+

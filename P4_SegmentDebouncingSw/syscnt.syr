@@ -1,0 +1,507 @@
+Release 14.3 - xst P.40xd (lin)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+Reading design: syscnt.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "syscnt.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "syscnt"
+Output Format                      : NGC
+Target Device                      : xc3s50a-4-vq100
+
+---- Source Options
+Top Module Name                    : syscnt
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/prescaller.vhd" in Library work.
+Architecture behavioral of Entity prescaller is up to date.
+Compiling vhdl file "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/debouncing.vhd" in Library work.
+Architecture behavioral of Entity debouncing is up to date.
+Compiling vhdl file "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/counterBCD.vhd" in Library work.
+Architecture behavioral of Entity counterbcd is up to date.
+Compiling vhdl file "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/decoder.vhd" in Library work.
+Architecture behavioral of Entity decoder is up to date.
+Compiling vhdl file "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/SysCnt.vhd" in Library work.
+Architecture behavioral of Entity syscnt is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <syscnt> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Prescaller> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <debouncing> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <counterBCD> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <decoder> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <syscnt> in library <work> (Architecture <behavioral>).
+Entity <syscnt> analyzed. Unit <syscnt> generated.
+
+Analyzing Entity <Prescaller> in library <work> (Architecture <behavioral>).
+Entity <Prescaller> analyzed. Unit <Prescaller> generated.
+
+Analyzing Entity <debouncing> in library <work> (Architecture <behavioral>).
+Entity <debouncing> analyzed. Unit <debouncing> generated.
+
+Analyzing Entity <counterBCD> in library <work> (Architecture <behavioral>).
+Entity <counterBCD> analyzed. Unit <counterBCD> generated.
+
+Analyzing Entity <decoder> in library <work> (Architecture <behavioral>).
+Entity <decoder> analyzed. Unit <decoder> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <debouncing>.
+    Related source file is "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/debouncing.vhd".
+    Found 1-bit register for signal <dbout>.
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q2>.
+    Found 1-bit register for signal <Q3>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <debouncing> synthesized.
+
+
+Synthesizing Unit <counterBCD>.
+    Related source file is "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/counterBCD.vhd".
+    Found 4-bit up counter for signal <clk_r>.
+    Found 5-bit comparator less for signal <clk_r$cmp_lt0000> created at line 16.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <counterBCD> synthesized.
+
+
+Synthesizing Unit <decoder>.
+    Related source file is "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/decoder.vhd".
+    Found 16x7-bit ROM for signal <segment7$mux0001> created at line 17.
+    Found 7-bit register for signal <segment7>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   7 D-type flip-flop(s).
+Unit <decoder> synthesized.
+
+
+Synthesizing Unit <Prescaller>.
+    Related source file is "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/prescaller.vhd".
+    Found 18-bit up counter for signal <clk_r>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Prescaller> synthesized.
+
+
+Synthesizing Unit <syscnt>.
+    Related source file is "/home/hendri/Documents/workspaceXilinx/P4_SegmentDebouncingSw/SysCnt.vhd".
+Unit <syscnt> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 2
+ 18-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 5
+ 1-bit register                                        : 4
+ 7-bit register                                        : 1
+# Comparators                                          : 1
+ 5-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <decoder>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_segment7_mux0001> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <decoder> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 2
+ 18-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+# Comparators                                          : 1
+ 5-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <syscnt> ...
+
+Optimizing unit <decoder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block syscnt, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : syscnt.ngr
+Top Level Output File Name         : syscnt
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 68
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 17
+#      LUT2                        : 2
+#      LUT3                        : 3
+#      LUT4                        : 7
+#      MUXCY                       : 17
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 33
+#      FD                          : 26
+#      FDR                         : 5
+#      FDS                         : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 8
+#      IBUF                        : 1
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50avq100-4 
+
+ Number of Slices:                       17  out of    704     2%  
+ Number of Slice Flip Flops:             33  out of   1408     2%  
+ Number of 4 input LUTs:                 31  out of   1408     2%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of     68    13%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)        | Load  |
+-----------------------------------+------------------------------+-------+
+Inst_Prescaller/clk_r_17           | BUFG                         | 4     |
+Inst_debouncing/dbout              | NONE(Inst_counterBCD/clk_r_0)| 11    |
+clk_i                              | BUFGP                        | 18    |
+-----------------------------------+------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.505ns (Maximum Frequency: 221.976MHz)
+   Minimum input arrival time before clock: 1.521ns
+   Maximum output required time after clock: 5.531ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_Prescaller/clk_r_17'
+  Clock period: 2.081ns (frequency: 480.538MHz)
+  Total number of paths / destination ports: 5 / 4
+-------------------------------------------------------------------------
+Delay:               2.081ns (Levels of Logic = 1)
+  Source:            Inst_debouncing/Q2 (FF)
+  Destination:       Inst_debouncing/dbout (FF)
+  Source Clock:      Inst_Prescaller/clk_r_17 rising
+  Destination Clock: Inst_Prescaller/clk_r_17 rising
+
+  Data Path: Inst_debouncing/Q2 to Inst_debouncing/dbout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.590  Inst_debouncing/Q2 (Inst_debouncing/Q2)
+     LUT2:I0->O            1   0.648   0.000  Inst_debouncing/dbout_and000011 (Inst_debouncing/dbout_and00001)
+     FDR:D                     0.252          Inst_debouncing/dbout
+    ----------------------------------------
+    Total                      2.081ns (1.491ns logic, 0.590ns route)
+                                       (71.6% logic, 28.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_debouncing/dbout'
+  Clock period: 3.660ns (frequency: 273.224MHz)
+  Total number of paths / destination ports: 57 / 17
+-------------------------------------------------------------------------
+Delay:               3.660ns (Levels of Logic = 1)
+  Source:            Inst_counterBCD/clk_r_1 (FF)
+  Destination:       Inst_counterBCD/clk_r_0 (FF)
+  Source Clock:      Inst_debouncing/dbout rising
+  Destination Clock: Inst_debouncing/dbout rising
+
+  Data Path: Inst_counterBCD/clk_r_1 to Inst_counterBCD/clk_r_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             11   0.591   0.965  Inst_counterBCD/clk_r_1 (Inst_counterBCD/clk_r_1)
+     LUT4:I2->O            4   0.648   0.587  Inst_counterBCD/clk_r_not00011 (Inst_counterBCD/clk_r_not0001)
+     FDR:R                     0.869          Inst_counterBCD/clk_r_0
+    ----------------------------------------
+    Total                      3.660ns (2.108ns logic, 1.552ns route)
+                                       (57.6% logic, 42.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_i'
+  Clock period: 4.505ns (frequency: 221.976MHz)
+  Total number of paths / destination ports: 171 / 18
+-------------------------------------------------------------------------
+Delay:               4.505ns (Levels of Logic = 18)
+  Source:            Inst_Prescaller/clk_r_1 (FF)
+  Destination:       Inst_Prescaller/clk_r_17 (FF)
+  Source Clock:      clk_i rising
+  Destination Clock: clk_i rising
+
+  Data Path: Inst_Prescaller/clk_r_1 to Inst_Prescaller/clk_r_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.563  Inst_Prescaller/clk_r_1 (Inst_Prescaller/clk_r_1)
+     LUT1:I0->O            1   0.648   0.000  Inst_Prescaller/Mcount_clk_r_cy<1>_rt (Inst_Prescaller/Mcount_clk_r_cy<1>_rt)
+     MUXCY:S->O            1   0.632   0.000  Inst_Prescaller/Mcount_clk_r_cy<1> (Inst_Prescaller/Mcount_clk_r_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<2> (Inst_Prescaller/Mcount_clk_r_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<3> (Inst_Prescaller/Mcount_clk_r_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<4> (Inst_Prescaller/Mcount_clk_r_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<5> (Inst_Prescaller/Mcount_clk_r_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<6> (Inst_Prescaller/Mcount_clk_r_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<7> (Inst_Prescaller/Mcount_clk_r_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<8> (Inst_Prescaller/Mcount_clk_r_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<9> (Inst_Prescaller/Mcount_clk_r_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<10> (Inst_Prescaller/Mcount_clk_r_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<11> (Inst_Prescaller/Mcount_clk_r_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<12> (Inst_Prescaller/Mcount_clk_r_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<13> (Inst_Prescaller/Mcount_clk_r_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<14> (Inst_Prescaller/Mcount_clk_r_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<15> (Inst_Prescaller/Mcount_clk_r_cy<15>)
+     MUXCY:CI->O           0   0.065   0.000  Inst_Prescaller/Mcount_clk_r_cy<16> (Inst_Prescaller/Mcount_clk_r_cy<16>)
+     XORCY:CI->O           1   0.844   0.000  Inst_Prescaller/Mcount_clk_r_xor<17> (Result<17>)
+     FD:D                      0.252          Inst_Prescaller/clk_r_17
+    ----------------------------------------
+    Total                      4.505ns (3.942ns logic, 0.563ns route)
+                                       (87.5% logic, 12.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_Prescaller/clk_r_17'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.521ns (Levels of Logic = 1)
+  Source:            pb_i (PAD)
+  Destination:       Inst_debouncing/Q1 (FF)
+  Destination Clock: Inst_Prescaller/clk_r_17 rising
+
+  Data Path: pb_i to Inst_debouncing/Q1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.849   0.420  pb_i_IBUF (pb_i_IBUF)
+     FD:D                      0.252          Inst_debouncing/Q1
+    ----------------------------------------
+    Total                      1.521ns (1.101ns logic, 0.420ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_debouncing/dbout'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              5.531ns (Levels of Logic = 1)
+  Source:            Inst_decoder/segment7_6 (FF)
+  Destination:       counter_out<6> (PAD)
+  Source Clock:      Inst_debouncing/dbout rising
+
+  Data Path: Inst_decoder/segment7_6 to counter_out<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.420  Inst_decoder/segment7_6 (Inst_decoder/segment7_6)
+     OBUF:I->O                 4.520          counter_out_6_OBUF (counter_out<6>)
+    ----------------------------------------
+    Total                      5.531ns (5.111ns logic, 0.420ns route)
+                                       (92.4% logic, 7.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 10.55 secs
+ 
+--> 
+
+
+Total memory usage is 181220 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

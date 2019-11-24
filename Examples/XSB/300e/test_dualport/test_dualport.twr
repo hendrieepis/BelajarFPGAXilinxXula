@@ -1,0 +1,197 @@
+--------------------------------------------------------------------------------
+Release 6.3.03i Trace G.38
+Copyright (c) 1995-2004 Xilinx, Inc.  All rights reserved.
+
+C:/Xilinx/bin/nt/trce.exe -intstyle ise -e 3 -l 3 -xml test_dualport
+test_dualport.ncd -o test_dualport.twr test_dualport.pcf
+
+
+Design file:              test_dualport.ncd
+Physical constraint file: test_dualport.pcf
+Device,speed:             xc2s300e,-6 (PRODUCTION 1.17 2004-06-25)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+================================================================================
+Timing constraint: TS_sdram_clk = PERIOD TIMEGRP "sdram_clk"  10 nS   HIGH 50.000000 % ;
+
+ 58797 items analyzed, 343 timing errors detected. (343 setup errors, 0 hold errors)
+ Minimum period is  17.495ns.
+--------------------------------------------------------------------------------
+Slack:                  -7.495ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u0_fast_memtest_port1_addr_r_22 (FF)
+  Destination:          u0_u2_cmd_r_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      17.495ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sdram_clk_BUFGP rising at 0.000ns
+  Destination Clock:    sdram_clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Data Path: u0_fast_memtest_port1_addr_r_22 to u0_u2_cmd_r_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R19C28.S0.YQ     Tcko                  0.992   u0_fast_memtest_port1_addr_r<22>
+                                                       u0_fast_memtest_port1_addr_r_22
+    CLB_R31C27.S1.F2     net (fanout=8)        2.418   u0_fast_memtest_port1_addr_r<22>
+    CLB_R31C27.S1.X      Tilo                  0.468   u0_hAddr<22>
+                                                       u0_u1_Mmux_hAddr_Result<22>1
+    CLB_R32C26.S0.G1     net (fanout=19)       1.524   u0_hAddr<22>
+    CLB_R32C26.S0.X      Tif5x                 0.890   u0_u2__n0140<6>
+                                                       u0_u2_Mmux__n0140_inst_mux_f5_7111_F
+                                                       u0_u2_Mmux__n0140_inst_mux_f5_7111
+    CLB_R27C26.S0.G1     net (fanout=1)        1.701   u0_u2__n0140<6>
+    CLB_R27C26.S0.COUT   Topcyg                1.000   u0_u2_Neq_stage_cyo3
+                                                       u0_u2_Neq_stagelut3
+                                                       u0_u2_Neq_stagecy_rn_2
+    CLB_R26C26.S0.CIN    net (fanout=1)        0.000   u0_u2_Neq_stage_cyo3
+    CLB_R26C26.S0.COUT   Tbyp                  0.149   u0_u2__n0193
+                                                       u0_u2_Neq_stagecy_rn_3
+                                                       u0_u2_Neq_stagecy_rn_4
+    CLB_R24C32.S0.G3     net (fanout=36)       2.487   u0_u2__n0193
+    CLB_R24C32.S0.Y      Tilo                  0.468   u0_u2__n01711_SW1/O
+                                                       u0_u2_cmd_x<2>10
+    CLB_R28C34.S1.G1     net (fanout=1)        1.766   CHOICE736
+    CLB_R28C34.S1.Y      Tilo                  0.468   u0_u2_cmd_x<2>32/O
+                                                       u0_u2_cmd_x<2>69
+    P95.O                net (fanout=1)        2.101   u0_u2_cmd_x<2>69/O
+    P95.CLK              Tioock                1.063   sdram_we_n
+                                                       u0_u2_cmd_r_2
+    -------------------------------------------------  ---------------------------
+    Total                                     17.495ns (5.498ns logic, 11.997ns route)
+                                                       (31.4% logic, 68.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -7.494ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u0_fast_memtest_port1_addr_r_22 (FF)
+  Destination:          u0_u2_cmd_r_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      17.494ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sdram_clk_BUFGP rising at 0.000ns
+  Destination Clock:    sdram_clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Data Path: u0_fast_memtest_port1_addr_r_22 to u0_u2_cmd_r_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R19C28.S0.YQ     Tcko                  0.992   u0_fast_memtest_port1_addr_r<22>
+                                                       u0_fast_memtest_port1_addr_r_22
+    CLB_R31C27.S1.F2     net (fanout=8)        2.418   u0_fast_memtest_port1_addr_r<22>
+    CLB_R31C27.S1.X      Tilo                  0.468   u0_hAddr<22>
+                                                       u0_u1_Mmux_hAddr_Result<22>1
+    CLB_R32C26.S0.F2     net (fanout=19)       1.542   u0_hAddr<22>
+    CLB_R32C26.S0.X      Tif5x                 0.871   u0_u2__n0140<6>
+                                                       u0_u2_Mmux__n0140_inst_mux_f5_7111_G
+                                                       u0_u2_Mmux__n0140_inst_mux_f5_7111
+    CLB_R27C26.S0.G1     net (fanout=1)        1.701   u0_u2__n0140<6>
+    CLB_R27C26.S0.COUT   Topcyg                1.000   u0_u2_Neq_stage_cyo3
+                                                       u0_u2_Neq_stagelut3
+                                                       u0_u2_Neq_stagecy_rn_2
+    CLB_R26C26.S0.CIN    net (fanout=1)        0.000   u0_u2_Neq_stage_cyo3
+    CLB_R26C26.S0.COUT   Tbyp                  0.149   u0_u2__n0193
+                                                       u0_u2_Neq_stagecy_rn_3
+                                                       u0_u2_Neq_stagecy_rn_4
+    CLB_R24C32.S0.G3     net (fanout=36)       2.487   u0_u2__n0193
+    CLB_R24C32.S0.Y      Tilo                  0.468   u0_u2__n01711_SW1/O
+                                                       u0_u2_cmd_x<2>10
+    CLB_R28C34.S1.G1     net (fanout=1)        1.766   CHOICE736
+    CLB_R28C34.S1.Y      Tilo                  0.468   u0_u2_cmd_x<2>32/O
+                                                       u0_u2_cmd_x<2>69
+    P95.O                net (fanout=1)        2.101   u0_u2_cmd_x<2>69/O
+    P95.CLK              Tioock                1.063   sdram_we_n
+                                                       u0_u2_cmd_r_2
+    -------------------------------------------------  ---------------------------
+    Total                                     17.494ns (5.479ns logic, 12.015ns route)
+                                                       (31.3% logic, 68.7% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -7.483ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u0_fast_memtest_port1_addr_r_22 (FF)
+  Destination:          u0_u2_cmd_r_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      17.483ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         sdram_clk_BUFGP rising at 0.000ns
+  Destination Clock:    sdram_clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Data Path: u0_fast_memtest_port1_addr_r_22 to u0_u2_cmd_r_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R19C28.S0.YQ     Tcko                  0.992   u0_fast_memtest_port1_addr_r<22>
+                                                       u0_fast_memtest_port1_addr_r_22
+    CLB_R31C27.S1.F2     net (fanout=8)        2.418   u0_fast_memtest_port1_addr_r<22>
+    CLB_R31C27.S1.X      Tilo                  0.468   u0_hAddr<22>
+                                                       u0_u1_Mmux_hAddr_Result<22>1
+    CLB_R31C27.S0.G4     net (fanout=19)       1.402   u0_hAddr<22>
+    CLB_R31C27.S0.X      Tif5x                 0.890   u0_u2__n0140<4>
+                                                       u0_u2_Mmux__n0140_inst_mux_f5_5111_F
+                                                       u0_u2_Mmux__n0140_inst_mux_f5_5111
+    CLB_R27C26.S0.F1     net (fanout=1)        1.872   u0_u2__n0140<4>
+    CLB_R27C26.S0.COUT   Topcyf                0.939   u0_u2_Neq_stage_cyo3
+                                                       u0_u2_Neq_stagelut2
+                                                       u0_u2_Neq_stagecy_rn_1
+                                                       u0_u2_Neq_stagecy_rn_2
+    CLB_R26C26.S0.CIN    net (fanout=1)        0.000   u0_u2_Neq_stage_cyo3
+    CLB_R26C26.S0.COUT   Tbyp                  0.149   u0_u2__n0193
+                                                       u0_u2_Neq_stagecy_rn_3
+                                                       u0_u2_Neq_stagecy_rn_4
+    CLB_R24C32.S0.G3     net (fanout=36)       2.487   u0_u2__n0193
+    CLB_R24C32.S0.Y      Tilo                  0.468   u0_u2__n01711_SW1/O
+                                                       u0_u2_cmd_x<2>10
+    CLB_R28C34.S1.G1     net (fanout=1)        1.766   CHOICE736
+    CLB_R28C34.S1.Y      Tilo                  0.468   u0_u2_cmd_x<2>32/O
+                                                       u0_u2_cmd_x<2>69
+    P95.O                net (fanout=1)        2.101   u0_u2_cmd_x<2>69/O
+    P95.CLK              Tioock                1.063   sdram_we_n
+                                                       u0_u2_cmd_r_2
+    -------------------------------------------------  ---------------------------
+    Total                                     17.483ns (5.437ns logic, 12.046ns route)
+                                                       (31.1% logic, 68.9% route)
+
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock sdram_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sdram_clk      |   17.495|    4.290|    4.837|         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 343  Score: 1073782
+
+Constraints cover 58797 paths, 0 nets, and 2543 connections
+
+Design statistics:
+   Minimum period:  17.495ns (Maximum frequency:  57.159MHz)
+
+
+Analysis completed Fri Jun 17 15:46:32 2005
+--------------------------------------------------------------------------------
+
+Peak Memory Usage: 56 MB

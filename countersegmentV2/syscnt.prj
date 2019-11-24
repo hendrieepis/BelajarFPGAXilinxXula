@@ -1,0 +1,4 @@
+vhdl work "Prescaller.vhd"
+vhdl work "decoder.vhd"
+vhdl work "counterBCD.vhd"
+vhdl work "syscnt.vhd"

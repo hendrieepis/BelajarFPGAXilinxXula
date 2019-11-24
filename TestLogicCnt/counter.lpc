@@ -1,0 +1,20 @@
+# counter.lpc  
+#   The constraints in this file were created simply to be viewed.  
+#   If you wish to use these constraints, please copy them into your  
+#   project's constraint file. If you do not have a project constraints  
+#   file yet, please use the "Project->New Source" menu to create one.
+
+
+
+#pin2ucf - Mon Nov 26 06:47:57 2012
+#The following constraints were newly added
+NET "counter_o<0>" LOC = P48;
+NET "counter_o<1>" LOC = P51;
+NET "counter_o<2>" LOC = P52;
+NET "counter_o<3>" LOC = P57;
+NET "counter_o<4>" LOC = P62;
+NET "counter_o<5>" LOC = P56;
+NET "counter_o<6>" LOC = P60;
+NET "clk_i" LOC = P41;
+NET "counter_o<7>" LOC = P44;
+NET "systick" LOC = P59;

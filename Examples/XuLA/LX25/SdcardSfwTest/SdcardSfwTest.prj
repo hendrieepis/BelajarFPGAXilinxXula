@@ -1,0 +1,4 @@
+vhdl work "../../XuLA_lib/SyncToClk.vhd"
+vhdl work "../../XuLA_lib/Common.vhd"
+vhdl work "../../XuLA_lib/HostIo.vhd"
+vhdl work "SdcardSfwTest.vhd"

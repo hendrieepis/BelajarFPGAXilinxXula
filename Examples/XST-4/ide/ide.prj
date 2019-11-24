@@ -1,0 +1,6 @@
+vhdl work debounce.vhd
+vhdl work common.vhd
+vhdl work randgen.vhd
+vhdl work memtest.vhd
+vhdl work atacntl.vhd
+vhdl work ide.vhd

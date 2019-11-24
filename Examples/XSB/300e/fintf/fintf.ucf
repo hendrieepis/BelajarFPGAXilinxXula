@@ -1,0 +1,64 @@
+#
+# pin assignments for the XC9572XL CPLD chip on the XSB Board
+#
+
+# peripheral bus
+net pb_d<0>		loc=p2;		# data bit D0 (in/out)
+net pb_d<1>		loc=p4;		# data bit D1 (in/out)
+net pb_d<2>		loc=p5;		# data bit D2 (in/out)
+net pb_d<3>		loc=p6;		# data bit D3 (in/out)
+net pb_d<4>		loc=p7;		# data bit D4 (in/out)
+net pb_d<5>		loc=p8;		# data bit D5 (in/out)
+net pb_d<6>		loc=p9;		# data bit D6 (in/out)
+net pb_d<7>		loc=p10;	# data bit D7 (in/out)
+net pb_a<0>		loc=p1;		# address bit A0 (in/out)
+net pb_a<1>		loc=p64;	# address bit A1 (in/out)
+net pb_a<2>		loc=p63;	# address bit A2 (in/out)
+net pb_a<3>		loc=p62;	# address bit A3 (in/out)
+net pb_a<4>		loc=p61;	# address bit A4 (in/out)
+net pb_a<5>		loc=p60;	# address bit A5 (in/out)
+net pb_a<6>		loc=p59;	# address bit A6 (in/out)
+net pb_a<7>		loc=p58;	# address bit A7 (in/out)
+net pb_a<8>		loc=p45;	# address bit A8 (in/out)
+net pb_a<9>		loc=p44;	# address bit A9 (in/out)
+net pb_a<10>		loc=p57;	# address bit A10 (in/out)
+net pb_a<11>		loc=p43;	# address bit A11 (in/out)
+net pb_a<12>		loc=p56;	# address bit A12 (in/out)
+net pb_a<13>		loc=p46;	# address bit A13 (in/out)
+net pb_a<14>		loc=p47;	# address bit A14 (in/out)
+net pb_a<15>		loc=p52;	# address bit A15 (in/out)
+net pb_a<16>		loc=p51;	# address bit A16 (in/out)
+net pb_a<17>		loc=p48;	# address bit A17 (in/out)
+net pb_a<18>		loc=p42;	# address bit A18 (in/out)
+net pb_a<19>		loc=p50;	# address bit A19 (in/out)
+net pb_oe_n		loc=p12;	# active-low output enable (out)
+net pb_we_n		loc=p49;	# active-low write enable (out)
+
+# parallel port
+net pp_d<0>		loc=p33;	# data pin D0 (in)
+net pp_d<1>		loc=p32;	# data pin D1 (in)
+net pp_d<2>		loc=p31;	# data pin D2 (in)
+net pp_d<3>		loc=p27;	# data pin D3 (in)
+net pp_d<4>		loc=p25;	# data pin D4 (in)
+net pp_d<5>		loc=p24;	# data pin D5 (in)
+#net pp_d<6>		loc=p23;	# data pin D6 (in)
+#net pp_d<7>		loc=p22;	# data pin D7 (in)
+net pp_s<3>		loc=p34;	# status pin S3 (out)
+net pp_s<4>		loc=p20;	# status pin S4 (out)
+net pp_s<5>		loc=p35;	# status pin S5 (out)
+
+# FPGA configuration interface
+#net fpga_m<0>		loc=p36;	# config. mode select (out)
+net fpga_program_n	loc=p39;	# active-low config. initiate (out)
+#net fpga_cclk		loc=p16;	# config. clock (out)
+#net fpga_cs_n		loc=p15;	# active-low chip-select (out)
+#net fpga_write_n	loc=p19;	# active-low write-enable (out)
+#net fpga_bsy		loc=p18;	# config. busy (in)
+#net fpga_init_n		loc=p38;	# config. initialization (in)
+#net fpga_done		loc=p40;	# config. done (in)
+#net fpga_tck		loc=p13;	# JTAG clock (out)
+
+net flash_ce_n		loc=p11;	# Flash RAM chip-enable (out)
+
+#net cpld_clk		loc=p17;	# CPLD clock (in)
+

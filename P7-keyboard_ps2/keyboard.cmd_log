@@ -1,0 +1,30 @@
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.xst" -ofn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-4 keyboard.ngc keyboard.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o keyboard_map.ncd keyboard.ngd keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_map.ncd keyboard.ncd keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml keyboard.twx keyboard.ncd -o keyboard.twr keyboard.pcf 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.xst" -ofn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.xst" -ofn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.xst" -ofn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-4 keyboard.ngc keyboard.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o keyboard_map.ncd keyboard.ngd keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_map.ncd keyboard.ncd keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml keyboard.twx keyboard.ncd -o keyboard.twr keyboard.pcf 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.xst" -ofn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.xst" -ofn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.syr" 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.xst" -ofn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc keyboard.ucf -p xc3s250e-cp132-4 keyboard.ngc keyboard.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o keyboard_map.ncd keyboard.ngd keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_map.ncd keyboard.ncd keyboard.pcf 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.xst" -ofn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc keyboard.ucf -p xc3s250e-cp132-4 keyboard.ngc keyboard.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o keyboard_map.ncd keyboard.ngd keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_map.ncd keyboard.ncd keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml keyboard.twx keyboard.ncd -o keyboard.twr keyboard.pcf -ucf keyboard.ucf 
+bitgen -intstyle ise -f keyboard.ut keyboard.ncd 
+xst -intstyle ise -ifn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.xst" -ofn "/home/hendri/Documents/workspaceXilinx/keyboard_ps2/keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc keyboard.ucf -p xc3s250e-cp132-4 keyboard.ngc keyboard.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o keyboard_map.ncd keyboard.ngd keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 keyboard_map.ncd keyboard.ncd keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml keyboard.twx keyboard.ncd -o keyboard.twr keyboard.pcf -ucf keyboard.ucf 
+bitgen -intstyle ise -f keyboard.ut keyboard.ncd 

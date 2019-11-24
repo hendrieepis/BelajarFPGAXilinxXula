@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/hendri/Documents/workspaceXilinx/P3-SegmentCNT/systemSeg.ncd
+OUTFILE=/home/hendri/Documents/workspaceXilinx/P3-SegmentCNT/systemSeg.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-4vq100
+WORKINGDIR=/home/hendri/Documents/workspaceXilinx/P3-SegmentCNT
+LICENSE=WebPack
+USER_INFO=205718885_0_0_719

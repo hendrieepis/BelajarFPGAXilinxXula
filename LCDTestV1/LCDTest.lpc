@@ -1,0 +1,18 @@
+# LCDTest.lpc  
+#   The constraints in this file were created simply to be viewed.  
+#   If you wish to use these constraints, please copy them into your  
+#   project's constraint file. If you do not have a project constraints  
+#   file yet, please use the "Project->New Source" menu to create one.
+
+
+
+#pin2ucf - Sun Jan 06 15:11:21 2013
+#The following constraints were newly added
+NET "clock" LOC = P41;
+NET "en" LOC = P6;
+NET "dataLCD<0>" LOC = P3;
+NET "dataLCD<1>" LOC = P4;
+NET "dataLCD<2>" LOC = P9;
+NET "dataLCD<3>" LOC = P10;
+NET "rs" LOC = P5;
+NET "reset" LOC = P7;

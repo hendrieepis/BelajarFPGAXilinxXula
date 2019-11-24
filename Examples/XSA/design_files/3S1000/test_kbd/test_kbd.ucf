@@ -1,0 +1,14 @@
+# XSA Board FPGA pin assignment constraints
+
+net clk      loc=T9;  
+
+net ps2_clk  loc=B16; 
+net ps2_data loc=E13; 
+
+net s<0>     loc=M6;  
+net s<1>     loc=M11; 
+net s<2>     loc=N6;  
+net s<3>     loc=R7;  
+net s<4>     loc=P10; 
+net s<5>     loc=T7;  
+net s<6>     loc=R10; 

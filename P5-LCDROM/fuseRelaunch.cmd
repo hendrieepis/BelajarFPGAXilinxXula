@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/hendri/Documents/workspaceXilinx/LCDROM/ROMtestbench_isim_par.exe" -prj "/home/hendri/Documents/workspaceXilinx/LCDROM/ROMtestbench_par.prj" "work.ROMtestbench" 

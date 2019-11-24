@@ -1,0 +1,4 @@
+EN lcd NULL /home/hendri/Documents/workspaceXilinx/LCDTestV2/LCDTest.vhd sub00/vhpl02 1357638823
+EN lcdtest NULL /home/hendri/Documents/workspaceXilinx/LCDTestV2/LCDTest.vhd sub00/vhpl00 1357637091
+AR lcdtest behavioral /home/hendri/Documents/workspaceXilinx/LCDTestV2/LCDTest.vhd sub00/vhpl01 1357637092
+AR lcd behavior /home/hendri/Documents/workspaceXilinx/LCDTestV2/LCDTest.vhd sub00/vhpl03 1357638824

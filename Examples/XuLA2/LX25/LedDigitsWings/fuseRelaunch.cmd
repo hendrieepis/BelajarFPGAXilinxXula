@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/xesscorp/PRODUCTS/StickIt/modules/LedDigits/FPGA/driver/LedDigitsTest_tb_isim_beh.exe" -prj "C:/xesscorp/PRODUCTS/StickIt/modules/LedDigits/FPGA/driver/LedDigitsTest_tb_beh.prj" "work.LedDigitsTest_tb" 
